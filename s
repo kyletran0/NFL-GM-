@@ -1,0 +1,4177 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#09101a"><title>NFL GM: Connected Careers — v6.6 Deep Stress Tested</title><meta name="description" content="NFL GM: play a football front-office, coaching or player career directly in your browser. Autosaves on this device."><meta property="og:title" content="NFL GM"><meta property="og:description" content="Build your NFL franchise, manage rosters, coach and play a career."><meta name="color-scheme" content="dark"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1421'/%3E%3Ctext x='32' y='44' text-anchor='middle' fill='%2359e4b4' font-size='34' font-family='Arial' font-weight='bold'%3EGM%3C/text%3E%3C/svg%3E"><style>:root{--bg:#070c17;--panel:#111d2d;--panel2:#17273a;--panel3:#1b2e44;--border:#2b4057;--text:#f2f7ff;--muted:#90a4b9;--green:#59e4b4;--green2:#133d37;--blue:#a9c6fd;--red:#ff8b99;--amber:#fbd18b;--shadow:0 14px 45px #0004}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.35;cursor:not-allowed}h1,h2,h3,h4,p{margin-top:0}h1{font-size:clamp(23px,3vw,31px);letter-spacing:-1px;margin-bottom:2px}h2{font-size:21px;letter-spacing:-.55px}h3{font-size:16px;letter-spacing:-.2px;margin-bottom:12px}h4{font-size:13px;margin:13px 0 6px}a{color:var(--green)}.app{max-width:1570px;margin:0 auto;min-height:100vh}.topbar{min-height:75px;border-bottom:1px solid var(--border);padding:13px 23px;display:flex;align-items:center;gap:18px;justify-content:space-between;background:#0b1220}.brand{font-size:23px;font-weight:950;letter-spacing:-1.4px;white-space:nowrap}.brand span{color:var(--green)}.brand small{display:block;letter-spacing:1.4px;color:#b3c4d7;font-size:9px;font-weight:750;margin-top:-3px}.brand small b{color:var(--green)}.topteam{display:flex;align-items:center;gap:10px;min-width:0}.topteam div{min-width:0}.topteam b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.topteam small,.topcap small{display:block;font-size:10px;letter-spacing:.8px;color:var(--muted)}.topcap{font-weight:900;font-size:18px;text-align:right;white-space:nowrap}.shell{display:grid;grid-template-columns:225px minmax(0,1fr);min-height:calc(100vh - 124px)}.nav{padding:18px 10px;background:#0b1421;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:4px}.navbutton{display:flex;align-items:center;gap:12px;width:100%;background:transparent;color:#9db2c9;border:1px solid transparent;text-align:left;border-radius:10px;padding:12px 14px;font-weight:720;white-space:nowrap}.navbutton:hover,.navbutton.active{background:var(--panel2);border-color:#344a61;color:#fff}.navbutton.active:before{content:'';position:absolute;left:-10px}.navicon{font-size:19px;width:21px;text-align:center;color:var(--green)}.livepulse{width:8px;height:8px;border-radius:50%;background:#ff6b75;box-shadow:0 0 10px #ff6b75;margin-left:auto}.content{padding:25px 27px 50px;min-width:0}.heading{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:17px}.heading .sub{margin:3px 0 0}.headright{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.sub,.fine{color:var(--muted)}.sub{font-size:12px}.fine{font-size:11px;margin:11px 0 0;line-height:1.5}.eyebrow{color:#9ab1c6;text-transform:uppercase;letter-spacing:1.4px;font-weight:900;font-size:10px}.neon{color:var(--green)}.section{margin-top:17px}.card{border:1px solid var(--border);background:var(--panel);border-radius:14px;padding:17px;min-width:0}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.sectionhead h3{margin:0}.statsgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:15px}.stat{padding:15px 17px}.statvalue{font-size:26px;letter-spacing:-1px;font-weight:950;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.stat .sub{margin:3px 0 0}.two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:14px}.withsidebar{display:grid;grid-template-columns:minmax(0,1fr) 267px;gap:13px}.rightcolumn,.flowcol{display:flex;flex-direction:column;gap:13px;min-width:0}.rightcolumn>.card{padding:13px}.chip{padding:6px 8px;border-radius:7px;background:#23334a;color:#cdddeb;border:1px solid #35485c;font-size:10px;font-weight:800;white-space:nowrap;letter-spacing:.2px}.chip b{color:white;margin-left:4px}.chip.ok,.chip.strong{background:#17473c;border-color:#2e7666;color:#9aefcc}.chip.status{color:#a1f4cb;background:#133e33;border-color:#347e60}.chip.danger,.chip.critical{background:#422934;border-color:#79404c;color:#ffc0c8}.chip.upgrade{background:#413626;border-color:#776143;color:#f8d6a5}.chip.depth{background:#243447;border-color:#456385;color:#b6d2fb}.chip.sim{color:#f5cfa1;background:#423627}.button{appearance:none;border:1px solid #394d62;background:#25374e;color:#f5fbff;font-weight:850;padding:10px 14px;border-radius:9px;white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font-size:12px;letter-spacing:.25px;max-width:100%}.button:hover{filter:brightness(1.15)}.button.primary{background:var(--green);border-color:var(--green);color:#07342b}.button.danger{background:#4a2938;border-color:#71404e;color:#ffd3d8}.button.tiny{font-size:10px;padding:7px 9px}.button.wide{width:100%}.button:focus-visible,.field:focus-visible{outline:2px solid var(--green);outline-offset:1px}.field{appearance:none;background:#0b1523;border:1px solid #40556a;border-radius:8px;color:#f5faff;padding:9px 10px;min-width:0;max-width:100%;font-size:13px}.field.wide{width:100%}.field option{background:#122338;color:white}.field.colorfield{padding:2px;width:100%;height:41px}.lab{display:block;color:#b6cce2;font-size:11px;font-weight:750;margin:14px 0 6px}.toolbar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:11px}.toolbar>.field{flex:1 1 130px}.toolbar>.search{flex:2 1 180px}.notice{border:1px solid #296550;background:#0d2a2a;color:#b4e9d5;padding:12px 13px;border-radius:10px;font-size:12px;margin:12px 0}.injurybar{border:1px solid #984b5b;background:#3a202e;padding:11px 15px;border-radius:11px;margin:10px 0;color:#ffb8c4}.injurybar div{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.injurybar span{font-size:11px;background:#59303f;padding:5px 7px;border-radius:6px}.injurybar p{margin:8px 0 0;font-size:12px}.tablewrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}.table{width:100%;border-collapse:collapse;min-width:620px}.table th{text-align:left;padding:11px;color:#91a7bd;font-size:10px;letter-spacing:.65px;border-bottom:1px solid var(--border);white-space:nowrap}.table td{padding:11px 9px;border-bottom:1px solid #263648;font-size:12px;vertical-align:middle}.table tbody tr:hover{background:#18283b}.table tbody tr:last-child td{border:0}.none{text-align:center;padding:34px!important;color:var(--muted)}.playerid{display:inline-flex;align-items:center;gap:9px;max-width:100%;min-width:0;text-align:left}.playerid strong{display:block;overflow:hidden;text-overflow:ellipsis;font-weight:760;max-width:195px}.playerid small{display:block;color:var(--muted);font-size:10px}.minzero{min-width:0}.face{display:inline-flex;position:relative;flex:none;width:40px;height:43px;border-radius:10px;background:linear-gradient(145deg,#314a63,#1b2c40);border:1px solid #40566d;align-items:center;justify-content:center;overflow:hidden}.facebig{width:76px;height:81px;border-radius:15px}.face img{position:absolute;inset:0;max-width:100%;width:100%;height:100%;object-fit:cover;object-position:center top;background:#324557;z-index:1}.facemono{font-weight:900;font-size:12px;color:#cbdfef}.facebig .facemono{font-size:22px}.real,.sim{font-size:9px;font-weight:800;letter-spacing:.3px;color:#68e0c4}.sim{color:#d5b18d}.rating{font-size:16px;color:#f4ca7c}.emblem{display:inline-flex;position:relative;flex:none;border:1px solid #8c96a4;border-radius:11px;justify-content:center;align-items:center;overflow:hidden;color:white;font-size:10px}.emblem img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:3px;z-index:1}.emblem b{font-weight:950;z-index:0}.franchisehero{padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(110deg, color-mix(in srgb, var(--team) 36%, #121d2e),#101c2b 70%);border:1px solid color-mix(in srgb, var(--team) 65%, #263a47);border-radius:14px}.heroinfo{display:flex;align-items:center;gap:14px}.heroinfo h2{font-size:24px;margin:0;letter-spacing:-.8px}.heroinfo .sub{margin-top:4px}.record{text-align:center;font-size:27px;font-weight:950;white-space:nowrap}.record small{display:block;font-size:10px;color:#b2c4d5;letter-spacing:.6px}.actiongrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.action{display:block;text-align:left;padding:14px;background:#1a2b3e;color:white;border:1px solid #34485f;border-radius:9px}.action:hover{background:#223a52}.action b,.action small{display:block}.action small{color:var(--muted);margin-top:3px;font-size:11px}.news{max-height:333px;overflow:auto}.newsitem{padding:7px 0;border-bottom:1px solid #2b3d50}.newsitem p{font-size:12px;margin:3px 0}.needlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.compactneeds{grid-template-columns:1fr}.needitem{padding:9px;background:#1a2c3e;border:1px solid #33485a;border-radius:9px;display:flex;align-items:center;justify-content:space-between;gap:4px}.needleft strong{font-size:12px}.needleft .sub{display:block;font-size:10px}.needtag{font-size:9px;font-weight:850;letter-spacing:.5px;border-radius:5px;padding:5px;background:#254255;color:#b3d7f5}.needtag.critical{background:#4c2a36;color:#ffadbc}.needtag.upgrade{background:#443624;color:#f2ce8b}.needtag.depth{background:#253d5b;color:#b3d7fa}.needtag.strong{background:#214c3b;color:#a6ebcc}.brief{display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid #294057}.brief .playerid,.brief .minzero{flex:1}.brief b{font-size:12px}.brief small{font-size:10px;color:var(--muted);display:block}.brief .rating{font-size:16px}.lastresult{border-top:1px solid var(--border);margin-top:16px;padding-top:13px}.lastresult>div{display:flex;gap:13px;align-items:center;margin-top:5px}.lastresult b{font-size:21px}.bigline{font-size:24px;font-weight:850;margin:13px 0}.opproster{display:flex;align-items:center;gap:14px;margin:13px 0}.opproster p{margin:4px 0}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.formgrid label{font-size:12px;color:#a9bfd3;font-weight:700}.formgrid input{margin-top:6px;width:100%}.setupwrap{min-height:85vh;display:grid;grid-template-columns:1fr 1fr;gap:25px;max-width:1180px;margin:auto;align-items:center;padding:30px 20px}.hero{padding:25px}.hero h1{font-size:clamp(34px,5vw,54px);font-weight:950;line-height:1.08;margin:20px 0}.hero p{font-size:16px;color:#adbed1;max-width:510px}.green{color:var(--green)}.hero-mini{display:flex;gap:9px;flex-wrap:wrap;margin-top:23px}.hero-mini span{color:#a8ddcd;background:#18382f;border:1px solid #296b52;border-radius:7px;padding:8px 10px;font-weight:850;font-size:10px}.setupcard{padding:27px}.modechoices{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:16px 0}.mode{padding:15px 11px;border:1px solid #415064;color:#e7f1ff;background:#182b3f;border-radius:10px;text-align:left}.mode b{display:block;font-size:12px}.mode small{display:block;font-size:10px;color:var(--muted);margin-top:6px}.mode.selected{border-color:var(--green);background:#143930}.start{margin-top:18px;padding:14px;font-size:12px;display:flex;justify-content:space-between}.startergrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.starter{padding:9px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;border:1px solid #30465d;border-radius:8px;background:#18293b}.slot{color:var(--green);font-weight:950;width:41px}.starter .minzero{flex:1}.starter .minzero b{font-size:11px;display:block}.starter .minzero small{display:block}.inlinefield{flex:1 1 150px;max-width:100%;font-size:11px}.tradehead{margin-top:8px}.tradeversus{display:flex;align-items:center;justify-content:center;gap:20px;padding:6px}.tradeversus>div{display:flex;flex-direction:column}.tradeversus .sub{font-size:10px}.versus{font-size:30px;color:var(--green)}.tradesides{margin-top:13px;display:grid;grid-template-columns:1fr 1fr;gap:13px}.tradesides .card{padding:21px}.draftbanner{border:1px solid #366a5d;background:linear-gradient(120deg,#15392f,#17243b);padding:20px 24px;border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:15px}.draftbanner h2{font-size:28px;margin:5px 0}.draftbanner p{margin:3px 0;display:flex;align-items:center;gap:8px}.prospect{display:flex;align-items:center;gap:9px}.ranknum{font-size:11px;font-weight:900;color:#e7c88d;min-width:28px}.resultrow{display:flex;align-items:center;gap:8px;border-bottom:1px solid #304052;padding:7px 0}.resultrow div{flex:1}.resultrow b{font-size:11px}.resultrow small{display:block;color:var(--muted);font-size:10px}.pickline{display:flex;gap:10px;align-items:center;border-bottom:1px solid #2c3e52;padding:7px 0;font-size:12px}.pickline>b{color:var(--green);min-width:34px}.push{margin-left:auto}.coachprofile{display:flex;gap:14px;align-items:center;margin:16px 0}.coachprofile h2{margin:0}.rowchips{display:flex;flex-wrap:wrap;gap:6px}.coachattrib{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}.coachattrib span{display:flex;justify-content:space-between;gap:8px;padding:10px;background:#1b2c41;border-radius:8px;font-size:11px}.coachattrib b{font-size:12px}.positive{color:#7fe7bf!important}.negative{color:#ffa1ac!important}.schemebar{display:flex;align-items:center;gap:15px;padding:15px;margin-top:15px;background:#17382f;border:1px solid #2b715d;border-radius:10px}.schemebar span{font-size:22px;font-weight:950}.schemebar b{display:block}.schemebar small{color:var(--muted);font-size:11px}.marketrow{display:flex;align-items:center;gap:9px;border-bottom:1px solid #304052;padding:8px 0}.marketrow>.minzero{flex:1}.marketrow b{display:block;font-size:12px}.marketrow small{font-size:10px;color:var(--muted)}.scoutline{display:flex;align-items:center;gap:8px;border-bottom:1px solid #304052;padding:8px 0}.scoutline>div{flex:1;min-width:0}.scoutline b,.scoutline small{display:block;font-size:11px}.scoutline small{color:var(--muted);font-size:10px}.scoutline>.field{font-size:11px;width:83px}.coachesgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.leaguecoach{display:flex;gap:7px;align-items:center;padding:8px;background:#182b3e;border-radius:8px}.leaguecoach b,.leaguecoach small{font-size:11px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.leaguecoach small{font-size:10px;color:var(--muted)}.gameintro{text-align:center;padding:30px 14px;margin-top:15px}.matchintro{display:flex;gap:24px;align-items:center;justify-content:center;margin:15px auto}.gameintro h2{font-size:22px}.scoreboard{display:flex;align-items:center;justify-content:center;gap:clamp(15px,4vw,42px);padding:12px 0 20px}.scoreboard>div{text-align:center}.scoreboard>div>h3{font-size:14px;margin:8px 0}.gamepoints{font-size:clamp(37px,7vw,65px);font-weight:950;letter-spacing:-3px;white-space:nowrap}.gamepoints span{font-size:.66em;color:#7c91a6}.gamepoints.smallscore{font-size:24px;letter-spacing:0}.livegame{border-radius:15px;background:linear-gradient(160deg,#172a41,#121f2c);border:1px solid #477160;padding:22px;margin-top:15px}.livehead{display:flex;justify-content:space-between;align-items:center}.playcalls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.calls{display:flex;flex-direction:column;gap:7px}.calls button{border-radius:10px;text-align:left;padding:10px 13px;background:#22364c;border:1px solid #3b516a;color:white;font-weight:800}.calls button:hover{background:#286551;border-color:var(--green)}.calls small{display:block;color:var(--muted);font-size:10px;margin-top:3px;font-weight:500}.playlog{max-height:200px;overflow:auto}.playlog p{padding:8px 0;margin:0;border-bottom:1px solid #304457;font-size:11px}.gstats{color:var(--muted);margin-top:16px;font-size:12px}.schedulelist{max-height:770px;overflow:auto}.scheduleitem{display:flex;gap:10px;align-items:center;padding:9px 8px;border-bottom:1px solid #293d52}.scheduleitem.thisweek{background:#1c3a35;border:1px solid #39745e;border-radius:8px}.scheduleitem strong{font-size:12px;display:block}.scheduleitem small{color:var(--muted);display:block}.weekmarker{font-size:11px;font-weight:900;color:#afc4d9;min-width:31px}.lastbox{display:flex;gap:15px;align-items:center;justify-content:center}.lastbox strong{font-size:24px}.playround{border-top:1px solid #304457;padding-top:8px}.playround h4{color:var(--green)}.playmatch{display:flex;align-items:center;gap:5px;font-size:10px;padding:7px 0;flex-wrap:wrap}.playmatch b{font-size:10px}.playmatch small{color:var(--muted)}.playmatch span:not(.emblem){font-weight:900}.setting{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #304457;padding:16px 0}.setting p{margin:3px 0}.setting input{accent-color:var(--green);width:22px;height:22px;flex:none}.stackedbtn{display:flex;flex-direction:column;gap:10px}.sep{border:0;border-top:1px solid var(--border);margin:18px 0}footer{text-align:center;color:#5e7389;border-top:1px solid #26394b;padding:13px;font-size:10px;letter-spacing:.6px}.toast{position:fixed;z-index:99;bottom:22px;right:20px;background:#174737;border:1px solid #43ba8e;color:#d8ffec;padding:13px 16px;max-width:365px;border-radius:10px;box-shadow:var(--shadow);font-weight:700}.toast.err{background:#542c38;border-color:#e1778c;color:#ffe0e5}.toast[hidden]{display:none}
+@media(max-width:1100px){.shell{grid-template-columns:178px minmax(0,1fr)}.content{padding:19px}.withsidebar{grid-template-columns:minmax(0,1fr) 236px}.coachesgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.startergrid{grid-template-columns:1fr}.navbutton{padding:11px 9px;gap:8px}}
+@media(max-width:820px){.topbar{min-height:66px;padding:10px 12px}.brand{font-size:20px}.topteam b{font-size:12px}.topteam small{font-size:9px}.topcap{font-size:13px}.shell{display:block}.nav{display:flex;position:sticky;top:0;z-index:30;flex-direction:row;gap:5px;overflow-x:auto;white-space:nowrap;padding:7px 8px;background:#0b1422;scrollbar-width:none;box-shadow:0 3px 14px #0007}.nav::-webkit-scrollbar{display:none}.navbutton{flex:none;width:auto;min-width:unset;padding:8px 10px;font-size:11px}.navicon{font-size:14px;width:auto}.content{padding:14px 13px 30px}.setupwrap{grid-template-columns:1fr;max-width:640px;padding:10px 13px;gap:10px}.hero{padding:20px 10px 2px}.hero h1{font-size:35px;margin:11px 0}.hero p{font-size:13px}.two{grid-template-columns:1fr}.withsidebar{grid-template-columns:1fr}.rightcolumn{display:grid;grid-template-columns:1fr 1fr}.statsgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.coachesgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.startergrid{grid-template-columns:repeat(2,minmax(0,1fr))}.needlist{grid-template-columns:repeat(2,minmax(0,1fr))}.draftbanner{padding:16px}.setupcard{padding:19px}.table{min-width:660px}}
+@media(max-width:540px){.topbar{gap:8px}.brand{font-size:18px;letter-spacing:-1px}.brand small{font-size:7px}.topteam .emblem{display:none}.topteam b{max-width:150px;white-space:nowrap}.topcap small{font-size:8px}.heading{gap:7px}.headright{max-width:130px}.headright .chip{white-space:normal;text-align:center}.franchisehero{padding:13px}.heroinfo h2{font-size:17px}.heroinfo .emblem{width:45px!important;height:45px!important}.record{font-size:20px}.statvalue{font-size:23px}.card{padding:13px}.modechoices{gap:5px}.mode{padding:12px 9px}.mode b{font-size:11px}.mode small{font-size:10px}.rightcolumn{display:flex}.startergrid,.coachesgrid{grid-template-columns:1fr}.needlist{grid-template-columns:repeat(2,minmax(0,1fr))}.compactneeds{grid-template-columns:1fr}.tradesides{grid-template-columns:1fr}.tradeversus{gap:7px}.tradeversus strong{font-size:11px}.tradeversus .emblem{width:35px!important;height:35px!important}.versus{font-size:18px}.draftbanner{align-items:flex-start;flex-direction:column}.draftbanner h2{font-size:22px}.playcalls{gap:8px}.calls button{padding:9px}.gamepoints{font-size:39px}.scoreboard .emblem{width:50px!important;height:50px!important}.gameintro{padding:18px 8px}.scoreboard>div>h3{font-size:12px}.actiongrid{gap:6px}.action{padding:10px}.action b{font-size:11px}.action small{font-size:9px}.stat{padding:12px}.navbutton{padding:8px}.hero-mini span{font-size:9px}}
+
+.careergrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:10px 0}.careerchoice,.typechoice,.planbutton{display:flex;align-items:center;text-align:left;gap:10px;background:#17283b;border:1px solid #38516a;color:#f5f9ff;border-radius:11px;padding:12px;cursor:pointer;width:100%;min-width:0}.careerchoice.selected,.typechoice.selected,.planbutton.selected{background:#153b35;border-color:#59e4b4;box-shadow:inset 0 0 0 1px #59e4b455}.careerchoice span:last-child{min-width:0}.careerchoice b,.typechoice b,.planbutton b{display:block;font-size:12px}.careerchoice small,.typechoice small,.planbutton small{display:block;font-size:10px;color:#aabdd2;margin-top:3px;line-height:1.4}.careemoji{font-size:21px;flex:none}.dividerline{margin:22px 0;height:1px;background:#344a61}.archetypes{display:grid;grid-template-columns:1fr 1fr;gap:7px}.typechoice,.planbutton{display:block;min-height:64px}.pregame{margin:14px 0}.matchbars{display:grid;grid-template-columns:1fr 1fr;gap:8px}.matchbars span{display:flex;justify-content:space-between;border-radius:8px;padding:10px 12px;background:#182c3f;font-size:12px}.matchbars b{color:#6aeab9}.planner{display:grid;grid-template-columns:1fr 1fr;gap:12px}.planner>div{display:flex;flex-direction:column;gap:7px}.planner h4{margin:0 0 4px}.careerhero{background:linear-gradient(125deg,#153c39,#15253b);border:1px solid #376b60;padding:20px;border-radius:14px}.careerhero h2{margin:4px 0 6px}.careerinfo{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.prospectlink{border:0;padding:0;text-align:left;background:none;color:#ebf7ff;text-decoration:underline;text-decoration-color:#4c806f;text-underline-offset:3px;font-weight:850;cursor:pointer}.modalback{position:fixed;inset:0;z-index:1000;background:#030a12d9;display:flex;justify-content:center;align-items:center;padding:16px}.modalpanel{max-height:90vh;overflow:auto;width:min(520px,100%);box-shadow:0 20px 75px #0008;border:1px solid #406377;background:#142338;border-radius:17px;padding:19px}.modalpanel .bigline{margin-bottom:9px}.inlinechips{display:flex;flex-wrap:wrap;gap:7px}.pending{border:1px solid #d3a65e;background:#403320;border-radius:12px;padding:12px;margin:9px 0}.pending p{margin:8px 0;font-size:12px}.nowrap{white-space:nowrap}.smallcaps{text-transform:uppercase;font-size:10px;font-weight:850;color:#b3d4d2;letter-spacing:.9px}.postbox{max-height:260px;overflow:auto}.postbox .playlog{max-height:300px}.rolepill{padding:7px 10px;border:1px solid #3b725f;color:#aaf2d1;background:#153d34;border-radius:10px;font-weight:850;font-size:10px;display:inline-block}.sectioncard{margin-bottom:14px}.dim{opacity:.65}
+@media(max-width:650px){.careergrid,.archetypes,.planner,.matchbars{grid-template-columns:1fr}.careergrid{gap:6px}.careerchoice{padding:11px}.careerchoice small{font-size:10px}.modalback{padding:8px}.modalpanel{padding:13px}.rolepill{font-size:9px}.topbar{gap:8px;padding:10px}.topcap{font-size:14px}.section{margin-top:12px}}
+
+/* Depth chart: two distinct rows on small screens. No overlapping names or controls. */
+.startergrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.starter{display:grid;grid-template-columns:48px minmax(0,1fr);gap:8px 12px;align-items:center;min-width:0;position:relative;padding:13px}
+.starter .slot{width:auto;grid-column:1;grid-row:1;align-self:start}
+.starter .minzero{grid-column:2;grid-row:1;min-width:0}
+.starter .minzero b{font-size:13px;word-wrap:break-word;overflow-wrap:anywhere;line-height:1.3}
+.starter .inlinefield{grid-column:1/-1;grid-row:2;min-width:0;max-width:100%;width:100%;font-size:12px;white-space:normal}
+.starter .jersey{font-weight:800;color:#c7e0e0;margin-right:6px}
+.positiontag{font-size:10px;padding:3px 5px;background:#31465c;border-radius:5px;color:#e5efff}
+.roster-sync-status{font-size:12px;color:#f5cfa1}
+.source-link{color:#a9dbff;font-size:12px;text-decoration:underline}
+.career-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.career-steps>.card{padding:13px}
+@media(max-width:800px){.startergrid{grid-template-columns:1fr}}
+@media(max-width:620px){.starter{grid-template-columns:52px minmax(0,1fr)}.career-steps{grid-template-columns:1fr}.startergrid{grid-template-columns:1fr}.starter .minzero b{font-size:14px}.starter .inlinefield{font-size:14px;min-height:42px}}
+
+/* Revised depth chart, card attributes, and playoff winner display */
+.startergrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.starter{min-height:0;position:relative;overflow:hidden;max-width:100%}
+.starter>.minzero{overflow-wrap:anywhere}
+.starter select{width:100%;font-size:12px;position:relative;z-index:0}
+.attribute-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:12px 0}
+.attribute{border:1px solid #374f63;background:#18293d;border-radius:10px;padding:9px;display:flex;justify-content:space-between;align-items:center;gap:6px}
+.attribute small{color:#a1b7cb}.attribute b{color:#6ae5be}
+.playmatch{border-bottom:1px solid #304256}.playmatch .positive{color:#5de8b0;font-weight:900}
+.gamepoints b{font-size:29px}.gamepoints small{display:block;font-size:10px;color:#bdd0e1}
+.navbutton:disabled{opacity:.4} button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #71e4bf;outline-offset:2px}
+@media(max-width:780px){.startergrid{grid-template-columns:1fr}.attribute-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.uniform-schedule{display:flex;flex-direction:column;gap:0}.uniform-week{display:grid;grid-template-columns:minmax(160px,1.1fr) minmax(150px,1.6fr) minmax(120px,.9fr);gap:13px;align-items:center;padding:12px 3px;border-top:1px solid var(--border)}.uniform-week>div:first-child small{display:block;color:var(--muted);font-size:12px;margin-top:3px}.uniform-result{font-size:11px;font-weight:800;color:#b3c9d9}.uniform-result small{display:block;font-size:10px;font-weight:500;margin-top:4px;color:var(--red)}.uniform-approved{color:#8ce8c2}.uniform-rejected{color:#ff99a5}.uniform-closet-entry{display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--border);padding:9px 0}.uniform-closet-entry small{color:var(--muted);margin-left:auto;font-size:10px;text-align:right}.uniform-alt-dot,.uniform-default-dot{width:9px;height:9px;border-radius:50%;background:#fbd18b;flex:none}.uniform-default-dot{background:#59e4b4}@media(max-width:720px){.uniform-week{grid-template-columns:1fr;gap:8px}.uniform-week>.uniform-result{margin-bottom:4px}.uniform-closet-entry small{white-space:nowrap}}
+
+.assetchoices{max-height:205px;overflow-y:auto;border:1px solid #334758;border-radius:10px;padding:5px;margin:8px 0 14px}.assetchoice{display:flex;align-items:center;gap:9px;padding:8px 10px;border-bottom:1px solid #243749;font-size:13px;cursor:pointer}.assetchoice:last-child{border-bottom:none}.assetchoice input{accent-color:#27c79d;width:16px;height:16px;flex-shrink:0}.assetchoice:hover{background:rgba(255,255,255,.04)}
+
+/* Additive styling: original dark NFL GM brand and responsive grids are preserved */
+.topSwitch{font-size:11px!important;white-space:nowrap;flex-shrink:0;border:1px solid #487a8b!important;background:#163440!important;color:#bafef2!important}
+.savedCareerLink{margin:12px auto;padding:12px 18px;border-radius:12px;max-width:940px;background:#17394b;color:#e6fffd;display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap}
+.leagueTicker{display:flex;gap:9px;background:#0c2632;padding:10px 13px;border:1px solid #285260;border-radius:9px;margin-bottom:18px;color:#c3d8e4;font-size:12px;align-items:center}
+.leagueTicker>span{background:#49d9aa;color:#062a24;font-size:9px;letter-spacing:1px;font-weight:900;padding:4px 7px;border-radius:4px}
+.leagueTicker>div{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hubOuter{min-height:calc(100vh - 130px)}.careerHubMain{padding:0 24px 40px}.hubHero{padding:42px clamp(20px,5vw,70px);border-radius:14px;margin-top:23px;max-width:1120px;background:radial-gradient(ellipse at 88% 13%,#13504d,transparent 49%),linear-gradient(125deg,#11263d,#0a1322);border:1px solid #2b5360}.hubHero h1{font-size:clamp(34px,5vw,64px);line-height:1.06;letter-spacing:-2.5px;margin:12px 0}.hubHero>p{max-width:600px;color:#aec9d7;font-size:15px}.tinyTag{color:#6fe2c4;font-size:10px;font-weight:900;letter-spacing:1.6px;text-transform:uppercase}.hubActions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.wideSection{max-width:1120px;padding:24px 2px}.rowTitle{display:flex;justify-content:space-between;align-items:center}.dim{color:var(--muted)}.slotGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:12px}.slotCard{padding:19px;border:1px solid #31485e;background:#152337;border-radius:14px}.slotCard h3{font-size:20px;margin:9px 0 6px}.slotCard p{color:#adc1d4;margin:0;font-size:12px}.roleTiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px;margin:18px 0}.roleTile{background:#15253a;border:1px solid #36516a;border-radius:12px;padding:21px;text-align:left;color:#eff9ff;display:flex;flex-direction:column;gap:10px}.roleTile:hover,.roleTile.current{border-color:#60e4b7;background:#193b40}.roleTile span{color:#69d5bc;font-size:22px;font-weight:950}.roleTile small{font-size:10px;color:#a3b8c9}
+.notificationDot{width:7px;height:7px;border-radius:100%;background:#ff8997;display:inline-block;margin-left:3px}
+.pressStage{border:1px solid #36546a;border-radius:15px;overflow:hidden;position:relative;background:#09111d;height:315px;box-shadow:0 20px 55px #0004;margin:14px 0 18px}.pressTop{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:12px 15px;font-size:10px;font-weight:850;letter-spacing:1.4px;color:#fff;background:linear-gradient(#0a142caa,transparent)}.pressTop>span:first-child{background:#a82737;padding:5px 8px;border-radius:5px}.pressBackdrop{position:absolute;top:0;bottom:0;left:0;right:0;background:radial-gradient(ellipse at 50% 16%,#4a6275aa,transparent 53%),linear-gradient(145deg,var(--club),#091626 76%)}.pressLogos{position:absolute;left:0;right:0;top:35px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,100px);opacity:.52;align-items:center;justify-items:center}.pressLogos>span{text-align:center;color:white;font-weight:950;font-size:31px;letter-spacing:-2px}.pressLogos small{display:block;font-size:8px;letter-spacing:2px}.podium{position:absolute;top:90px;left:50%;transform:translateX(-50%);width:165px;height:205px}.podiumMic{height:70px;width:9px;background:#151c27;position:absolute;left:78px;top:0;z-index:2;box-shadow:0 -8px 0 2px #0a0e14;border-radius:7px}.podiumBody{position:absolute;top:51px;bottom:0;width:100%;background:linear-gradient(95deg,#202d3d,#0e1827 62%,#26374b);clip-path:polygon(11% 0,89% 0,100% 100%,0 100%);box-shadow:0 0 0 2px #ffffff20;color:#eaf2ff;text-align:center;padding:46px 0 0;font-weight:950;font-size:34px;text-shadow:0 4px 10px #000}.podiumBody small{display:block;font-size:9px;letter-spacing:2px}.pressLower{position:absolute;left:0;right:0;bottom:0;z-index:4;background:linear-gradient(100deg,#081322,#113d49);padding:11px 15px;display:flex;gap:12px;align-items:center}.pressLower strong{text-transform:uppercase;letter-spacing:.3px;font-size:15px}.pressLower>span{color:#acd5da;font-size:11px}.mediaQuestion{padding:22px}.mediaMeta{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:1px;color:#6bdfc2;font-weight:850}.mediaQuestion h2{font-size:clamp(18px,3vw,26px);line-height:1.35;margin:13px 0 18px}.mediaChoices{display:grid;gap:9px;margin:14px 0}.mediaAnswer{width:100%;display:flex;flex-direction:column;align-items:flex-start;text-align:left;background:#14283a;color:#f0f8ff;border:1px solid #385168;border-radius:10px;padding:13px 16px;transition:background .15s,border-color .15s;font-size:14px;gap:3px}.mediaAnswer:hover{background:#1d3c49;border-color:#59e4b4}.mediaAnswer:disabled{opacity:.43;cursor:not-allowed}.mediaAnswer small{color:#a0bace;line-height:1.4}.mediaHistoryMini{color:#95afc3;font-size:12px}.pulses{display:grid;gap:12px;margin:15px 0}.pulseStat{display:grid;grid-template-columns:1fr auto;gap:5px;align-items:center;font-size:12px;color:#cfdfeb}.pulseStat i{grid-column:1/-1;height:6px;border-radius:12px;background:linear-gradient(to right,#56e1b4 var(--w),#283b50 var(--w));display:block}.storyCard h2{margin-top:12px}.faListRow{width:100%;border:0;border-bottom:1px solid #2c4355;background:transparent;color:#e5f2fa;padding:11px 8px;display:flex;justify-content:space-between;gap:5px;text-align:left;align-items:center}.faListRow small{display:block;color:#98afc5;margin-top:4px}.faListRow.focused{background:#1b3b46}.timelineFeed{border-left:2px solid #2e695d;padding-left:15px;margin-left:8px}.timelineEntry{position:relative;border-bottom:1px solid #294051;padding:14px 8px}.timelineEntry:before{content:'';position:absolute;width:10px;height:10px;border-radius:50%;background:#55dbb4;left:-22px;top:19px}.timelineEntry span{display:block;color:#63dbb5;font-size:10px;font-weight:800;letter-spacing:1px}.timelineEntry b{font-size:15px}.timelineEntry p{color:#a4b8cb;font-size:12px;margin:5px 0}.gameFieldPanel{border:1px solid #42615d;border-radius:12px;background:#0a1a25;padding:11px;margin:12px 0 18px}.fieldTop{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:#a7c4c8;margin:8px 1px}.fieldTop>b{color:#f7ffff}.turf{height:150px;position:relative;overflow:hidden;border:4px solid #daeaca;background:repeating-linear-gradient(90deg,#206c4f 0,#206c4f 10%,#2c7a56 10%,#2c7a56 20%)}.turf:before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(10% - 2px),#e6ffeb88 calc(10% - 2px),#e6ffeb88 10%)}.yardLabels{position:absolute;top:12px;left:5%;right:5%;z-index:2;display:flex;justify-content:space-between;color:#ffffffa9;font-weight:900;font-size:13px}.fieldMarker{position:absolute;top:50%;transform:translate(-50%,-50%);font-size:35px;color:#ffec95;z-index:4;text-shadow:0 2px 9px #111}.endZone{position:absolute;bottom:10px;left:10px;color:#e5ffe4bb;font-size:18px;font-weight:900;letter-spacing:4px}
+@media(max-width:850px){.careerHubMain{padding:0 13px 26px}.hubHero{padding:26px 19px}.topSwitch{font-size:9px!important;padding:8px!important}.pressStage{height:264px}.pressLogos{grid-template-rows:repeat(2,85px)}.pressLogos>span{font-size:26px}.podium{top:70px}.mediaQuestion{padding:16px}.pressLower{flex-direction:column;gap:0;align-items:flex-start}.roleTiles{grid-template-columns:repeat(2,minmax(0,1fr))}.hubActions .button{max-width:100%}}
+@media(max-width:430px){.topbar{gap:5px!important;padding:11px 9px!important}.topteam{font-size:10px}.topteam small{font-size:8px}.brand{font-size:19px!important}.pressStage{height:252px}.pressTop{font-size:9px}.mediaMeta{font-size:9px}.pressLower strong{font-size:12px}.pressLower>span{font-size:10px}.hubHero h1{font-size:39px}.slotGrid{grid-template-columns:1fr}}
+
+.pressSvgWrap{position:absolute;inset:0;z-index:1;background:#051a25}.pressSvgWrap svg{display:block;width:100%;height:100%;object-fit:cover}.pressSvgWrap:after{content:"";position:absolute;inset:0;background:var(--club);mix-blend-mode:color;opacity:.18;pointer-events:none}.pressTop{z-index:5}.pressLower{z-index:6}
+
+@media(max-width:850px){.frenzyLayout{display:flex!important;flex-direction:column!important}.frenzyLayout>.card:nth-child(2){order:1}.frenzyLayout>.card:nth-child(1){order:2}}
+
+.live2dGame{background:#0e1b2d;border-color:#3a5c63}.live2dScore{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 0 17px}.live2dScore>div:first-child,.live2dScore>div:last-child{display:flex;flex:1;gap:9px;align-items:center;min-width:0}.live2dScore>div:last-child{flex-direction:row-reverse}.live2dScore strong{font-size:30px;color:#fff}.live2dScore b{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.live2dTime{display:flex;flex-direction:column;text-align:center;gap:2px}.live2dTime b{font-size:20px;color:#c8f6dd}.live2dTime span{font-size:10px;color:#b7c9d1}.live2dTurf{position:relative;height:190px;border:2px solid #95cfb8;border-radius:11px;overflow:hidden;background:repeating-linear-gradient(90deg,#1c644c 0 10%,#267753 10% 20%);box-shadow:inset 0 0 35px #00221eaa}.live2dTurf:before{content:'';position:absolute;inset:0 8%;background:repeating-linear-gradient(90deg,transparent 0 calc(10% - 1px),#e8fff05a calc(10% - 1px) 10%);pointer-events:none}.live2dTurf:after{content:'';position:absolute;top:50%;left:0;right:0;border-top:1px dashed #ddfff756}.live2dEnd{position:absolute;top:0;bottom:0;width:8%;background:#071a1dcc;display:flex;align-items:center;justify-content:center;font-weight:950;font-size:16px;letter-spacing:1px;writing-mode:vertical-rl}.live2dEnd.left{left:0;transform:rotate(180deg)}.live2dEnd.right{right:0}.live2dYard{position:absolute;inset:0 9%;display:flex;align-items:flex-start;justify-content:space-around;padding-top:9px;color:#e5f5e9b8;font-size:12px;font-weight:850}.live2dLine{position:absolute;top:0;bottom:0;width:2px;background:#f8df78;transform:translateX(-50%);transition:left .25s}.live2dBall{position:absolute;top:58%;z-index:3;transform:translate(-50%,-50%);transition:left .25s}.live2dBall span{display:block;font-size:23px;filter:drop-shadow(0px 3px 2px #000a)}.live2dPlayers{position:absolute;top:34%;display:flex;gap:6px;transform:translateX(-50%);transition:left .25s}.live2dPlayers i{display:block;width:11px;height:11px;border:2px solid #fff;border-radius:50%;background:#ffe284;box-shadow:0 2px 6px #0008}.live2dPlayers i:nth-child(2){background:#549dff}.live2dPlayers i:nth-child(3){background:#f99767}.live2dSub{margin:11px 0;display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.live2dSub small{color:#aebfcd}.live2dDecision{background:#31282b;border:1px solid #a56660;border-radius:13px;padding:15px;margin:14px 0}.live2dDecision .eyebrow{color:#ffdf9f}.live2dDecision h3{margin:5px 0 11px}.live2dChoices{display:flex;gap:8px;flex-wrap:wrap;margin:9px 0}.live2dChoices .button{white-space:normal}.live2dControls{margin:15px 0}.live2dStats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:15px 0}.live2dStats>div{border:1px solid #39546a;border-radius:9px;padding:10px;text-align:center;background:#16283b}.live2dStats b{display:block;font-size:19px}.live2dStats small{color:#b1c3d0;font-size:9px;font-weight:800}.live2dLog{max-height:250px;overflow-y:auto}.live2dLog p{margin:0;padding:6px 0;border-bottom:1px solid #304356;font-size:12px}.live2dLog p:first-child{color:#ccf7e5;font-weight:720}@media(max-width:700px){.live2dScore strong{font-size:23px}.live2dScore b{font-size:11px}.live2dScore>div:first-child,.live2dScore>div:last-child{gap:4px}.live2dTime b{font-size:15px}.live2dTime span{font-size:9px}.live2dTurf{height:155px}.live2dChoices .button{flex:1 1 42%;font-size:11px;padding:10px 8px}.live2dStats{gap:5px}.live2dStats>div{padding:7px 3px}.live2dStats b{font-size:16px}.live2dStats small{font-size:8px}}
+
+
+.live2dRoleTag{background:linear-gradient(120deg,#133c4e,#173247);border:1px solid #52c8a277;border-radius:11px;padding:11px 13px;display:flex;flex-direction:column;gap:5px;margin-top:13px}.live2dRoleTag strong{color:#d8fff3;font-size:13px;letter-spacing:.35px}.live2dRoleTag small{color:#aacbd5;font-size:11px;line-height:1.4}.live2dRolePlayer{margin-top:8px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:#1f3445;border:1px solid #536a7d;border-radius:9px;padding:9px 12px}.live2dRolePlayer b{font-size:13px;color:white}.live2dRolePlayer span{font-size:12px;color:#a7e6ce;font-weight:bold}.live2dObserve{border:1px solid #415b68;border-radius:10px;padding:12px;margin:12px 0;background:#192b3d}.live2dObserve b{color:#cbf3e6;font-size:12px}.live2dObserve p{margin:8px 0 0}.live2dControls .eyebrow{color:#bef3df;font-weight:850}.live2dControls .fine{line-height:1.4}
+.nflv5DraftChoices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}.nflv5Pick{border:1px solid #3d5968;border-radius:10px;padding:11px;display:flex;flex-direction:column;align-items:flex-start;gap:5px;background:#142637}.nflv5Pick b{font-size:13px}.nflv5Pick small{font-size:11px;color:#a8c1c5}.nflv5Pick .button{margin-top:5px}@media(max-width:620px){.nflv5DraftChoices{grid-template-columns:1fr}.nflv5Pick{flex-direction:row;flex-wrap:wrap;align-items:center}.nflv5Pick small{flex:1 0 48%}}
+
+/* v6.5 safe mobile layouts, standings tables, and controls */
+.shell,.content,.card,.withsidebar,.two,.rightcolumn{min-width:0}
+.tablewrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+.table{min-width:570px;width:100%;border-collapse:collapse}
+.table td,.table th{white-space:normal;overflow-wrap:anywhere}
+.two,.withsidebar{align-items:start}
+.mediaChoices{min-width:0}.mediaAnswer{max-width:100%;overflow-wrap:anywhere;white-space:normal;text-align:left}
+.actiongrid{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+@media(max-width:900px){.withsidebar,.two{display:grid;grid-template-columns:minmax(0,1fr)!important}.rightcolumn{max-width:100%}.card{width:100%;box-sizing:border-box}.content{max-width:100%;overflow-x:hidden}}
+@media(max-width:540px){.nav{overflow-x:auto;scrollbar-width:thin;max-width:100vw}.navbutton{flex:0 0 auto;min-width:88px}.statsgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.mediaQuestion h2{overflow-wrap:anywhere}.marketrow{flex-wrap:wrap;min-width:0}.marketrow .minzero{flex:1;min-width:145px}.topbar{min-width:0}.topteam{min-width:0;flex:1}.topcap{flex-shrink:1}.heading{flex-wrap:wrap}.content{padding:12px!important}}
+
+/* QA: Keep franchise identity readable on narrow phones; don't truncate it to 2 characters. */
+@media(max-width:650px){
+ .topbar{display:grid!important;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto;align-items:center;column-gap:10px;row-gap:9px!important;padding:12px 13px!important}
+ .topbar>.brand{grid-column:1;grid-row:1;min-width:0}
+ .topbar>.topSwitch{grid-column:2;grid-row:1;justify-self:end}
+ .topbar>.topteam{grid-column:1;grid-row:2;min-width:0;max-width:100%}
+ .topbar>.topteam b{white-space:normal;overflow-wrap:anywhere;line-height:1.18;overflow:visible;text-overflow:clip}
+ .topbar>.topcap{grid-column:2;grid-row:2;justify-self:end;text-align:right}
+}
+
+/* v6.7: fictional broadcast presentation only — no sim/schedule mutations */
+.tv-feature {--tv-accent:#62c7f5;--tv-glow:rgba(98,199,245,.17);display:flex;gap:13px;align-items:center;flex-wrap:wrap;padding:15px 17px;margin:6px 0 18px;border:1px solid var(--tv-accent);border-radius:13px;background:linear-gradient(110deg,var(--tv-glow),rgba(11,19,32,.94) 68%);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);color:#f4f8ff;}
+.tv-feature .tv-mark{flex:0 0 auto;width:66px;min-height:58px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;border:1px solid var(--tv-accent);border-radius:10px;background:rgba(0,0,0,.28);font-size:25px;font-weight:1000;letter-spacing:-1.2px;line-height:1;color:#fff;}
+.tv-feature .tv-mark small{font-size:8px;letter-spacing:1.3px;font-weight:900;color:var(--tv-accent)}
+.tv-feature .tv-copy{min-width:0;flex:1 1 170px;}
+.tv-feature .tv-eyebrow{display:block;font-size:10px;letter-spacing:1.5px;font-weight:900;color:var(--tv-accent);margin-bottom:3px;}
+.tv-feature .tv-name{font-size:clamp(17px,4vw,24px);line-height:1.15;font-weight:950;letter-spacing:.1px;overflow-wrap:anywhere;}
+.tv-feature .tv-sub{font-size:11px;color:#becbdc;margin-top:4px;overflow-wrap:anywhere}
+.tv-feature .tv-rival-tag{font-size:10px;padding:5px 9px;border:1px solid rgba(255,255,255,.28);border-radius:999px;font-weight:900;letter-spacing:.5px;white-space:normal;}
+.tv-feature[data-tv="tnf"]{--tv-accent:#61a9ff;--tv-glow:rgba(40,99,227,.22)}
+.tv-feature[data-tv="snf"]{--tv-accent:#ffde83;--tv-glow:rgba(178,122,25,.23)}
+.tv-feature[data-tv="mnf"]{--tv-accent:#ff9c83;--tv-glow:rgba(187,53,43,.25)}
+.tv-feature[data-tv="thanks"]{--tv-accent:#ffbf72;--tv-glow:rgba(160,81,20,.26)}
+.tv-feature[data-tv="xmas"]{--tv-accent:#78e3b7;--tv-glow:rgba(20,116,76,.26)}
+.tv-feature[data-tv="rival"]{--tv-accent:#ceafff;--tv-glow:rgba(99,60,166,.27)}
+.tv-feature[data-tv="playoffs"]{--tv-accent:#f6d18a;--tv-glow:rgba(178,129,34,.24)}
+.tv-calendar{margin:15px 0;border:1px solid var(--border);border-radius:12px;background:rgba(20,29,42,.66);padding:0 14px 10px}
+.tv-calendar summary{padding:13px 0;font-size:12px;font-weight:900;letter-spacing:.4px;cursor:pointer;list-style:revert;color:#dae9f8}
+.tv-calendar .tv-calendar-row{display:grid;grid-template-columns:52px minmax(95px,1fr) minmax(95px,1.2fr);gap:9px;align-items:center;padding:8px 2px;border-top:1px solid rgba(255,255,255,.08);font-size:11px}
+.tv-calendar .tv-calendar-week{font-weight:900;color:#d3e4f7}
+.tv-calendar .tv-calendar-name{font-weight:750;overflow-wrap:anywhere}
+.tv-calendar .tv-calendar-event{color:#9bead4;font-size:10px;overflow-wrap:anywhere}
+.tv-calendar .tv-calendar-empty{font-size:11px;color:var(--muted);padding:8px 0}
+.tv-league-spotlight{margin:12px 0 16px}
+.tv-league-spotlight .tv-league-rows{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:8px;padding-top:10px}
+.tv-league-spotlight .tv-spotlight-match{border:1px solid rgba(255,255,255,.09);border-radius:9px;padding:9px 11px;background:rgba(10,18,32,.62);font-size:11px}
+.tv-league-spotlight .tv-spotlight-match strong{display:block;font-size:12px;margin:3px 0}
+.tv-league-spotlight .tv-spotlight-match small{color:var(--muted)}
+@media(max-width:420px){.tv-feature{gap:9px;padding:11px}.tv-feature .tv-mark{width:55px;min-height:50px;font-size:20px}.tv-feature .tv-rival-tag{width:100%;text-align:center}.tv-calendar .tv-calendar-row{grid-template-columns:38px 1fr;gap:4px 8px}.tv-calendar .tv-calendar-event{grid-column:2}}
+
+</style></head><body><div id="root"></div><div id="toast" class="toast" hidden></div><script>'use strict';
+// Public roster and prospect identities are not a licensed/complete roster feed.
+// Ratings, contracts and projected offseason transactions are game simulations.
+const TEAM_ROWS = [
+['ARI','Arizona','Cardinals','#972c49','NFC','Mike LaFleur','West Coast','Cover 3'],
+['ATL','Atlanta','Falcons','#a6273c','NFC','Kevin Stefanski','West Coast','3-4'],
+['BAL','Baltimore','Ravens','#614699','AFC','Jesse Minter','Power Run','3-4'],
+['BUF','Buffalo','Bills','#2865c1','AFC','Joe Brady','Spread','4-3'],
+['CAR','Carolina','Panthers','#159ac9','NFC','Dave Canales','West Coast','4-3'],
+['CHI','Chicago','Bears','#d77429','NFC','Ben Johnson','Balanced','4-3'],
+['CIN','Cincinnati','Bengals','#e87726','AFC','Zac Taylor','Spread','Nickel'],
+['CLE','Cleveland','Browns','#ad4f29','AFC','Todd Monken','Power Run','4-3'],
+['DAL','Dallas','Cowboys','#4a759d','NFC','Brian Schottenheimer','Balanced','Man Press'],
+['DEN','Denver','Broncos','#e86b30','AFC','Sean Payton','West Coast','3-4'],
+['DET','Detroit','Lions','#2e9bc8','NFC','Dan Campbell','Power Run','4-3'],
+['GB','Green Bay','Packers','#277454','NFC','Matt LaFleur','West Coast','Nickel'],
+['HOU','Houston','Texans','#315476','AFC','DeMeco Ryans','Balanced','4-3'],
+['IND','Indianapolis','Colts','#376eb8','AFC','Shane Steichen','Spread','Nickel'],
+['JAX','Jacksonville','Jaguars','#189995','AFC','Liam Coen','West Coast','4-3'],
+['KC','Kansas City','Chiefs','#b72f43','AFC','Andy Reid','Spread','Nickel'],
+['LV','Las Vegas','Raiders','#7b8593','AFC','Klint Kubiak','West Coast','4-3'],
+['LAC','Los Angeles','Chargers','#d7ac46','AFC','Jim Harbaugh','Power Run','3-4'],
+['LAR','Los Angeles','Rams','#326ec2','NFC','Sean McVay','West Coast','Nickel'],
+['MIA','Miami','Dolphins','#2aabaa','AFC','Jeff Hafley','Spread','4-3'],
+['MIN','Minnesota','Vikings','#7253ad','NFC',"Kevin O'Connell",'West Coast','Man Press'],
+['NE','New England','Patriots','#55799b','AFC','Mike Vrabel','Balanced','3-4'],
+['NO','New Orleans','Saints','#bd9d60','NFC','Kellen Moore','West Coast','4-3'],
+['NYG','New York','Giants','#376cad','NFC','John Harbaugh','Power Run','3-4'],
+['NYJ','New York','Jets','#29815b','AFC','Aaron Glenn','Balanced','Man Press'],
+['PHI','Philadelphia','Eagles','#138075','NFC','Nick Sirianni','Balanced','3-4'],
+['PIT','Pittsburgh','Steelers','#c7a332','AFC','Mike McCarthy','West Coast','3-4'],
+['SF','San Francisco','49ers','#c53d45','NFC','Kyle Shanahan','Power Run','4-3'],
+['SEA','Seattle','Seahawks','#398d79','NFC','Mike Macdonald','Balanced','Nickel'],
+['TB','Tampa Bay','Buccaneers','#c24c4e','NFC','Todd Bowles','Vertical','3-4'],
+['TEN','Tennessee','Titans','#529dc5','AFC','Robert Saleh','Power Run','4-3'],
+['WAS','Washington','Commanders','#923b42','NFC','Dan Quinn','Balanced','4-3']
+];
+// Specific public player identities; all overall ratings, salary values and age updates are game estimates.
+// Empty roster positions are displayed as explicitly SIMULATED fictional depth players (never fake real names).
+const NFL_STARS = [
+'Patrick Mahomes|QB|KC|97|31|3139477','Travis Kelce|TE|KC|88|37|15847','Chris Jones|DT|KC|95|32|3044859','Rashee Rice|WR|KC|82|26|4428331',
+'Josh Allen|QB|BUF|96|30|3918298','James Cook|RB|BUF|89|27|4379399','Dawson Knox|TE|BUF|80|30|3913912','Dion Dawkins|OL|BUF|90|32|2973591',
+'Lamar Jackson|QB|BAL|96|29|3916387','Derrick Henry|RB|BAL|91|32|3043078','Zay Flowers|WR|BAL|88|26|4430027','Kyle Hamilton|S|BAL|95|25|4361287','Roquan Smith|LB|BAL|92|29|3915189',
+'Joe Burrow|QB|CIN|94|29|3915511',"Ja'Marr Chase|WR|CIN|97|26|4362628",'Tee Higgins|WR|CIN|90|27|4239993','Trey Hendrickson|EDGE|CIN|91|31|3052746',
+'Jalen Hurts|QB|PHI|91|28|4241479','A.J. Brown|WR|PHI|94|29|4047646','DeVonta Smith|WR|PHI|90|27|4241478','Saquon Barkley|RB|PHI|95|29|3929630','Jalen Carter|DT|PHI|94|25|4426349','Quinyon Mitchell|CB|PHI|92|25|4362847','Lane Johnson|OL|PHI|93|36|15797','Dallas Goedert|TE|PHI|84|31|3121023','Cooper DeJean|CB|PHI|87|23|4431219',
+'Dak Prescott|QB|DAL|88|33|2577417','CeeDee Lamb|WR|DAL|95|27|4241389','George Pickens|WR|DAL|89|25|4426354','Jake Ferguson|TE|DAL|85|27|4361411',
+'Jared Goff|QB|DET|88|32|3046779','Amon-Ra St. Brown|WR|DET|95|27|4374302','Jahmyr Gibbs|RB|DET|94|24|4430029','Penei Sewell|OL|DET|97|26|4361425','Aidan Hutchinson|EDGE|DET|94|26|4372099','Sam LaPorta|TE|DET|88|25|4430023',
+'Jordan Love|QB|GB|87|27|4036378','Josh Jacobs|RB|GB|91|28|4047365','Micah Parsons|EDGE|GB|96|27|4361428','Tucker Kraft|TE|GB|86|26|4428850',
+'Justin Jefferson|WR|MIN|98|27|4262921','Kyler Murray|QB|MIN|82|29|3917315','T.J. Hockenson|TE|MIN|87|29|4036131','Jonathan Greenard|EDGE|MIN|88|29|4035472',
+'Brock Purdy|QB|SF|88|26|4361741','Christian McCaffrey|RB|SF|92|30|3117251','George Kittle|TE|SF|93|33|3040151','Nick Bosa|EDGE|SF|94|29|4040605','Fred Warner|LB|SF|96|29|3138287','Trent Williams|OL|SF|94|38|13241',
+'Matthew Stafford|QB|LAR|92|38|12483','Puka Nacua|WR|LAR|96|25|4426515','Kyren Williams|RB|LAR|88|26|4430737','Jared Verse|EDGE|LAR|90|26|4426532',
+'Justin Herbert|QB|LAC|93|28|4038941','Ladd McConkey|WR|LAC|89|25|4427095','Omarion Hampton|RB|LAC|83|23|4431407','Derwin James Jr.|S|LAC|92|30|3916384',
+'C.J. Stroud|QB|HOU|86|25|4432577','Nico Collins|WR|HOU|92|27|4242219','Will Anderson Jr.|EDGE|HOU|94|25|4432585','Derek Stingley Jr.|CB|HOU|95|25|4361272',
+'Drake Maye|QB|NE|89|24|4431455','Stefon Diggs|WR|WAS|82|33|2976212','Christian Gonzalez|CB|NE|92|24|4432079','Rhamondre Stevenson|RB|NE|82|28|4361410',
+'Caleb Williams|QB|CHI|86|24|4431611','Rome Odunze|WR|CHI|86|24|4431299','D.J. Moore|WR|CHI|87|29|3915416','Cole Kmet|TE|CHI|84|27|4258595',
+'Jayden Daniels|QB|WAS|89|25|4426556','Terry McLaurin|WR|WAS|89|31|3121422','Laremy Tunsil|OL|WAS|91|30|3051890',
+'Baker Mayfield|QB|TB|87|31|3052587','Mike Evans|WR|TB|90|33|16737','Bucky Irving|RB|TB|89|24|4431624','Antoine Winfield Jr.|S|TB|90|28|4035634',
+'Bijan Robinson|RB|ATL|95|24|4431390','Drake London|WR|ATL|91|25|4426502','Michael Penix Jr.|QB|ATL|83|26|4360423','Kyle Pitts|TE|ATL|86|26|4360248',
+'Marvin Harrison Jr.|WR|ARI|86|24|4431409','Trey McBride|TE|ARI|91|27|4361253','Budda Baker|S|ARI|92|30|3127287',
+'Trevor Lawrence|QB|JAX|86|27|4360310','Brian Thomas Jr.|WR|JAX|90|23|4432770','Travis Etienne Jr.|RB|JAX|85|27|4239996','Josh Hines-Allen|EDGE|JAX|92|29|3915239',
+'Bo Nix|QB|DEN|86|26|4431452','Courtland Sutton|WR|DEN|88|31|3128085','Patrick Surtain II|CB|DEN|96|26|4372012','Nik Bonitto|EDGE|DEN|90|27|4426527',
+'Brock Bowers|TE|LV|95|24|4431454','Maxx Crosby|EDGE|LV|96|29|3916655','Ashton Jeanty|RB|LV|84|22|4569652',
+'DK Metcalf|WR|PIT|89|28|4047650','T.J. Watt|EDGE|PIT|95|32|3045282','Jaylen Warren|RB|PIT|84|28|4429781',
+'Jaxson Dart|QB|NYG|82|23|4430764','Malik Nabers|WR|NYG|92|23|4431566','Andrew Thomas|OL|NYG|91|27|4259566','Dexter Lawrence II|DT|NYG|94|28|4046528',
+'Garrett Wilson|WR|NYJ|89|26|4361333','Breece Hall|RB|NYJ|90|25|4427366','Quinnen Williams|DT|NYJ|93|28|4040953',
+'Chris Olave|WR|NO|88|26|4361370','Alvin Kamara|RB|NO|85|31|3054850','Chase Young|EDGE|NO|83|27|4372547',
+'Cam Ward|QB|TEN|80|24|4569553','Jeffery Simmons|DT|TEN|93|29|4035369','Calvin Ridley|WR|TEN|84|31|3925357',
+'Jonathan Taylor|RB|IND|93|27|4242335','Michael Pittman Jr.|WR|IND|85|29|4035687','Sauce Gardner|CB|IND|93|26|4426327','Daniel Jones|QB|IND|83|29|3917792',
+'Bryce Young|QB|CAR|83|25|4432578','Tetairoa McMillan|WR|CAR|84|23|4432761','Derrick Brown|DT|CAR|88|28|4035538',
+'Jaxon Smith-Njigba|WR|SEA|94|24|4430878','Sam Darnold|QB|SEA|84|29|3912547','Devon Witherspoon|CB|SEA|93|25|4432936','Kenneth Walker III|RB|SEA|88|26|4428554',
+'Myles Garrett|EDGE|CLE|98|30|3122132','David Njoku|TE|CLE|85|30|3127299','Denzel Ward|CB|CLE|89|29|3915535','Quinshon Judkins|RB|CLE|83|23|4431542',
+'Tyreek Hill|WR|FA|80|32|3116406','Deebo Samuel Sr.|WR|FA|80|30|3126486', 'Brandin Cooks|WR|FA|76|33|16731','Kirk Cousins|QB|FA|77|38|14880',
+'Russell Wilson|QB|FA|74|37|14881','Joe Flacco|QB|FA|72|41|11252','Jimmy Garoppolo|QB|FA|72|34|16760','Kareem Hunt|RB|FA|76|31|3116385','Nick Chubb|RB|FA|78|30|3128720',
+'Dalvin Cook|RB|FA|69|31|3116593','Keenan Allen|WR|IND|79|34|15818','Tyler Lockett|WR|FA|74|34|2577327',
+'Calais Campbell|DT|BAL|77|40|13239','Yannick Ngakoue|EDGE|FA|74|31|3128721','Jadeveon Clowney|EDGE|FA|74|33|16734',
+'Jordan Poyer|S|FA|72|35|14876','Cody Whitehair|OL|FA|70|34|2971512','Gerald Everett|TE|FA|70|32|3139784',
+'Teddy Bridgewater|QB|FA|70|33|16728','Zack Moss|RB|FA|72|28|4035663','Allen Robinson II|WR|FA|70|33|2577401','Robert Woods|WR|FA|70|34|15882',
+'Johnathan Abram|S|FA|69|30|4040951','Shaq Thompson|LB|FA|73|32|2576702','Leonard Floyd|EDGE|FA|74|34|3043133'
+];
+// The free-agent pool is an intentionally fictional 2027 offseason scenario using real identities,
+// not a claim those players are actually unsigned in Nov 2026.
+
+const ROOKIES_2026 = [
+['Fernando Mendoza','QB','LV',75],['David Bailey','EDGE','NYJ',75],['Jeremiyah Love','RB','ARI',77],
+['Carnell Tate','WR','TEN',74],['Arvell Reese','LB','NYG',75],['Mansoor Delane','CB','KC',74],
+['Sonny Styles','LB','WAS',76],['Jordyn Tyson','WR','NO',75],['Spencer Fano','OL','CLE',74],
+['Francis Mauigoa','OL','NYG',75],['Caleb Downs','S','DAL',77],['Kadyn Proctor','OL','MIA',73],
+['Ty Simpson','QB','LAR',72],['Olaivavega Ioane','OL','BAL',74],['Rueben Bain Jr.','EDGE','TB',75],
+['Kenyon Sadiq','TE','NYJ',75],['Blake Miller','OL','DET',73],['Monroe Freeling','OL','CAR',73],['Max Iheanachor','OL','PIT',72],['Akheem Mesidor','EDGE','LAC',73],['KC Concepcion','WR','CLE',75],['Dillon Thieneman','S','CHI',73],['Peter Woods','DT','KC',73],['Omar Cooper Jr.','WR','NYJ',72],['Jadarian Price','RB','SEA',73]
+];
+// Known 2026 staff assignments. Level ratings are simulated, not real grades.
+const COORDINATORS_2026 = {
+ARI:['Nathaniel Hackett','Nick Rallis'],ATL:['Tommy Rees','Jeff Ulbrich'],BAL:['Declan Doyle','Anthony Weaver'],BUF:['Pete Carmichael Jr.','Jim Leonhard'],
+CAR:['Brad Idzik','Todd Wash'],CHI:['Press Taylor','Dennis Allen'],CIN:['Dan Pitcher','Al Golden'],CLE:['Travis Switzer','Mike Rutenberg'],
+DAL:['Klayton Adams','Christian Parker'],DEN:['Davis Webb','Vance Joseph'],DET:['Drew Petzing','Kelvin Sheppard'],GB:['Adam Stenavich','Jonathan Gannon'],
+HOU:['Nick Caley','Matt Burke'],IND:['Jim Bob Cooter','Lou Anarumo'],JAX:['Grant Udinski','Anthony Campanile'],KC:['Eric Bieniemy','Steve Spagnuolo'],
+LAC:['Mike McDaniel',"Chris O'Leary"],LAR:['Nathan Scheelhaase','Chris Shula'],LV:['Andrew Janocko','Rob Leonard'],MIA:['Bobby Slowik','Sean Duggan'],
+MIN:['Wes Phillips','Brian Flores'],NE:['Josh McDaniels','Zak Kuhr'],NO:['Doug Nussmeier','Brandon Staley'],NYG:['Matt Nagy','Dennard Wilson'],
+NYJ:['Frank Reich','Brian Duker'],PHI:['Sean Mannion','Vic Fangio'],PIT:['Brian Angelichio','Patrick Graham'],SF:['Klay Kubiak','Raheem Morris'],
+SEA:['Brian Fleury','Aden Durde'],TB:['Zac Robinson','Todd Bowles'],TEN:['Brian Daboll','Gus Bradley'],WAS:['David Blough','Daronte Jones']
+};
+const COACH_NAMES=['Marcus Holloway','Adrian Brooks','Taylor Nash','Devin Reed','Jordan Whitaker','Casey Wells','Morgan Fox','Drew Parker','Alex Monroe'];
+
+const ARCHETYPES={
+ offensive:{name:'Offensive Genius',desc:'Better offensive planning, QB development and passing matchups.',off:4,def:0,dev:1,lead:0},
+ defensive:{name:'Defensive Mastermind',desc:'Stronger defensive planning, pressure and coverage.',off:0,def:4,dev:0,lead:1},
+ development:{name:'Development Wizard',desc:'Young players grow faster after games; long-term focus.',off:1,def:1,dev:5,lead:0},
+ motivator:{name:'Players’ Coach',desc:'Leadership and morale can lift an underdog.',off:0,def:0,dev:2,lead:5},
+ tactician:{name:'Scheme Architect',desc:'Gets more from scheme matches; poor fits still hurt.',off:2,def:2,dev:1,lead:1}
+};
+const CAREER_ROLES={owner:'OWNER',gm:'GENERAL MANAGER',hc:'HEAD COACH',oc:'OFFENSIVE COORDINATOR',dc:'DEFENSIVE COORDINATOR',player:'NFL PLAYER'};
+const coachRole=()=>['hc','oc','dc'].includes(game.career);
+const gmRole=()=>['gm','owner'].includes(game.career);
+const isPlayer=()=>game.career==='player';
+function archetypeBuff(id){let c=game.coaches.find(x=>x.club===id&&x.id===game.careerCoach),a=ARCHETYPES[c?.archetype];return a&&id===game.userTeam?a:{off:0,def:0,dev:0,lead:0}}
+function leagueTeamOVR(id,side){let wanted=side==='line'?['EDGE','DT','LB']:side==='secondary'?['CB','S']:side==='run'?['RB','OL']:['QB','WR','TE'];let arr=roster(id).filter(p=>wanted.includes(p.pos)).sort((a,b)=>b.ovr-a.ovr).slice(0,side==='line'?5:4);return arr.length?Math.round(arr.reduce((a,p)=>a+p.ovr,0)/arr.length):65}
+function matchPreview(id){let l=leagueTeamOVR(id,'line'),b=leagueTeamOVR(id,'secondary'),run=leagueTeamOVR(id,'run'),pass=leagueTeamOVR(id,'pass');let suggested=b+2<l?'pass':l+2<b?'run':'balanced';return {line:l,secondary:b,run,pass,suggested,summary:suggested==='pass'?'Their defensive line looks tougher than their secondary. Spread the field and attack through the air.':suggested==='run'?'Their defensive backs are stronger than their front. Try to establish the run and control the clock.':'Both units look balanced. Mix the run and pass to keep the defense guessing.'}}
+function bestDraftPickFor(id){let req=Object.fromEntries(need(id).map(p=>[p.pos,p.weight]));return game.prospects.filter(x=>!x.drafted).map(p=>({p,score:105-p.rank*.15+(req[p.pos]||0)*1.7+rand()*10})).sort((a,b)=>b.score-a.score)[0]?.p}
+function cpuDraftAll(){let loops=0;while(nextPick()&&loops++<300){let p=bestDraftPickFor(nextPick().owner);if(!p)break;draftPlayer(p.id,nextPick().owner)}if(!nextPick()){game.phase='season';game.week=1;makeSchedule();setDefaultLineup();news('CPU-managed offseason completed. Week 1 begins.')}store()}
+function pendingLabel(){return game.pendingMoves?.length?game.pendingMoves.length+' decision'+(game.pendingMoves.length>1?'s':'')+' waiting':''}
+
+const OFF=['Balanced','West Coast','Spread','Vertical','Power Run'];
+const DEF=['4-3','3-4','Nickel','Cover 3','Man Press'];
+const POS=['QB','RB','WR','TE','OL','EDGE','DT','LB','CB','S'];
+const STARTER_REQ={QB:1,RB:1,WR:2,TE:1,OL:3,EDGE:2,DT:1,LB:2,CB:2,S:2};
+const DEPTH_REQ={QB:2,RB:2,WR:4,TE:2,OL:5,EDGE:3,DT:2,LB:3,CB:3,S:3};
+// 150 real, publicly named projected prospects as of Nov 4, 2026. Board order is a snapshot, not a final NFL declaration list.
+const PROSPECT_2027 = `
+Jeremiah Smith|WR|Ohio State
+Colin Simmons|EDGE|Texas
+Leonard Moore|CB|Notre Dame
+Drew Mestemaker|QB|Oklahoma State
+Charlie Becker|WR|Indiana
+Darian Mensah|QB|Miami (FL)
+Jordan Seaton|OL|LSU
+Chris Cole|LB|Georgia
+Ashton Hampton|CB|Clemson
+Jadan Baugh|RB|Florida
+Dylan Stewart|EDGE|South Carolina
+Ellis Robinson IV|CB|Georgia
+Will Echoles|DT|Ole Miss
+Trevor Goosby|OL|Texas
+Trinidad Chambliss|QB|Ole Miss
+K.J. Bolden|S|Georgia
+Kelley Jones|CB|Mississippi State
+Matayo Uiagalelei|EDGE|Oregon
+Greg Johnson|OL|Minnesota
+A'Mauri Washington|DT|Oregon
+C.J. Carr|QB|Notre Dame
+Jamari Johnson|TE|Oregon
+Xavier Gilliam|DT|Tennessee
+Yhonzae Pierre|EDGE|Alabama
+Ahmad Moten Sr.|DT|Miami (FL)
+Trevor Lauck|OL|Iowa
+Nick Marsh|WR|Indiana
+Tae Johnson|S|Notre Dame
+Arch Manning|QB|Texas
+Kade Pieper|OL|Iowa
+A.J. Holmes Jr.|DT|Texas Tech
+Kenyatta Jackson Jr.|EDGE|Ohio State
+Damon Wilson II|EDGE|Miami (FL)
+Cam Coleman|WR|Texas
+Trey'Dez Green|TE|LSU
+Will Heldt|EDGE|Clemson
+Dante Moore|QB|Oregon
+Cayden Green|OL|Missouri
+Reed Harris|WR|Arizona State
+David Stone|DT|Oklahoma
+Carter Smith|OL|Indiana
+Jordan Ross|EDGE|LSU
+Ryan Wingo|WR|Texas
+Boubacar Traore|EDGE|Notre Dame
+Devan Thompkins|DT|Alabama
+Justin Scott|DT|Miami (FL)
+Quincy Rhodes Jr.|EDGE|Arkansas
+K.J. Duff|WR|Rutgers
+Melvin Siani|OL|Texas
+Kewan Lacy|RB|Ole Miss
+John Henry Daley|EDGE|Michigan
+Omarion Miller|WR|Arizona State
+Julian Sayin|QB|Ohio State
+Princewill Umanmielen|EDGE|LSU
+Koi Perich|S|Oregon
+Zabien Brown|CB|Alabama
+Jelani McDonald|S|Texas
+Austin Siereveld|OL|Ohio State
+Sammy Brown|LB|Clemson
+Clev Lubin|EDGE|Louisville
+Jayden Maiava|QB|USC
+Kingston Lopa|S|California
+Wyatt Young|WR|Oklahoma State
+Austin Simmons|QB|Missouri
+Jacarrius Peak|OL|South Carolina
+Lance Heard|OL|Kentucky
+Bryant Wesco Jr.|WR|Clemson
+Luke Reynolds|TE|Virginia Tech
+Samson Okunlola|OL|Miami (FL)
+Ryan Coleman-Williams|WR|Alabama
+Bear Alexander|DT|Oregon
+Rasheem Biles|LB|Texas
+Kyngstonn Viliamu-Asa|LB|Notre Dame
+Teitum Tuioti|EDGE|Oregon
+Ty Benefield|S|LSU
+Anthonie Knapp|OL|Notre Dame
+DeSean Bishop|RB|Tennessee
+Jyaire Hill|CB|Michigan
+Corey Myrick|S|Clemson
+LaNorris Sellers|QB|South Carolina
+Tavion Gadson|DT|Kentucky
+Ahmad Hardy|RB|Missouri
+Anthony Smith|EDGE|Minnesota
+P.J. Williams|OL|SMU
+Deuce Alexander|WR|Ole Miss
+Isaac Brown|RB|Louisville
+Jayden Jackson|DT|Oklahoma
+Jamari Sharpe|CB|Indiana
+Sam Leavitt|QB|LSU
+Jide Abasiri|DT|USC
+Iapani Laloulu|OL|Oregon
+Suntarine Perkins|LB|Ole Miss
+Mario Craver|WR|Texas A&M
+Terrance Carter Jr.|TE|Texas Tech
+Tony Rojas|LB|Penn State
+Zereoue Williams|OL|Utah
+Jackson Bennee|S|Utah
+Junior Sherrill|WR|Vanderbilt
+Wendell Gregory|EDGE|Kansas State
+Peter Clarke|TE|Temple
+Bray Hubbard|S|Alabama
+Luke Montgomery|OL|Ohio State
+Amare Ferrell|S|Indiana
+Braelin Moore|OL|LSU
+Chris Peal|CB|Syracuse
+Drew Azzopardi|OL|Washington
+Ben Roberts|LB|Texas Tech
+John Nestor|CB|Minnesota
+Whit Weeks|LB|LSU
+Taylor Wein|EDGE|Oklahoma
+Brandon Baker|OL|Texas
+Jaylen McClain|S|Ohio State
+Mark Fletcher Jr.|RB|Miami (FL)
+Anto Saka|EDGE|Texas A&M
+Isaiah Sategna III|WR|Oklahoma
+Christian Alliegro|LB|Ohio State
+O.J. Frederique Jr.|CB|Miami (FL)
+Audavion Collins|CB|Penn State
+Jermaine Mathews Jr.|CB|Ohio State
+Andrew Rappleyea|TE|Penn State
+Tyrique Tucker|DT|Indiana
+Eli Bowen|CB|Oklahoma
+Nate Frazier|RB|Georgia
+Francis Brewu|DT|Notre Dame
+Zach Lutmer|S|Iowa
+Mateen Ibirogba|DT|Texas Tech
+Emmanuel Oyebadejo|DT|Florida
+Hollywood Smothers|RB|Texas
+Horace Lockett|DT|UCF
+Brice Pollock|CB|Texas Tech
+Evan Tengesdahl|OL|Cincinnati
+Adam Trick|EDGE|Texas Tech
+D.J. McKinney|CB|Notre Dame
+Elijah Paige|OL|USC
+Wayshawn Parker|RB|Utah
+Ethan O'Connor|CB|Miami (FL)
+Justin Evans|OL|Nebraska
+Payton Pierce|LB|Ohio State
+Jalen Mayo|CB|Houston
+Carson Hinzman|OL|Ohio State
+Kip Lewis|LB|Oklahoma
+Mike Matthews|WR|Tennessee
+Drayk Bowen|LB|Notre Dame
+Jett Jefferson|CB|Mississippi State
+Earl Little Jr.|S|Ohio State
+L.J. Martin|RB|BYU
+Blake Frazier|OL|Michigan
+Samuel Omosigho|LB|UCLA
+Peyton Bowen|S|Oklahoma
+Benjamin Brahmer|TE|Penn State
+`.trim().split('\n').map((line,i)=>{const [name,pos,college]=line.split('|');return {name,pos,college,rank:i+1}});
+// Future projection pools include only actual named college players; not guaranteed to declare in these years.
+const FUTURE_REAL = {
+// True college identities / speculative *eligibility* only; draft declaration is unknown.
+2028:[
+['Bryce Underwood','QB','Michigan'],['Michael Fasusi','OL','Oklahoma'],['Will Black','OL','Notre Dame'],['Tavien St. Clair','QB','Ohio State'],['Keelon Russell','QB','Alabama'],['Elijah Griffin','DT','Georgia'],['David Sanders Jr.','OL','Tennessee'],['Quincy Porter','WR','Ohio State'],['Lance Jackson','EDGE','Texas'],['Isaiah Gibson','EDGE','Georgia'],['Andrew Babalola','OL','Michigan'],['DJ Pickett','CB','LSU'],['Justus Terry','DT','Texas'],['Tylon Lee','EDGE','Florida State'],['Jerome Myles','WR','Texas A&M'],['Na’eem Offord','CB','Oregon'],['Michael Carroll','OL','Alabama'],['Talyn Taylor','WR','Georgia'],['Deuce Knight','QB','Auburn'],['Amare Adams','DT','Clemson'],['Devin Sanchez','CB','Ohio State'],['Jonah Williams','S','Texas'],['Carius Curne','OL','LSU'],['Harlem Berry','RB','LSU'],['Andrew Olesh','TE','Penn State'],['Dakorien Moore','WR','Oregon'],['Nate Marshall','EDGE','Michigan'],['Dallas Wilson','WR','Florida'],['Elyiss Williams','TE','Georgia'],['Jackson Lloyd','OL','Alabama'],['Ousmane Kromah','RB','Florida State'],['Hayden Lowe','EDGE','Miami']
+],
+// 2026 college freshmen: earliest typical draft eligibility is the 2029 class.
+2029:[
+['Jared Curtis','QB','Vanderbilt'],['Lamar Brown','DT','LSU'],['Keisean Henderson','QB','Houston'],['Jackson Cantwell','OL','Miami (FL)'],['Zion Elee','EDGE','Maryland'],['Carter Meadows','EDGE','Michigan'],['Faizon Brandon','QB','Tennessee'],['Savion Hiter','RB','Michigan'],['Dia Bell','QB','Texas'],['Chris Henry Jr.','WR','Ohio State'],['Tristen Keys','WR','Tennessee'],['Rodney Dunham','EDGE','Notre Dame'],['Felix Ojo','OL','Texas Tech'],['Ezavier Crowell','RB','Alabama'],['LaDamion Guyton','EDGE','Texas Tech'],['Immanuel Iheanacho','OL','Oregon'],['Richard Wesley','DT','Texas'],['Derrek Cooper','RB','Texas'],['Jireh Edwards','S','Alabama'],['Tyler Atkinson','LB','Texas'],['Keenyi Pepe','OL','USC'],['Kaiden Prothro','TE','Georgia'],['Elbert Hill','CB','USC'],['Jake Kreul','EDGE','Oklahoma']
+],
+2030:[]
+};
+const SCOUT_CANDIDATES=[
+['Avery Brooks','QB',4,'South'],['Jordan Ellis','WR',3,'East'],['Cameron Price','EDGE',5,'Midwest'],['Morgan Lee','CB',4,'West'],['Riley Chen','OL',5,'South'],['Parker Reed','RB',3,'West'],['Sydney Patel','LB',4,'Midwest'],['Alex Morgan','DT',2,'East'],['Taylor Green','TE',3,'South'],['Jamie Knox','S',4,'East'],['Harper James','QB',2,'West'],['Chris Bell','CB',5,'South']
+];
+const COACH_FA=[['Mike Tomlin','Balanced','3-4',5],['Doug Pederson','West Coast','Nickel',4],['Pete Carroll','Balanced','Cover 3',4],['Matt Eberflus','Balanced','4-3',3]]; // Game candidate pool, not verified unemployment status
+
+'use strict';
+const $=id=>document.getElementById(id);
+const esc=x=>String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const rnd=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
+const rand=()=>Math.random();
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+const money=n=>'$'+Number(n||0).toFixed(1)+'M';
+const STORAGE='nflgm_v7_rosters_2026_11';
+const OLD_STORAGE='nflgm_franchise_universe_v4_2026_11';
+const FIRST=['Elijah','Isaiah','Cameron','Jordan','Miles','Noah','Devin','Andre','Marcus','Darius','Landon','Trey','Micah','Avery','Kendrick'];
+const LAST=['Brooks','Reed','Cooper','Bennett','Price','Foster','Wilson','Morgan','Coleman','Owens','Carter','Parker'];
+let game=null, page='dashboard', formMode='existing',formCareer='gm', playerStart='create',selectedProspect=null,formCoachArchetype='development',formCoachFirst='',formCoachLast='',formTeam='PHI',draftTradePrefill='',tradeReturn='draft',coachMarketRole='HC';
+let filter={roster:'ALL',free:'ALL',draft:'ALL',expansion:'ALL',freeQuery:'',draftQuery:''};
+let tradeTo='KC';let rosterHubTeam='PHI',rosterHubStatus='ALL';let toastTimer;let tradeRequestedPlayer=null;
+function say(t,error=false){let o=$('toast');if(!o)return;o.textContent=t;o.className='toast '+(error?'err':'');o.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>o.hidden=true,4600)}
+function uuid(prefix){return prefix+'_'+Math.random().toString(36).slice(2,11)}
+function store(){try{localStorage.setItem(STORAGE,JSON.stringify(game));return true}catch(e){return false}}
+function news(text){game.news.unshift({week:game.week,year:game.year,text});game.news=game.news.slice(0,150)}
+const teams=()=>game.teams;
+const team=id=>game.teams.find(t=>t.id===id);
+const roster=id=>game.players.filter(p=>p.team===id);
+const mine=()=>team(game.userTeam);
+const own=()=>roster(game.userTeam);
+const unsigned=()=>roster('FA');
+const coach=id=>game.coaches.find(c=>c.club===id&&(!c.role||c.role==='HC'));
+const hc=()=>coach(game.userTeam);
+const healthy=p=>!!p&&!['PS','OTHER'].includes(p.status||'ACT')&&!((p.status==='IR'||p.status==='INJ')&&!Number.isFinite(p.injuryWeeks))&&!(p.injuryWeeks>0);
+const color=id=>team(id)?.color||'#50dcb8';
+
+// Source-checked 2026 identity corrections (Nov. 7, 2026); jersey is the player's listed number.
+const VERIFIED_2026 = [
+['A.J. Brown','WR','NE','1',93,29,'ACT'],['Deebo Samuel Sr.','WR','SF','19',82,30,'ACT'],['Kirk Cousins','QB','LV','8',79,38,'ACT'],
+['Jonathan Greenard','EDGE','PHI','52',87,29,'ACT'],['Jalen Carter','DT','PHI','98',94,25,'ACT'],
+['Joe Milton III','QB','PHI','14',73,26,'ACT'],['Tanner McKee','QB','PHI','16',72,26,'ACT'],['Cole Payton','QB','PHI','18',63,24,'ACT'],
+['Jalen Hurts','QB','PHI','1',91,28,'IR'],['Saquon Barkley','RB','PHI','26',93,29,'ACT'],['Jaydon Blue','RB','PHI','30',72,22,'ACT'],
+['Tank Bigsby','RB','PHI','8',72,25,'IR'],['Will Shipley','RB','PHI','28',69,23,'IR'],
+['DeVonta Smith','WR','PHI','6',90,27,'ACT'],['Dontayvion Wicks','WR','PHI','13',80,25,'ACT'],['Makai Lemon','WR','PHI','9',76,21,'ACT'],
+['Marquise Brown','WR','PHI','0',78,29,'ACT'],['Elijah Moore','WR','PHI','19',74,26,'ACT'],['Darius Cooper','WR','PHI','80',72,23,'ACT'],
+['Britain Covey','WR','PHI','85',67,29,'ACT'],['Johnny Wilson','WR','PHI','89',68,25,'IR'],
+['Dallas Goedert','TE','PHI','88',83,31,'ACT'],['Eli Stowers','TE','PHI','87',72,23,'ACT'],['Johnny Mundt','TE','PHI','83',68,31,'ACT'],['Grant Calcaterra','TE','PHI','81',67,28,'ACT'],
+['Jordan Mailata','OL','PHI','68',92,29,'ACT'],['Landon Dickerson','OL','PHI','69',88,28,'ACT'],['Drew Kendall','OL','PHI','66',75,24,'ACT'],
+['Tyler Steen','OL','PHI','56',79,26,'ACT'],['Markel Bell','OL','PHI','72',70,23,'ACT'],['Fred Johnson','OL','PHI','74',71,29,'ACT'],
+['Willie Lampkin','OL','PHI','61',68,24,'ACT'],['Jake Majors','OL','PHI','75',66,24,'ACT'],['Micah Morris','OL','PHI','76',65,23,'ACT'],
+['Jordan Davis','DT','PHI','90',86,26,'ACT'],['Moro Ojomo','DT','PHI','97',82,25,'ACT'],['Ty Robinson','DT','PHI','92',71,24,'ACT'],
+['Zack Baun','LB','PHI','53',88,29,'ACT'],['Jihaad Campbell','LB','PHI','11',79,22,'ACT'],['Jeremiah Trotter Jr.','LB','PHI','54',72,23,'ACT'],
+['Nolan Smith Jr.','EDGE','PHI','3',83,25,'ACT'],['Jalyx Hunt','EDGE','PHI','58',79,25,'ACT'],['Arnold Ebiketie','EDGE','PHI','17',75,28,'ACT'],['A.J. Epenesa','EDGE','PHI','57',74,28,'ACT'],
+['Quinyon Mitchell','CB','PHI','27',91,25,'ACT'],['Cooper DeJean','CB','PHI','33',89,23,'ACT'],['Riq Woolen','CB','PHI','',82,27,'ACT'],
+['Jonathan Jones','CB','PHI','31',73,33,'ACT'],['Kelee Ringo','CB','PHI','22',74,24,'ACT'],['Mac McWilliams','CB','PHI','22',68,23,'ACT'],
+['Marcus Epps','S','PHI','29',75,30,'ACT'],['Andrew Mukuba','S','PHI','24',78,23,'ACT'],['Michael Carter II','CB','PHI','35',76,27,'ACT'],['Kenny Moore II','CB','PHI','',81,31,'ACT'],
+['Jake Elliott','K','PHI','4',82,31,'ACT'],['Braden Mann','P','PHI','10',78,29,'ACT'],['Rocco Underwood','LS','PHI','',69,23,'ACT']
+];
+function applyVerifiedPlayers(state){for(let [name,pos,cl,jersey,ovr,age,status] of VERIFIED_2026){let p=state.players.find(x=>x.name===name || (name==='Joe Milton III'&&x.name==='Joe Milton')||(name==='Marquise Brown'&&x.name==='Hollywood Brown'));
+ if(p){p.name=name;p.pos=pos;p.team=cl;p.jersey=jersey;p.age=age;p.status=status;p.source='2026 roster review';p.real=true;p.origin='NFL';}
+ else state.players.push({id:'checked26_'+name.toLowerCase().replace(/[^a-z]+/g,'_'),name,pos,team:cl,jersey,ovr,age,status,source:'2026 roster review',real:true,origin:'NFL',salary:Math.max(.8,(ovr-49)*.14),potential:Math.min(98,ovr+5),outUntil:0})}}
+// ROSTER DATA: ESPN team roster API (browser CORS); MyFootballToolbox/nflverse CSV import.
+// The 2026 player and roster status data is sourced. Ratings, future contracts and games are simulations.
+const ROSTER_CACHE='nflgm_2026_verified_roster_cache_v2';
+const ROSTER_DATE='2026-11-07';
+const ESPN_ROSTER_ENDPOINT='https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/';
+let rosterBusy=false,rosterProgress='';
+const TEAM_CODE_FIX={WSH:'WAS',JAC:'JAX',LA:'LAR',OAK:'LV',SD:'LAC',STL:'LAR'};
+function canonicalTeam(code){let c=String(code||'').trim().toUpperCase();return TEAM_CODE_FIX[c]||c}
+function positionMap(code){let m={FB:'RB',HB:'RB',RB:'RB',QB:'QB',WR:'WR',TE:'TE',G:'OL',OG:'OL',T:'OL',OT:'OL',C:'OL',OL:'OL',DE:'EDGE',OLB:'EDGE',ED:'EDGE',DT:'DT',NT:'DT',DL:'DT',ILB:'LB',MLB:'LB',LB:'LB',CB:'CB',DB:'CB',S:'S',SAF:'S',FS:'S',SS:'S',K:'K',PK:'K',P:'P',PT:'P',LS:'LS'};return m[String(code||'').toUpperCase()]||null}
+function rosterStatus(value,group=''){
+ let str=(String(value||'')+' '+String(group||'')).toLowerCase();
+ if(/practice|squad|develop|\bdev\b|\bps\b/.test(str))return'PS';
+ if(/injured|reserve|\bir\b|\bres\b|pup|non.football injury|non.football illness/.test(str))return'IR';
+ if(/cut|released|waived|free agent|retired|\bret\b/.test(str))return'OTHER';
+ return'ACT';
+}
+function seededRating(pos,years,rank=0){const base={QB:68,RB:69,WR:68,TE:69,OL:68,EDGE:69,DT:69,LB:69,CB:68,S:69,K:70,P:68,LS:65};return Math.max(58,Math.min(86,(base[pos]||68)+Math.min(8,Math.floor((Number(years)||0)*1.1))+(rank===1?5:rank===2?2:0)))}
+function mapEspnRoster(payload,teamId){let blocks=payload.athletes||payload.roster||[];if(!Array.isArray(blocks))return [];
+ let grouped=blocks.flatMap(x=>{let kids=Array.isArray(x.items)?x.items:Array.isArray(x.athletes)?x.athletes:x.id?[x]:[];return kids.map(p=>({a:p,group:String(x.position?.name||x.position||x.name||x.displayName||'')}))});
+ const seen=new Set();return grouped.filter(({a})=>a&&a.id&&(a.fullName||a.displayName)).map(({a,group})=>{
+  let years=Number(a.experience?.years??a.experience??0),pos=positionMap(a.position?.abbreviation||a.position?.name),num=a.jersey==null?'':String(a.jersey),stat=a.status||a.athleteStatus||a.injuryStatus||'',status=rosterStatus((typeof stat==='string'?stat:JSON.stringify(stat)),group);
+  let id='espn_'+a.id;if(seen.has(id))return null;seen.add(id);
+  let obj={id,name:a.fullName||a.displayName,pos,team:teamId,jersey:num,age:Number(a.age)||Math.max(20,22+years),real:true,origin:'NFL',source:'ESPN 2026 roster',status,espn:String(a.id),years,positionDetail:a.position?.abbreviation||'',salary:+Math.max(.8,1+years*.30).toFixed(1),potential:Math.max(71,Math.min(93,78+Math.floor(years/2))),ovr:seededRating(pos,years),outUntil:0};
+  let picture=a.headshot?.href||a.headshot?.url;if(picture&&/^https:\/\//.test(picture))obj.headshot=picture;return obj;
+ }).filter(p=>p&&p.pos);
+}
+function rosterCache(){try{let c=JSON.parse(localStorage.getItem(ROSTER_CACHE)||'null');return c?.data&&Array.isArray(c.data)&&c.data.length>=1?c:null}catch(e){return null}}
+function saveRosterCache(data,kind){try{localStorage.setItem(ROSTER_CACHE,JSON.stringify({kind,updated:new Date().toISOString(),data}))}catch(e){/* private-mode storage may be full */}}
+function matchExistingGamePlayer(p,old){if(!old)return p;return {...p,ovr:Number(old.ovr)||p.ovr,potential:Number(old.potential)||p.potential,salary:Number(old.salary)||p.salary,espn:p.espn||old.espn,headshot:p.headshot||old.headshot}}
+function applyRosterBlocks(blocks,source,asCache=true){if(!game||!blocks.length)return 0;
+ const prior=new Map(game.players.filter(p=>p.real).map(p=>[p.name.toLowerCase(),p]));
+ let seenIds=new Set(),recorded=[],ids=new Set(blocks.map(b=>b.id)),newPlayers=[];
+ for(let b of blocks){let local=new Set();for(let raw of b.data||[]){if(!raw?.name||!raw?.pos||local.has(raw.name.toLowerCase()))continue;local.add(raw.name.toLowerCase());let player=matchExistingGamePlayer({...raw,team:b.id,source},prior.get(raw.name.toLowerCase()));newPlayers.push(player);seenIds.add(player.id);recorded.push(player.name.toLowerCase());}}
+ let names=new Set(recorded);
+ // Keep existing offseason transactions only on teams that were not refreshed.
+ // Remove previous copies of a player from other teams if their latest source lists them elsewhere.
+ game.players=game.players.filter(p=>(!ids.has(p.team)&&!names.has(p.name.toLowerCase())&&!seenIds.has(p.id))||(p.id===game.careerPlayer&&p.origin==='CUSTOM'));
+ game.players.push(...newPlayers);
+ const current=game.rosterSync||{};
+ const covered=new Set([...(current.loadedIds||[]),...ids].filter(id=>TEAM_ROWS.some(t=>t[0]===id)));
+ game.rosterSync={count:covered.size,loadedIds:[...covered],people:game.players.filter(p=>p.real&&TEAM_ROWS.some(t=>t[0]===p.team)).length,failed:32-covered.size,source,updated:new Date().toISOString()};
+ if(asCache){let prev=rosterCache(),others=(prev?.data||[]).filter(b=>!ids.has(b.id));saveRosterCache([...others,...blocks],source)}
+ setDefaultLineup(true);store();render();return newPlayers.length;
+}
+function applyCachedRosters(state){let cached=rosterCache();if(!cached)return;
+ const ids=new Set(cached.data.filter(b=>TEAM_ROWS.some(t=>t[0]===b.id)).map(b=>b.id));let names=new Set(cached.data.flatMap(b=>b.data||[]).map(p=>p.name?.toLowerCase()));
+ const refreshTeams=new Set(cached.data.map(b=>b.id));state.players=state.players.filter(p=>!refreshTeams.has(p.team)&&!names.has(p.name?.toLowerCase()));
+ state.players.push(...cached.data.flatMap(b=>(b.data||[]).map(p=>({...p,team:b.id}))));
+ state.rosterSync={count:ids.size,loadedIds:[...ids],people:state.players.filter(p=>p.real&&ids.has(p.team)).length,failed:32-ids.size,source:cached.kind+' (saved snapshot)',updated:cached.updated};
+}
+async function requestJSON(url,ms=6500){const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),ms);
+ try{let r=await fetch(url,{mode:'cors',signal:controller.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json()}finally{clearTimeout(timer)}}
+
+function mapDepthRanks(payload,players){let items=payload?.depthCharts||[];let byId=new Map(players.filter(x=>x.espn).map(x=>[String(x.espn),x]));let count=0;
+ for(let chart of items){let positions=Object.values(chart.positions||{});for(let position of positions){let slot=String(position.position?.abbreviation||position.position?.name||'');let all=position.athletes||[];
+  for(let i=0;i<all.length;i++){let entry=all[i],key=String(entry.athlete?.id||entry.id||'');let p=byId.get(key);if(!p)continue;let rank=Number(entry.rank)||i+1;
+   if(!p.depthRank||rank<p.depthRank){p.depthRank=rank;p.depthSlot=slot;p.depthSource='ESPN 2026';count++}
+  }
+ }}return count}
+async function tryDepthRankImport(blocks){
+ // ESPN sometimes blocks /depthcharts in browser CORS; rosters must remain usable if it does.
+ try{const first=blocks.find(x=>x.id==='PHI')||blocks[0];if(!first)return 0;
+  const data=await requestJSON(ESPN_ROSTER_ENDPOINT+first.id.toLowerCase()+'/depthcharts',3500);let ok=mapDepthRanks(data,roster(first.id));if(ok<8)return 0;
+  let successful=1;for(let k=0;k<blocks.length;k+=8){let group=blocks.slice(k,k+8).filter(x=>x.id!==first.id);
+   let rs=await Promise.all(group.map(async x=>{try{return{x,data:await requestJSON(ESPN_ROSTER_ENDPOINT+x.id.toLowerCase()+'/depthcharts',3500)}}catch(e){return null}}));
+   for(let item of rs)if(item&&mapDepthRanks(item.data,roster(item.x.id))>=8)successful++;
+  }
+  game.rosterSync.depthCount=successful;game.lineup={};setDefaultLineup(true);store();render();return successful;
+ }catch(e){game.rosterSync.depthCount=0;store();return 0;}
+}
+// Static host roster bootstrap. GitHub Pages serves this same-origin JSON without CORS.
+// A scheduled GitHub Action can refresh the JSON from nflverse (the source also used by MyFootballToolbox).
+// Once a career advances, its initial roster snapshot stays frozen so real-world moves do not rewrite a save.
+async function syncWebsiteRosters(auto=false){
+ if(!game||game.phase==='setup'||rosterBusy)return;
+ if((game.phase==='season'&&game.week>1)||game.draftHistory.length||game.expCount>0){
+  if(!auto)say('This career is underway. Real-world roster updates apply to NEW careers only, so your trades and draft stay safe.',true);
+  return;
+ }
+ let source=null;
+ try{
+  const target=new URL('data/rosters-2026.json',document.baseURI);
+  const response=await fetch(target.toString(),{cache:'no-store'});
+  if(!response.ok)throw Error('Hosted roster data not published yet ('+response.status+')');
+  const data=await response.json();
+  if(!Array.isArray(data.blocks))throw Error('Roster file missing blocks');
+  const valid=new Set(TEAM_ROWS.map(t=>t[0]));
+  const blocks=data.blocks.filter(b=>b&&b.id&&(valid.has(b.id)||b.id==='FA')&&Array.isArray(b.data));
+  const count=blocks.filter(b=>valid.has(b.id)).length;
+  const people=blocks.reduce((n,b)=>n+b.data.length,0);
+  if(count<28||people<1000)throw Error('Published roster file incomplete');
+  source='nflverse 2026 published '+String(data.updated||'snapshot').slice(0,10);
+  rosterBusy=true;rosterProgress='Loading hosted 2026 NFL rosters';render();
+  let inserted=applyRosterBlocks(blocks,source);
+  rosterBusy=false;rosterProgress='';render();
+  if(!auto)say('Loaded '+inserted+' real player identities across '+count+' NFL teams from the website.');
+  return;
+ }catch(e){
+  // Existing GitHub Pages site still plays before the optional automated source is published.
+  if(!auto&&String(e).includes('incomplete'))say('Hosted roster data was incomplete; trying the ESPN player service instead.',true);
+ }
+ return syncCurrentRosters(auto);
+}
+
+async function syncCurrentRosters(auto=false){
+ if(!game||game.phase==='setup'||rosterBusy)return;
+ if((game.phase==='season'&&game.week>1)||game.draftHistory.length||game.expCount>0){if(!auto)say('Roster updates are locked after draft picks or games so your franchise stays intact. Start a new career for a new snapshot.',true);return}
+ rosterBusy=true;rosterProgress='Loading current rosters: 0/32';render();
+ const ids=TEAM_ROWS.map(x=>x[0]),all=[],fail=[];try{
+  for(let group=0;group<ids.length;group+=8){let part=ids.slice(group,group+8);
+   let checks=await Promise.all(part.map(async id=>{try{let payload=await requestJSON(ESPN_ROSTER_ENDPOINT+id.toLowerCase()+'/roster?season=2026',6500),data=mapEspnRoster(payload,id);if(data.length<23)throw Error('Only '+data.length+' profiles');return{id,data}}
+   catch(err){return{id,error:String(err)}}}));
+   for(let item of checks)item.data?all.push(item):fail.push(item.id);
+   rosterProgress='Loading current rosters: '+(all.length+fail.length)+'/32';render();
+   // If the browser blocks the source entirely, finish promptly instead of waiting for 24 more requests.
+   if(!all.length&&group===0){fail.push(...ids.slice(8));break}
+  }
+  if(all.length){if(game.draftHistory.length||game.expCount>0){if(!auto)say('Draft has started. Live rosters were not applied to protect your picks.',true);}else{let added=applyRosterBlocks(all,'ESPN 2026 roster snapshot');let depth=await tryDepthRankImport(all);say('Imported '+added+' real NFL players across '+all.length+' teams'+(depth?' and source depth rankings from '+depth+' teams':'')+'. '+(32-all.length)+' teams unavailable.');}}
+  else{if(!auto)say('ESPN blocked roster downloads in this browser. Use Import 2026 CSV in NFL Rosters to load the published snapshot offline.',true);}
+ }finally{rosterBusy=false;rosterProgress='';render();}
+}
+function csvRows(text){let out=[],line=[],cell='',quote=false;for(let i=0;i<text.length;i++){let c=text[i];if(c==='"'){if(quote&&text[i+1]==='"'){cell+='"';i++;}else quote=!quote;}else if(c===','&&!quote){line.push(cell);cell='';}else if((c==='\n'||c==='\r')&&!quote){if(c==='\r'&&text[i+1]==='\n')i++;line.push(cell);if(line.some(v=>v.trim()))out.push(line);line=[];cell='';}else cell+=c;}line.push(cell);if(line.some(v=>v.trim()))out.push(line);return out}
+function csvToRosterBlocks(input){let rows=csvRows(input);if(rows.length<100)throw Error('CSV is too small to contain NFL team rosters.');
+ let columns=rows.shift().map(x=>x.toLowerCase().trim().replace(/[^a-z0-9]+/g,'_'));let find=(obj,...keys)=>{for(let k of keys)if(obj[k]!==undefined&&obj[k]!==null&&obj[k]!=='')return obj[k];return''};
+ let byTeam=new Map();let count=0;
+ for(let [i,row] of rows.entries()){
+  let rec=Object.fromEntries(columns.map((name,j)=>[name,row[j]||'']));
+  let teamId=canonicalTeam(find(rec,'team','team_abbr','team_code','club','recent_team','club_code'));
+  if(!TEAM_ROWS.some(t=>t[0]===teamId))continue;
+  let name=find(rec,'full_name','player_name','name','player','display_name');if(!name)name=[rec.first_name,rec.last_name].filter(Boolean).join(' ');
+  let posCode=find(rec,'position','position_abbr','pos','depth_chart_position');if(!name||!posCode)continue;
+  let original=String(find(rec,'status','roster_status','status_abbreviation')||'ACT').toUpperCase(),status=rosterStatus(original),jersey=String(find(rec,'jersey_number','jersey','number'));
+  if(status==='OTHER')continue; // Released and retired are NOT on the active team list.
+  let born=String(find(rec,'birth_date','birth_day','birthday','dob')),age=born&&/^\d{4}-/.test(born)?Math.max(19,2026-Number(born.slice(0,4))):Number(rec.age)||25;
+  let years=Number(find(rec,'years_exp','experience','exp'))||0,position=positionMap(posCode),espn=String(find(rec,'espn_id','espn','espn_player_id'));
+  let p={id:String(find(rec,'gsis_id','gsis_it_id','player_id')||('csv_'+teamId+'_'+name)).replace(/[^a-zA-Z0-9_]+/g,'_'),name,pos:position,team:teamId,jersey,age,real:true,origin:'NFL',status,years,source:'2026 MyFootballToolbox / nflverse CSV',salary:Math.max(.8,+(1+years*.3).toFixed(1)),ovr:seededRating(position,years),potential:Math.min(93,79+Math.floor(years/2)),outUntil:0};if(espn)p.espn=espn;
+  if(!byTeam.has(teamId))byTeam.set(teamId,[]);let arr=byTeam.get(teamId);if(!arr.some(x=>x.name===name)){arr.push(p);count++}
+ }
+ if(byTeam.size<20||count<600)throw Error('The CSV did not contain enough 2026 NFL players ('+count+' across '+byTeam.size+' teams).');
+ return [...byTeam.entries()].map(([id,data])=>({id,data}));
+}
+function importRosterCSV(file){if(!file)return;if(!game||game.phase==='setup')return say('Start a new career before importing rosters.',true);
+ if((game.phase==='season'&&game.week>1)||game.draftHistory.length||game.expCount>0)return say('To preserve your game, import before your first draft pick or week 1.',true);
+ const reader=new FileReader();reader.onload=()=>{try{let blocks=csvToRosterBlocks(String(reader.result)),n=applyRosterBlocks(blocks,'2026 MyFootballToolbox / nflverse CSV');say('Loaded '+n+' genuine NFL player identities across '+blocks.length+' teams. Ratings remain game estimates.')}catch(e){say('Roster import failed: '+e.message,true)}};reader.readAsText(file);
+}
+const ROSTER_DIRECTORY={league:'https://nflmeta.org/rosters',depth:'https://www.espn.com/nfl/story/_/id/29098001/2020-nfl-depth-charts-all-32-teams',practice:'https://www.nfl.com/news/2026-nfl-practice-squad-tracker-team-by-team-roster-signings',free:'https://www.footballdb.com/transactions/free-agents.html'};
+
+function initial(){
+ const tt=TEAM_ROWS.map(([id,city,nickname,color,conf,head,off,def])=>({id,city,nickname,color,conf,name:city+' '+nickname,off,def,w:0,l:0,pf:0,pa:0}));
+ const coaches=TEAM_ROWS.map(([id,city,nickname,color,conf,name,off,def],i)=>({id:'hc_'+id,role:'HC',name,club:id,off,def,real:true,level:({'Andy Reid':5,'Sean McVay':5,'Mike Vrabel':4,'John Harbaugh':5,'Sean Payton':5,'Mike Macdonald':4,'Ben Johnson':4,'Kyle Shanahan':5,'Dan Campbell':4}[name]||[3,3,4,2,3,4][i%6]),leadership:68+i*3%29,development:66+i*7%31}));
+ for(let t of tt){const pair=COORDINATORS_2026[t.id]||[];
+  for(let [index,role] of ['OC','DC'].entries()){
+   let name=pair[index]||('Interim '+role+' '+t.id);
+   // Tampa Bay's head coach doubles as defensive coordinator in real life.
+   coaches.push({id:role.toLowerCase()+'_'+t.id,role,name,club:t.id,off:t.off,def:t.def,real:!!pair[index],level:clamp(2+(t.id.charCodeAt(0)+index)%4,2,5),leadership:65+(index*7+t.id.length*4)%30,development:66+(index*11+t.city.length)%29})
+  }
+ }
+ COACH_FA.forEach(([name,off,def,level],i)=>coaches.push({id:'hcmarket'+i,role:'HC',name,club:null,off,def,real:true,level,leadership:70+(i*6)%23,development:68+(i*7)%22}));
+ for(let i=0;i<4;i++)for(let role of ['HC','OC','DC']){
+  coaches.push({id:'coachgen_'+role+i,role,name:COACH_NAMES[i%COACH_NAMES.length]+' '+String.fromCharCode(65+(i%12)),club:null,off:OFF[i%OFF.length],def:DEF[(i+2)%DEF.length],real:false,level:1+i%5,leadership:rnd(58,90),development:rnd(59,89)})
+ }
+ const players=NFL_STARS.map((line,i)=>{let [name,pos,cl,ovr,age,espn]=line.split('|');let o=+ovr;return{id:'n'+i,name,pos,team:cl,ovr:o,age:+age,espn,real:true,origin:'NFL',salary:+clamp(.85+(o-55)*.21,1,17).toFixed(1),potential:clamp(o+rnd(-2,3),58,98),outUntil:0}});
+ // 2026 rookie selections existed before the fictional 2027 start, and cannot appear twice.
+ ROOKIES_2026.forEach(([name,pos,cl,ovr],i)=>{if(players.some(p=>p.name===name))return;players.push({id:'rook26_'+i,name,pos,team:cl,ovr,age:21,real:true,origin:'NFL',draftYear:2026,salary:2.8,potential:clamp(ovr+rnd(7,15),ovr,93),outUntil:0})});
+ applyVerifiedPlayers({players});
+ // Lane Johnson announced his retirement October 6, 2026; exclude him from active franchise roster.
+ for(let i=players.length-1;i>=0;i--)if(players[i].name==='Lane Johnson')players.splice(i,1);
+ const sizes={QB:3,RB:3,WR:6,TE:3,OL:7,EDGE:4,DT:3,LB:4,CB:5,S:4,K:1,P:1,LS:1};
+ for(let t of tt)for(let pos of POS){let num=players.filter(x=>x.team===t.id&&x.pos===pos).length;for(let j=num;j<sizes[pos];j++){let o=clamp(rnd(60,76)+(j<STARTER_REQ[pos]?2:0),54,78);let ix=players.length;players.push({id:'sd_'+t.id+'_'+pos+'_'+j,name:FIRST[(ix+j)%FIRST.length]+' '+LAST[(ix+j*3)%LAST.length],pos,team:t.id,ovr:o,age:rnd(21,31),salary:+clamp((o-48)*.11,.8,4).toFixed(1),potential:clamp(o+rnd(0,12),60,89),origin:'SIM',real:false,outUntil:0})}}
+ for(let pos of POS)for(let j=0;j<12;j++){let o=rnd(56,72),ix=j+POS.indexOf(pos)*12;players.push({id:'f_'+pos+j,name:FIRST[(ix+3)%FIRST.length]+' '+LAST[(ix+9)%LAST.length],pos,team:'FA',ovr:o,age:rnd(21,34),salary:+clamp((o-49)*.1,.8,3.3).toFixed(1),potential:clamp(o+rnd(0,11),60,84),origin:'SIM',real:false,outUntil:0})}
+ let scouts=SCOUT_CANDIDATES.map(([name,pos,level,region],i)=>({id:'sc'+i,name,role:['OFF','DEF','ALL'][i%3],pos,assigned:pos,region,level,cost:+(.4+level*.3).toFixed(1)}));
+ return{version:7,year:2027,week:1,phase:'setup',userTeam:'PHI',mode:'existing',career:'gm',careerName:'',careerPlayer:null,careerCoach:null,teams:tt,coaches,players,scouts:[],scoutPool:scouts,settings:{simple:false,autoInjury:false,autoContracts:false,autoFree:false,autoTrades:false,difficulty:'Normal'},salaryCap:320,news:[],lineup:{},prospects:[],picks:[],draftIndex:0,draftHistory:[],futureOwners:{...OPENING_PICK_OWNERS},schedule:[],results:[],lastGame:null,currentGame:null,post:null,champions:[],expCount:0,expTeams:[],prevDraftOrder:[],histories:[],recordYear:null,rosterSync:{count:0,people:0,failed:32,source:'Offline partial snapshot',updated:null},careerStage:null,collegeGames:0,collegeLog:[],combineResults:{},frontofficeSeen:false,gameplan:{off:'balanced',def:'zone'},pendingMoves:[],coachXP:0,jobSecurity:75};
+}
+function begin(mode){let state=initial();applyCachedRosters(state);let career=formCareer,c=formTeam||'PHI',exp=mode==='expansion'&&['owner','gm'].includes(career);
+ if(exp){let city=($('customCity')?.value||'Portland').trim().slice(0,28),nick=($('customName')?.value||'Pioneers').trim().slice(0,28),stadium=($('customStadium')?.value||'Summit Field').trim().slice(0,36);if(!city||!nick)return say('Enter city and nickname.',true);state.teams.push({id:'EXP',city,nickname:nick,name:city+' '+nick,color:$('customColor')?.value||'#50dcb7',stadium,off:'Balanced',def:'4-3',conf:'NFC',w:0,l:0,pf:0,pa:0});state.userTeam='EXP';state.mode='expansion';career='owner';}
+ else{state.userTeam=c;state.mode='existing'}state.career=career;
+ if(['hc','oc','dc'].includes(career)){let role=career.toUpperCase(),first=($('coachFirstName')?.value||'').trim().slice(0,24),last=($('coachLastName')?.value||'').trim().slice(0,24);if(!first||!last)return say('Enter your coach’s first and last name.',true);let name=first+' '+last;let pool=['ARI','CLE','LV','NYJ','TEN','NO','MIA','ATL'];let offer=pool[rnd(0,pool.length-1)];state.careerPending={name,role,archetype:formCoachArchetype,offer,declined:0};state.careerName=name;state.userTeam=offer;state.jobSecurity=70;state.coachXP=0;state.phase='interview';newsState(state,`${name} entered the ${role} job market. You must earn a team offer, not choose a franchise directly.`);}
+ else if(career==='player'){
+  let chosen=($('realCareerPlayer')?.value||'');let found=playerStart==='real'?state.players.find(p=>p.id===chosen&&p.real&&p.team!=='FA'):null;
+  if(found){state.userTeam=found.team;state.careerPlayer=found.id;state.careerName=found.name;state.phase='nfl_join';}
+  else{let name=($('playerName')?.value||'Jordan Carter').trim().slice(0,36),pos=$('playerPosition')?.value||'QB';let school=($('collegeName')?.value||'Georgia').trim().slice(0,40)||'Georgia';let p={id:'created_player',name,pos,team:'COLLEGE',ovr:62,age:21,salary:0,potential:rnd(82,95),real:false,origin:'CUSTOM',outUntil:0};state.players.push(p);state.careerPlayer=p.id;state.careerName=name;state.college=school;state.collegeGames=0;state.collegeLog=[];state.combineResults={};state.phase='college';state.userTeam='PHI';newsState(state,`${name} begins a college career at ${school}. The NFL team will be decided by the draft.`);}
+  state.playerXP=0;state.playerCareerStats={games:0,wins:0,passing:0,rushing:0,receiving:0,touchdowns:0,tackles:0,sacks:0,interceptions:0};state.playerGameHistory=[];state.playerTraining='balanced';
+ }
+ else{state.phase='offseason_intro';state.nextStage=exp?'expansion':'draft';newsState(state,exp?'Your expansion club is founded. First: pre-draft scouting and combine.':'Front-office career begins in the offseason. Review the combine and roster needs first.');}
+ game=state;ensurePlayerFields();setDefaultLineup();if(game.phase==='interview'||game.phase==='college')page='career';else if(game.phase==='nfl_join'){openDraft(2027);cpuDraftAll();page='career';}else page='frontoffice';store();render();
+ // Automatically attempt all 32 ESPN roster feeds. Import remains available if browser CORS blocks requests.
+ setTimeout(()=>{if(game===state)syncWebsiteRosters(true)},50);
+}
+
+function frontofficePage(){let p=game.prospects.length?game.prospects:getProspects(2027),best=p.sort((a,b)=>a.rank-b.rank).slice(0,12);let next=game.nextStage==='expansion'?'Expansion Draft':'2027 NFL Draft';return `${title('2027 Offseason','Complete pre-draft preparation before building your roster.')}<div class="notice"><b>Franchise roadmap:</b> Scouting Combine → ${game.mode==='expansion'?'Expansion Draft → ':''}NFL Draft → Free Agency → Regular Season. This is the entry sequence, not a random automatic skip to the draft.</div><div class="career-steps"><div class="card"><h3>1. NFL Combine</h3><p class="sub">Review projected prospects, athletic tests, and positional value before your picks.</p></div><div class="card"><h3>2. Team evaluation</h3><p class="sub">Staff reports identify your critical starters and depth needs.</p></div><div class="card"><h3>3. ${next}</h3><p class="sub">Advance when you're ready to make personnel decisions.</p></div></div><div class="two section">${needPanel(true)}<div class="card"><h3>Projected 2027 Combine invitees</h3><p class="sub">Names and colleges from published boards. Simulated ratings and combine numbers.</p>${best.map(pr=>`<div class="brief"><b>${esc(pr.name)}</b> ${chip('POS',pr.pos)} <span class="push sub">${esc(pr.school||'College')}</span></div>`).join('')}</div></div><div class="section">${button('CONTINUE TO '+next.toUpperCase()+' →','A.advanceFront()','primary wide')}</div>`}
+function advanceFront(){if(game.phase!=='offseason_intro')return;if(game.nextStage==='expansion'){game.phase='expansion';page='expansion';}else{openDraft(2027);page='draft';}store();render()}
+function advanceCollege(){if(game.phase!=='college')return;let p=game.players.find(x=>x.id===game.careerPlayer);if(!p)return;let win=rand()<.55,ym=rnd(160,350),td=rnd(0,4);if(p.pos==='RB'){ym=rnd(65,180);td=rnd(0,3)}if(['WR','TE'].includes(p.pos)){ym=rnd(30,158);td=rnd(0,2)}if(['OL','EDGE','DT','LB','CB','S'].includes(p.pos)){ym=rnd(3,12);td=0}
+ game.collegeGames++;game.playerXP=(game.playerXP||0)+rnd(12,20)+(win?5:0);p.ovr=clamp(p.ovr+(rand()<.7?1:0),62,75);game.collegeLog.unshift({game:game.collegeGames,win,yards:ym,td});news(`${game.college}: ${p.name} ${win?'wins':'loses'} game ${game.collegeGames} (${ym} ${p.pos==='QB'?'passing':'total'} yards, ${td} TD).`);if(game.collegeGames>=5){game.phase='combine';news('College season complete. NFL Combine invite received. Your draft stock depends on the combine.')}store();render()}
+function combineDrill(drill){if(game.phase!=='combine'||game.combineResults[drill]!=null)return;let p=game.players.find(x=>x.id===game.careerPlayer);let score=clamp(Math.round(p.ovr+rnd(-17,21)),35,95);game.combineResults[drill]=score;game.playerXP+=score>=75?8:4;news(`${p.name} scored ${score}/100 in the ${drill} combine drill.`);store();render()}
+function finishPlayerDraft(){if(game.phase!=='combine'||Object.keys(game.combineResults).length<3)return say('Finish all three combine drills first.',true);let p=game.players.find(x=>x.id===game.careerPlayer),scores=Object.values(game.combineResults),avg=scores.reduce((a,b)=>a+b,0)/scores.length;
+ let ranked=TEAM_ROWS.map(([id])=>({id,needs:need(id)})).map(x=>({id:x.id,urgency:x.needs.find(n=>n.pos===p.pos)?.weight||0})).sort((a,b)=>b.urgency-a.urgency||rand()-.5),range=avg>79?8:avg>65?15:28,choice=ranked[rnd(0,Math.min(ranked.length-1,range))],id=choice.id;
+ game.userTeam=id;p.team=id;p.salary=+clamp(1.3+avg*.05,1.5,6).toFixed(1);p.ovr=clamp(Math.round(p.ovr+(avg-65)*.1),60,78);p.jersey=String(rnd(1,89));game.draftedBy=id;game.draftProjection=avg>78?'Early rounds':avg>62?'Middle rounds':'Late rounds';news(`${team(id).name} selected ${p.name} out of ${game.college} in the 2027 NFL Draft (${game.draftProjection}).`);
+ openDraft(2027);cpuDraftAll();setDefaultLineup(true);page='career';store();render()}
+function acceptJob(){if(game.phase!=='interview'||!game.careerPending)return;let job=game.careerPending,id=job.offer;game.userTeam=id;let prior=game.coaches.find(x=>x.club===id&&x.role===job.role);if(prior)prior.club=null;let a=ARCHETYPES[job.archetype]||ARCHETYPES.development;
+ let me={id:'my_coach',role:job.role,club:id,name:job.name,real:false,level:2,leadership:74+a.lead,development:72+a.dev,off:team(id).off,def:team(id).def,archetype:job.archetype};game.coaches.push(me);game.careerCoach=me.id;news(`${team(id).name} hired ${job.name} as ${job.role}. Specialty: ${a.name}.`);game.careerPending=null;openDraft(2027);cpuDraftAll();page='career';store();render()}
+function declineJob(){let j=game.careerPending;if(!j)return;let pool=TEAM_ROWS.map(x=>x[0]).filter(id=>id!==j.offer);j.offer=pool[rnd(0,pool.length-1)];j.declined++;store();render();say('You declined. A new team has invited you to interview.')}
+
+function newsState(s,text){s.news.unshift({year:s.year,week:s.week,text})}
+function rating(id){let values=[];let ps=roster(id);for(let pos of POS){let n=STARTER_REQ[pos];let arr=ps.filter(p=>p.pos===pos&&healthy(p)).sort((a,b)=>b.ovr-a.ovr);for(let i=0;i<n;i++)values.push(arr[i]?.ovr||55)}return Math.round(values.reduce((a,b)=>a+b,0)/values.length)}
+function fit(id){let c=coach(id),oc=game.coaches.find(x=>x.club===id&&x.role==='OC'),dc=game.coaches.find(x=>x.club===id&&x.role==='DC'),t=team(id);if(!t||!c)return{value:-3,effective:1,off:0,def:0};let a=archetypeBuff(id);let off=(oc?.off===t.off?3:oc?.off==='Balanced'||t.off==='Balanced'?1:-2)+(c.off===t.off?1:0)+a.off*.35;let def=(dc?.def===t.def?3:-2)+(c.def===t.def?1:0)+a.def*.35;let raw=(c.level-3)*1.2+off+def+(c.leadership-75)*.024+(c.development-75)*.023+((oc?.level||2)-3)*.55+((dc?.level||2)-3)*.55+a.lead*.18;return{value:+raw.toFixed(1),effective:clamp(+(c.level+(off+def)/4).toFixed(1),1,5),off:+off.toFixed(1),def:+def.toFixed(1)}}
+function cap(id=game.userTeam){return game.salaryCap-roster(id).reduce((a,p)=>a+(+p.salary||0),0)}
+function need(id=game.userTeam){return POS.map(pos=>{let items=roster(id).filter(p=>p.pos===pos&&healthy(p)).sort((a,b)=>b.ovr-a.ovr),slots=STARTER_REQ[pos],best=items.slice(0,slots),avg=Math.round(best.reduce((v,p)=>v+p.ovr,0)/slots);let label=best.length<slots||avg<68?'CRITICAL':avg<77?'UPGRADE':items.length<DEPTH_REQ[pos]?'DEPTH':'STRONG';let weight={CRITICAL:5,UPGRADE:3,DEPTH:1,STRONG:0}[label];return{pos,avg,count:items.length,missing:Math.max(0,slots-items.length),label,weight,req:slots}}).sort((a,b)=>b.weight-a.weight||a.avg-b.avg)}
+function setDefaultLineup(force=false){for(let pos of POS){let count=STARTER_REQ[pos];let chosen=[];let options=own().filter(p=>p.pos===pos).sort((a,b)=>(a.depthRank||99)-(b.depthRank||99)||b.ovr-a.ovr);for(let i=1;i<=count;i++){let key=pos+i,current=options.find(p=>p.id===game.lineup[key]);let valid=current&&!chosen.includes(current.id)&& healthy(current);if(!valid){current=options.find(p=>healthy(p)&&!chosen.includes(p.id))||null;game.lineup[key]=current?.id||null;}if(current)chosen.push(current.id)}}}
+function injuredStarters(){let result=[];for(let pos of POS)for(let i=1;i<=STARTER_REQ[pos];i++){let p=own().find(x=>x.id===game.lineup[pos+i]);if(p&&!healthy(p))result.push(p)}return result}
+function setStarter(pos,slot,id){let key=pos+slot,p=own().find(p=>p.id===id&&p.pos===pos);if(!p||!healthy(p))return say('Choose a healthy backup for '+pos+'.',true);for(let i=1;i<=STARTER_REQ[pos];i++)if(i!==slot&&game.lineup[pos+i]===id)game.lineup[pos+i]=game.lineup[key]||null;game.lineup[key]=id;store();render();say(p.name+' is starting at '+pos+slot)}
+function pickId(year,round,source){return 'pk_'+year+'_'+round+'_'+source}
+function ownerOf(year,round,source){return game.futureOwners[pickId(year,round,source)]||source}
+function sortRecords(){return [...teams()].sort((a,b)=>a.w/(a.w+a.l||1)-b.w/(b.w+b.l||1)||(a.pf-a.pa)-(b.pf-b.pa)||a.id.localeCompare(b.id)).map(t=>t.id)}
+function draftOrder(year){if(year===2027){let ids=teams().filter(t=>t.id!=='EXP').sort((a,b)=>rating(a.id)-rating(b.id)||a.id.localeCompare(b.id)).map(t=>t.id);return game.mode==='expansion'?['EXP',...ids]:ids}return game.prevDraftOrder.length?[...game.prevDraftOrder]:sortRecords()}
+function futurePicks(year){return draftOrder(year).map((orig,idx)=>({year,round:1,source:orig,owner:ownerOf(year,1,orig),number:idx+1}))}
+function createPicks(year){let ord=draftOrder(year),picks=[];for(let r=1;r<=7;r++)for(let i=0;i<ord.length;i++){let source=ord[i];picks.push({id:pickId(year,r,source),year,round:r,source,owner:ownerOf(year,r,source),slot:i+1,number:(r-1)*ord.length+i+1})}return picks}
+function getProspects(year){
+ const real=year===2027?PROSPECT_2027:(FUTURE_REAL[year]||[]).map(([name,pos,college],i)=>({name,pos,college,rank:i+1}));
+ let all=[];let total=Math.max(260,teams().length*7+10);
+ for(let i=0;i<total;i++){
+  let row=real[i],rank=i+1,pos=row?.pos||POS[(i*3+Math.floor(i/13))%POS.length];
+  // A prospect's true talent is set ONCE and never modified by scouting. Hidden late-round gems are possible.
+  let sleeper=rand()<.075&&rank>50;
+  let ovr=clamp(Math.round(70-i*.052+rnd(-5,3)+(sleeper?rnd(10,17):0)),51,81);
+  let potential=clamp(ovr+rnd(5,17)+(sleeper?rnd(3,8):0),ovr,97);
+  let name=row?.name||(FIRST[(i*7+year)%FIRST.length]+' '+LAST[(i*5+year)%LAST.length]);
+  all.push({id:'prospect_'+year+'_'+rank,name,pos,school:row?.college||'Fictional University',real:!!row,rank,ovr,potential,gem:sleeper,age:rnd(20,23),drafted:false})
+ }return all;
+}
+function openDraft(year){game.year=year;game.phase='draft';game.draftIndex=0;game.draftHistory=[];game.prospects=getProspects(year);game.picks=createPicks(year);news(`${year} draft loaded. ${game.prospects.filter(p=>p.real).length} named real college prospects; late rounds clearly simulated.`);cpuToNext();store()}
+function nextPick(){return game.picks[game.draftIndex]||null}
+function draftPlayer(id,forTeam){let next=nextPick(),p=game.prospects.find(p=>p.id===id&&!p.drafted);if(!p||!next||forTeam!==next.owner)return false;
+ p.drafted=true;let rookie={...p,id:'rookie_'+p.id,team:forTeam,draftYear:game.year,age:p.age,salary:+clamp(8-next.round*.94,.8,7).toFixed(1),outUntil:0,origin:p.real?'NCAA':'SIM'};game.players.push(rookie);game.draftHistory.push({number:next.number,round:next.round,slot:next.slot,source:next.source,team:forTeam,id:p.id,name:p.name,pos:p.pos,school:p.school,real:p.real,ovr:p.ovr});game.draftIndex++;if(forTeam===game.userTeam){news(`Selected ${p.name} (${p.pos}) #${next.number} overall.`);setDefaultLineup()}return true}
+function cpuToNext(){let loops=0;while(nextPick()&&nextPick().owner!==game.userTeam&&loops<260){let id=nextPick().owner,req=Object.fromEntries(need(id).map(p=>[p.pos,p.weight]));let prospect=game.prospects.filter(x=>!x.drafted).map(x=>({x,score:110-x.rank*.19+(req[x.pos]||0)*1.35+rand()*14})).sort((a,b)=>b.score-a.score)[0]?.x;if(!prospect||!draftPlayer(prospect.id,id))break;loops++}
+ if(!nextPick()){game.phase='season';game.week=1;makeSchedule();setDefaultLineup();news(`${game.year} draft complete. Week 1 begins.`)}store()}
+
+function inspectProspect(id){let p=game.prospects.find(x=>x.id===id);if(p){selectedProspect=id;render()}}
+function closeProspect(){selectedProspect=null;render()}
+function pickTrade(){if(game.phase!=='draft'||nextPick()?.owner!==game.userTeam)return say('Trade your pick only while you are on the clock.',true);draftTradePrefill=nextPick().id;tradeReturn='draft';page='trades';render()}
+
+function selectDraft(id){if(game.phase!=='draft'||nextPick()?.owner!==game.userTeam)return say('Not your pick right now.',true);if(draftPlayer(id,game.userTeam)){cpuToNext();render()}}
+function chooseExpansion(id){if(game.phase!=='expansion')return;let p=game.players.find(p=>p.id===id);if(!p||p.ovr>78||!healthy(p)||['EXP','FA'].includes(p.team)||game.expTeams.includes(p.team))return say('Choose a backup from a new NFL team.',true);
+ game.expTeams.push(p.team);p.team='EXP';game.expCount++;news(`Expansion selection ${game.expCount}/16: ${p.name}.`);setDefaultLineup();if(game.expCount>=16){openDraft(2027);page='draft'}store();render()}
+function sign(id){let p=unsigned().find(p=>p.id===id);if(!p)return;if(p.salary>cap())return say('Not enough cap space.',true);p.team=game.userTeam;news(`Signed ${p.name} (${p.pos}) for ${money(p.salary)} per year.`);setDefaultLineup();store();render();say('Signed '+p.name)}
+function cut(id){let p=own().find(p=>p.id===id);if(!p)return;if(!confirm('Release '+p.name+' to free agency?'))return;p.team='FA';news('Released '+p.name+'.');setDefaultLineup();store();render()}
+function playerValue(p){return !p?0:Math.max(2,(p.ovr-48)*2.35 + (p.potential-p.ovr)*.64-(p.age-25)*1.15-(p.salary-2)*.4)}
+function pickValue(p){if(!p)return 0;return Math.max(7,180/(Math.pow(p.round,1.2)) * (1+(34-(p.slot||16))/65))*Math.pow(.84,p.year-game.year)}
+function teamPickList(id){let years=[game.year,game.year+1,game.year+2],p=[];for(let y of years){let ord=y===game.year?game.picks.map(x=>x.source).filter((x,i,arr)=>arr.indexOf(x)===i):draftOrder(y);for(let r=1;r<=7;r++)for(let orig of ord){let pid=pickId(y,r,orig),pick=game.picks.find(x=>x.id===pid);let holder=pick?.owner||ownerOf(y,r,orig);if(holder===id && (!pick||game.picks.indexOf(pick)>=game.draftIndex))p.push({id:pid,year:y,round:r,source:orig,owner:holder,slot:ord.indexOf(orig)+1,number:pick?.number})}}return p}
+function trade(){let to=team(tradeTo);if(!to||to.id===game.userTeam)return say('Choose another team.',true);
+ let apid=$('offPlayer')?.value,bpid=$('askPlayer')?.value,aqid=$('offPick')?.value,bqid=$('askPick')?.value;
+ let a=apid?own().find(p=>p.id===apid):null,b=bpid?roster(tradeTo).find(p=>p.id===bpid):null,ap=aqid?teamPickList(game.userTeam).find(p=>p.id===aqid):null,bp=bqid?teamPickList(tradeTo).find(p=>p.id===bqid):null;
+ if((!a&&!ap)||(!b&&!bp))return say('Add at least one player or pick on each side.',true);
+ if(cap()+ (a?.salary||0)-(b?.salary||0)<0)return say('Trade would exceed your salary cap.',true);if(cap(to.id)+(b?.salary||0)-(a?.salary||0)<0)return say('Other team cannot afford this trade.',true);
+ let offering=playerValue(a)+pickValue(ap),asking=playerValue(b)+pickValue(bp);
+ let limit=game.settings.difficulty==='Easy'?.74:game.settings.difficulty==='Hard'?1.12:.94;
+ if(offering<asking*limit)return say('TRADE REJECTED: '+to.nickname+' needs a better offer. Value '+Math.round(offering)+' vs '+Math.round(asking)+'.',true);
+ if(a)a.team=to.id;if(b)b.team=game.userTeam;
+ for(let [p,newOwner]of[[ap,to.id],[bp,game.userTeam]])if(p){game.futureOwners[p.id]=newOwner;let current=game.picks.find(x=>x.id===p.id);if(current)current.owner=newOwner}
+ news('TRADE ACCEPTED with '+to.name+': '+[a?.name,ap?ap.year+' R'+ap.round+' pick':null].filter(Boolean).join(' + ')+' for '+[b?.name,bp?bp.year+' R'+bp.round+' pick':null].filter(Boolean).join(' + ')+'.');setDefaultLineup();if(game.phase==='draft'&&nextPick()?.owner!==game.userTeam)cpuToNext();store();render();say('TRADE ACCEPTED!');}
+function hire(id){let c=game.coaches.find(c=>c.id===id&&c.club===null);if(!c||!['owner','gm','hc'].includes(game.career))return;let role=c.role||'HC',old=game.coaches.find(x=>x.club===game.userTeam&&(x.role||'HC')===role);if(old&&old.id===game.careerCoach)return say('You cannot replace your own career role.',true);if(old)old.club=null;c.club=game.userTeam;news(`Hired ${c.name} as ${role}.`);store();render()}
+function fireCoach(){let c=hc();if(!c)return;if(!confirm('Fire '+c.name+'? You can hire a replacement from the coach market.'))return;c.club=null;news('Fired head coach '+c.name+'.');store();render()}
+function fireRole(role){let c=game.coaches.find(c=>c.club===game.userTeam&&c.role===role);if(!c||c.id===game.careerCoach)return say('You cannot fire your own coaching career.',true);if(!confirm('Fire '+c.name+' ('+role+')?'))return;c.club=null;news('Fired '+role+' '+c.name+'.');store();render()}
+function scheme(kind,val){if(game.career==='player')return say('Game plans are managed by your coaching staff.',true);if(game.career==='oc'&&kind==='def')return say('Your role manages offense only.',true);if(game.career==='dc'&&kind==='off')return say('Your role manages defense only.',true);if(kind==='off'&&OFF.includes(val))mine().off=val;if(kind==='def'&&DEF.includes(val))mine().def=val;store();render();say('Scheme updated. Staff effectiveness recalculated.')}
+function signScout(id){let scout=game.scoutPool.find(s=>s.id===id);if(!scout)return;
+ if(game.scouts.some(s=>s.role===scout.role))return say('One '+scout.role+' scout only. Fire the current scout to replace them.',true);
+ game.scouts.push(scout);game.scoutPool=game.scoutPool.filter(s=>s.id!==id);news('Hired '+scout.role+' scout '+scout.name+' (level '+scout.level+').');store();render()}
+function dropScout(id){let scout=game.scouts.find(s=>s.id===id);if(!scout)return;game.scouts=game.scouts.filter(s=>s.id!==id);game.scoutPool.push(scout);store();render()}
+function assignScout(id,pos){let scout=game.scouts.find(s=>s.id===id);if(scout&&POS.includes(pos)){scout.assigned=pos;store();render()}}
+function scoutedOVR(p){let best=Math.max(0,...game.scouts.map(s=>(s.role==='ALL'?s.level*.8:s.role==='OFF'&&['QB','RB','WR','TE','OL'].includes(p.pos)?s.level:s.role==='DEF'&&['EDGE','DT','LB','CB','S'].includes(p.pos)?s.level:0)));let spread=Math.max(2,9-Math.round(best*1.3));let seed=(p.rank*11+p.name.length*3)%19-9;return clamp(p.ovr+Math.round(seed*spread/9),48,86)}
+function scoutConfidence(p){let best=Math.max(0,...game.scouts.map(s=>(s.role==='ALL'?s.level*.8:s.role==='OFF'&&['QB','RB','WR','TE','OL'].includes(p.pos)?s.level:s.role==='DEF'&&['EDGE','DT','LB','CB','S'].includes(p.pos)?s.level:0)));return best>=4?'HIGH':best>=2?'MEDIUM':'LOW'}
+function staffCandidates(){return game.coaches.filter(x=>!x.club)}
+function setSetting(key,value){if(key==='simple')game.settings.simple=!!value;if(['autoInjury','autoContracts','autoFree','autoTrades'].includes(key)){game.settings[key]=!!value;if(key==='autoInjury'&&value)setDefaultLineup(true)}if(key==='difficulty'&&['Easy','Normal','Hard'].includes(value))game.settings.difficulty=value;store();render()}
+function changeSeason(){if(game.phase!=='offseason')return;game.histories.push({year:game.year,champ:game.champions.at(-1)||'Unknown',record:mine().w+'-'+mine().l});game.prevDraftOrder=sortRecords();for(let p of game.players){p.age++;p.outUntil=0;if(p.age<=27&&rand()<(.38+(p.team===game.userTeam?archetypeBuff(game.userTeam).dev*.045:0)))p.ovr=clamp(p.ovr+rnd(0,2),50,98);if(p.age>31&&rand()<.49)p.ovr=clamp(p.ovr-rnd(0,2),48,98)}for(let t of teams()){t.w=0;t.l=0;t.pf=0;t.pa=0}game.week=1;game.results=[];game.post=null;game.schedule=[];game.lastGame=null;game.currentGame=null;openDraft(game.year+1);if(!gmRole()){cpuDraftAll();page=isPlayer()?'career':'dashboard'}else page='draft';setDefaultLineup();store();render()}
+function circleFixtures(){let ids=teams().map(t=>t.id);if(ids.length%2)ids.push(null);let n=ids.length;const rounds=[];for(let r=0;r<n-1;r++){let pairs=[];for(let i=0;i<n/2;i++){let a=ids[i],b=ids[n-1-i];if(a&&b)pairs.push([a,b])}rounds.push(pairs);ids=[ids[0],ids[n-1],...ids.slice(1,n-1)]}return rounds}
+function makeSchedule(){let rounds=circleFixtures().filter(r=>r.some(pair=>pair.includes(game.userTeam))),out=[];for(let w=1;w<=18;w++){let pairings=w===9?[]:rounds[w<=8?w-1:w-2];out.push({week:w,pairings:pairings?.map(x=>{let pair=[...x];if(pair.includes(game.userTeam)){let other=pair.find(id=>id!==game.userTeam),isHome=(w+game.year)%2===1;return isHome?[game.userTeam,other]:[other,game.userTeam]}return pair})||[]})}game.schedule=out;game.week=1;game.results=[]}
+function nextMatchup(){return game.schedule[game.week-1]?.pairings.find(pair=>pair.includes(game.userTeam))||null}
+function scoreGame(a,b,week,type='regular',interact=false){let ra=rating(a)+fit(a).value,rb=rating(b)+fit(b).value;let variance=rnd(-14,14),diff=(ra-rb)*.52+variance;let sa=clamp(Math.round(21+diff+rnd(-7,7)),3,54),sb=clamp(Math.round(21-diff+rnd(-7,7)),3,54);if(sa===sb)sa+=3;return recordResult(a,b,sa,sb,week,type)}
+function recordResult(a,b,sa,sb,week,type='regular'){if(sa===sb)sa+=3;let ta=team(a),tb=team(b);if(type==='regular'){ta[sa>sb?'w':'l']++;tb[sb>sa?'w':'l']++;ta.pf+=sa;ta.pa+=sb;tb.pf+=sb;tb.pa+=sa}return{a,b,sa,sb,week,type,winner:sa>sb?a:b}}
+
+function careerAfterGame(result){let won=result.winner===game.userTeam;if(coachRole()){game.coachXP+=(won?11:5);game.jobSecurity=clamp((game.jobSecurity||70)+(won?3:-4),8,100);let c=game.coaches.find(x=>x.id===game.careerCoach);if(c&&game.coachXP>=c.level*32&&c.level<5){game.coachXP-=c.level*32;c.level++;c.leadership=clamp(c.leadership+2,60,99);news(`CAREER LEVEL UP: ${c.name} is now a level ${c.level} ${c.role}.`)}if(game.jobSecurity<21)news('Your job security is low. The front office may replace you after the season.');}
+ if(isPlayer()){let p=game.players.find(p=>p.id===game.careerPlayer);if(!p||p.injuryWeeks>0)return;let y=result.stats||{},gain=won?14:9;let t=game.playerTraining||'balanced';game.playerXP=(game.playerXP||0)+gain+(t==='film'?3:0);let stats=game.playerCareerStats;stats.games++;if(won)stats.wins++;let yards=p.pos==='QB'?Math.round((y.pass||0)*.78):['WR','TE'].includes(p.pos)?Math.round((y.pass||0)*.28):['RB','OL'].includes(p.pos)?Math.round((y.rush||0)*.61):0;stats.passing+=p.pos==='QB'?yards:0;stats.receiving+=['WR','TE'].includes(p.pos)?yards:0;stats.rushing+=['RB','OL'].includes(p.pos)?yards:0;let td=Math.round((yards||0)/115);stats.touchdowns+=td;game.playerGameHistory.unshift({week:game.week,year:game.year,win:won,yards,td,score:`${result.sa}-${result.sb}`});if(game.playerGameHistory.length>20)game.playerGameHistory.length=20;}
+}
+function seasonAdvisory(){let ns=need().sort((a,b)=>b.weight-a.weight);let biggest=ns.slice(0,3).map(n=>n.pos+' ('+n.label+')').join(', ');let deadline=game.week===9;news((deadline?'TRADE DEADLINE WATCH':game.week===7?'MIDSEASON REPORT':'PLAYOFF PUSH')+': Biggest needs are '+biggest+'.');if(gmRole()){let fa=unsigned().filter(p=>p.pos===ns[0]?.pos&&p.salary<=cap()).sort((a,b)=>b.ovr-a.ovr)[0];if(fa&&game.settings.autoFree)game.pendingMoves.push({id:uuid('offer'),type:'fa',playerId:fa.id,description:`Assistant GM recommends signing ${fa.name} (${fa.pos}, ${fa.ovr} OVR) for ${money(fa.salary)}. Approve?`});if(game.settings.autoTrades){let r=roster(teams().find(t=>t.id!==game.userTeam)?.id||'').filter(p=>p.pos===ns[0]?.pos).sort((a,b)=>b.ovr-a.ovr)[0];if(r)game.pendingMoves.push({id:uuid('offer'),type:'trade',playerId:r.id,description:`Assistant GM recommends exploring a trade for ${r.name} (${r.pos}). Review in Trade Center before making any offer.`})}}
+}
+function approveMove(id,yes){let m=game.pendingMoves.find(x=>x.id===id);if(!m)return;game.pendingMoves=game.pendingMoves.filter(x=>x.id!==id);if(yes&&m.type==='fa'){let p=unsigned().find(x=>x.id===m.playerId);if(p&&p.salary<=cap()){p.team=game.userTeam;news(`Approved assistant GM signing: ${p.name}.`);setDefaultLineup()}}if(yes&&m.type==='trade'){page='trades';news('Assistant GM trade suggestion opened for review. No trade was executed.')}store();render()}
+
+function endWeek(played){let week=game.week,fixtures=game.schedule[week-1]?.pairings||[];if(played)game.results.push(played);for(let [a,b]of fixtures){if(played&&((a===played.a&&b===played.b)||(a===played.b&&b===played.a)))continue;game.results.push(scoreGame(a,b,week))}
+ if(played)careerAfterGame(played);game.week++;if(game.week===7||game.week===9||game.week===14)seasonAdvisory();setDefaultLineup();if(game.week>18){game.prevDraftOrder=sortRecords();initPlayoffs()}store();render()}
+function advanceBye(){if(game.phase!=='season'||nextMatchup())return say('You have a game this week.',true);endWeek(null)}
+function playNow(opponent=null,round=null){if(game.currentGame)return;let opp=opponent||nextMatchup()?.find(id=>id!==game.userTeam);if(!opp)return say('This is a bye week.',true);setDefaultLineup();let injured=injuredStarters();if(injured.length&&!game.settings.simple&&!game.settings.autoInjury){page='roster';render();return say('INJURED STARTERS: '+injured.map(p=>p.name+' ('+p.pos+')').join(', ')+'. Replace them on Roster.',true)}
+ let missing=POS.filter(pos=>!own().some(p=>p.pos===pos&&healthy(p)));if(missing.length)return say('Need healthy players: '+missing.join(', ')+'. Visit Free Agency.',true);
+ game.currentGame={opponent:opp,round,playoff:!!round,us:0,them:0,drive:0,log:[],stats:{pass:0,rush:0,firstDowns:0,turnovers:0},statsOpp:{pass:0,rush:0},quarter:1};page='games';store();render()}
+
+function setPlan(kind,val){let p=game.players.find(x=>x.id===game.careerPlayer),onOff=p&&['QB','RB','WR','TE','OL'].includes(p.pos);if(isPlayer()&&((kind==='off'&&!onOff)||(kind==='def'&&onOff)))return say('Your player cannot call plays for the other side of the ball.',true);if(game.career==='oc'&&kind==='def'||game.career==='dc'&&kind==='off')return say('That strategy belongs to the other coordinator.',true);if(!game.gameplan)game.gameplan={off:'balanced',def:'zone'};if(kind==='off'&&['pass','balanced','run'].includes(val))game.gameplan.off=val;if(kind==='def'&&['blitz','zone','man'].includes(val))game.gameplan.def=val;store();render()}
+function startPreparedGame(opponent=null,round=null){if(game.currentGame)return say('Finish the active game.',true);playNow(opponent,round);if(!game.currentGame)return;let guard=0;game.fastSim=true;while(game.currentGame&&guard++<10)drive(game.gameplan?.off||'balanced',game.gameplan?.def||'zone');game.fastSim=false;store();render()}
+function gameReport(op){let r=matchPreview(op),p=game.players.find(x=>x.id===game.careerPlayer),onOff=p&&['QB','RB','WR','TE','OL'].includes(p.pos),showO=!isPlayer()&&game.career!=='dc'||isPlayer()&&onOff,showD=!isPlayer()&&game.career!=='oc'||isPlayer()&&!onOff;
+ return `<div class="card pregame"><div class="sectionhead"><h3>Opponent scouting report</h3>${chip('OPPONENT',team(op).nickname)}</div><div class="matchbars"><span>Front seven <b>${r.line}</b></span><span>Secondary <b>${r.secondary}</b></span><span>Run game <b>${r.run}</b></span><span>Passing game <b>${r.pass}</b></span></div><div class="notice">COACHING SUGGESTION · ${esc(r.summary)}</div><div class="planner">${showO?`<div><h4>Offensive game plan</h4>${[['pass','Air Attack','Attack the secondary'],['balanced','Balanced','Mix rushes and passes'],['run','Ground & Clock','Control the pace']].map(([id,label,desc])=>`<button class="planbutton ${game.gameplan?.off===id?'selected':''}" onclick="A.plan('off','${id}')"><b>${label}</b><small>${desc}</small></button>`).join('')}</div>`:''}${showD?`<div><h4>Defensive game plan</h4>${[['blitz','Pressure','Pursue the quarterback'],['man','Man Coverage','Challenge receivers'],['zone','Zone Coverage','Protect deeper areas']].map(([id,label,desc])=>`<button class="planbutton ${game.gameplan?.def===id?'selected':''}" onclick="A.plan('def','${id}')"><b>${label}</b><small>${desc}</small></button>`).join('')}</div>`:''}</div><p class="fine">${isPlayer()?'You only make choices for your position group. The coaching staff controls the rest.':'Game plans apply to the full automatic simulation.'}</p></div>`}
+function drive(off,def){let g=game.currentGame;if(!g)return;let diff=(rating(game.userTeam)+fit(game.userTeam).value-rating(g.opponent)-fit(g.opponent).value)*.42;
+ let qb=own().find(p=>p.id===game.lineup.QB1);let qbBonus=qb&&healthy(qb)?(qb.ovr-76)*.13:-3;
+ let specialty=archetypeBuff(game.userTeam);let offBonus=(specialty.off||0)*.9+(off==='pass'?(mine().off==='Vertical'||mine().off==='Spread'?4:-1):off==='run'?(mine().off==='Power Run'?4:0):2);
+ let defBonus=(specialty.def||0)*.9+(def==='blitz'?3:def==='zone'?1:0);
+ let d=rnd(1,100)+diff+qbBonus+offBonus,opp=rnd(1,100)-diff+fit(g.opponent).value*.3-defBonus;
+ let scored=d>87?7:d>66?3:0,against=opp>86?7:opp>66?3:0,turnover=d<12;
+ if(turnover){scored=0;g.stats.turnovers++}let yards=clamp(rnd(14,71)+Math.round(diff),0,110),passY=Math.round(yards*(off==='pass'?.83:off==='run'?.21:.55));g.stats.pass+=passY;g.stats.rush+=yards-passY;g.stats.firstDowns+=rnd(1,4);g.us+=scored;g.them+=against;
+ let q=1+Math.floor(g.drive/2);let word=turnover?'TURNOVER':scored===7?'TOUCHDOWN':scored===3?'FIELD GOAL':'PUNT';g.log.unshift(`Q${q} — ${off.toUpperCase()} / ${def.toUpperCase()}: ${word}, ${yards} yards. Opponent ${against===7?'TD':against===3?'FG':'stopped'}.`);
+ if(rand()<.075){let ps=own().filter(healthy);if(ps.length){let victim=ps[rnd(0,ps.length-1)],weeks=rnd(1,4);victim.outUntil=game.week+weeks;victim.injuryWeeks=weeks+1;victim.status='INJ';victim.injuryReason='Game injury';g.log.unshift(`INJURY: ${victim.name} (${victim.pos}) — out ${weeks} weeks.`);news(`Injury report: ${victim.name} (${victim.pos}), ${weeks} weeks.`);gameHealthEvent(victim)}}
+ g.drive++;g.quarter=clamp(1+Math.floor(g.drive/2),1,4);
+ if(g.drive===8){if(g.us===g.them){if(rand()<.5)g.us+=3;else g.them+=3;g.log.unshift('OVERTIME — winning field goal.')}let result=recordResult(game.userTeam,g.opponent,g.us,g.them,game.week,g.playoff?'playoff':game.phase==='preseason'?'preseason':'regular');game.lastGame={...result,log:[...g.log],stats:{...g.stats}};game.currentGame=null;news(`${g.playoff?g.round:'Week '+game.week}: ${mine().nickname} ${result.sa}–${result.sb} ${team(g.opponent).nickname}.`);if(g.playoff){let m=game.post?.rounds.at(-1)?.matches.find(m=>m.a===game.userTeam||m.b===game.userTeam);if(m){m.result=result;m.winner=result.winner}progressPlayoffs()}else endWeek(result);return}
+ if(!game.fastSim){store();render()}}
+function autoFinish(){let count=0;while(game.currentGame&&count++<9)drive(game.gameplan?.off||'balanced',game.gameplan?.def||'zone');store();render()}
+const DIV={AFC:[['BUF','MIA','NE','NYJ'],['BAL','CIN','CLE','PIT'],['HOU','IND','JAX','TEN'],['DEN','KC','LAC','LV']],NFC:[['DAL','NYG','PHI','WAS'],['CHI','DET','GB','MIN'],['ATL','CAR','NO','TB'],['ARI','LAR','SF','SEA','EXP']]};
+function seeds(conf){let divs=DIV[conf].map(ids=>teams().filter(t=>ids.includes(t.id)).sort(standingsSort)[0]).filter(Boolean);let rest=teams().filter(t=>t.conf===conf&&!divs.includes(t)).sort(standingsSort);return [...divs.sort(standingsSort),...rest].slice(0,7).map((t,i)=>({id:t.id,seed:i+1}))}
+function standingsSort(a,b){let pa=a.w/(a.w+a.l||1),pb=b.w/(b.w+b.l||1);return pb-pa||(b.pf-b.pa)-(a.pf-a.pa)||a.id.localeCompare(b.id)}
+function playoffMatch(a,b,round,conf){return{id:uuid('m'),a,b,round,conf,result:null,winner:null}}
+function initPlayoffs(){game.phase='playoffs';let a=seeds('AFC'),n=seeds('NFC');game.post={seeds:{AFC:a,NFC:n},rounds:[],roundIndex:0};let matches=[];for(let conf of ['AFC','NFC']){let arr=game.post.seeds[conf];for(let [i,j]of[[1,6],[2,5],[3,4]])matches.push(playoffMatch(arr[i].id,arr[j].id,'Wild Card',conf))}game.post.rounds.push({name:'Wild Card',matches});news('Regular season complete. Wild Card playoffs begin.');progressPlayoffs()}
+function processRound(){let po=game.post,round=po.rounds.at(-1),index=po.rounds.length;if(index===1){let upcoming=[];for(let conf of ['AFC','NFC']){let arr=po.seeds[conf],top=arr[0].id,wins=round.matches.filter(m=>m.conf===conf).map(m=>m.winner);let rank=id=>arr.find(x=>x.id===id).seed;wins.sort((a,b)=>rank(a)-rank(b));upcoming.push(playoffMatch(top,wins[2],'Divisional',conf),playoffMatch(wins[0],wins[1],'Divisional',conf))}po.rounds.push({name:'Divisional',matches:upcoming});return}
+ if(index===2){let upcoming=['AFC','NFC'].map(c=>{let m=round.matches.filter(m=>m.conf===c);return playoffMatch(m[0].winner,m[1].winner,'Conference Championship',c)});po.rounds.push({name:'Conference Championship',matches:upcoming});return}
+ if(index===3){po.rounds.push({name:'Super Bowl',matches:[playoffMatch(round.matches[0].winner,round.matches[1].winner,'Super Bowl','NFL')]});return}
+ if(index===4){let champ=round.matches[0].winner;game.champions.push({year:game.year,id:champ});game.phase='offseason';news(`SUPER BOWL CHAMPION: ${team(champ).name}! Offseason is open.`);return}}
+function progressPlayoffs(){let safety=0;while(game.phase==='playoffs'&&safety++<8){let round=game.post.rounds.at(-1),waiting=false;for(let match of round.matches){if(match.winner)continue;if(match.a===game.userTeam||match.b===game.userTeam){waiting=true;continue}let r=scoreGame(match.a,match.b,game.week,'playoff');match.result=r;match.winner=r.winner}
+ if(waiting)break;if(round.matches.some(m=>!m.winner))break;processRound()}
+ store();render()}
+function nextPlayoff(){let round=game.post?.rounds.at(-1),match=round?.matches.find(m=>!m.winner&&(m.a===game.userTeam||m.b===game.userTeam));return match}
+function exportSave(){let blob=new Blob([JSON.stringify(game,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='NFL_GM_Franchise_Save.json';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1500)}
+function importSave(file){if(!file)return;let read=new FileReader();read.onload=()=>{try{let g=JSON.parse(read.result);if(g.version!==7||!Array.isArray(g.players)||!Array.isArray(g.teams)||!g.settings)throw Error('Only NFL GM v7 save files can be imported.');game=g;setDefaultLineup();store();page='dashboard';render();say('Save imported!')}catch(e){say('Save could not be imported: '+e.message,true)}};read.readAsText(file)}
+function reset(){if(!confirm('Delete your franchise and start over?'))return;localStorage.removeItem(STORAGE);game=initial();page='dashboard';render()}
+function restore(){
+ try{let s=JSON.parse(localStorage.getItem(STORAGE)||'null');if(s?.version===7&&Array.isArray(s.teams)&&s.players?.length){game=s;setDefaultLineup();return}}
+ catch(e){}
+ try{let older=JSON.parse(localStorage.getItem(OLD_STORAGE)||'null');if(older?.version===4&&older.teams?.length&&older.players?.length){
+  // Preserve the user's franchise when upgrading, adding new optional systems with safe defaults.
+  let basis=initial();let existingTeams=new Set(older.teams.map(t=>t.id));
+  older.coaches=older.coaches.map(c=>({...c,role:c.role||'HC'}));
+  older.coaches.push(...basis.coaches.filter(c=>c.role!=='HC'&&existingTeams.has(c.club)));
+  older.settings={...basis.settings,...older.settings};older.career='gm';older.careerPlayer=null;older.careerCoach=null;older.careerName='';older.gameplan={off:'balanced',def:'zone'};older.pendingMoves=[];older.coachXP=0;older.jobSecurity=75;
+  older.version=7;game=older;setDefaultLineup();store();return;
+ }}catch(e){}
+ game=initial();
+}
+const NFL_IMAGE=id=>`https://a.espncdn.com/i/headshots/nfl/players/full/${encodeURIComponent(id)}.png`;
+const logo=id=>id==='EXP'?'':`https://a.espncdn.com/i/teamlogos/nfl/500/${id.toLowerCase()}.png`;
+const prospectPhotos={"Jeremiah Smith":"https://images.sidearmdev.com/resize?type=jpeg&url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fohiostatebuckeyes.com%2Fimages%2F2025%2F7%2F25%2FSmith_Jeremiah-0116.jpg&width=400","Arch Manning":"https://a.espncdn.com/i/headshots/college-football/players/full/4870906.png","Colin Simmons":"https://images.sidearmdev.com/convert?type=webp&url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Ftexassports_com%2Fimages%2F2024%2F2%2F15%2FSimmons_Colin-2024.jpg","Leonard Moore":"https://a.espncdn.com/i/headshots/college-football/players/full/5079629.png","Dylan Stewart":"https://a.espncdn.com/i/headshots/college-football/players/full/4899417.png"};
+function face(p,large=false){let initials=(p.name||'??').split(' ').slice(0,2).map(x=>x[0]).join('').toUpperCase(),url=(p.origin==='NFL'&&p.espn?NFL_IMAGE(p.espn):p.school?prospectPhotos[p.name]:null);return `<span class="face ${large?'facebig':''}">${url?`<img loading="lazy" src="${esc(url)}" alt="" onerror="this.remove()">`:''}<span class="facemono">${esc(initials)}</span></span>`}
+function teamIcon(id,size=38){let t=team(id);if(!t)return'';return `<span class="emblem" style="background:${esc(t.color)}23;border-color:${esc(t.color)};width:${size}px;height:${size}px">${id!=='EXP'?`<img src="${logo(id)}" alt="" onerror="this.remove()">`:''}<b>${esc(id)}</b></span>`}
+function playerCell(p){return `<span class="playerid">${face(p)}<span class="minzero"><strong>${esc(p.name)}</strong><small>${p.real?`<span class="real">REAL ID</span>`:'<span class="sim">SIMULATED</span>'}${p.school?' · '+esc(p.school):''}</small></span></span>`}
+function chip(label,value,cls=''){return `<span class="chip ${cls}">${esc(label)} ${value!==undefined?`<b>${esc(value)}</b>`:''}</span>`}
+function button(label,action,kind='subtle',disabled=false){return `<button class="button ${kind}" ${disabled?'disabled':''} onclick="${esc(action)}">${label}</button>`}
+function selectOptions(items,chosen){return items.map(([value,label])=>`<option value="${esc(value)}" ${String(value)===String(chosen)?'selected':''}>${esc(label)}</option>`).join('')}
+function selectPos(current,action){return `<select class="field" onchange="${esc(action)}"><option value="ALL" ${current==='ALL'?'selected':''}>All positions</option>${POS.map(p=>`<option ${current===p?'selected':''}>${p}</option>`).join('')}</select>`}
+function title(name,subtitle,right=''){return `<div class="heading"><div><h1>${name}</h1><p class="sub">${subtitle}</p></div>${right?`<div class="headright">${right}</div>`:''}</div>`}
+function kpi(label,val,small=''){return `<div class="card stat"><div class="eyebrow">${esc(label)}</div><div class="statvalue">${val}</div>${small?`<p class="sub">${small}</p>`:''}</div>`}
+function needPanel(compact=false){let ns=need();return `<div class="card"><div class="sectionhead"><h3>Team needs</h3><small class="sub">Live · based on healthy roster</small></div><div class="needlist ${compact?'compactneeds':''}">${ns.map(n=>`<div class="needitem"><div class="needleft"><strong>${n.pos}</strong> <span class="sub">${n.count} active · ${n.avg} avg</span></div><span class="needtag ${n.label.toLowerCase()}">${n.label}</span></div>`).join('')}</div><div class="fine">Changes instantly after a draft pick, signing, trade, or injury.</div></div>`}
+function rosterBrief(){let list=own().filter(p=>p.real).sort((a,b)=>b.ovr-a.ovr).slice(0,5);return `<div class="card"><div class="sectionhead"><h3>Roster snapshot</h3>${button('Full roster','A.page("roster")','tiny')}</div>${list.length?list.map(p=>`<div class="brief">${playerCell(p)}<b class="rating">${p.ovr}</b></div>`).join(''):'<p class="sub">Your expansion roster is empty. Select players in the expansion draft.</p>'}<p class="fine">${own().length} contracted players · ${money(cap())} available cap</p></div>`}
+function needsAndRoster(){return `<aside class="rightcolumn">${needPanel(true)}${rosterBrief()}</aside>`}
+function setupPage(){let clubs=TEAM_ROWS.map(([id,city,nick])=>`<option value="${id}" ${id===formTeam?'selected':''}>${city} ${nick}</option>`).join(''),isManager=['owner','gm'].includes(formCareer),isCoach=['hc','oc','dc'].includes(formCareer),types=[['owner','🏟','Owner','Own a franchise and lead through the GM.'],['gm','📋','General Manager','Control an existing NFL front office.'],['hc','🎧','Head Coach','Interview for a coaching job; no direct team selection.'],['oc','🎯','Offensive Coordinator','Earn an offensive coordinator offer.'],['dc','🛡','Defensive Coordinator','Earn a defensive coordinator offer.'],['player','🏈','Player Career','Start in college or choose an existing NFL player.']];
+ let realPlayers=NFL_STARS.map(x=>x.split('|')).filter(x=>x[2]!=='FA').map(([name,pos,cl])=>({name,pos,cl})).sort((a,b)=>a.name.localeCompare(b.name));
+ return `<div class="setupwrap"><div class="hero"><span class="eyebrow neon">NFL GM</span><h1>Your career.<br><span class="green">Your league.</span></h1><p>Own a franchise, rebuild a roster, earn a coaching job, or play your way from college into the NFL.</p><div class="hero-mini"><span>32 NFL CLUBS</span><span>6 CAREER PATHS</span><span>7 DRAFT ROUNDS</span></div></div><div class="card setupcard"><h2>New career</h2><p class="sub">This role is selected when you start a new save.</p><div class="careergrid">${types.map(([id,ico,title,detail])=>`<button class="careerchoice ${formCareer===id?'selected':''}" onclick="A.career('${id}')"><span class="careemoji">${ico}</span><span><b>${title}</b><small>${detail}</small></span></button>`).join('')}</div><div class="dividerline"></div>${isManager?`<h3>Franchise path</h3><div class="modechoices"><button class="mode ${formMode==='existing'?'selected':''}" onclick="A.mode('existing')"><b>Existing NFL team</b><small>${formCareer==='owner'?'Own the club and act as GM':'Become the club GM'}</small></button><button class="mode ${formMode==='expansion'?'selected':''}" onclick="A.mode('expansion')"><b>Create expansion team</b><small>You become its owner and GM</small></button></div>${formMode==='expansion'?`<div class="formgrid"><label>City<input id="customCity" class="field" value="Portland" maxlength="28"></label><label>Team name<input id="customName" class="field" value="Pioneers" maxlength="28"></label><label>Stadium<input id="customStadium" class="field" value="Summit Field" maxlength="36"></label><label>Color<input id="customColor" class="field colorfield" type="color" value="#50dcb7"></label></div>`:`<label class="lab">NFL franchise</label><select id="teamChoice" class="field wide" onchange="A.team(this.value)">${clubs}</select>`}<div class="notice">Your career begins with offseason preparation and the scouting combine, not an immediate automatic draft.</div>`:''}
+ ${isCoach?`<div class="section"><h3>Coaching career</h3><p class="sub">Teams will offer interviews. You can't pick a team from a dropdown.</p><div class="formgrid"><label>Coach first name<input id="coachFirstName" class="field wide" value="${esc(formCoachFirst)}" oninput="A.coachName('first',this.value)" placeholder="First name" maxlength="24"></label><label>Coach last name<input id="coachLastName" class="field wide" value="${esc(formCoachLast)}" oninput="A.coachName('last',this.value)" placeholder="Last name" maxlength="24"></label></div><label class="lab">Coaching specialty</label><div class="archetypes">${Object.entries(ARCHETYPES).map(([id,a])=>`<button class="typechoice ${formCoachArchetype===id?'selected':''}" onclick="A.archetype('${id}')"><b>${esc(a.name)}</b><small>${esc(a.desc)}</small></button>`).join('')}</div></div>`:''}
+ ${formCareer==='player'?`<div class="section"><h3>Player career</h3><div class="modechoices"><button class="mode ${playerStart==='create'?'selected':''}" onclick="A.playerType('create')"><b>Created player</b><small>College → Combine → Draft → NFL</small></button><button class="mode ${playerStart==='real'?'selected':''}" onclick="A.playerType('real')"><b>Existing NFL player</b><small>Inherit their actual team</small></button></div>${playerStart==='create'?`<label class="lab">Your name</label><input id="playerName" class="field wide" value="Jordan Carter" maxlength="36"><label class="lab">College</label><input id="collegeName" class="field wide" value="Georgia" maxlength="40"><label class="lab">Position</label><select id="playerPosition" class="field wide">${selectOptions(POS.map(p=>[p,p]),'QB')}</select><div class="notice">You do not pick your NFL team. College games and combine performance determine your draft stock.</div>`:`<label class="lab">NFL player</label><select id="realCareerPlayer" class="field wide">${realPlayers.map(x=>{let p=initial().players.find(p=>p.name===x.name);return p?`<option value="${esc(p.id)}">${esc(p.name)} · ${p.pos} · ${teamNameFromId(p.team)}</option>`:''}).join('')}</select>`}</div>`:''}
+ <div class="section">${button('START MY CAREER →','A.start()','primary wide')}</div><p class="fine">Real roster identities need verification. Live ESPN roster sync is available under Settings when your browser permits it. Player ratings, salaries and career outcomes are gameplay estimates rather than official rankings.</p></div></div>`}
+function teamNameFromId(id){let t=TEAM_ROWS.find(x=>x[0]===id);return t?t[1]+' '+t[2]:'Free Agent'}
+function tabs(){let names=[['dashboard','⌂',isPlayer()?'Player Hub':coachRole()?'Coaching Hub':'Front Office']];if(game.phase==='offseason_intro')names.push(['frontoffice','◷','Offseason']);if(game.phase==='expansion')names.push(['expansion','✣','Expansion Draft']);if(!isPlayer())names.push(['roster','▦','Roster']);names.push(['rosterhub','◈','NFL Rosters']);if(gmRole())names.push(['free','＋','Free Agency'],['trades','↔','Trade Center'],['draft','★','NFL Draft'],['uniforms','▣','Uniform Planning']);if(!isPlayer())names.push(['coaches','♟','Staff & Schemes']);names.push(['games','▷','Game Center'],['league','≡','League']);if(isPlayer()||coachRole())names.push(['career','🏆','My Career']);names.push(['settings','⚙','Settings']);return `<nav class="nav">${names.map(([id,ico,label])=>`<button class="navbutton ${id===page?'active':''}" onclick="A.page('${id}')"><span class="navicon">${ico}</span><span>${label}</span></button>`).join('')}</nav>`}
+function dashboard(){let m=mine(),p=game.phase,next=nextMatchup(),co=hc();let label=CAREER_ROLES[game.career]||'GENERAL MANAGER';let actions=isPlayer()?[['career','Player development','Train and upgrade your player'],['games','Game Center','Choose strategies and simulate each week'],['roster','Team roster','Browse teammates and depth chart'],['league','League','Standings and postseason']]:coachRole()?[['career','My coaching career','Track reputation and specialty'],['coaches','Coaching staff & schemes','Improve scheme fit'],['roster','Depth chart','Manage healthy starters'],['games','Prepare for kickoff','Scout opponents and choose a plan']]:[['roster','Manage roster','Starters and backups'],['free','Free agency','Improve team needs'],['trades','Trades and picks','Trade players and picks'],['draft','NFL Draft','Scout prospects'],['coaches','Staff & scouts','Hire coaches and scout talent'],['games','Game Center','Scout opponents before kickoff']];let top=title(isPlayer()?'Player Hub':coachRole()?'Coaching Hub':'Front Office',`Season ${game.year} · ${m.name} · ${label}`,chip('PHASE',p.toUpperCase(),'status'));return `${top}<div class="franchisehero" style="--team:${esc(m.color)}"><div class="heroinfo">${teamIcon(m.id,65)}<div><span class="eyebrow">${esc(label)}</span><h2>${esc(m.name)}</h2><div class="sub">${esc(m.stadium||'NFL')} · ${esc(m.off)} offense · ${esc(m.def)} defense</div></div></div><div class="record">${m.w}–${m.l}<small>RECORD</small></div></div><div class="statsgrid">${kpi('TEAM OVR',rating(game.userTeam))}${kpi('CAP SPACE',money(cap()))}${kpi('COACH FIT',fit(game.userTeam).effective.toFixed(1)+'/5')}${kpi('YOUR ROLE',game.career.toUpperCase())}</div><div class="two section"><div class="card"><h3>Career actions</h3><div class="actiongrid">${actions.map(([id,label,desc])=>`<button class="action" onclick="A.page('${id}')"><b>${label} →</b><small>${desc}</small></button>`).join('')}</div></div><div class="card"><h3>Latest NFL GM headlines</h3><div class="news">${game.news.slice(0,9).map(n=>`<div class="newsitem"><small class="sub">${n.year}${n.week?' · W'+n.week:''}</small><p>${esc(n.text)}</p></div>`).join('')||'<p class="sub">Your career starts here.</p>'}</div></div></div><div class="two section">${needPanel(true)}<div class="card"><h3>Up next</h3>${p==='draft'?`${button('GO TO NFL DRAFT','A.page("draft")','primary')}`:p==='expansion'?`<p class="sub">${game.expCount}/16 expansion players selected.</p>${button('CONTINUE EXPANSION','A.page("expansion")','primary')}`:p==='season'?`<p class="bigline">WEEK ${game.week}</p><p class="sub">${next?esc(team(next.find(x=>x!==game.userTeam)).name):'Bye week'} · Pregame scout report ready.</p>${button('PREPARE GAME PLAN','A.page("games")','primary')}`:p==='offseason'?`${button('NEXT OFFSEASON','A.nextSeason()','primary')}`:`${button('VIEW POSTSEASON','A.page("games")','primary')}`}<p class="fine">${pendingLabel()||'The assistant GM monitors roster needs and upcoming decisions.'}</p></div></div>`}
+function expansionPage(){let available=game.players.filter(p=>p.team&&p.team!=='FA'&&p.team!=='EXP'&&healthy(p)&&p.ovr<=78&&!game.expTeams.includes(p.team));if(filter.expansion!=='ALL')available=available.filter(p=>p.pos===filter.expansion);available=available.sort((a,b)=>b.ovr-a.ovr).slice(0,120);return `${title('Expansion Draft',`Build from backups: ${game.expCount}/16 players selected. Live team needs update after each choice.`,chip('PICK',game.expCount+1+' OF 16','status'))}<div class="notice"><b>What happens next?</b> Choose 16 players from 16 different NFL teams. After selection #16, you automatically advance to the 2027 NFL Draft with the #1 pick. Pick players to fix your biggest needs, then fill the rest through free agency.</div><div class="statsgrid">${kpi('CHOSEN',game.expCount+'/16')}${kpi('YOUR ROSTER',own().length)}${kpi('TEAM OVR',rating(game.userTeam))}${kpi('CAP SPACE',money(cap()))}</div><div class="withsidebar section"><div class="card"><div class="sectionhead"><h3>Available NFL backups</h3>${chip('TEAMS REMAINING',32-game.expTeams.length)}</div><div class="toolbar">${selectPos(filter.expansion,'A.pos("expansion",this.value)')}</div><div class="tablewrap">${table(['PLAYER','POS','CLUB','OVR','AGE','PICK'],available.map(p=>`<tr><td>${playerCell(p)}</td><td>${p.pos}</td><td>${esc(team(p.team)?.nickname)}</td><td><b class="rating">${p.ovr}</b></td><td>${p.age}</td><td>${button('ADD',`A.exp('${p.id}')`,'tiny primary')}</td></tr>`))}</div></div><aside class="rightcolumn">${needPanel(true)}${rosterBrief()}<div class="card"><h3>Draft progress</h3><p class="sub">${16-game.expCount} picks remaining. You can draft only one player from each NFL team.</p>${button('FREE AGENCY (AFTER EXPANSION)','A.page("free")','tiny',true)}</div></aside></div>`}
+function table(head,rows){return `<table class="table"><thead><tr>${head.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.join('')||`<tr><td colspan="${head.length}" class="none">No results for this filter.</td></tr>`}</tbody></table>`}
+function injuryBanner(){let injuries=own().filter(p=>!healthy(p));return injuries.length?`<div class="injurybar"><b>⚠ INJURY REPORT</b><div>${injuries.map(p=>`<span>${esc(p.name)} (${p.pos}) — ${p.status==='IR'?'IR (2026 roster snapshot)':p.status==='PS'?'practice squad':'injured through week '+(p.outUntil||'?')}</span>`).join('')}</div>${injuredStarters().length?`<p><strong>${injuredStarters().length} injured starter(s)</strong> need ${game.settings.autoInjury||game.settings.simple?'automatic replacement (enabled)':'manual substitution before playing'}.</p>`:''}</div>`:`<div class="notice">✓ All players on your roster are currently healthy.</div>`}
+
+function rosterHubPage(){let clubs=teams().filter(t=>t.id!=='EXP'),t=team(rosterHubTeam)||clubs[0],list=roster(t.id).filter(p=>rosterHubStatus==='ALL'||(p.status||'ACT')===rosterHubStatus).sort((a,b)=>a.pos.localeCompare(b.pos)||a.name.localeCompare(b.name)),source=game.rosterSync||{},real=list.filter(x=>x.real).length,fictional=list.length-real;
+ let links=[['ESPN full roster',`https://www.espn.com/nfl/team/roster/_/name/${t.id.toLowerCase()}`],['ESPN depth chart',`https://www.espn.com/nfl/team/depth/_/name/${t.id.toLowerCase()}`],['Ourlads November 2026 depth chart',`https://www.ourlads.com/nfldepthcharts/depthchart/${t.id}`],['MyFootballToolbox 2026 roster',`https://myfootballtoolbox.com/nfl/teams/${t.nickname.toLowerCase()}/roster/?year=2026`],['NFLMeta all roster statuses','https://nflmeta.org/rosters'],['2026 free-agent tracker','https://www.footballdb.com/transactions/free-agents.html']];
+ return `${title('2026 NFL Roster Hub','Browse all 32 teams, their jerseys, depth and official status sources.')}<div class="notice"><b>2026 NFL roster data:</b> ${source.count||0}/32 teams loaded from verified source records · ${source.people||0} real player profiles · ${source.depthCount||0}/32 ESPN depth rankings. ${rosterBusy?'<b>'+rosterProgress+'</b>':button('REFRESH NFL ROSTERS','A.sync()','tiny')}<p class="fine">NFL GM tries its hosted 2026 roster snapshot first, then ESPN if needed. These data load automatically when a new career begins; players never have to download the game. If the roster count is under 32, check the status below. ESPN depth rankings are requested where permitted; if blocked, depth order uses game ratings and is not an official depth chart. Practice squad and injured reserve are distinct from active.</p><label class="button subtle">IMPORT 2026 ROSTER CSV<input type="file" accept=".csv,text/csv" hidden onchange="A.importRoster(this.files[0])"></label> <a class="source-link" href="https://myfootballtoolbox.com/nfl/rosters/downloads/" target="_blank" rel="noopener noreferrer">Get 2026 roster CSV</a><p class="fine">Player names, teams, numbers, and status come from source data. Overall ratings, potential, contracts and future roster moves are simulations. Unsynced teams may have fictional fillers.</p></div><div class="card"><div class="toolbar"><label>Franchise <select class="field" onchange="A.rosterTeam(this.value)">${clubs.map(x=>`<option value="${x.id}" ${x.id===t.id?'selected':''}>${esc(x.name)}</option>`).join('')}</select></label><label>Status <select class="field" onchange="A.rosterStatus(this.value)">${selectOptions([['ALL','All players'],['ACT','Active'],['PS','Practice squad'],['IR','Injured reserve'],['OTHER','Other status']],rosterHubStatus)}</select></label></div><div class="inlinechips">${chip('REAL PLAYER IDENTITIES',real)}${chip('FICTIONAL FILLERS',fictional)}${chip('TEAM',t.id)}</div><div class="toolbar section">${links.map(([label,url])=>`<a class="source-link" href="${url}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`).join(' · ')}</div><div class="tablewrap">${table(['NAME / JERSEY','POS','AGE','STATUS','DATA SOURCE'],list.map(p=>`<tr><td>${playerCell(p)}${p.jersey?`<small class="sub">#${esc(p.jersey)}</small>`:''}</td><td>${p.pos}</td><td>${p.age}</td><td>${esc(p.status||'ACT')}</td><td class="sub">${esc(p.source||'Estimated offline')}</td></tr>`))}</div></div>`}
+function rosterPage(){let items=own().filter(p=>filter.roster==='ALL'||p.pos===filter.roster).sort((a,b)=>POS.indexOf(a.pos)-POS.indexOf(b.pos)||b.ovr-a.ovr);let slots=POS.map(pos=>Array.from({length:STARTER_REQ[pos]||0},(_,i)=>{let key=pos+(i+1),id=game.lineup[key],current=own().find(p=>p.id===id),options=own().filter(p=>p.pos===pos&&healthy(p)).sort((a,b)=>b.ovr-a.ovr);return `<div class="starter"><span class="slot">${pos}${i+1}</span><div class="minzero"><b><span class="jersey">${current?.jersey?'#'+esc(current.jersey):''}</span>${esc(current?.name||'VACANT')}</b><small class="sub">${current?current.ovr+' OVR · '+(current.status||'ACTIVE'):'No starter assigned'}${current&&!healthy(current)?' · INJURED':''}</small></div><select class="field inlinefield" aria-label="Change ${pos} starter" onchange="A.starter('${pos}',${i+1},this.value)"><option value="">Choose another player…</option>${options.map(p=>`<option value="${p.id}" ${id===p.id?'selected':''}>${p.jersey?'#'+p.jersey+' ':''}${esc(p.name)} · ${p.ovr} OVR</option>`).join('')}</select></div>`})).flat().join('');let status=game.rosterSync||{};return `${title('Roster & Depth Chart',`${own().length} players · Names and jersey numbers are separated from depth controls.`,chip('CAP',money(cap())))}<div class="notice"><b>Roster source:</b> ${esc(status.source||'Offline 2026 partial snapshot')} · ${status.count||0}/32 teams roster-synced. ${rosterBusy?esc(rosterProgress):button('REFRESH NFL ROSTERS','A.sync()','tiny')}<p class="fine">${status.count===32?'All 32 team roster lists have source records. Starter order uses ESPN depth ranks when available; otherwise it is sorted by game-estimated ratings.':'Some team rosters are still offline estimates. Open NFL Rosters to import the 2026 CSV if the live service is blocked.'}</p></div>${injuryBanner()}<div class="two section"><section class="card"><div class="sectionhead"><h3>Starting lineup</h3><small class="sub">Autosaved</small></div><div class="startergrid">${slots}</div></section>${needPanel(true)}</div><div class="card section"><div class="sectionhead"><h3>Entire roster</h3>${selectPos(filter.roster,'A.pos("roster",this.value)')}</div><div class="tablewrap">${table(['PLAYER / JERSEY','POS','AGE','OVR','STATUS','SALARY',''],items.map(p=>`<tr><td>${playerCell(p)}<small class="sub">${p.jersey?'#'+esc(p.jersey)+' · ':''}${esc(p.source||'Offline estimate')}</small></td><td>${p.pos}</td><td>${p.age}</td><td><b class="rating">${p.ovr}</b></td><td>${esc(p.status||'ACT')}</td><td>${money(p.salary)}</td><td>${button('Release',`A.cut('${p.id}')`,'tiny')}</td></tr>`))}</div></div>`}
+function freePage(){let ns=new Set(need().filter(n=>n.weight>=3).map(n=>n.pos));let free=unsigned().filter(p=>(filter.free==='ALL'||p.pos===filter.free)&&(!filter.freeQuery||p.name.toLowerCase().includes(filter.freeQuery.toLowerCase()))).sort((a,b)=>(ns.has(b.pos)?5:0)-(ns.has(a.pos)?5:0)||b.ovr-a.ovr);return `${title('Free Agency','2027 offseason simulation — roster imports supply actual NFL team membership, not official future contracts.',chip('CAP SPACE',money(cap())))}<div class="notice"><b>Offseason universe:</b> The real-name free-agent group is a hypothetical 2027 market, not a verified list of players currently unsigned. No fake ages attached to a real player name.</div><div class="withsidebar section"><div><div class="card"><div class="sectionhead"><h3>Available free agents</h3><small class="sub">${free.length} results</small></div><div class="toolbar">${selectPos(filter.free,'A.pos("free",this.value)')}<input class="field search" value="${esc(filter.freeQuery)}" placeholder="Search player name" onchange="A.query('free',this.value)"><button class="button subtle" onclick="A.query('free','')">Clear</button></div><div class="tablewrap">${table(['PLAYER','POS','AGE','OVR','SALARY','FIT',''],free.slice(0,160).map(p=>`<tr><td>${playerCell(p)}</td><td><b>${p.pos}</b></td><td>${p.age}</td><td><b class="rating">${p.ovr}</b></td><td>${money(p.salary)}</td><td>${ns.has(p.pos)?chip('NEED',undefined,'danger'):chip('DEPTH',undefined,'ok')}</td><td>${button('SIGN',`A.sign('${p.id}')`,'tiny primary',p.salary>cap())}</td></tr>`))}</div></div></div>${needsAndRoster()}</div>`}
+function tradePickSelect(picks,id,empty='No draft pick'){return `<select id="${id}" class="field wide"><option value="">${empty}</option>${picks.map(p=>`<option value="${p.id}">${p.year} · Round ${p.round} · ${p.source} ${p.number?'(#'+p.number+')':''}</option>`).join('')}</select>`}
+function tradesPage(){let others=teams().filter(t=>t.id!==game.userTeam),other=team(tradeTo);if(!other||other.id===game.userTeam){tradeTo=others[0].id;other=team(tradeTo)}let people=id=>roster(id).sort((a,b)=>b.ovr-a.ovr);let pickOption=(id,picks)=>`<select id="${id}" class="field wide"><option value="">No pick</option>${picks.map(p=>`<option value="${p.id}" ${(id==='offPick'&&p.id===draftTradePrefill)?'selected':''}>${p.year} R${p.round} · #${p.slot||'?'} (${p.source} original)</option>`).join('')}</select>`;return `${title('Trade Center','Negotiate realistic player and draft-pick exchanges.',chip('DIFFICULTY',game.settings.difficulty))}${draftTradePrefill&&game.phase==='draft'?`<div class="notice">Your current pick is preselected in the offer below. Trade it while on the clock, or return to the draft without trading. ${button('BACK TO DRAFT','A.page("draft")','tiny')}</div>`:''}<div class="card tradehead"><div class="sectionhead"><h3>Trade partner</h3><select class="field" onchange="A.tradeTeam(this.value)">${others.map(t=>`<option value="${t.id}" ${t.id===tradeTo?'selected':''}>${esc(t.name)}</option>`).join('')}</select></div><div class="tradeversus">${teamIcon(game.userTeam,52)}<strong>${esc(mine().nickname)}</strong><span class="versus">↔</span><strong>${esc(other.nickname)}</strong>${teamIcon(other.id,52)}</div></div><div class="tradesides"><div class="card"><h3>YOU OFFER</h3><label class="lab">Player (optional)</label><select class="field wide" id="offPlayer"><option value="">None</option>${people(game.userTeam).map(p=>`<option value="${p.id}">${esc(p.name)} · ${p.pos} · ${p.ovr} OVR</option>`).join('')}</select><label class="lab">Draft pick (optional)</label>${pickOption('offPick',teamPickList(game.userTeam))}</div><div class="card"><h3>YOU RECEIVE</h3><label class="lab">Player (optional)</label><select id="askPlayer" class="field wide"><option value="">None</option>${people(other.id).map(p=>`<option value="${p.id}" ${p.id===tradeRequestedPlayer?'selected':''}>${esc(p.name)} · ${p.pos} · ${p.ovr} OVR</option>`).join('')}</select><label class="lab">Draft pick (optional)</label>${pickOption('askPick',teamPickList(other.id))}</div></div><div class="card section"><p class="sub">CPU teams evaluate age, rating, potential, salary and pick value. Trading your on-the-clock pick causes the CPU to pick in your place. Trades must be submitted and accepted.</p>${button('SUBMIT TRADE OFFER →','A.trade()','primary')}</div>`}
+function prospectModal(id){let p=game.prospects.find(x=>x.id===id);if(!p)return '';let est=scoutedOVR(p),conf=scoutConfidence(p),range=conf==='HIGH'?2:conf==='MEDIUM'?4:7;let n=need().find(x=>x.pos===p.pos);return `<div class="modalback" role="dialog" aria-modal="true"><div class="modalpanel"><div class="sectionhead"><span class="smallcaps">2027+ SCOUT REPORT</span>${button('CLOSE','A.closeProspect()','tiny')}</div><div class="careerinfo">${face(p,true)}<div><h2>${esc(p.name)}</h2><p class="sub">${p.pos} · ${esc(p.school)} · ${p.real?'REAL COLLEGE PLAYER':'FICTIONAL PROSPECT'}</p><div class="inlinechips">${chip('BOARD',`#${p.rank}`)}${chip('TEAM NEED',n?.label||'—',(n?.label||'depth').toLowerCase())}</div></div></div><hr class="sep"><h3>Scouting evaluation</h3><div class="statsgrid" style="grid-template-columns:repeat(2,minmax(0,1fr))">${kpi('EST. RATING',`${est-range}–${est+range}`)}${kpi('INTEL QUALITY',conf)}</div><p class="sub">Potential is uncertain. Strong scouting narrows the estimated range, but does not increase or decrease a prospect’s true rating. There can be late-round steals and early busts.</p><p class="sub">Projected selection: Round ${Math.min(7,Math.max(1,Math.ceil(p.rank/32)))} · Athletic traits: ${p.rank%2?'Explosive':'Technically sound'} · Development outlook: ${p.rank%3?'Growth potential':'High variance'}</p>${game.phase==='draft'&&nextPick()?.owner===game.userTeam?button('DRAFT THIS PLAYER',`A.draft('${p.id}')`,'primary wide'):''}</div></div>`}
+function draftPage(){let cur=nextPick(),ready=game.phase==='draft',available=game.prospects.filter(p=>!p.drafted),needs=Object.fromEntries(need().map(n=>[n.pos,n]));let rows=available.filter(p=>(filter.draft==='ALL'||p.pos===filter.draft)&&(!filter.draftQuery||(`${p.name} ${p.school}`).toLowerCase().includes(filter.draftQuery.toLowerCase()))).sort((a,b)=>a.rank-b.rank).slice(0,120);let real=game.prospects.filter(p=>p.real).length;let modal=selectedProspect?prospectModal(selectedProspect):'';return `${title(`${game.year} NFL Draft`,`${real} named real prospect identities from projected college boards; remaining depth is fictional.`,chip('DRAFT',ready?'LIVE':'ARCHIVED','status'))}<div class="draftbanner"><div><span class="eyebrow">ON THE CLOCK</span><h2>${ready?`Round ${cur?.round} · #${cur?.number} overall`:'Draft complete'}</h2><p>${cur?`${teamIcon(cur.owner,26)} ${esc(team(cur.owner)?.name)}`:'See drafted rookies on your roster'}</p></div><div class="flowcol">${chip('DRAFT PROGRESS',(game.phase==='draft'?game.draftIndex+1:game.draftIndex)+' / '+game.picks.length)}${ready&&cur?.owner===game.userTeam?button('TRADE THIS PICK ↔','A.pickTrade()','tiny'):''}${ready?chip('YOUR NEXT PICK',game.picks.find((p,i)=>i>=game.draftIndex&&p.owner===game.userTeam)?.number?'#'+game.picks.find((p,i)=>i>=game.draftIndex&&p.owner===game.userTeam).number:'NONE'):' '}</div></div><div class="withsidebar section"><div class="flowcol"><div class="card"><div class="sectionhead"><h3>Prospect big board</h3><span class="sub">Click a player’s name to view profile and scouting report</span></div><div class="toolbar">${selectPos(filter.draft,'A.pos("draft",this.value)')}<input class="field search" value="${esc(filter.draftQuery)}" placeholder="Search name or college" onchange="A.query('draft',this.value)">${button('CLEAR','A.query("draft","")','tiny')}</div><div class="tablewrap">${table(['RANK / PROSPECT','POS','EST. OVR','NEED',''],rows.map(p=>`<tr><td><div class="prospect"><span class="ranknum">#${p.rank}</span>${face(p)}<div><button class="prospectlink" onclick="A.inspect('${p.id}')">${esc(p.name)}</button><small class="sub" style="display:block">${esc(p.school)} · ${p.real?'REAL IDENTITY':'FICTIONAL'}</small></div></div></td><td>${p.pos}</td><td><b class="rating">${scoutedOVR(p)}</b> <small class="sub">±${scoutConfidence(p)==='HIGH'?2:scoutConfidence(p)==='MEDIUM'?4:7}</small></td><td>${chip(needs[p.pos]?.label||'DEPTH',undefined,(needs[p.pos]?.label||'depth').toLowerCase())}</td><td>${ready&&cur?.owner===game.userTeam?button('DRAFT',`A.draft('${p.id}')`,'tiny primary'):''}</td></tr>`))}</div></div><div class="card"><h3>Recent draft picks</h3>${game.draftHistory.slice(-26).reverse().map(p=>`<div class="resultrow"><span class="ranknum">#${p.number}</span>${teamIcon(p.team,30)}<div class="minzero"><b>${esc(p.name)}</b><small>${esc(team(p.team).nickname)} · ${p.pos} · ${esc(p.school)}</small></div></div>`).join('')||'<p class="sub">Waiting for your first selection.</p>'}</div></div><aside class="rightcolumn">${needPanel(true)}<div class="card"><h3>Suggested prospects</h3>${available.map(p=>({p,n:needs[p.pos]})).sort((a,b)=>b.n.weight-a.n.weight||(a.p.rank-b.p.rank)*.05).slice(0,5).map(({p,n})=>`<div class="brief">${face(p)}<div class="minzero"><button class="prospectlink" onclick="A.inspect('${p.id}')">${esc(p.name)}</button><small>${p.pos} · ${n.label} · rank #${p.rank}</small></div></div>`).join('')}</div><div class="card"><h3>Your remaining picks</h3>${game.picks.filter((p,i)=>p.owner===game.userTeam&&i>=game.draftIndex).slice(0,9).map(p=>`<div class="pickline"><b>#${p.number}</b><span>Round ${p.round}</span><small class="sub">from ${p.source}</small></div>`).join('')||'<p class="sub">No more selections.</p>'}<p class="fine">Trade future picks or your current on-the-clock pick in the Trade Center.</p>${button('TRADE CENTER','A.page("trades")','tiny')}</div><div class="card"><h3>Scouts</h3><p class="sub">${game.scouts.length}/3 hired (Offense, Defense, All-Around). Better scouts narrow estimates, never change player talent.</p>${button('MANAGE SCOUTS','A.page("coaches")','tiny')}</div></aside></div>${modal}`}
+function coachesPage(){let staff=['HC','OC','DC'].map(role=>game.coaches.find(c=>c.club===game.userTeam&&c.role===role));let cf=fit(game.userTeam),pool=staffCandidates();return `${title('Coaching & Scouting',`${mine().name} staff · coaching scheme match matters more than raw level alone.`)}<div class="two"><div class="card"><h3>Coaching staff</h3>${staff.map((c,i)=>`<div class="marketrow">${c?face(c):'<span class="face">—</span>'}<div class="minzero"><b>${['HEAD COACH','OFFENSIVE COORDINATOR','DEFENSIVE COORDINATOR'][i]}</b><small>${c?esc(c.name)+' · Level '+c.level+'/5':'VACANT'}</small><small>${c?.archetype?ARCHETYPES[c.archetype]?.name:''}</small></div>${c&&c.id!==game.careerCoach&&['owner','gm','hc'].includes(game.career)?button('FIRE',`A.fireRole('${c.role}')`,'tiny danger'):''}</div>`).join('')}<div class="section inlinechips">${chip('BASE HC',staff[0]?.level+'/5'||'VACANT')}${chip('EFFECTIVE',cf.effective.toFixed(1)+'/5','ok')}${chip('TEAM BONUS',cf.value>=0?'+'+cf.value:cf.value,cf.value>=0?'ok':'danger')}</div><p class="fine">Coach base levels stay the same when you change schemes. Effective level and in-game performance bonuses recalculate. Chemistry and fit matter.</p></div><div class="card"><h3>Offensive & defensive schemes</h3><label class="lab">Offensive identity</label><select class="field wide" ${game.career==='dc'?'disabled':''} onchange="A.scheme('off',this.value)">${selectOptions(OFF.map(o=>[o,o]),mine().off)}</select><label class="lab">Defensive identity</label><select class="field wide" ${game.career==='oc'?'disabled':''} onchange="A.scheme('def',this.value)">${selectOptions(DEF.map(o=>[o,o]),mine().def)}</select><div class="schemebar"><span><b>${cf.effective.toFixed(1)}</b>/5</span><div><b>Effective level</b><small>Offense fit ${cf.off>=0?'+':''}${cf.off} · Defense fit ${cf.def>=0?'+':''}${cf.def}</small></div></div></div></div><div class="two section"><div class="card"><div class="sectionhead"><h3>Available coaching candidates</h3><small class="sub">${pool.length} candidates</small></div><p class="fine">Current NFL staff are assigned to their actual 2026 clubs. The free-agent coach market is a fictional game scenario. Generated coaches have clearly fictional names.</p><label class="lab">Vacancy / role to hire</label><select class="field wide" onchange="A.coachFilter(this.value)">${selectOptions(['HC','OC','DC'].map(x=>[x,x]),coachMarketRole||'HC')}</select>${pool.filter(c=>c.role===(coachMarketRole||'HC')).sort((a,b)=>b.level-a.level).slice(0,9).map(c=>`<div class="marketrow">${face(c)}<div class="minzero"><b>${esc(c.name)}</b><small>${c.real?'Real coach identity':'Fictional coach'} · ${c.role} · Level ${c.level} · ${esc(c.off)}/${esc(c.def)}</small></div>${button('HIRE',`A.hire('${c.id}')`,'tiny primary',!['owner','gm','hc'].includes(game.career))}</div>`).join('')}</div><div class="card"><h3>Your three scouting roles</h3><p class="sub">Exactly one Offensive Scout, one Defensive Scout and one All-Around Scout.</p>${['OFF','DEF','ALL'].map(role=>{let c=game.scouts.find(x=>x.role===role);let options=game.scoutPool.filter(x=>x.role===role);return `<div class="scoutrole"><h4>${{OFF:'OFFENSIVE SCOUT',DEF:'DEFENSIVE SCOUT',ALL:'ALL-AROUND SCOUT'}[role]}</h4>${c?`<div class="marketrow"><div class="minzero"><b>${esc(c.name)}</b><small>Level ${c.level} · ${esc(c.region)} · ${money(c.cost)}/yr</small></div>${button('FIRE',`A.dropScout('${c.id}')`,'tiny')}</div>`:options.sort((a,b)=>b.level-a.level).slice(0,3).map(x=>`<div class="marketrow"><div class="minzero"><b>${esc(x.name)}</b><small>Level ${x.level} · ${esc(x.region)} · ${money(x.cost)}/yr</small></div>${button('HIRE',`A.signScout('${x.id}')`,'tiny primary')}</div>`).join('')||'<p class="sub">No candidate available.</p>'}</div>`}).join('')}<p class="fine">Your scouts affect uncertainty, not prospects’ real ratings. Late-round hidden gems can still surprise elite scouting departments.</p></div></div><div class="card section"><h3>Real NFL coaching assignments</h3><div class="coachesgrid">${game.coaches.filter(c=>c.club&&c.real&&c.role==='HC').sort((a,b)=>a.club.localeCompare(b.club)).map(c=>`<div class="leaguecoach">${teamIcon(c.club,26)}<div class="minzero"><b>${esc(c.name)}</b><small>${esc(team(c.club)?.nickname)} · HC L${c.level}</small></div></div>`).join('')}</div></div>`}
+function gamePage(){let opp=nextMatchup()?.find(id=>id!==game.userTeam),pm=nextPlayoff(),phase=game.phase;let rows=game.schedule.map(s=>{let ids=s.pairings.find(p=>p.includes(game.userTeam)),other=ids?.find(x=>x!==game.userTeam),result=game.results.find(r=>r.week===s.week&&(r.a===game.userTeam||r.b===game.userTeam));return `<div class="scheduleitem ${s.week===game.week?'thisweek':''}"><span class="weekmarker">W${s.week}</span>${other?`${teamIcon(other,29)}<div class="minzero"><strong>${esc(team(other).nickname)}</strong><small>${esc(team(other).city)}</small></div>`:'<div class="minzero"><strong>BYE WEEK</strong></div>'}<div class="push">${result?`<b class="${result.winner===game.userTeam?'positive':'negative'}">${result.winner===game.userTeam?'W':'L'} ${result.sa}–${result.sb}</b>`:s.week===game.week?chip('NEXT',undefined,'status'):''}</div></div>`}).join('');let upcoming=phase==='playoffs'&&pm?(pm.a===game.userTeam?pm.b:pm.a):opp;let pre=upcoming?`${gameReport(upcoming)}<div class="gameintro card"><div class="matchintro">${teamIcon(game.userTeam,58)}<div class="gamepoints smallscore">VS</div>${teamIcon(upcoming,58)}</div><h2>${esc(mine().nickname)} vs ${esc(team(upcoming).nickname)}</h2><p class="sub">Your team ${rating(game.userTeam)} OVR · ${team(upcoming).nickname} ${rating(upcoming)} OVR. Staff chemistry and game plans influence results, but don't guarantee them.</p>${button('KICKOFF · SIMULATE FULL GAME ▶',`A.kickoff(${phase==='playoffs'?"'"+upcoming+"','"+pm.round+"'":''})`,'primary wide')}</div>`:'';let decision=game.pendingMoves?.length?`<div class="card section"><h3>Assistant GM recommendations</h3>${game.pendingMoves.map(m=>`<div class="pending"><b>Approval required</b><p>${esc(m.description)}</p><div class="toolbar">${button('REVIEW / APPROVE',`A.move('${m.id}',true)`,'tiny primary')}${button('DECLINE',`A.move('${m.id}',false)`,'tiny')}</div></div>`).join('')}</div>`:'';return `${title('Game Center',`Season ${game.year} · Week ${game.week} · ${phase.toUpperCase()}`,chip('RECORD',mine().w+'-'+mine().l))}${injuryBanner()}${decision}${phase==='season'?upcoming?pre:`<div class="card"><h2>Bye week</h2><p class="sub">Scout, heal and prepare for your next matchup.</p>${button('ADVANCE BYE WEEK','A.bye()','primary')}</div>`:phase==='playoffs'?pm?pre:`<div class="card"><h2>Postseason results</h2><p class="sub">The remaining teams are competing. Continue the playoff bracket.</p>${button('ADVANCE PLAYOFFS','A.advancePlayoff()','primary')}</div>`:phase==='offseason'?`<div class="card"><h2>Super Bowl champion: ${esc(team(game.champions.at(-1)?.id)?.name||'—')}</h2><p class="sub">Continue to the ${game.year+1} NFL Draft and next season.</p>${button('START NEXT OFFSEASON','A.nextSeason()','primary')}</div>`:`<div class="notice">Complete the NFL Draft to begin your regular season.</div>`}${game.lastGame?`<div class="card section"><h3>Previous game · final result</h3><div class="lastbox">${teamIcon(game.lastGame.a,45)}<strong>${game.lastGame.sa} – ${game.lastGame.sb}</strong>${teamIcon(game.lastGame.b,45)}</div><p class="sub">Passing ${game.lastGame.stats?.pass||0} yds · Rushing ${game.lastGame.stats?.rush||0} yds · First downs ${game.lastGame.stats?.firstDowns||0}</p><div class="playlog postbox">${(game.lastGame.log||[]).map(x=>`<p>${esc(x)}</p>`).join('')}</div></div>`:''}<div class="two section"><div class="card"><h3>Your 18-week schedule</h3><div class="schedulelist">${rows||'<p class="sub">Schedule appears after the draft.</p>'}</div></div>${playoffUI()}</div>`}
+function playoffUI(){let post=game.post;return `<div class="card"><h3>Playoff bracket</h3>${post?.rounds?.length?post.rounds.map(r=>`<div class="playround"><h4>${r.name}</h4>${r.matches.map(m=>`<div class="playmatch">${teamIcon(m.a,27)}<b>${esc(team(m.a).nickname)}</b><span>${m.result?.sa??'—'}</span><small>vs</small>${teamIcon(m.b,27)}<b>${esc(team(m.b).nickname)}</b><span>${m.result?.sb??'—'}</span>${m.winner?'<b class="positive">✓</b>':''}</div>`).join('')}</div>`).join(''):'<p class="sub">The playoff bracket appears after Week 18. The top 7 teams from each conference qualify.</p>'}</div>`}
+function leaguePage(){let standings=[...teams()].sort(standingsSort),order=game.phase==='draft'?draftOrder(game.year):game.phase==='offseason'?game.prevDraftOrder:sortRecords();return `${title('NFL League',`All ${teams().length} franchises · live standings and projected draft order.`)}<div class="two"><div class="card"><h3>League standings</h3><div class="tablewrap">${table(['TEAM','W','L','PCT','OVR'],standings.map(t=>`<tr><td><span class="playerid">${teamIcon(t.id,28)}<strong>${esc(t.name)}</strong></span></td><td>${t.w}</td><td>${t.l}</td><td>${(t.w/(t.w+t.l||1)).toFixed(3)}</td><td>${rating(t.id)}</td></tr>`))}</div></div><div class="flowcol"><div class="card"><h3>${game.phase==='draft'?'Current':'Projected next'} draft order</h3><p class="sub">Worse win percentage gets an earlier pick. Draft order updates after each week; traded picks retain ownership.</p>${order.map((orig,i)=>`<div class="pickline"><b>#${i+1}</b>${teamIcon(orig,27)}<span>${esc(team(orig).nickname)}</span><span class="push sub">${esc(team(ownerOf(game.phase==='draft'?game.year:game.year+1,1,orig))?.nickname||orig)} pick</span></div>`).join('')}</div>${playoffUI()}</div></div>`}
+
+function upgradePlayer(){let p=game.players.find(x=>x.id===game.careerPlayer);if(!p||game.playerXP<20)return say('Earn 20 XP before upgrading your player.',true);if(p.ovr>=Math.min(98,p.potential||98))return say('You have reached your current development ceiling.',true);p.ovr++;game.playerXP-=20;news(`${p.name} improves to ${p.ovr} OVR through training.`);store();render()}
+function setTraining(v){if(['balanced','film','strength'].includes(v)){game.playerTraining=v;store();render()}}
+
+function careerPage(){let phase=game.phase,p=game.players.find(x=>x.id===game.careerPlayer);
+ if(phase==='interview'){let j=game.careerPending,t=team(j.offer),ar=ARCHETYPES[j.archetype];return `${title('Coaching job market','You earn interviews and job offers—no choosing a team outright.')}<div class="careerhero"><span class="eyebrow">COACHING INTERVIEW</span><h2>${esc(j.name)} · ${j.role}</h2><p class="sub">Specialty: ${ar.name} · ${ar.desc}</p></div><div class="card section"><h2>Job offer: ${esc(t.name)}</h2><p class="sub">Offensive scheme ${t.off}. Defensive scheme ${t.def}. Your specialty influences how you perform after being hired.</p><p>Accept the team's offer or decline and wait for another opportunity.</p><div class="toolbar">${button('ACCEPT COACHING JOB','A.acceptJob()','primary')}${button('DECLINE / NEXT INTERVIEW','A.declineJob()')}</div></div>`}
+ if(phase==='college'){let g=game.collegeGames;return `${title('College Football Career',`Road to the 2027 NFL Draft · ${game.college}`)}<div class="careerhero"><span class="eyebrow">COLLEGE STARTER</span><h2>${esc(p?.name)}</h2><p class="sub">${esc(game.college)} · ${p?.pos} · ${p?.ovr} projected game OVR · ${game.playerXP||0} XP</p></div><div class="two section"><div class="card"><h3>College season</h3><p class="sub">Game ${g+1} of 5. Your performances affect draft stock, but do not choose an NFL destination.</p>${button('SIMULATE COLLEGE GAME '+(g+1),'A.collegeGame()','primary wide')}<div class="news">${(game.collegeLog||[]).map(r=>`<div class="newsitem"><b>Game ${r.game}: ${r.win?'WIN':'LOSS'}</b><p>${r.yards} yards · ${r.td} TD</p></div>`).join('')}</div></div><div class="card"><h3>Develop your player</h3><p class="sub">Earn XP through college and NFL games. Spend 20 XP to improve overall; performance has some randomness.</p>${button('UPGRADE (20 XP)','A.upgrade()','primary',game.playerXP<20)}</div></div>`}
+ if(phase==='combine'){let drills=game.combineResults||{},total=Object.keys(drills).length;return `${title('NFL Scouting Combine',`College career complete · ${game.college}`)}<div class="careerhero"><span class="eyebrow">NFL DRAFT PROSPECT</span><h2>${esc(p?.name)} · ${p?.pos}</h2><p class="sub">Complete all three combines, improve draft stock, then see which NFL team selects you.</p></div><div class="career-steps section">${[['speed','40-yard Dash'],['skill','Position Drills'],['interview','Team Interviews']].map(([key,label])=>`<div class="card"><h3>${label}</h3><p class="sub">${drills[key]!=null?'Result: '+drills[key]+'/100':'Not completed yet'}</p>${button(drills[key]!=null?'COMPLETED':'TAKE TEST',`A.combine('${key}')`,'primary',drills[key]!=null)}</div>`).join('')}</div><div class="section">${button('ENTER THE NFL DRAFT →','A.playerDraft()','primary wide',total<3)}</div>`}
+ return nflCareerPage();}
+function nflCareerPage(){let my=game.coaches.find(x=>x.id===game.careerCoach);let p=game.players.find(x=>x.id===game.careerPlayer);let a=my?ARCHETYPES[my.archetype]:null;return `${title('My Career',CAREER_ROLES[game.career]+' · '+mine().name)}${isPlayer()?`<div class="careerhero"><div class="careerinfo">${face(p,true)}<div><div class="eyebrow">PLAYER CAREER</div><h2>${esc(p?.name||'Player')}</h2><p class="sub">${p?.pos||'—'} · ${mine().name} · Age ${p?.age||'—'} · ${p?.real?'Real NFL player identity':'Custom athlete'}</p><div class="inlinechips">${chip('OVR',p?.ovr)}${chip('POTENTIAL',p?.potential)}${chip('XP',game.playerXP||0,'ok')}</div></div></div></div><div class="statsgrid">${kpi('GAMES',game.playerCareerStats?.games||0)}${kpi('WINS',game.playerCareerStats?.wins||0)}${kpi('PASS YDS',game.playerCareerStats?.passing||0)}${kpi('TDs',game.playerCareerStats?.touchdowns||0)}</div><div class="two section"><div class="card"><h3>Training & development</h3><label class="lab">Weekly training priority</label><select class="field wide" onchange="A.training(this.value)">${selectOptions([['balanced','Balanced practices'],['film','Film study (+XP)'],['strength','Strength & conditioning']],game.playerTraining||'balanced')}</select><p class="sub">Earn XP from games and wins. Every 20 XP can improve your overall rating by 1, up to your potential.</p>${button('UPGRADE PLAYER (20 XP)','A.upgrade()','primary',game.playerXP<20)}</div><div class="card"><h3>Recent performances</h3>${(game.playerGameHistory||[]).slice(0,8).map(h=>`<div class="newsitem"><b>${h.year} Week ${h.week}</b><p class="sub">${h.win?'WIN':'LOSS'} · ${h.score} · ${h.yards} yards · ${h.td} TD</p></div>`).join('')||'<p class="sub">Play your first game to track your career.</p>'}</div></div>`:`<div class="careerhero"><div class="eyebrow">COACHING CAREER</div><h2>${esc(my?.name||game.careerName)}</h2><p class="sub">${CAREER_ROLES[game.career]} · ${mine().name}</p><div class="inlinechips">${chip('SPECIALTY',a?.name||'—')}${chip('COACH LEVEL',(my?.level||1)+'/5')}${chip('XP',game.coachXP||0,'ok')}${chip('JOB SECURITY',(game.jobSecurity||70)+'/100')}</div></div><div class="two section"><div class="card"><h3>Coaching archetype</h3><h2>${esc(a?.name||'Coach')}</h2><p class="sub">${esc(a?.desc||'')}</p><p class="fine">Your career type and archetype were selected when you created this save and cannot be changed in Settings. Win games and develop players to raise your reputation.</p></div><div class="card"><h3>Career milestones</h3><p class="sub">Your head coach or coordinator will earn XP after each game. Levels improve gradually. Poor results can affect job security.</p><div class="inlinechips">${chip('2027 SEASON',mine().w+'-'+mine().l)}${chip('TEAM FIT',fit(game.userTeam).effective.toFixed(1)+'/5')}</div></div></div>`}`}
+function settingsPage(){let rows=[['simple','Simple interface','Streamlined screens only. Does NOT change roster or injuries.'],['autoInjury','Auto-adjust injury depth chart','Automatically replace injured starters with healthy backups.'],['autoContracts','Contract assistance','Assistant GM can suggest extensions; you review before approval.'],['autoFree','Free-agency assistance','Assistant GM proposes signings at key points; nothing happens without your approval.'],['autoTrades','Trade assistance','Suggests trade targets. A trade requires your approval and normal CPU acceptance.']];return `${title('Settings','Choose your preferred level of franchise control. Your career role was selected when you made this save.')}<div class="two"><div class="card"><h3>Franchise assistance</h3>${rows.map(([id,label,desc])=>`<label class="setting"><div><b>${label}</b><p class="sub">${desc}</p></div><input type="checkbox" ${game.settings[id]?'checked':''} onchange="A.setting('${id}',this.checked)"></label>`).join('')}<label class="lab">CPU trade difficulty</label><select class="field wide" onchange="A.setting('difficulty',this.value)">${selectOptions(['Easy','Normal','Hard'].map(v=>[v,v]),game.settings.difficulty)}</select></div><div class="card"><h3>Saving & game data</h3><div class="notice">✓ Autosave is always on. The game saves in your current browser after every change. No need to press a Save button.</div><p class="sub">Export and import are optional backup tools for moving your franchise to another device or browser. They are not needed for normal saving.</p><div class="stackedbtn">${button('START A NEW CAREER','A.reset()','danger')}</div><details style="margin-top:14px"><summary class="sub" style="cursor:pointer;font-weight:750">Optional: transfer a save to another browser</summary><div class="stackedbtn" style="margin-top:10px">${button('EXPORT SAVE (OPTIONAL)','A.export()','subtle')}<label class="button subtle">IMPORT BACKUP<input type="file" accept=".json" hidden onchange="A.import(this.files[0])"></label></div></details><hr class="sep"><h3>Current 2026 NFL rosters</h3><p class="sub">NFL GM runs as a website. It first tries the roster JSON hosted on the same domain; if that file is not available, it tries ESPN. View alternate published sources:</p><p><a class="source-link" target="_blank" rel="noopener" href="https://nflmeta.org/rosters">All 32 teams: Active / IR / practice squad</a></p><p><a class="source-link" target="_blank" rel="noopener" href="https://www.espn.com/nfl/story/_/id/29098001/2020-nfl-depth-charts-all-32-teams">ESPN 2026 depth charts</a></p><p><a class="source-link" target="_blank" rel="noopener" href="https://www.footballdb.com/transactions/free-agents.html">Free-agent signing status</a></p>${button('REFRESH 32 ESPN NFL ROSTERS','A.sync()','tiny')}<p><label class="button subtle">IMPORT 2026 NFL ROSTER CSV<input type="file" accept=".csv,text/csv" hidden onchange="A.importRoster(this.files[0])"></label></p><hr class="sep"><h3>About the simulation</h3><p class="fine">This is an unofficial fan-made NFL-inspired game. Roster and coach identities are a partial 2026 snapshot; game ratings, salary figures, contracts, draft outcomes and results are simulations. 2027 prospect names are projected rather than officially declared, and future classes may include clearly labeled fictional players. Photos use third-party internet sources and may be unavailable. NFL and Madden are trademarks of their owners.</p></div></div>`}
+/* NFL GM gameplay integrity update: deeper roles, proper playoffs and offseason. */
+STARTER_REQ.WR=3;
+DEPTH_REQ.WR=6;
+const WR_SLOTS=['WR1','WR2','SLOT'];
+const OPENING_2027_SNAPSHOT=['LAC','TEN','MIA','IND','PHI','NYJ','HOU','NO','WAS','DAL','ARI','TB','ATL','BAL','LV','LAR','SEA','CLE','CAR','GB','NE','NYG','CIN','KC','JAX','DET','PIT','CHI','DEN','MIN','SF','BUF'];
+// A provisional Nov. 7, 2026 order (not the finalized April 2027 official draft).
+// First-round 2027 ownership: Sauce Gardner, Quinnen Williams, Micah Parsons, Myles Garrett / Jared Verse, Jeffery Simmons trades.
+const OPENING_PICK_OWNERS={'pk_2027_1_IND':'NYJ','pk_2027_1_DAL':'NYJ','pk_2027_1_GB':'DAL','pk_2027_1_LAR':'CLE','pk_2027_1_CHI':'TEN','pk_2027_2_HOU':'ARI','pk_2027_3_LAR':'KC','pk_2027_3_PHI':'MIN'};
+const CURRENT_2026_RECORD={ARI:[3,5],ATL:[3,5],BAL:[4,5],BUF:[6,1],CAR:[3,4],CHI:[6,2],CIN:[5,2],CLE:[5,3],DAL:[3,5],DEN:[6,2],DET:[5,2],GB:[5,3],HOU:[2,5],IND:[2,6],JAX:[6,2],KC:[5,2],LAC:[0,7],LAR:[4,4],LV:[4,4],MIA:[1,6],MIN:[6,1],NE:[5,3],NO:[2,5],NYG:[4,2],NYJ:[2,6],PHI:[2,6],PIT:[6,2],SEA:[4,4],SF:[6,1],TB:[3,5],TEN:[1,7],WAS:[2,4]};
+// The opening class is a PROJECTED 2027 class based on the November 2026 season-to-date table.
+function draftOrder(year){
+ if(year===2027 && !game.prevDraftOrder?.length){let ids=OPENING_2027_SNAPSHOT.filter(id=>!!team(id));return game.mode==='expansion'?['EXP',...ids]:ids}
+ return game.prevDraftOrder?.length?[...game.prevDraftOrder]:sortRecords();
+}
+function ensurePlayerFields(){
+ for(let p of game.players){if(!Number.isFinite(p.contractYears))p.contractYears=1+Math.abs(hashNumber(p.name))%4;if(!Number.isFinite(p.starts))p.starts=0;if(!Number.isFinite(p.yearStarts))p.yearStarts=0;if(p.status==='IR' && p.injuryWeeks==null){p.injuryWeeks=3+Math.abs(hashNumber(p.name))%6;p.injuryReason='On injured reserve at the start of the career';}if(p.outUntil && !p.injuryWeeks && ['season','preseason','playoffs'].includes(game.phase)){p.injuryWeeks=Math.max(1,p.outUntil-game.week+1);p.status='INJ'}}
+ if(!game.playerFinancials)game.playerFinancials={earnings:0,endorsements:0,morale:75,tradeRequests:0,contractOffers:[]};
+ if(!game.gameplan)game.gameplan={off:'balanced',def:'zone'};
+ if(!game.uniforms)game.uniforms={home:'Home colors',away:'Away whites',alternate:'Alternate'};
+ if(!game.pendingMoves)game.pendingMoves=[];
+}
+function hashNumber(v){let n=23;for(let c of String(v||''))n=((n*31)+c.charCodeAt(0))|0;return Math.abs(n)}
+function starterSlotName(pos,index){return pos==='WR'?(WR_SLOTS[index-1]||'WR'+index):pos+(index>1||STARTER_REQ[pos]>1?index:'')}
+function setDefaultLineup(force=false){
+ for(let pos of POS){const options=own().filter(p=>p.pos===pos).sort((a,b)=>(a.depthRank||99)-(b.depthRank||99)||b.ovr-a.ovr),selected=[];
+  for(let i=1;i<=STARTER_REQ[pos];i++){const key=pos+i;let cur=options.find(p=>p.id===game.lineup[key]);if(cur&&!selected.includes(cur.id)&&healthy(cur)){selected.push(cur.id);continue}
+   if(cur&&!healthy(cur)&&!force&&!game.settings?.autoInjury&&['season','playoffs','preseason'].includes(game.phase)){selected.push(cur.id);continue}
+   cur=options.find(p=>healthy(p)&&!selected.includes(p.id));game.lineup[key]=cur?.id||null;if(cur)selected.push(cur.id);
+  }
+ }
+}
+function setStarter(pos,slot,id){const key=pos+slot,p=own().find(x=>x.id===id&&x.pos===pos);if(!p||!healthy(p))return say('Choose a healthy player.',true);for(let i=1;i<=STARTER_REQ[pos];i++)if(i!==slot&&game.lineup[pos+i]===id)game.lineup[pos+i]=game.lineup[key]||null;game.lineup[key]=id;store();render();say(p.name+' is now '+starterSlotName(pos,slot))}
+function injuredStarters(){let list=[];for(let pos of POS)for(let i=1;i<=STARTER_REQ[pos];i++){let p=own().find(x=>x.id===game.lineup[pos+i]);if(p&&!healthy(p))list.push(p)}return list}
+function recoverInjuries(){
+ for(let p of game.players){if(p.injuryWeeks>0){p.injuryWeeks--;if(p.injuryWeeks<=0){p.injuryWeeks=0;p.outUntil=0;p.status='ACT';if(p.team===game.userTeam){news('CLEARED TO PLAY: '+p.name+' ('+p.pos+') has returned from injury.');if(isPlayer()&&p.id===game.careerPlayer&&game.playerInjuryEvent){game.playerInjuryEvent.acknowledged=false}}}}}
+}
+function inflictWeekInjuries(){
+ for(let id of teams().map(x=>x.id)){let active=roster(id).filter(p=>healthy(p)&&!['K','P','LS'].includes(p.pos));if(active.length&&rand()<.09){let p=active[rnd(0,active.length-1)],weeks=rnd(1,5);p.injuryWeeks=weeks;p.outUntil=game.week+weeks;p.injuryReason=['Ankle injury','Shoulder soreness','Hamstring strain','Knee sprain'][rnd(0,3)];p.status='INJ';if(id===game.userTeam){news('INJURY: '+p.name+' ('+p.pos+') — '+weeks+' weeks.');gameHealthEvent(p)}}}
+}
+function injuryBanner(){let list=own().filter(p=>(p.injuryWeeks>0)||p.status==='IR'||p.status==='INJ'),out=injuredStarters();return list.length?`<div class="injurybar"><b>⚠ ACTIVE INJURY REPORT · ${list.length} injured</b><div>${list.map(p=>`<span>${esc(p.name)} ${esc(p.pos)} · ${p.injuryWeeks?`${p.injuryWeeks} week${p.injuryWeeks===1?'':'s'} remaining`:esc(p.injuryReason||'IR')}</span>`).join('')}</div>${out.length?`<p>STARTER CHANGES NEEDED: ${out.map(x=>esc(x.name)).join(', ')}. ${game.settings.autoInjury?'Auto-depth chart is enabled.':'Make replacements in your depth chart before kickoff.'}</p>`:''}</div>`:`<div class="sub" style="margin:10px 0">✓ Injury report: no active injuries on your roster.</div>`}
+function markStarts(id){
+ const ps=roster(id);for(let pos of POS){let arr=ps.filter(healthy).sort((a,b)=>b.ovr-a.ovr);for(let i=0;i<STARTER_REQ[pos];i++){let p=id===game.userTeam?ps.find(x=>x.id===game.lineup[pos+(i+1)])||arr[i]:arr[i];if(p&&healthy(p)){p.yearStarts=(p.yearStarts||0)+1;p.starts=(p.starts||0)+1;}}}
+}
+function developRoster(){
+ const all=game.players;for(let p of all){if(['FA','COLLEGE'].includes(p.team))continue;let starts=p.yearStarts||0,unit=['QB','RB','WR','TE','OL'].includes(p.pos)?'OC':'DC',mentors=game.coaches.filter(c=>c.club===p.team&&(c.role==='HC'||c.role===unit)),bonus=mentors.length?mentors.reduce((acc,c)=>acc+Math.max(0,(c.development||72)-66)/60,0)/mentors.length:0,rookie=(p.draftYear===game.year||p.origin==='NCAA'&&p.age<24),growth=starts>=12?(rookie?rnd(2,4):p.age<28?rnd(0,2):0):starts>=7?(rookie?rnd(1,3):p.age<26?rnd(0,1):0):0;
+  if(rand()<bonus)growth++;if(p.age>32&&rand()<.3)growth--;p.ovr=clamp(p.ovr+growth,48,Math.min(98,p.potential||98));p.age++;p.yearStarts=0;if(p.age>40||(p.age>=37&&rand()<.3)){p.team='RETIRED';p.status='RETIRED';}if(p.injuryWeeks>0){p.injuryWeeks=0;p.status='ACT';p.outUntil=0;}
+ }
+}
+function beginPreseason(){
+ ensurePlayerFields();game.phase='preseason';game.preWeek=1;game.week=1;game.preResults=[];game.preOpponents=teams().filter(t=>t.id!==game.userTeam).sort((a,b)=>hashNumber(a.id+game.userTeam+game.year)-hashNumber(b.id+game.userTeam+game.year)).slice(0,3).map(x=>x.id);
+ game.uniformPlan={};game.uniformReviews={};game.uniformYear=game.year;game.uniformSubmitted=false;game.uniformLocked=false;game.currentGame=null;game.gameplan={off:'balanced',def:'zone'};makeSchedule();game.week=1;setDefaultLineup(true);news(`Preseason is here! Schedule alternate jerseys in Uniform Planning before Week 1; choose your game strategy separately.`);store();
+}
+function cpuToNext(){let loops=0;while(nextPick()&&nextPick().owner!==game.userTeam&&loops++<300){let id=nextPick().owner,req=Object.fromEntries(need(id).map(p=>[p.pos,p.weight]));let pr=game.prospects.filter(p=>!p.drafted).map(p=>({p,value:110-p.rank*.19+(req[p.pos]||0)*1.35+rand()*14})).sort((a,b)=>b.value-a.value)[0]?.p;if(!pr||!draftPlayer(pr.id,id))break}if(!nextPick())beginPreseason();store()}
+function cpuDraftAll(){let loops=0;while(nextPick()&&loops++<270){let p=bestDraftPickFor(nextPick().owner);if(!p)break;draftPlayer(p.id,nextPick().owner)}if(!nextPick())beginPreseason();store()}
+function nextMatchup(){if(game.phase==='preseason'&&game.preOpponents?.[game.preWeek-1]&&game.preOpponents[game.preWeek-1]!==game.userTeam)return[game.userTeam,game.preOpponents[game.preWeek-1]];return game.schedule[game.week-1]?.pairings.find(pair=>pair.includes(game.userTeam))||null}
+function recordResult(a,b,sa,sb,week,type='regular'){
+ if(sa===sb)sa+=3;let ta=team(a),tb=team(b);if(type==='regular'){ta[sa>sb?'w':'l']++;tb[sb>sa?'w':'l']++;ta.pf+=sa;ta.pa+=sb;tb.pf+=sb;tb.pa+=sa}return{a,b,sa,sb,week,type,winner:sa>sb?a:b};
+}
+function endWeek(played){
+ if(game.phase==='preseason'){if(played)game.preResults.push({...played,week:game.preWeek});resolveCoachTradeRequests();recoverInjuries();game.preWeek++;game.week=game.preWeek;if(game.preWeek>3){lockUniformsForSeason();game.phase='season';game.week=1;if(!game.schedule?.length)makeSchedule();news('Preseason complete. The 18-week season begins with the uniform calendar locked.')}setDefaultLineup();store();render();return}
+ const week=game.week,fixtures=game.schedule[week-1]?.pairings||[];
+ if(played)game.results.push(played);
+ for(let [a,b]of fixtures){if(played&&((a===played.a&&b===played.b)||(a===played.b&&b===played.a)))continue;game.results.push(scoreGame(a,b,week));}
+ if(played)careerAfterGame(played);
+ resolveCoachTradeRequests();
+ for(let t of teams())markStarts(t.id);
+ recoverInjuries();inflictWeekInjuries();game.week++;
+ if([7,9,14,17].includes(game.week))seasonAdvisory();
+ if(game.settings.autoInjury)setDefaultLineup(true);else setDefaultLineup(false);
+ if(game.week>18){game.prevDraftOrder=sortRecords();initPlayoffs()}
+ store();render();
+}
+function setPlan(kind,val){
+ if(gmRole())return say('Your coaching staff sets on-field strategy; you control the franchise.',true);
+ let p=game.players.find(x=>x.id===game.careerPlayer),offPlayer=p&&['QB','RB','WR','TE','OL'].includes(p.pos);
+ if(isPlayer()&&((kind==='off'&&!offPlayer)||(kind==='def'&&offPlayer)))return say('Your player cannot run the other unit.',true);
+ if(game.career==='oc'&&kind==='def'||game.career==='dc'&&kind==='off')return say('That is another coordinator’s responsibility.',true);
+ if(kind==='off'&&['pass','balanced','run'].includes(val))game.gameplan.off=val;
+ if(kind==='def'&&['blitz','zone','man'].includes(val))game.gameplan.def=val;
+ store();render();
+}
+function matchPreview(id){
+ let line=leagueTeamOVR(id,'line'),sec=leagueTeamOVR(id,'secondary'),run=leagueTeamOVR(id,'run'),pass=leagueTeamOVR(id,'pass');let suggested=sec+2<line?'pass':line+2<sec?'run':'balanced';
+ return{line,secondary:sec,run,pass,suggested,summary:suggested==='pass'?'Their front is stronger than their secondary. Passing concepts should create opportunities.':suggested==='run'?'Their secondary looks tougher than their defensive front. Establish the run.':'The defensive front and secondary are balanced. Use a varied offense.',defSuggested:pass>run+2?'zone':run>pass+2?'blitz':'man',defSummary:pass>run+2?'Their passing offense is their strength. Protect the secondary and limit deep passes.':run>pass+2?'They lean on their running game. Load the box and force passing downs.':'Their offense is balanced. Stay disciplined against both the run and pass.'};
+}
+function gameReport(op){
+ let r=matchPreview(op),p=game.players.find(x=>x.id===game.careerPlayer),onOff=p&&['QB','RB','WR','TE','OL'].includes(p.pos);let showO=game.career==='hc'||game.career==='oc'||isPlayer()&&onOff;let showD=game.career==='hc'||game.career==='dc'||isPlayer()&&!onOff;
+ return `<div class="card pregame"><div class="sectionhead"><h3>Opponent film room</h3>${chip('OPPONENT',team(op)?.nickname||op)}</div><div class="matchbars"><span>Defensive front <b>${r.line}</b></span><span>Secondary <b>${r.secondary}</b></span><span>Run offense <b>${r.run}</b></span><span>Pass offense <b>${r.pass}</b></span></div><div class="notice"><b>${showD&&!showO?'DEFENSIVE FILM':showO?'OFFENSIVE FILM':'STAFF FILM'}:</b> ${esc(showD&&!showO?r.defSummary:r.summary)}</div>${gmRole()?'<p class="sub">The coaching staff chooses on-field game plans. Owners and GMs control personnel, budgets and contracts—not play calls.</p>':`<div class="planner">${showO?`<div><h4>Your offensive plan</h4>${[['pass','Air Attack','Target weaker coverage'],['balanced','Balanced','Stay unpredictable'],['run','Ground Game','Control time of possession']].map(([v,label,desc])=>`<button class="planbutton ${game.gameplan?.off===v?'selected':''}" onclick="A.plan('off','${v}')"><b>${label}</b><small>${desc}</small></button>`).join('')}</div>`:''}${showD?`<div><h4>Your defensive plan</h4>${[['blitz','Pressure','Pressure the QB / stop the run'],['man','Man Coverage','Match their receivers'],['zone','Zone Coverage','Protect deep zones']].map(([v,label,desc])=>`<button class="planbutton ${game.gameplan?.def===v?'selected':''}" onclick="A.plan('def','${v}')"><b>${label}</b><small>${desc}</small></button>`).join('')}</div>`:''}</div>`}</div>`;
+}
+function startPreparedGame(opponent=null,round=null){
+ if(game.currentGame)return say('A game is already underway.',true);
+ if(gmRole()){let r=matchPreview(opponent||nextMatchup()?.find(id=>id!==game.userTeam)||''),opp=opponent||nextMatchup()?.find(id=>id!==game.userTeam);if(opp){game.gameplan.off=r.suggested;game.gameplan.def=r.defSuggested;}}
+ playNow(opponent,round);
+}
+function previewUniform(){let home=(game.week%2)!==0,sel=home?game.uniforms?.home:game.uniforms?.away;if(game.userTeam==='PHI'&&(sel==='Home colors'||sel==='Away whites'))sel=home?'Midnight Green':'White';return `<div class="card section"><div class="sectionhead"><h3>Game day uniforms</h3>${chip('GAME',home?'HOME':'AWAY')}</div><label class="lab">Choose your uniform for this matchup</label><select class="field wide" onchange="A.uniform('${home?'home':'away'}',this.value)">${selectOptions([['Home colors','Home colors'],['Midnight Green','Midnight Green (Eagles home)'],['Away whites','Away whites'],['White','White away'],['Alternate','Alternate / throwback'],['Color rush','Color rush'],['Kelly green','Kelly Green throwback (Eagles)']],sel||'Home colors')}</select><p class="fine">Default kits are home colors and away whites. Alternate sets are cosmetic, not official licensed uniform images.</p></div>`}
+function liveGame(){const g=game.currentGame;if(!g)return '';return `${title(game.phase==='preseason'?'Preseason Game':'Game Day',`Quarter ${Math.min(4,g.quarter)} · Possession ${Math.min(8,g.drive+1)} of 8`)}<div class="card"><div class="matchintro">${teamIcon(game.userTeam,55)}<div class="gamepoints"><b>${g.us} – ${g.them}</b><small>${g.drive>=8?'FINAL':'Q'+g.quarter+' · LIVE SIM'}</small></div>${teamIcon(g.opponent,55)}</div><div class="section"><h3>Live game simulation</h3><p class="sub">Watch each possession or advance the quarter. Your pregame strategy remains in effect throughout the game.</p><div class="toolbar">${button('NEXT POSSESSION →','A.nextDrive()','primary')}${button('SIM QUARTER','A.simQuarter()')}${button('SIM REST OF GAME','A.autoGame()')}</div></div><div class="playlog postbox">${g.log.map(x=>`<p>${esc(x)}</p>`).join('')||'<p class="sub">Kickoff is underway. Advance the first possession.</p>'}</div></div>`}
+function gamePage(){
+ if(game.currentGame)return liveGame()+injuryBanner();
+ let phase=game.phase,pm=phase==='playoffs'?nextPlayoff():null,next=nextMatchup(),opp=phase==='playoffs'&&pm?(pm.a===game.userTeam?pm.b:pm.a):next?.find(id=>id!==game.userTeam);
+ let subtitle=`${game.year} · ${phase==='preseason'?'PRESEASON GAME '+game.preWeek:phase==='season'?'WEEK '+game.week:phase.replace(/_/g,' ').toUpperCase()}`;
+ let upcoming=opp?`${gameReport(opp)}${previewUniform()}<div class="gameintro card section"><div class="matchintro">${teamIcon(game.userTeam,58)}<div class="gamepoints smallscore">VS</div>${teamIcon(opp,58)}</div><h2>${esc(mine().nickname)} vs ${esc(team(opp)?.nickname||opp)}</h2><p class="sub">Choose your uniform and, if you're a coach or player, set your game plan before kickoff. The game will unfold drive by drive.</p>${button('KICKOFF · WATCH THE GAME ▶',phase==='playoffs'?`A.kickoff('${opp}','${pm.round}')`:'A.kickoff()','primary wide')}</div>`:'';
+ let currentSeason=(game.schedule||[]).map(s=>{let pair=s.pairings.find(p=>p.includes(game.userTeam)),other=pair?.find(x=>x!==game.userTeam),result=game.results.find(r=>r.week===s.week&&(r.a===game.userTeam||r.b===game.userTeam));return `<div class="scheduleitem ${s.week===game.week?'thisweek':''}"><span class="weekmarker">W${s.week}</span>${other?teamIcon(other,25)+' <b>'+esc(team(other)?.nickname||other)+'</b>':'<b>BYE</b>'}<div class="push">${result?`<b class="${result.winner===game.userTeam?'positive':'negative'}">${result.winner===game.userTeam?'W':'L'} ${result.a===game.userTeam?result.sa:result.sb}–${result.a===game.userTeam?result.sb:result.sa}</b>`:''}</div></div>`}).join('');
+ let postStatus=phase==='playoffs'&&!pm?`<div class="card"><h2>${game.reviewPending?'Your playoff run has ended':'Postseason in progress'}</h2><p class="sub">Review the results before the remaining playoff games continue. You won't automatically be sent to the draft.</p>${button(game.reviewPending?'CONTINUE TO SUPER BOWL RESULTS':'ADVANCE PLAYOFFS','A.continuePost()','primary')}</div>`:'';
+ let offStatus=['offseason','offseason_review'].includes(phase)?`<div class="card"><h2>${phase==='offseason_review'?'Season recap':'NFL Offseason'}</h2><p class="sub">Super Bowl champion: ${esc(team(game.champions.at(-1)?.id)?.name||'To be decided')}. Your season record: ${mine().w}–${mine().l}. ${phase==='offseason_review'?'Review your season before entering contracts and free agency.':'Review expiring contracts and free agents before starting the next draft.'}</p>${phase==='offseason_review'?button('ENTER OFFSEASON →','A.openOffseason()','primary'):button('VIEW OFFSEASON CONTRACTS →','A.page("offseason")','primary')}</div>`:'';
+ let preStatus=phase==='preseason'?`<div class="card section"><h3>Three-game preseason</h3>${(game.preOpponents||[]).map((id,i)=>`<div class="resultrow"><span class="ranknum">P${i+1}</span>${teamIcon(id,25)}<b>${esc(team(id)?.nickname||id)}</b><span class="push sub">${game.preResults?.[i]?((game.preResults[i].winner===game.userTeam?'W':'L')+' '+game.preResults[i].sa+'–'+game.preResults[i].sb):i===game.preWeek-1?'NEXT':'—'}</span></div>`).join('')}</div>`:'';
+ let advice=game.pendingMoves?.length?`<div class="card section"><h3>Front Office / Trade Deadline</h3>${game.pendingMoves.map(m=>`<div class="pending"><b>DECISION REQUIRED</b><p>${esc(m.description)}</p>${button('REVIEW','A.move("'+m.id+'",true)','tiny primary')} ${button('DECLINE','A.move("'+m.id+'",false)','tiny')}</div>`).join('')}</div>`:'';
+ return `${title('Game Center',subtitle,chip('RECORD',mine().w+'-'+mine().l))}${injuryBanner()}${advice}${phase==='playoffs'?postStatus||upcoming:phase==='season'?upcoming||`<div class="card"><h3>Bye week</h3>${button('ADVANCE BYE WEEK','A.bye()','primary')}</div>`:phase==='preseason'?upcoming+preStatus:offStatus||`<div class="card"><p class="sub">Complete offseason preparation before the season begins.</p></div>`}${game.lastGame?`<div class="card section"><h3>Most recent game</h3><div class="lastbox">${teamIcon(game.lastGame.a,44)}<strong>${game.lastGame.sa} – ${game.lastGame.sb}</strong>${teamIcon(game.lastGame.b,44)}</div><div class="playlog postbox">${(game.lastGame.log||[]).map(t=>`<p>${esc(t)}</p>`).join('')}</div></div>`:''}<div class="two section"><div class="card"><h3>Regular-season schedule</h3><div class="schedulelist">${currentSeason||'<p class="sub">Schedule will appear after preseason.</p>'}</div></div>${playoffUI()}</div>`;
+}
+function playoffUI(){let post=game.post;return `<div class="card"><h3>Playoff bracket · verified advancing teams</h3><p class="fine">✓ marks the winner only. Losers never advance. #1 seeds have a Wild Card bye.</p>${post?.rounds?.length?post.rounds.map(r=>`<div class="playround"><h4>${r.name}</h4>${r.matches.map(m=>{let sa=m.result?(m.result.a===m.a?m.result.sa:m.result.sb):'—',sb=m.result?(m.result.a===m.b?m.result.sa:m.result.sb):'—';return `<div class="playmatch" style="display:flex;gap:7px;flex-wrap:wrap;align-items:center;padding:7px 2px"><span class="${m.winner===m.a?'positive':''}">${teamIcon(m.a,25)} <b>${esc(team(m.a)?.nickname||m.a)}</b> ${sa} ${m.winner===m.a?'✓':''}</span><small>vs</small><span class="${m.winner===m.b?'positive':''}">${teamIcon(m.b,25)} <b>${esc(team(m.b)?.nickname||m.b)}</b> ${sb} ${m.winner===m.b?'✓':''}</span></div>`}).join('')}</div>`).join(''):'<p class="sub">The playoff bracket begins after Week 18. Each conference sends seven teams, with the top seed receiving a bye.</p>'}</div>`}
+function processRound(){const post=game.post,round=post.rounds.at(-1),index=post.rounds.length;const all=round.matches;if(all.some(m=>!m.winner))return;
+ if(index===1){let matches=[];for(const conf of ['AFC','NFC']){let arr=post.seeds[conf],top=arr[0].id,wins=all.filter(m=>m.conf===conf).map(m=>m.winner);let seed=id=>arr.find(x=>x.id===id)?.seed||99;wins.sort((a,b)=>seed(a)-seed(b));matches.push(playoffMatch(top,wins[2],'Divisional',conf),playoffMatch(wins[0],wins[1],'Divisional',conf))}post.rounds.push({name:'Divisional',matches});}
+ else if(index===2){let matches=['AFC','NFC'].map(conf=>{let m=all.filter(x=>x.conf===conf);return playoffMatch(m[0].winner,m[1].winner,'Conference Championship',conf)});post.rounds.push({name:'Conference Championship',matches});}
+ else if(index===3){post.rounds.push({name:'Super Bowl',matches:[playoffMatch(all[0].winner,all[1].winner,'Super Bowl','NFL')]});}
+ else if(index===4){let champ=all[0].winner;game.champions.push({year:game.year,id:champ});game.phase='offseason_review';game.reviewPending=false;news('SUPER BOWL WINNER: '+team(champ)?.name+'. Your season review is ready.');}
+}
+function progressPlayoffs(){let count=0;while(game.phase==='playoffs'&&count++<10){if(game.reviewPending)break;let round=game.post.rounds.at(-1),userMatch=round.matches.find(m=>m.a===game.userTeam||m.b===game.userTeam);for(let match of round.matches){if(match.winner)continue;if(match===userMatch)continue;let res=scoreGame(match.a,match.b,game.week,'playoff');match.result=res;match.winner=res.winner}
+ if(userMatch&&!userMatch.winner)break;
+ if(userMatch?.winner&&userMatch.winner!==game.userTeam&&!game.eliminationNotified){game.eliminationNotified=true;game.reviewPending=true;news(`PLAYOFF ELIMINATION: ${game.userTeam} was defeated in the ${round.name}. Review the bracket to continue.`);break}
+ if(round.matches.some(m=>!m.winner))break;processRound()}
+ store();render();
+}
+function continuePostseason(){game.reviewPending=false;progressPlayoffs()}
+function playNow(opponent=null,round=null){
+ if(game.currentGame)return;let opp=opponent||nextMatchup()?.find(x=>x!==game.userTeam);if(!opp)return say('No game is scheduled.',true);
+ if(game.settings.autoInjury||game.career==='player')setDefaultLineup(true);
+ let injured=game.career==='player'?[]:injuredStarters();if(injured.length&&!game.settings.autoInjury){page='roster';render();return say('INJURED STARTERS: '+injured.map(p=>p.name+' ('+p.pos+')').join(', ')+'. Make manual substitutions.',true)}
+ let missing=POS.filter(pos=>!own().some(p=>p.pos===pos&&healthy(p)));if(missing.length&&game.career!=='player')return say('Missing healthy players at '+missing.join(', ')+'. Sign a free agent.',true);
+ game.currentGame={opponent:opp,round,playoff:!!round,us:0,them:0,drive:0,log:[],stats:{pass:0,rush:0,firstDowns:0,turnovers:0},statsOpp:{pass:0,rush:0},quarter:1};page='games';store();render();
+}
+function enterOffseason(){if(game.phase!=='offseason_review')return;game.phase='offseason';ensurePlayerFields();game.offseasonStep='contracts';game.expiringPlayers=[];
+ for(let p of game.players){p.contractYears=Math.max(0,(p.contractYears||1)-1);if(p.contractYears===0){if(p.team===game.userTeam)game.expiringPlayers.push(p.id);else{p.team='FA';p.status='ACT';}}}
+ news(`Offseason contracts are open. ${game.expiringPlayers.length} players need extensions. Free agents can negotiate terms.`);page='offseason';store();render();
+}
+function contractModal(){if(!selectedContract)return '';let p=game.players.find(x=>x.id===selectedContract);if(!p)return '';return `<div class="modalback" role="dialog" aria-modal="true"><div class="modalpanel"><div class="sectionhead"><h3>Contract negotiation</h3>${button('CLOSE','A.closeContract()','tiny')}</div><div class="careerinfo">${face(p,true)}<div><h2>${esc(p.name)}</h2><p class="sub">${p.pos} · ${p.ovr} OVR · Age ${p.age} · Requested ${money(p.salary)}/year</p></div></div><label class="lab">Length of deal</label><select id="contractLength" class="field wide">${selectOptions([[1,'1 year'],[2,'2 years'],[3,'3 years'],[4,'4 years']],3)}</select><label class="lab">Annual salary ($ millions)</label><input class="field wide" type="number" step="0.5" min="0.5" max="50" value="${Math.max(1,p.salary||2).toFixed(1)}" id="contractSalary"><label class="lab">Signing bonus ($ millions)</label><input class="field wide" type="number" step="0.5" min="0" max="40" value="2" id="contractBonus"><p class="fine">The player's agent may accept, counter, or ask for a longer deal. Signing bonus is considered part of the offer.</p>${button('SEND CONTRACT OFFER','A.offerContract()','primary wide')}</div></div>`}
+let selectedContract=null,selectedRosterPlayer=null;
+function startContract(id){if(!gmRole())return say('Only the Owner/GM can negotiate contracts.',true);selectedContract=id;render()}
+function negotiateContract(){if(!selectedContract||!gmRole())return;let p=game.players.find(x=>x.id===selectedContract);if(!p)return;let years=Number($('contractLength')?.value)||1,offer=Number($('contractSalary')?.value)||0,bonus=Number($('contractBonus')?.value)||0;if(offer<=0||years<1||years>4)return say('Enter a valid contract.',true);let asking=Math.max(.8,(p.salary||2)*(p.ovr>83?1.13:1.02)),score=offer+bonus/years*.4;
+ if(score<asking*.91){p.salary=Math.round(asking*10)/10;store();render();return say(`${p.name}'s agent counters: I need at least ${money(asking)} per year or a bigger signing bonus.`,true)}
+ if(years===1&&p.age<29&&p.ovr>79&&score<asking*1.18)return say(`${p.name} is looking for a longer-term deal. Try 3 or 4 years.`,true);
+ if(p.team==='FA'&&cap()<offer)return say('Not enough available cap space.',true);
+ p.salary=offer;p.contractYears=years;p.team=game.userTeam;p.status='ACT';p.expiring=false;if(game.expiringPlayers)game.expiringPlayers=game.expiringPlayers.filter(x=>x!==p.id);
+ news(`SIGNED: ${p.name} agrees to ${years} years at ${money(offer)}/year with a ${money(bonus)} signing bonus.`);selectedContract=null;setDefaultLineup(true);store();render();say('Contract signed!');
+}
+function sign(id){let p=game.players.find(x=>x.id===id&&x.team==='FA');if(!p)return;if(!gmRole())return say('Your role cannot sign free agents.',true);startContract(id)}
+function advanceOffseason(){if(game.phase!=='offseason')return;let missing=(game.expiringPlayers||[]).filter(id=>own().some(p=>p.id===id));if(missing.length&&!confirm(missing.length+' unsigned contracts will expire and those players will become free agents. Continue to the draft?'))return;
+ for(let id of missing){let p=game.players.find(p=>p.id===id);if(p){p.team='FA';p.status='ACT';}}game.expiringPlayers=[];
+ game.histories.push({year:game.year,champ:game.champions.at(-1)?.id||'',record:mine().w+'-'+mine().l});if(!game.prevDraftOrder?.length)game.prevDraftOrder=sortRecords();developRoster();
+ for(let t of teams()){t.w=0;t.l=0;t.pf=0;t.pa=0}game.results=[];game.post=null;game.lastGame=null;game.currentGame=null;game.week=1;game.preResults=[];game.playerOffseasonTraining=null;
+ openDraft(game.year+1);if(!gmRole()){cpuDraftAll();page=isPlayer()?'career':'games'}else page='draft';setDefaultLineup(true);store();render();
+}
+function changeSeason(){if(game.phase==='offseason_review')return enterOffseason();if(game.phase==='offseason')return advanceOffseason();say('The next season begins after the offseason.',true)}
+function offseasonTraining(focus){if(!isPlayer()||game.phase!=='offseason')return;if(game.playerOffseasonTraining)return say('You already completed this offseason training block.');let p=game.players.find(x=>x.id===game.careerPlayer),bonus={film:14,strength:17,skills:22}[focus]||12;game.playerOffseasonTraining=focus;game.playerXP=(game.playerXP||0)+bonus;if(game.playerXP>=45&&p.ovr<Math.min(p.potential||95,98)){game.playerXP-=45;p.ovr++;news('OFFSEASON WORKOUT: '+p.name+' improved to '+p.ovr+' OVR.')}else news('OFFSEASON WORKOUT: '+p.name+' gained '+bonus+' training XP.');store();render()}
+function offseasonPage(){
+ if(!['offseason','offseason_review'].includes(game.phase))return `${title('Offseason','Locked until your season finishes.')}<div class="card"><p class="sub">Finish the regular season and playoffs to unlock contracts, team options, free agency, and the next draft.</p>${button('BACK TO GAME CENTER','A.page("games")','primary')}</div>`;
+ if(game.phase==='offseason_review')return `${title('Season review',`Your ${game.year} season has ended.`)}<div class="card"><h2>Super Bowl champion: ${esc(team(game.champions.at(-1)?.id)?.name||'—')}</h2><p class="sub">Your team finished ${mine().w}–${mine().l}. Advance to the offseason to manage expiring contracts, free agency and player development. The draft never begins automatically.</p>${button('ENTER OFFSEASON','A.openOffseason()','primary')}</div>${playoffUI()}`;
+ if(isPlayer()){let p=game.players.find(x=>x.id===game.careerPlayer);return `${title('My Player Offseason',`Year ${game.year} · training camp, contracts and team opportunities.`)}<div class="two"><div class="card"><h3>Offseason training</h3><p class="sub">Choose one offseason training block. Growth is gradual rather than repeatedly pressing upgrade.</p><div class="toolbar">${button('FILM STUDY','A.offseasonTraining("film")','tiny',!!game.playerOffseasonTraining)}${button('STRENGTH','A.offseasonTraining("strength")','tiny',!!game.playerOffseasonTraining)}${button('POSITION SKILLS','A.offseasonTraining("skills")','tiny primary',!!game.playerOffseasonTraining)}</div><p class="sub">${p?.name} · ${p?.ovr||0} OVR · ${game.playerXP||0}/45 XP · ${p?.contractYears||0} years remaining</p></div><div class="card"><h3>Agent & next season</h3><p class="sub">Review your salary, request a raise, ask for a release or trade, and decide which contract offers to accept.</p>${button('VIEW MY CONTRACT & OFFERS','A.page("career")','tiny')}<p class="fine">You can join a new team only through contracts or approved trade and release requests.</p></div></div>${playerFinancialPanel()}<div class="card section">${button('FINISH OFFSEASON · ADVANCE TO DRAFT','A.advanceOffseason()','primary wide')}</div>`}
+ if(coachRole())return `${title('Coaching Offseason',`${game.year} · player development and the staff strategy.`)}<div class="two"><div class="card"><h3>Player development</h3><p class="sub">Your coordinator and head coach ratings influence year-to-year growth. Young regular starters benefit from game reps.</p><p class="fine">Browse NFL Rosters, open a player's profile, and build a specific proposal for your GM.</p></div><div class="card"><h3>Job security & next season</h3><p class="sub">Your current job security: ${game.jobSecurity||70}/100. Staff contracts and the draft are handled by management.</p></div></div><div class="section">${button('FINISH OFFSEASON','A.advanceOffseason()','primary')}</div>`;
+ let exp=(game.expiringPlayers||[]).map(id=>game.players.find(p=>p.id===id)).filter(Boolean);let top=unsigned().filter(p=>p.real||p.origin==='NCAA').sort((a,b)=>b.ovr-a.ovr).slice(0,12);
+ return `${title(`${game.year} Offseason`,'Contract extensions → Free agency → scouting → next draft. Nothing advances until you choose.')}${injuryBanner()}<div class="two"><div class="card"><h3>Expiring contracts · ${exp.length}</h3><p class="sub">Unsigned players become free agents when you advance. Counteroffers are possible.</p>${exp.map(p=>`<div class="marketrow">${face(p)}<div class="minzero"><b>${esc(p.name)}</b><small>${p.pos} · ${p.ovr} OVR · previous ${money(p.salary)}/year</small></div>${button('NEGOTIATE',`A.contract('${p.id}')`,'tiny primary')}</div>`).join('')||'<p class="sub">No contracts currently expiring for your franchise.</p>'}</div><div class="card"><h3>Available free agents</h3><p class="sub">Player agents may ask for bigger bonuses or longer contracts.</p>${top.map(p=>`<div class="brief">${face(p)}<div class="minzero"><b>${esc(p.name)}</b><small>${p.pos} · ${p.ovr} OVR</small></div>${button('OFFER',`A.contract('${p.id}')`,'tiny')}</div>`).join('')}</div></div><div class="card section"><h3>Offseason decisions</h3><div class="toolbar">${button('FULL FREE AGENCY','A.page("free")')}${button('SCOUT FUTURE PROSPECTS','A.page("draft")')}${button('BEGIN NEXT NFL DRAFT →','A.advanceOffseason()','primary')}</div><p class="fine">Once the next draft finishes, the three-game preseason will begin before Week 1.</p></div>${contractModal()}`;
+}
+function seasonAdvisory(){const ns=need().slice(0,3),msg=ns.map(x=>x.pos+' '+x.label).join(' • ');news((game.week<=9?'TRADE DEADLINE':'LATE SEASON')+': roster needs — '+msg);if(coachRole())news('Coaching staff recommendation sent to the front office: prioritize '+ns[0]?.pos+' depth.');if(gmRole()&&([7,9].includes(game.week)||game.settings.autoTrades)){let tgt=teams().find(t=>t.id!==game.userTeam),p=roster(tgt?.id).filter(p=>p.pos===ns[0]?.pos).sort((a,b)=>b.ovr-a.ovr)[0];if(p)game.pendingMoves.push({id:uuid('trade'),type:'trade',playerId:p.id,description:`Trade deadline: upgrade ${ns[0].pos}? Consider targeting ${p.name} (${p.ovr} OVR). Your approval is required.`})}}
+function approveMove(id,yes){let m=game.pendingMoves.find(x=>x.id===id);if(!m)return;game.pendingMoves=game.pendingMoves.filter(x=>x.id!==id);if(yes&&m.type==='trade'){page='trades';say('Trade Center opened. No trade has been executed yet.')}else if(yes&&m.type==='contract'){startContract(m.playerId);return}else if(yes&&m.type==='fa'){startContract(m.playerId);return}store();render()}
+function suggestTrade(){if(!coachRole())return;let n=need()[0],t=game.players.filter(p=>p.team!==game.userTeam&&p.team!=='FA'&&p.pos===n.pos).sort((a,b)=>b.ovr-a.ovr)[0];news(`${game.career.toUpperCase()} recommendation to GM: consider ${t?.name||'a proven '+n.pos} to address ${n.pos} (${n.label}).`);say('Recommendation sent to the front office. The GM controls trades.');store();render()}
+function setTraining(v){if(['balanced','film','strength'].includes(v)){game.playerTraining=v;store();render()}}
+function careerAfterGame(result){let won=result.winner===game.userTeam;
+ if(coachRole()){game.coachXP=(game.coachXP||0)+(won?11:5);game.jobSecurity=clamp((game.jobSecurity||70)+(won?3:-4),8,100);let c=game.coaches.find(x=>x.id===game.careerCoach);if(c&&game.coachXP>=c.level*32&&c.level<5){game.coachXP-=c.level*32;c.level++;c.leadership=clamp(c.leadership+2,60,99);news(`${c.name} reaches Coach Level ${c.level}.`);}}
+ if(isPlayer()){ensurePlayerFields();let p=game.players.find(p=>p.id===game.careerPlayer);if(!p||p.injuryWeeks>0)return;let y=result.stats||{},stats=game.playerCareerStats;stats.games++;if(won)stats.wins++;
+ let wrSlot=Object.entries(game.lineup).find(([key,id])=>id===p.id)?.[0],wrShare=wrSlot==='WR1'?.37:wrSlot==='WR2'?.28:wrSlot==='WR3'?.22:.08;let yards=p.pos==='QB'?Math.round((y.pass||0)*.78):p.pos==='WR'?Math.round((y.pass||0)*wrShare):p.pos==='TE'?Math.round((y.pass||0)*.16):['RB','OL'].includes(p.pos)?Math.round((y.rush||0)*.55):0,td=Math.max(0,Math.floor(yards/110));
+ stats.passing+=p.pos==='QB'?yards:0;stats.receiving+=['WR','TE'].includes(p.pos)?yards:0;stats.rushing+=['RB','OL'].includes(p.pos)?yards:0;stats.touchdowns+=td;
+ const tr=game.playerTraining||'balanced',gain=(won?9:6)+(tr==='film'?3:tr==='strength'?2:1)+Math.min(8,Math.floor(yards/90));game.playerXP=(game.playerXP||0)+gain;
+ let advances=0;while(game.playerXP>=45&&p.ovr<Math.min(p.potential||95,98)&&advances<2){game.playerXP-=45;p.ovr++;advances++;if(advances===1)news(`DEVELOPMENT: ${p.name} has grown to ${p.ovr} OVR automatically through games and practice.`)}
+ game.playerFinancials.earnings+=Number(p.salary||0)/17;game.playerFinancials.morale=clamp(game.playerFinancials.morale+(won?2:-1),15,99);
+ game.playerGameHistory.unshift({week:game.week,year:game.year,win:won,yards,td,score:`${result.sa}-${result.sb}`});game.playerGameHistory=game.playerGameHistory.slice(0,25);
+ }
+}
+function requestPlayer(kind){if(!isPlayer()||!['trade','release','contract'].includes(kind))return;let p=game.players.find(x=>x.id===game.careerPlayer);if(!p)return;ensurePlayerFields();let f=game.playerFinancials;if(kind==='trade'){if(game.phase!=='offseason'&&game.phase!=='offseason_review')return say('Your agent can submit a formal trade request in the offseason.',true);if((game.playerCareerStats?.games||0)<12)return say('Your rookie season is just starting. Play through your first season before requesting a trade.',true);f.tradeRequests++;let options=teams().filter(t=>t.id!==game.userTeam&&need(t.id).some(n=>n.pos===p.pos&&n.weight>=3));if(options.length && rand()<.58){let dest=options.sort((a,b)=>need(b.id)[0].weight-need(a.id)[0].weight)[0];news(`TRADE REQUEST APPROVED: ${p.name} sent to ${dest.name}.`);p.team=dest.id;game.userTeam=dest.id;setDefaultLineup(true);f.morale=82;say('Trade request accepted. You have a new team.')}else{news(`${p.name}'s trade request was declined by the club.`);f.morale=Math.max(18,f.morale-7);say('The team rejected your trade request this time.',true)}}
+ if(kind==='release'){if(p.ovr<72||p.age>32||rand()<.3){p.team='FA';f.morale=55;news(`${p.name} was granted a release. Negotiations with teams are now available.`);let offers=teams().filter(t=>need(t.id).some(n=>n.pos===p.pos&&n.weight>=2)).slice(0,3);f.contractOffers=offers.map(t=>({team:t.id,salary:+Math.max(1,p.salary*(.8+rand()*.3)).toFixed(1),years:rnd(1,3)}));}else{news('Release request denied: the organization still considers you part of its plans.');say('The club declined your release request.',true)}}
+ if(kind==='contract'){if(p.contractYears>1){say('Your contract is still active for '+p.contractYears+' years.');return;}let bump=p.ovr>=80?1.12:1.04;p.salary=+(p.salary*bump).toFixed(1);p.contractYears=2+Math.round(rand()*2);news(`Contract talks completed: ${p.name} agreed to ${p.contractYears} years at ${money(p.salary)} annually.`);}
+ store();render();}
+function acceptPlayerOffer(teamId){if(!isPlayer())return;let f=game.playerFinancials,offer=f?.contractOffers?.find(x=>x.team===teamId),p=game.players.find(x=>x.id===game.careerPlayer);if(!offer||!p)return;p.team=offer.team;p.salary=offer.salary;p.contractYears=offer.years;game.userTeam=offer.team;f.contractOffers=[];news(`NEW TEAM: ${p.name} signs with ${team(teamId).name} (${offer.years} years, ${money(offer.salary)}/year).`);store();render()}
+function upgradePlayer(){return say('Your player develops automatically through games, practices and offseason training. No upgrade button spam required.')}
+function playerFinancialPanel(){if(!isPlayer())return '';ensurePlayerFields();let f=game.playerFinancials,p=game.players.find(x=>x.id===game.careerPlayer);return `<div class="two section"><div class="card"><h3>Player contract & career earnings</h3><div class="statsgrid" style="grid-template-columns:repeat(2,minmax(0,1fr))">${kpi('SALARY',money(p?.salary||0)+'/yr')}${kpi('EARNED',money(f.earnings||0))}${kpi('CONTRACT',`${p?.contractYears||1} years`)}${kpi('MORALE',(f.morale||70)+'/100')}</div><div class="toolbar section">${button('REQUEST TRADE','A.request("trade")','tiny')}${button('REQUEST RELEASE','A.request("release")','tiny')}${button('NEGOTIATE CONTRACT','A.request("contract")','tiny')}</div><p class="fine">The front office can accept or deny requests. Your current deal, role, needs and team interest matter.</p></div><div class="card"><h3>Training & development</h3><label class="lab">Weekly training focus</label><select class="field wide" onchange="A.training(this.value)">${selectOptions([['balanced','Balanced training'],['film','Film study'],['strength','Strength & conditioning']],game.playerTraining||'balanced')}</select><p class="sub">Your OVR improves automatically from on-field performance, practice XP, and offseason development. Current progress: <b>${game.playerXP||0}/45 XP</b> toward the next step.</p><p class="fine">Rookie starters often grow faster. Growth slows near their potential ceiling.</p></div></div>${f.contractOffers?.length?`<div class="card section"><h3>Contract offers</h3>${f.contractOffers.map(o=>`<div class="marketrow">${teamIcon(o.team,28)}<b>${esc(team(o.team)?.name||o.team)}</b><span class="sub">${o.years} yrs · ${money(o.salary)}/yr</span>${button('ACCEPT',`A.acceptPlayerOffer('${o.team}')`,'tiny primary')}</div>`).join('')}</div>`:''}`}
+function coachAdvicePanel(){return coachRole()?`<div class="card section"><h3>Your role · ${esc(CAREER_ROLES[game.career])}</h3><p class="sub">You may recommend personnel changes and develop the players in your unit. Hiring, firing, draft selections and contracts are front-office decisions.</p>${button('RECOMMEND A TRADE TO GM','A.suggestTrade()','tiny')}</div>`:''}
+function coachCareerPageOverride(){let my=game.coaches.find(c=>c.id===game.careerCoach),a=ARCHETYPES[my?.archetype];return `${title('My Coaching Career',`${esc(game.careerName||my?.name)} · ${esc(CAREER_ROLES[game.career])}`)}<div class="careerhero"><div class="eyebrow">${esc(game.career.toUpperCase())} · NOT HEAD COACH</div><h2>${esc(my?.name||game.careerName||'Coach')}</h2><p class="sub">${mine().name} · ${a?.name||'Coach'} · Level ${my?.level||1}/5 · Job security ${game.jobSecurity||70}/100</p></div><div class="two section"><div class="card"><h3>Your specialty</h3><p>${esc(a?.desc||'Your coaching decisions and player development contribute to team performance.')}</p><p class="fine">Your scheme-fit bonus affects performance. Development ratings help players improve over the season.</p></div><div class="card"><h3>Career reputation</h3><p class="sub">Coach XP ${game.coachXP||0}. Players who start regularly will gain experience with development support.</p></div></div>${coachAdvicePanel()}`}
+function interviewAvailable(){let job=game.careerPending;if(!job)return[];let role=job.role;return TEAM_ROWS.map(x=>x[0]).filter(id=>{let existing=game.coaches.find(c=>c.club===id&&c.role===role),t=team(id);return !existing||existing.level<=2||hashNumber(id+role)%7===0}).slice(0,6)}
+function declineJob(){const j=game.careerPending;if(!j)return;let offers=interviewAvailable();let attempted=j.attempted||[];attempted.push(j.offer);let left=offers.filter(id=>!attempted.includes(id));j.attempted=attempted;if(!left.length){game.phase='interview_pause';page='career';news('No more coaching interviews this hiring cycle. Check the next hiring window.');store();render();return}j.offer=left[0];j.declined++;store();render();say('Next eligible coaching interview: '+team(j.offer).name)}
+function nextHiringWindow(){let j=game.careerPending;if(!j)return;j.attempted=[];j.offer=interviewAvailable()[0]||'CLE';game.phase='interview';game.year++;news('A new hiring cycle has opened. Teams have reassessed coaching needs.');store();render()}
+function allowedCoachActions(){return gmRole()}
+function hire(id){if(!gmRole())return say('Only owners and GMs can hire staff. Coaches can recommend changes.',true);let c=game.coaches.find(c=>c.id===id&&c.club===null);if(!c)return;let role=c.role||'HC',old=game.coaches.find(x=>x.club===game.userTeam&&(x.role||'HC')===role);if(old)old.club=null;c.club=game.userTeam;news('Hired '+c.name+' ('+role+').');store();render()}
+function fireRole(role){if(!gmRole())return say('Your role cannot fire another coach.',true);let c=game.coaches.find(x=>x.club===game.userTeam&&x.role===role);if(!c)return;if(!confirm('Fire '+c.name+'?'))return;c.club=null;news('Fired '+role+' '+c.name);store();render()}
+function fireCoach(){return fireRole('HC')}
+function scheme(kind,val){if(isPlayer()||gmRole())return say('Your staff manages schemes; owners and GMs handle personnel.',true);if(game.career==='oc'&&kind==='def'||game.career==='dc'&&kind==='off')return say('You only control your assigned unit.',true);if(kind==='off'&&OFF.includes(val))mine().off=val;if(kind==='def'&&DEF.includes(val))mine().def=val;store();render()}
+function navLocked(){return !['offseason','offseason_review'].includes(game.phase)}
+function tabs(){let names=[['dashboard','⌂',isPlayer()?'Player Hub':coachRole()?'Coaching Hub':'Front Office']];if(game.phase==='offseason_intro')names.push(['frontoffice','◷','Offseason Prep']);if(game.phase==='expansion')names.push(['expansion','✣','Expansion Draft']);names.push(['roster','▦','Roster & Depth'],['rosterhub','◈','NFL Rosters']);if(gmRole())names.push(['free','＋','Free Agency'],['trades','↔','Trade Center'],['draft','★','NFL Draft'],['uniforms','▣','Uniform Planning']);if(!isPlayer())names.push(['coaches','♟','Staff & Schemes']);names.push(['newsroom','◉','NFL News']);if(!isPlayer())names.push(['combinecenter','◇','Combine'],['trainingcamp','⚑','Training Camp']);names.push(['honors','★','Awards & Records']);if(coachRole()||gmRole())names.push(['politics','♟','Coaching Carousel']);if(game.career==='owner')names.push(['stadium','▤','Stadium & Fans']);names.push(['games','▷','Game Center'],['league','≡','League'],['offseason',navLocked()?'🔒':'◷','Offseason']);if(isPlayer()||coachRole())names.push(['career','🏆','My Career']);names.push(['settings','⚙','Settings']);return `<nav class="nav">${names.map(([id,ico,label])=>`<button class="navbutton ${id===page?'active':''}" ${id==='offseason'&&navLocked()?'disabled title="Unlocked after the Super Bowl"':''} onclick="A.page('${id}')"><span class="navicon">${ico}</span><span>${label}</span></button>`).join('')}</nav>`}
+function rosterPage(){let items=own().filter(p=>filter.roster==='ALL'||p.pos===filter.roster).sort((a,b)=>POS.indexOf(a.pos)-POS.indexOf(b.pos)||b.ovr-a.ovr),canChange=game.career!=='player';let slots=POS.map(pos=>Array.from({length:STARTER_REQ[pos]||0},(_,i)=>{let key=pos+(i+1),id=game.lineup[key],p=own().find(p=>p.id===id),opts=own().filter(p=>p.pos===pos&&healthy(p)).sort((a,b)=>b.ovr-a.ovr);return `<div class="starter" style="display:grid;grid-template-columns:70px minmax(0,1fr);gap:8px;align-items:center;padding:10px"><span class="slot">${starterSlotName(pos,i+1)}</span><div class="minzero"><b><span class="jersey">${p?.jersey?'#'+esc(p.jersey)+' ':''}</span>${esc(p?.name||'VACANT')}</b><small class="sub" style="display:block">${p?p.ovr+' OVR · '+(p.injuryWeeks>0?'OUT '+p.injuryWeeks+'wk':'ACTIVE'):'No player assigned'}</small></div>${canChange&&(!coachRole()||(game.career==='dc'?['EDGE','DT','LB','CB','S'].includes(pos):game.career==='oc'?['QB','RB','WR','TE','OL'].includes(pos):true))?`<select class="field wide" style="grid-column:1/-1" aria-label="Change ${starterSlotName(pos,i+1)}" onchange="A.starter('${pos}',${i+1},this.value)">${opts.map(x=>`<option value="${x.id}" ${id===x.id?'selected':''}>${x.jersey?'#'+esc(x.jersey)+' ':''}${esc(x.name)} · ${x.ovr} OVR</option>`).join('')||'<option>No eligible player</option>'}</select>`:''}</div>`})).flat().join('');return `${title('Roster & Depth Chart',`${own().length} players · WR1, WR2 and SLOT have separate starting assignments.`)}${game.career==='player'||(coachRole()&&game.career==='dc')?'':injuryBanner()}<div class="two section"><div class="card"><div class="sectionhead"><h3>Starters & slot receiver</h3>${chip('SAVE','AUTOMATIC','ok')}</div><div class="startergrid">${slots}</div><p class="fine">Use the dropdown under each starter to make substitutions. Your selection saves immediately. The SLOT receiver is a separate starting role for three-receiver packages.</p></div>${needPanel(true)}</div><div class="card section"><div class="sectionhead"><h3>Full team roster</h3>${selectPos(filter.roster,'A.pos("roster",this.value)')}</div><div class="tablewrap">${table(['PLAYER / JERSEY','POS','AGE','OVR','INJURY / STATUS','DEAL','PROFILE'],items.map(p=>`<tr><td>${playerCell(p)}</td><td>${p.pos}</td><td>${p.age}</td><td class="rating">${p.ovr}</td><td>${p.injuryWeeks>0?'<b class="negative">OUT '+p.injuryWeeks+'wk</b>':esc(p.status||'ACT')}</td><td>${p.contractYears||1}yr · ${money(p.salary)}/yr</td><td>${button('VIEW',`A.inspectRoster('${p.id}')`,'tiny')}</td></tr>`))}</div></div>${rosterProfileModal()}`}
+function attributeEstimate(p){let n=hashNumber(p.id||p.name),base=p.ovr||65;return Object.fromEntries([['Speed',((n%9)-4)*2],['Strength',((n>>3)%9-4)*2],['Awareness',((n>>5)%9-4)*2],['Technique',((n>>7)%9-4)*2],['Agility',((n>>9)%9-4)*2],['Stamina',((n>>11)%9-4)*2]].map(([name,delta])=>[name,clamp(base+delta,42,98)]))}
+function rosterProfileModal(){let p=game.players.find(x=>x.id===selectedRosterPlayer);if(!p)return '';let attrs=attributeEstimate(p);let isOther=p.team!==game.userTeam&&p.team!=='FA';return `<div class="modalback" role="dialog" aria-modal="true"><div class="modalpanel"><div class="sectionhead"><h3>Player scouting card</h3>${button('CLOSE','A.closeRoster()','tiny')}</div><div class="careerinfo">${face(p,true)}<div><h2>${esc(p.name)} ${p.jersey?'#'+esc(p.jersey):''}</h2><p class="sub">${esc(team(p.team)?.name||'Free agent')} · ${esc(p.pos)} · Age ${p.age}</p><div class="inlinechips">${chip('OVR',p.ovr)}${chip('CEILING',p.potential||'—')}${chip('STATUS',p.injuryWeeks>0?'INJURED':p.status||'ACT')}</div></div></div><hr class="sep"><h3>Estimated attributes</h3><p class="fine">These six gameplay ratings are simulated estimates, not official Madden attributes.</p><div class="attribute-grid">${Object.entries(attrs).map(([a,v])=>`<div class="attribute"><small>${a}</small><b>${v}</b></div>`).join('')}</div><p class="sub">Contract ${p.contractYears||1} yr · ${money(p.salary)} per season. ${p.real?'Real player identity from roster data':'Fictional player.'}</p>${isOther&&gmRole()?button('TARGET IN TRADE CENTER →',`A.tradeTarget('${p.id}')`,'primary wide'):isOther&&coachRole()?button('BUILD TRADE RECOMMENDATION',`A.coachTarget('${p.id}')`,'primary wide'):''}</div></div>`}
+function rosterHubPage(){let clubs=teams().filter(t=>t.id!=='EXP'),t=team(rosterHubTeam)||clubs[0],list=roster(t.id).filter(p=>rosterHubStatus==='ALL'||(p.status||'ACT')===rosterHubStatus).sort((a,b)=>a.pos.localeCompare(b.pos)||b.ovr-a.ovr),source=game.rosterSync||{},real=list.filter(p=>p.real).length;return `${title('NFL Rosters',`Explore all 32 NFL teams · public roster identities where synchronized; OVR is a game estimate.`)}${coachRole()?coachTradeInbox():''}<div class="card"><div class="toolbar"><label class="lab">Team<select class="field wide" onchange="A.rosterTeam(this.value)">${clubs.map(x=>`<option value="${x.id}" ${t.id===x.id?'selected':''}>${esc(x.name)}</option>`).join('')}</select></label><label class="lab">Roster status<select class="field wide" onchange="A.rosterStatus(this.value)">${selectOptions([['ALL','All players'],['ACT','Active'],['PS','Practice squad'],['IR','Injured reserve'],['INJ','Injured'],['OTHER','Other']],rosterHubStatus)}</select></label></div><div class="inlinechips">${chip('PLAYERS',list.length)}${chip('REAL IDENTITIES',real)}${chip('TEAM',t.id)}</div><details style="margin:12px 0"><summary class="sub" style="cursor:pointer">Roster data sources & verification</summary><p class="fine">${source.count||0}/32 synced teams. Imported rosters are season snapshots; player salaries and OVR are game estimates, and rankings are based on published depth charts when available.</p><a href="https://www.espn.com/nfl/team/roster/_/name/${t.id.toLowerCase()}" target="_blank" rel="noopener">ESPN team roster</a> · <a href="https://www.ourlads.com/nfldepthcharts/" target="_blank" rel="noopener">Ourlads depth charts</a></details><div class="tablewrap">${table(['PLAYER / NUMBER','POSITION','AGE','OVR','STATUS','PROFILE'],list.map(p=>`<tr><td>${playerCell(p)}</td><td>${p.pos}</td><td>${p.age}</td><td><b class="rating">${p.ovr}</b></td><td>${p.injuryWeeks>0?'OUT '+p.injuryWeeks+'wk':p.status||'ACT'}</td><td>${button('VIEW',`A.inspectRoster('${p.id}')`,'tiny')}</td></tr>`))}</div></div>${rosterProfileModal()}`}
+function freePage(){let ns=new Set(need().filter(n=>n.weight>=3).map(n=>n.pos)),available=unsigned().filter(p=>(filter.free==='ALL'||p.pos===filter.free)&&(!filter.freeQuery||p.name.toLowerCase().includes(filter.freeQuery.toLowerCase()))).sort((a,b)=>(ns.has(b.pos)?5:0)-(ns.has(a.pos)?5:0)||b.ovr-a.ovr);return `${title('Free Agency',`Search available players · negotiate salary, bonus and contract length.`,chip('CAP',money(cap())))}<div class="withsidebar section"><div class="card"><div class="sectionhead"><h3>Available players · ${available.length}</h3><span class="sub">Contracts are simulated</span></div><div class="toolbar">${selectPos(filter.free,'A.pos("free",this.value)')}<input class="field search" value="${esc(filter.freeQuery)}" placeholder="Search player" onchange="A.query('free',this.value)"></div><div class="tablewrap">${table(['PLAYER','POS','AGE','OVR','ASK / YEAR','ACTION'],available.slice(0,160).map(p=>`<tr><td>${playerCell(p)}</td><td>${p.pos}</td><td>${p.age}</td><td><b class="rating">${p.ovr}</b></td><td>${money(p.salary)}</td><td>${gmRole()?button('NEGOTIATE',`A.contract('${p.id}')`,'tiny primary'):chip('GM HANDLES CONTRACTS')}</td></tr>`))}</div></div>${needsAndRoster()}</div>${contractModal()}`}
+function prospectModal(id){let p=game.prospects.find(x=>x.id===id);if(!p)return '';let ovr=scoutedOVR(p),grade=scoutConfidence(p),margin=grade==='HIGH'?2:grade==='MEDIUM'?4:7,n=need().find(x=>x.pos===p.pos),attrs=attributeEstimate(p);return `<div class="modalback" role="dialog" aria-modal="true"><div class="modalpanel"><div class="sectionhead"><span class="smallcaps">NFL DRAFT · PROSPECT PROFILE</span>${button('CLOSE','A.closeProspect()','tiny')}</div><div class="careerinfo">${face(p,true)}<div><h2>${esc(p.name)}</h2><p class="sub">${p.pos} · ${esc(p.school)} · ${p.real?'COLLEGE PROSPECT':'FICTIONAL PROSPECT'}</p><div class="inlinechips">${chip('BIG BOARD','#'+p.rank)}${chip('TEAM NEED',n?.label||'DEPTH')}${chip('SCOUT',grade)}</div></div></div><hr class="sep"><div class="statsgrid" style="grid-template-columns:repeat(2,minmax(0,1fr))">${kpi('EST. OVR',`${Math.max(45,ovr-margin)}–${Math.min(89,ovr+margin)}`)}${kpi('GROWTH',p.rank<=25?'High upside':'Unknown potential')}</div><h3>Scouted attributes (estimated)</h3><div class="attribute-grid">${Object.entries(attrs).map(([k,v])=>`<div class="attribute"><small>${k}</small><b>${clamp(v+(ovr-p.ovr),35,99)}</b></div>`).join('')}</div><p class="sub">Scouting never changes actual player talent. Hidden late-round gems and early-round busts can exist. Interview your player and judge team needs before selecting.</p>${game.phase==='draft'&&nextPick()?.owner===game.userTeam?button('DRAFT THIS PLAYER',`A.draft('${p.id}')`,'primary wide'):''}</div></div>`}
+function coachesPage(){let roles=['HC','OC','DC'],staff=roles.map(r=>game.coaches.find(c=>c.club===game.userTeam&&c.role===r)),cf=fit(game.userTeam),pool=staffCandidates(),isManager=gmRole(),my=game.coaches.find(c=>c.id===game.careerCoach);return `${title('Staff & Schemes',`Your career: ${CAREER_ROLES[game.career]} · ${mine().name}`)}<div class="two"><div class="card"><h3>Coaching staff</h3>${staff.map((c,i)=>`<div class="marketrow">${c?face(c):'<span class="face">—</span>'}<div class="minzero"><b>${['HEAD COACH','OFFENSIVE COORDINATOR','DEFENSIVE COORDINATOR'][i]} ${c?.id===my?.id?'<span class="chip ok">YOU</span>':''}</b><small>${c?esc(c.name)+' · Level '+c.level+'/5':'VACANT'}</small></div>${c&&isManager?button('FIRE',`A.fireRole('${roles[i]}')`,'tiny danger'):''}</div>`).join('')}<div class="section inlinechips">${chip('EFFECTIVE HC',cf.effective.toFixed(1)+'/5')}${chip('CHEMISTRY',cf.value>=0?'+'+cf.value:cf.value)}</div><p class="fine">A defensive coordinator is never your head coach. Staff levels do not change instantly with scheme swaps; effective performance changes from fit.</p></div><div class="card"><h3>Team identities</h3><label class="lab">Offensive scheme</label><select class="field wide" ${!['hc','oc'].includes(game.career)?'disabled':''} onchange="A.scheme('off',this.value)">${selectOptions(OFF.map(v=>[v,v]),mine().off)}</select><label class="lab">Defensive scheme</label><select class="field wide" ${!['hc','dc'].includes(game.career)?'disabled':''} onchange="A.scheme('def',this.value)">${selectOptions(DEF.map(v=>[v,v]),mine().def)}</select><p class="fine">Only HC and OC can alter offensive identity. Only HC and DC can alter defensive identity. Owners and GMs hire coaches to establish schemes.</p></div></div><div class="two section"><div class="card"><h3>Staff hiring market</h3>${!isManager?'<p class="notice">Staff hirings and firings are handled by the Owner/GM. Coordinators can recommend changes, not hire their boss.</p>':''}<label class="lab">Candidate role</label><select class="field wide" onchange="A.coachFilter(this.value)">${selectOptions(roles.map(v=>[v,v]),coachMarketRole)}</select>${pool.filter(c=>c.role===coachMarketRole).sort((a,b)=>b.level-a.level).slice(0,9).map(c=>`<div class="marketrow">${face(c)}<div class="minzero"><b>${esc(c.name)}</b><small>${c.real?'Former NFL staff':'Fictional staff'} · ${c.role} · L${c.level}</small></div>${isManager?button('HIRE',`A.hire('${c.id}')`,'tiny primary'):''}</div>`).join('')}</div><div class="card"><h3>Three-scout department</h3>${['OFF','DEF','ALL'].map(role=>{let s=game.scouts.find(x=>x.role===role),candidates=game.scoutPool.filter(x=>x.role===role).sort((a,b)=>b.level-a.level);return `<div class="scoutrole"><h4>${role==='OFF'?'OFFENSE':role==='DEF'?'DEFENSE':'ALL AROUND'}</h4>${s?`<div class="marketrow"><b>${esc(s.name)}</b><small class="sub">Level ${s.level}</small>${isManager?button('REPLACE',`A.dropScout('${s.id}')`,'tiny'):''}</div>`:candidates.slice(0,2).map(x=>`<div class="marketrow"><b>${esc(x.name)}</b><small class="sub">Level ${x.level}</small>${isManager?button('HIRE',`A.signScout('${x.id}')`,'tiny primary'):''}</div>`).join('')}</div>`}).join('')}<p class="fine">Scouts reveal better estimates but cannot change a prospect's true rating.</p></div></div>${coachAdvicePanel()}`}
+function nflCareerPage(){let p=game.players.find(x=>x.id===game.careerPlayer);return isPlayer()?`${title('My Player Career',`Season ${game.year} · ${mine().name}`)}<div class="careerhero"><div class="careerinfo">${face(p,true)}<div><span class="eyebrow">NFL PLAYER</span><h2>${esc(p?.name||game.careerName)}</h2><p class="sub">${p?.pos||'—'} · ${mine().name} · Age ${p?.age||'—'} · ${p?.ovr||0} OVR</p><div class="inlinechips">${chip('OVR',p?.ovr||0)}${chip('XP',(game.playerXP||0)+'/45')}${chip('POTENTIAL',p?.potential||'—')}</div></div></div></div><div class="statsgrid">${kpi('CAREER GAMES',game.playerCareerStats?.games||0)}${kpi('WINS',game.playerCareerStats?.wins||0)}${kpi('PASS YDS',game.playerCareerStats?.passing||0)}${kpi('TOUCHDOWNS',game.playerCareerStats?.touchdowns||0)}</div>${playerInjuryPanel()}${playerFinancialPanel()}<div class="card section"><h3>Recent game performances</h3>${game.playerGameHistory?.slice(0,10).map(h=>`<div class="newsitem"><b>${h.year} Week ${h.week} · ${h.win?'WIN':'LOSS'}</b><p>${h.score} · ${h.yards} yards · ${h.td} TD</p></div>`).join('')||'<p class="sub">Your career stats appear after games.</p>'}</div>`:coachCareerPageOverride()}
+function careerPage(){let j=game.careerPending,p=game.players.find(x=>x.id===game.careerPlayer);if(game.phase==='interview_pause')return `${title('Coaching Career','No offers remaining this hiring cycle.')}<div class="card"><h2>Keep building your resume</h2><p class="sub">You declined the available job interviews. Advance to the next hiring window to see newly opened coaching jobs.</p>${button('NEXT HIRING WINDOW','A.hiringWindow()','primary')}</div>`;if(game.phase==='interview'){return `${title('Coaching interview','Eligible teams have openings or are considering a change.')}<div class="careerhero"><h2>${esc(j?.name||'Coach')} · ${j?.role}</h2><p class="sub">${esc(ARCHETYPES[j?.archetype]?.name||'Coach')} · Specialty determined at career creation</p></div><div class="card section"><h2>Job offer · ${esc(team(j?.offer)?.name||'NFL Team')}</h2><p class="sub">Your job offer is for ${j?.role}, not automatically head coach. You cannot hire or fire the head coach from a coordinator position.</p>${button('ACCEPT JOB','A.acceptJob()','primary')} ${button('DECLINE / NEXT INTERVIEW','A.declineJob()')}</div>`}
+ if(game.phase==='college')return `${title('College Career',`Road to the NFL Draft · ${game.college}`)}<div class="careerhero"><h2>${esc(p?.name)}</h2><p class="sub">${esc(game.college)} · ${p?.pos} · OVR ${p?.ovr} · XP ${game.playerXP||0}</p></div><div class="two section"><div class="card"><h3>College season</h3><p class="sub">Game ${(game.collegeGames||0)+1} of 5. Your stats affect your draft stock.</p>${button('SIMULATE COLLEGE GAME','A.collegeGame()','primary wide')}${(game.collegeLog||[]).map(r=>`<div class="newsitem"><b>Game ${r.game} ${r.win?'WIN':'LOSS'}</b><p>${r.yards} yards · ${r.td} TDs</p></div>`).join('')}</div><div class="card"><h3>Practice & growth</h3><p class="sub">College games award XP and develop your ability automatically. Your NFL destination is decided in the draft.</p></div></div>`;
+ if(game.phase==='combine'){let drills=game.combineResults||{},total=Object.keys(drills).length;return `${title('NFL Scouting Combine',`${game.college} · ${esc(p?.name)}`)}<p class="sub">Complete all three tests, then see which NFL team selects you.</p><div class="career-steps">${[['speed','40-yard dash'],['skill','Position drills'],['interview','Team interviews']].map(([k,lab])=>`<div class="card"><h3>${lab}</h3><p>${drills[k]==null?'Not completed':'Score: '+drills[k]+'/100'}</p>${button(drills[k]==null?'TAKE TEST':'DONE',`A.combine('${k}')`,'tiny primary',drills[k]!=null)}</div>`).join('')}</div>${button('ENTER THE NFL DRAFT','A.playerDraft()','primary',total<3)}`}
+ return nflCareerPage();}
+function settingsPage(){let rows=[['simple','Simple display','Streamlined UI only. Does not manage injuries or depth charts.'],['autoInjury','Automatic injured-starter replacements','If OFF, you must replace injured starters manually.'],['autoContracts','Contract recommendations','Assistant GM suggests deals; approval is still required.'],['autoFree','Free-agent assistance','Assistant GM can recommend signings.'],['autoTrades','Trade recommendations','Suggested trades are never completed without your review.']];return `${title('Settings','Control your franchise, not your browser downloads.')}<div class="two"><div class="card"><h3>Gameplay & assistance</h3>${rows.map(([id,label,desc])=>`<label class="setting"><div><b>${label}</b><p class="sub">${desc}</p></div><input type="checkbox" ${game.settings[id]?'checked':''} onchange="A.setting('${id}',this.checked)"></label>`).join('')}<label class="lab">CPU trade difficulty</label><select class="field wide" onchange="A.setting('difficulty',this.value)">${selectOptions(['Easy','Normal','Hard'].map(v=>[v,v]),game.settings.difficulty)}</select></div><div class="card"><h3>Careers & autosave</h3><p class="sub">All progress saves automatically in this browser. Starting a new career creates a new save after confirmation.</p>${button('START A NEW CAREER','A.reset()','danger wide')}<details style="margin-top:14px"><summary class="sub" style="cursor:pointer">Advanced save backup / roster data sources</summary><p class="fine">Roster identity synchronization is automatic where the site can access source data. Imported or hosted data is separate from simulated OVR and contracts.</p>${button('REFRESH REAL ROSTERS','A.sync()','tiny')} ${button('EXPORT BACKUP','A.export()','tiny')}<label class="button tiny">IMPORT BACKUP<input type="file" hidden accept=".json" onchange="A.import(this.files[0])"></label></details></div></div>`}
+function leaguePage(){let standing=[...teams()].sort(standingsSort),currentYear=game.phase==='draft'?game.year:game.year+1,initial=game.year===2027&&!game.prevDraftOrder?.length;let ord=game.phase==='draft'?draftOrder(game.year):game.prevDraftOrder?.length?game.prevDraftOrder:sortRecords();if(initial&&game.phase!=='draft')ord=draftOrder(2027);return `${title('NFL League','Standings, seedings and future draft selections.')}${initial?`<p class="sub">Opening 2027 draft order is a provisional projection using standings as of November 7, 2026. It is not an official finalized NFL draft order.</p>`:''}<div class="two"><div class="card"><h3>Franchise standings</h3><div class="tablewrap">${table(['TEAM','W','L','PCT','OVR'],standing.map(t=>`<tr><td>${teamIcon(t.id,26)} ${esc(t.name)}</td><td>${t.w}</td><td>${t.l}</td><td>${(t.w/(t.w+t.l||1)).toFixed(3)}</td><td>${rating(t.id)}</td></tr>`))}</div></div><div class="flowcol"><div class="card"><h3>Projected NFL Draft order</h3><p class="sub">Worst records pick earlier. The opening 2027 order is a November 2026 snapshot; later draft orders follow your simulated standings. Traded picks keep their current owners.</p>${ord.map((src,i)=>`<div class="pickline"><b>#${i+1}</b>${teamIcon(src,26)}<span>${esc(team(src)?.nickname||src)}</span><span class="push sub">${esc(team(ownerOf(currentYear,1,src))?.nickname||src)} owns</span></div>`).join('')}</div>${playoffUI()}</div></div>`}
+
+const A={extraInterview(id){extraInterview(id)},extraBattle(pos){extraBattle(pos)},extraTicket(v){extraTicket(v)},extraFacility(){extraFacility()},page(id){page=id;selectedProspect=null;render();window.scrollTo?.(0,0)},mode(m){formMode=m;render()},career(c){formCareer=c;if(!['owner','gm'].includes(c))formMode='existing';render()},team(id){formTeam=id;render()},archetype(a){formCoachArchetype=a;render()},playerType(p){playerStart=p;render()},start(){begin(formMode)},advanceFront(){advanceFront()},collegeGame(){advanceCollege()},combine(d){combineDrill(d)},playerDraft(){finishPlayerDraft()},acceptJob(){acceptJob()},declineJob(){declineJob()},sync(){syncWebsiteRosters()},importRoster(f){importRosterCSV(f)},rosterTeam(id){rosterHubTeam=id;render()},rosterStatus(id){rosterHubStatus=id;render()},pos(where,v){filter[where]=v;render()},query(where,v){filter[where+'Query']=v;render()},exp(id){chooseExpansion(id)},starter(pos,slot,id){setStarter(pos,slot,id)},sign(id){sign(id)},cut(id){cut(id)},tradeTeam(id){tradeTo=id;render()},trade(){trade()},draft(id){selectedProspect=null;selectDraft(id)},inspect(id){inspectProspect(id)},closeProspect(){closeProspect()},pickTrade(){pickTrade()},hire(id){hire(id)},fireCoach(){fireCoach()},fireRole(r){fireRole(r)},coachFilter(v){coachMarketRole=v;render()},scheme(t,v){scheme(t,v)},signScout(id){signScout(id)},dropScout(id){dropScout(id)},assign(id,p){assignScout(id,p)},setting(k,v){setSetting(k,v)},nextSeason(){changeSeason()},play(){startPreparedGame()},kickoff(o=null,r=null){startPreparedGame(o,r)},playPlayoff(){let m=nextPlayoff();if(m)startPreparedGame(m.a===game.userTeam?m.b:m.a,m.round)},advancePlayoff(){progressPlayoffs()},bye(){advanceBye()},plan(k,v){setPlan(k,v)},move(id,yes){approveMove(id,yes)},call(o,d){drive(o,d)},autoGame(){autoFinish()},training(v){setTraining(v)},upgrade(){upgradePlayer()},reset(){reset()},export(){exportSave()},import(f){importSave(f)}};
+window.A=A;
+
+Object.assign(A,{
+ coachName(which,value){if(which==='first')formCoachFirst=value;if(which==='last')formCoachLast=value},
+ simSeason(){advanceTeamSeasonFixed()},
+ sidelined(){sidelineWeek()},
+ rehab(choice){rehabPlayer(choice)},
+ ackHealth(){if(game.playerInjuryEvent)game.playerInjuryEvent.acknowledged=true;store();render()},
+ renameCoach(){renameCoach()},
+ nextDrive(){if(game.currentGame)drive(game.gameplan?.off||'balanced',game.gameplan?.def||'zone')},
+ offseasonTraining(f){offseasonTraining(f)},
+ simQuarter(){let count=0;while(game.currentGame&&count++<2)drive(game.gameplan?.off||'balanced',game.gameplan?.def||'zone');store();render()},
+ continuePost(){continuePostseason()},
+ openOffseason(){enterOffseason()},
+ advanceOffseason(){advanceOffseason()},
+ uniform(kind,value){return say('Game-day uniform choices are locked. Use preseason Uniform Planning instead.',true)},
+ uniformPick(week,id){chooseUniformForWeek(Number(week),id)},
+ uniformSubmit(){submitUniformSchedule()},
+ uniformPage(){page='uniforms';render()},
+ contract(id){startContract(id)},
+ closeContract(){selectedContract=null;render()},
+ offerContract(){negotiateContract()},
+ request(kind){requestPlayer(kind)},
+ acceptPlayerOffer(id){acceptPlayerOffer(id)},
+ suggestTrade(){submitCoachTrade()},coachTarget(id){coachTarget(id)},coachOffer(id){coachOffer(id)},
+ hiringWindow(){nextHiringWindow()},
+ inspectRoster(id){selectedRosterPlayer=id;render()},
+ closeRoster(){selectedRosterPlayer=null;render()},
+ tradeTarget(id){let p=game.players.find(x=>x.id===id);if(!p)return;tradeTo=p.team;tradeRequestedPlayer=id;selectedRosterPlayer=null;page='trades';render()},
+ reset(){if(!confirm('Start a brand-new NFL GM career? Your current autosave will be replaced.'))return;localStorage.removeItem(STORAGE);game=initial();page='dashboard';selectedContract=null;selectedRosterPlayer=null;render();},
+});
+
+
+/* NFL GM career permissions, transactions, player health and Game Center refinement. */
+function gameHealthEvent(p){
+ if(!isPlayer()||!p||p.id!==game.careerPlayer)return;
+ game.playerInjuryEvent={reason:p.injuryReason||'Game injury',initialWeeks:Math.max(1,p.injuryWeeks||1),week:game.week,year:game.year,rehabWeek:null,rehabChoice:null,acknowledged:false};
+ news('PLAYER CAREER INJURY: '+p.name+' will miss time. Open My Career to manage rehabilitation.');
+}
+function rehabPlayer(choice){
+ if(!isPlayer()||!['therapy','film','rest'].includes(choice))return;
+ let p=game.players.find(x=>x.id===game.careerPlayer),ev=game.playerInjuryEvent;
+ if(!p||!(p.injuryWeeks>0))return say('You are cleared to play; rehabilitation is no longer needed.',true);
+ if(!ev)game.playerInjuryEvent={reason:p.injuryReason||'Injury',week:game.week,year:game.year,rehabWeek:null};
+ let item=game.playerInjuryEvent,stamp=game.year+'-'+game.phase+'-'+game.week;
+ if(item.rehabWeek===stamp)return say('You already completed your recovery session for this week.',true);
+ item.rehabWeek=stamp;item.rehabChoice=choice;item.acknowledged=true;
+ if(choice==='therapy'){game.playerXP=(game.playerXP||0)+3;news('REHAB: supervised therapy completed. Your medical timeline remains '+p.injuryWeeks+' weeks.');}
+ if(choice==='film'){game.playerXP=(game.playerXP||0)+5;news('REHAB: film study earned 5 XP while you recover.');}
+ if(choice==='rest'){game.playerFinancials.morale=clamp((game.playerFinancials?.morale||70)+3,10,100);news('REHAB: extra rest helped morale. You remain sidelined until cleared.');}
+ store();render();
+}
+function playerInjuryPanel(){
+ if(!isPlayer())return '';
+ let p=game.players.find(x=>x.id===game.careerPlayer),ev=game.playerInjuryEvent;if(!p)return '';
+ let injured=(p.injuryWeeks||0)>0||p.status==='INJ'||p.status==='IR';
+ if(!injured)return ev&&ev.acknowledged===false?`<div class="card section"><h3>Medical update · Cleared</h3><p class="sub">Your previous injury has healed. Team doctors cleared you to return to practice and games.</p>${button('ACKNOWLEDGE','A.ackHealth()','tiny primary')}</div>`:'';
+ let weekStamp=game.year+'-'+game.phase+'-'+game.week,used=ev?.rehabWeek===weekStamp;
+ return `<div class="card section" style="border-color:#d8904f"><div class="sectionhead"><h3>🏥 Player career · Medical room</h3>${chip('OUT',p.injuryWeeks+' WEEK'+(p.injuryWeeks===1?'':'S'))}</div><p><b>${esc(p.name)} · ${esc(p.injuryReason||'Injury')}</b></p><p class="sub">You cannot play while injured. Your team will compete without you; your recovery updates after each game week. Choose one recovery activity per week.</p><div class="toolbar">${button('PHYSICAL THERAPY','A.rehab("therapy")','tiny',used)}${button('FILM STUDY','A.rehab("film")','tiny',used)}${button('EXTRA REST','A.rehab("rest")','tiny',used)}</div>${used?`<p class="fine">This week's recovery session: ${esc(ev?.rehabChoice||'complete')}. Continue to the next game week for another session.</p>`:''}</div>`;
+}
+function canEditUniform(){return gmRole()}
+// Each franchise has its own 2026-era uniform closet. Names identify jersey sets;
+// they are not official product artwork or a promise of real-life calendar dates.
+const UNIFORM_CLOSET={
+ ARI:['Cardinal Red','White','Black Alternate','Desert Rivalries'],ATL:['Falcons Red','White','1966 Throwback','All Black'],BAL:['Purple','White','All Black','Purple Rising'],BUF:['Royal Blue','White','Nickel City','Cold Front','Red Color Rush'],
+ CAR:['Black','White','Panther Blue'],CHI:['Navy','White','Classic Throwback','Rivalries'],CIN:['Black','White','Orange Alternate','White Bengal'],CLE:['Brown','White','Brown Alternate','1946 Throwback'],
+ DAL:['White','Navy','Color Rush','Thanksgiving Classic'],DEN:['Sunset Orange','Summit White','Midnight Navy','1977 Throwback'],DET:['Honolulu Blue','White','Black Alternate','Rivalries'],GB:['Green','White','Vintage Green','Classic White','1923 Throwback'],
+ HOU:['Deep Steel Blue','Liberty White','Battle Red','Rivalries'],IND:['Royal Blue','White','Indiana Nights','Anvil Strike'],JAX:['Teal','White','Prowler Throwback','Bold City'],KC:['Red','White'],
+ LV:['Black','White','Classic White Throwback'],LAC:['Powder Blue','White','Super Chargers Navy','Charger Power Gold'],LAR:['Royal Blue','White','Classic Sol','Fearsome White','Midnight Mode'],MIA:['Aqua','White','Aqua Throwback','White Throwback','Dark Water'],
+ MIN:['Purple','White','Winter Warrior','Rivalries'],NE:['Navy','White','Pat Patriot Throwback','Nor\'easter'],NO:['Black','White','Gold Alternate','White Out'],NYG:['Blue','White','Legacy Blue','Vintage White'],
+ NYJ:['Green','White','White Out','Gotham City','Classic Throwback'],PHI:['Midnight Green','White','Kelly Green','All Black'],PIT:['Black','White','1933 Throwback','Black Color Rush'],SEA:['College Navy','White','Royal Blue Throwback','Rivalries'],
+ SF:['Red','White','1994 Throwback','Black Rivalries'],TB:['Red','White','Creamsicle','All Pewter'],TEN:['Titans Blue','White','Rivalries'],WAS:['Burgundy','White','Hail Raiser','Black Alternate']
+};
+const MAX_ALTERNATE_GAMES=4; // NFL expanded regular-season alternate appearances from 3 to 4 in 2025.
+function uniformCloset(teamId){
+ const t=team(teamId),data=UNIFORM_CLOSET[teamId]||[(t?.nickname||'Club')+' Home','White','Custom Alternate'];
+ return data.map((name,i)=>({id:i===0?'home':i===1?'away':'alt'+(i-1),name,tone:/white|silver|cream|gold/i.test(name)?'light':'dark',alternate:i>1}));
+}
+function getSeasonMatchup(week){
+ const round=(game.schedule||[])[week-1];const pair=round?.pairings?.find(p=>p.includes(game.userTeam));
+ if(!pair)return null;
+ return{home:pair[0]===game.userTeam,opp:pair.find(x=>x!==game.userTeam),week};
+}
+function defaultUniformChoice(week){return getSeasonMatchup(week)?.home?'home':'away'}
+function selectedUniformChoice(week){return(game.uniformPlan||{})[String(week)]||defaultUniformChoice(week)}
+function selectedUniform(week){return uniformCloset(game.userTeam).find(k=>k.id===selectedUniformChoice(week))||uniformCloset(game.userTeam)[0]}
+function ensureUniformState(){
+ if(!game||game.phase==='setup')return;
+ if(!game.uniformPlan||game.uniformYear!==game.year){
+  game.uniformPlan={};game.uniformReviews={};game.uniformYear=game.year;
+  // Existing saves already past preseason cannot retroactively change their schedule.
+  game.uniformLocked=game.phase!=='preseason';game.uniformSubmitted=game.uniformLocked;
+ }
+ if(game.phase==='preseason'&&(!game.schedule||game.schedule.length!==18)){
+  let oldWeek=game.week,oldResults=game.results;makeSchedule();game.week=oldWeek;game.results=oldResults;
+ }
+ // Normalise home/away assignments for an old preseason save without changing opponents.
+ if(game.phase==='preseason'&&game.schedule?.length===18){for(const round of game.schedule){if(!round?.pairings)continue;round.pairings=round.pairings.map(pair=>{if(!pair.includes(game.userTeam))return pair;const other=pair.find(id=>id!==game.userTeam),isHome=(round.week+game.year)%2===1;return isHome?[game.userTeam,other]:[other,game.userTeam]})}}
+}
+function uniformPlanEditable(){return canEditUniform()&&game.phase==='preseason'&&!game.uniformLocked}
+function uniformReviewFor(week){
+ let kit=selectedUniform(week),m=getSeasonMatchup(week);
+ if(!m)return{ok:true,text:'BYE'};
+ if(!kit.alternate)return{ok:true,text:'Standard uniform'};
+ if(!m.home){
+  let oppHome=uniformCloset(m.opp)[0];
+  if(kit.tone===oppHome.tone)return{ok:false,text:'Contrast conflict: away alternate and home colors are both '+kit.tone+'. Choose a light/contrasting set.'};
+ }
+ return{ok:true,text:'Eligible for league approval'};
+}
+function chooseUniformForWeek(week,id){
+ ensureUniformState();if(!uniformPlanEditable())return say('Only owners and GMs can schedule uniforms during preseason, before league submission.',true);
+ let m=getSeasonMatchup(week),kit=uniformCloset(game.userTeam).find(k=>k.id===id);
+ if(!m||!kit)return say('That game or uniform option is unavailable.',true);
+ let proposal={...game.uniformPlan,[String(week)]:id};
+ const used=Object.entries(proposal).filter(([w,v])=>v.startsWith('alt')&&getSeasonMatchup(Number(w))).length;
+ if(used>MAX_ALTERNATE_GAMES){render();return say('NFL GM allows only four regular-season alternate/throwback appearances.',true);}
+ game.uniformPlan=proposal;game.uniformReviews={};store();render();
+}
+function submitUniformSchedule(){
+ ensureUniformState();if(!uniformPlanEditable())return say('The uniform calendar is already locked or you do not control uniforms.',true);
+ let invalid=[];const reviews={};let altCount=0;
+ for(let week=1;week<=18;week++){
+  let m=getSeasonMatchup(week);if(!m)continue;
+  let kit=selectedUniform(week),r=uniformReviewFor(week);
+  if(kit.alternate)altCount++;
+  reviews[String(week)]={status:r.ok?(kit.alternate?'APPROVED':'STANDARD'):'REJECTED',reason:r.text,kit:kit.id,opponent:m.opp};
+  if(!r.ok)invalid.push('Week '+week+': '+r.text);
+ }
+ if(altCount>MAX_ALTERNATE_GAMES)invalid.push('Maximum '+MAX_ALTERNATE_GAMES+' alternate games in the regular season.');
+ if(invalid.length){game.uniformReviews=reviews;store();render();return say('League declined the submission. Fix '+invalid.length+' issue(s) shown in red, then resubmit.',true)}
+ if(!confirm('Submit the '+game.year+' uniform schedule to league operations? Once approved it is locked for the season.'))return;
+ game.uniformReviews=reviews;game.uniformSubmitted=true;game.uniformLocked=true;game.uniformSubmittedYear=game.year;
+ news('NFL OPERATIONS: '+mine().name+' uniform calendar approved and locked ('+altCount+' special-uniform games).');store();render();say('League approved your uniform schedule. It is locked for this season.');
+}
+function lockUniformsForSeason(){
+ ensureUniformState();if(game.uniformLocked)return;
+ // If no schedule is submitted, regulation home/away sets are used for every game.
+ game.uniformPlan={};game.uniformReviews={};
+ for(let w=1;w<=18;w++)if(getSeasonMatchup(w))game.uniformReviews[String(w)]={status:'STANDARD',reason:'Default home/road uniform',kit:defaultUniformChoice(w)};
+ game.uniformLocked=true;game.uniformSubmitted=false;game.uniformSubmittedYear=game.year;
+ news('NFL OPERATIONS: No special-uniform calendar submitted. Standard home/road uniforms locked for the season.');
+}
+function uniformPlannerPage(){
+ ensureUniformState();const editable=uniformPlanEditable(),isGM=canEditUniform(),active=['preseason','season','playoffs','offseason_review','offseason'].includes(game.phase);
+ const records=Array.from({length:18},(_,i)=>{
+  let w=i+1,m=getSeasonMatchup(w);if(!m)return`<div class="uniform-week"><b>Week ${w}</b><span class="sub">BYE</span><span class="sub">No uniform scheduled</span></div>`;
+  let kit=selectedUniform(w),r=game.uniformReviews?.[String(w)]||uniformReviewFor(w),isPast=game.phase!=='preseason'&&game.week>w,options=uniformCloset(game.userTeam);
+  return `<div class="uniform-week"><div><b>Week ${w} · ${m.home?'HOME':'AWAY'}</b><small>${esc(m.home?'vs ':'@ ')}${esc(team(m.opp)?.name||m.opp)}</small></div>
+  <div>${editable?`<select class="field wide" aria-label="Week ${w} jersey" onchange="A.uniformPick(${w},this.value)">${options.map(o=>`<option value="${o.id}" ${o.id===kit.id?'selected':''}>${esc(o.name)}${o.alternate?' · Alternate':''}</option>`).join('')}</select>`:`<b>${esc(kit.name)}</b>`}</div>
+  <span class="uniform-result ${r.ok===false||r.status==='REJECTED'?'uniform-rejected':r.status==='APPROVED'?'uniform-approved':''}">${r.status==='APPROVED'?'✓ League approved':r.status==='STANDARD'?'Standard set':r.status==='REJECTED'?'⚠ Rejected':editable?(kit.alternate?'Pending approval':'Standard set'):'Locked'}${r.ok===false||r.status==='REJECTED'?`<small>${esc(r.reason||'League review required')}</small>`:''}</span></div>`;
+ }).join('');
+ let alt=Object.entries(game.uniformPlan||{}).filter(([w,v])=>v.startsWith('alt')&&getSeasonMatchup(Number(w))).length;
+ return `${title('Uniform Planning',`${game.year} · ${esc(mine().name)} · Season uniform calendar`,chip('STATUS',editable?'PLANNING':game.uniformSubmitted?'APPROVED & LOCKED':'LOCKED'))}
+ <div class="two"><div class="card"><h3>League uniform calendar</h3><p class="sub">Teams choose the home jersey and send special-uniform dates to league operations in advance. NFL GM uses preseason as its scheduling window. Once the regular season begins, jerseys cannot be changed game day.</p><div class="inlinechips">${chip('SPECIAL GAMES',alt+'/'+MAX_ALTERNATE_GAMES)}${chip('DEFAULT','Home / road')}${chip('CONTROL','OWNER')}</div>
+ ${game.phase==='preseason'?`<p class="fine">You can schedule up to four alternate or throwback appearances. Away alternatives must contrast with the home team's colors. Submit before preseason ends.</p>`:!active?`<p class="notice">The next season's uniform calendar opens during preseason. Game-day uniforms are not selectable here.</p>`:`<p class="fine">This season's submitted calendar is read-only. New changes must be made during next year's preseason.</p>`}
+ ${editable?button('SUBMIT CALENDAR FOR LEAGUE APPROVAL','A.uniformSubmit()','primary wide'):''}</div><div class="card"><h3>Team uniform closet</h3><p class="sub">Team-specific uniform sets, based on published 2026 styles. Special uniforms are limited to approved dates.</p>${uniformCloset(game.userTeam).map((kit,i)=>`<div class="uniform-closet-entry"><span class="${kit.alternate?'uniform-alt-dot':'uniform-default-dot'}"></span><b>${esc(kit.name)}</b><small>${i===0?'Primary home':i===1?'Primary road':'Alternate / throwback'}</small></div>`).join('')}</div></div>
+ <div class="card section"><div class="sectionhead"><h3>Regular-season uniform schedule</h3>${chip('YEAR',game.year)}</div>${active||game.schedule?.length?`<div class="uniform-schedule">${records}</div>`:'<p class="sub">Your matchups will be generated before preseason. Finish your draft to unlock the uniform planner.</p>'}</div>`;
+}
+function previewUniform(){
+ ensureUniformState();let m=game.phase==='season'?getSeasonMatchup(game.week):null;
+ const week=game.phase==='season'?game.week:null,pre=game.phase==='preseason',choice=pre?(game.preWeek%2?'home':'away'):week?selectedUniformChoice(week):null;
+ let kit=uniformCloset(game.userTeam).find(x=>x.id===choice)||uniformCloset(game.userTeam)[0];
+ const status=game.uniformSubmitted?'League-approved uniform':game.uniformLocked?'Standard uniform locked':'Preseason default uniform';
+ return `<div class="card section"><div class="sectionhead"><h3>Scheduled uniform · ${esc(mine().nickname)}</h3>${chip('STATUS',status)}</div><p><b>${esc(kit.name)}</b> · ${esc(pre?'Preseason exhibition':m?(m.home?'Home game':'Away game'):'Postseason / league-assigned')}</p><p class="fine">No jersey changes at kickoff. ${canEditUniform()&&game.phase==='preseason'?'Owners and GMs can set the regular-season calendar in Uniform Planning.':'Only owners and GMs schedule special uniforms in preseason.'}</p>${canEditUniform()&&game.phase==='preseason'?button('OPEN UNIFORM PLANNING','A.uniformPage()','tiny'):''}</div>`;
+}
+function coachTradeCandidates(){
+ if(!coachRole())return [];
+ let needed=need().filter(n=>n.weight>=2).slice(0,6).map(n=>n.pos);
+ return game.players.filter(p=>p.team!==game.userTeam&&p.team!=='FA'&&p.team!=='COLLEGE'&&needed.includes(p.pos)&&p.ovr>=65&&p.ovr<=85&&(!p.injuryWeeks||p.injuryWeeks<3))
+ .sort((a,b)=>b.ovr-a.ovr).slice(0,35);
+}
+function suggestTrade(){
+ if(!coachRole())return say('Only coaches can send staff trade recommendations.',true);
+ let id=$('coachTradeTarget')?.value,candidates=coachTradeCandidates(),p=candidates.find(x=>x.id===id)||candidates[0];
+ if(!p)return say('No reasonable external targets are available.',true);
+ let open=(game.coachTradeRequests||[]).find(r=>r.status==='PENDING');if(open)return say('Your GM is still evaluating your previous trade recommendation.',true);
+ if(!game.coachTradeRequests)game.coachTradeRequests=[];
+ let req={id:uuid('coachtrade'),playerId:p.id,team:p.team,year:game.year,week:game.week,status:'PENDING',response:'Under review: the GM will evaluate cost, roster needs, and available trade assets after the next game week.'};
+ game.coachTradeRequests.unshift(req);news(`COACH → GM: Trade proposal submitted for ${p.name}, ${p.pos}, ${team(p.team)?.nickname||p.team}. Decision due after the next week.`);
+ store();render();say('Recommendation submitted. Watch the GM Decision Inbox for a response after the next game week.');
+}
+function resolveCoachTradeRequests(){
+ if(!game.coachTradeRequests?.length)return;
+ for(const req of game.coachTradeRequests){
+  if(req.status!=='PENDING')continue;
+  let p=game.players.find(x=>x.id===req.playerId);
+  if(!p||p.team!==req.team){req.status='DECLINED';req.response='GM reply: target is no longer on the expected team.';continue;}
+  let others=own().filter(x=>x.id!==game.careerPlayer&&x.ovr>=62&&x.ovr<=p.ovr+4&&x.ovr>=p.ovr-11&&x.injuryWeeks<=0);
+  let otherNeeds=need(p.team).map(x=>x.pos);let sending=others.filter(x=>otherNeeds.includes(x.pos)).sort((a,b)=>Math.abs(playerValue(a)-playerValue(p)) - Math.abs(playerValue(b)-playerValue(p)))[0];
+  let possible=!!sending&&cap()+sending.salary-p.salary>=0&&cap(p.team)+p.salary-sending.salary>=0;
+  let fair=possible&&playerValue(sending)>=playerValue(p)*.88;
+  if(fair){let old=p.team;p.team=game.userTeam;sending.team=old;req.status='COMPLETED';req.response=`GM COMPLETED TRADE: acquired ${p.name} (${p.pos}, ${p.ovr} OVR) from ${team(old)?.nickname||old}; sent ${sending.name} (${sending.pos}, ${sending.ovr} OVR).`;req.sentId=sending.id;setDefaultLineup(true);}
+  else {req.status='DECLINED';req.response=`GM DECLINED: ${team(p.team)?.nickname||p.team} requested more value than our available trade package or cap could support.`;}
+  news(req.response);
+ }
+}
+function coachTradeInbox(){
+ if(!coachRole())return '';
+ let history=(game.coachTradeRequests||[]).slice(0,8),candidates=coachTradeCandidates(),canSend=!history.some(r=>r.status==='PENDING');
+ return `<div class="card section"><h3>GM Decision Inbox · Personnel suggestions</h3><p class="sub">Coaches recommend players; the GM negotiates. A completed deal actually moves players between rosters.</p><label class="lab">Recommend a realistic trade target</label><select id="coachTradeTarget" class="field wide">${candidates.map(p=>`<option value="${p.id}">${esc(p.name)} · ${p.pos} · ${p.ovr} OVR · ${esc(team(p.team)?.nickname||p.team)}</option>`).join('')}</select><div class="section">${button('SEND RECOMMENDATION TO GM','A.suggestTrade()','tiny primary',!canSend||!candidates.length)}</div>${history.length?history.map(r=>`<div class="newsitem"><b>${r.status==='PENDING'?'⏳ GM REVIEW':r.status==='COMPLETED'?'✓ TRADE COMPLETED':'GM DECLINED'} · ${esc(game.players.find(p=>p.id===r.playerId)?.name||'Player')}</b><p class="sub">${esc(r.response||'Awaiting response.')}</p><small>Sent ${r.year} Week ${r.week}</small></div>`).join(''):'<p class="fine">No trade recommendations submitted yet.</p>'}</div>`;
+}
+function coachAdvicePanel(){return coachRole()?'<p class="fine">To recommend a trade, visit NFL Rosters and open a player profile.</p>':'';}
+function renameCoach(){
+ if(!coachRole())return;
+ let first=($('coachRenameFirst')?.value||'').trim(),last=($('coachRenameLast')?.value||'').trim();
+ if(!first||!last)return say('Enter a first and last name for your coach.',true);
+ let name=(first+' '+last).slice(0,52),c=game.coaches.find(x=>x.id===game.careerCoach);
+ if(c)c.name=name;game.careerName=name;if(game.careerPending)game.careerPending.name=name;
+ news('Coaching identity updated: '+name);store();render();
+}
+function coachCareerPageOverride(){
+ let my=game.coaches.find(c=>c.id===game.careerCoach),a=ARCHETYPES[my?.archetype],display=game.careerName||my?.name||'Coach';
+ return `${title('My Coaching Career',esc(display)+' · '+esc(CAREER_ROLES[game.career]))}<div class="careerhero"><div class="eyebrow">${esc(CAREER_ROLES[game.career])}</div><h2>${esc(display)}</h2><p class="sub">${mine().name} · ${esc(a?.name||'Coach')} · Level ${my?.level||1}/5 · Job security ${game.jobSecurity||70}/100</p></div><div class="two section"><div class="card"><h3>Your coaching identity</h3><p class="sub">Edit your real first and last name without starting over. Your coaching role stays the same.</p><div class="formgrid"><label>First name<input id="coachRenameFirst" class="field" placeholder="First name" value="${esc(display.split(' ')[0]||'')}"></label><label>Last name<input id="coachRenameLast" class="field" placeholder="Last name" value="${esc(display.split(' ').slice(1).join(' ')||'')}"></label></div><div class="section">${button('SAVE COACH NAME','A.renameCoach()','tiny primary')}</div></div><div class="card"><h3>Your development specialty</h3><p>${esc(a?.desc||'Your decisions and player development affect team performance.')}</p><p class="sub">Coach XP ${game.coachXP||0} · Effective team fit ${fit(game.userTeam).effective.toFixed(1)}/5.</p></div></div><p class="fine">Trade requests are managed from NFL Rosters. Select a player to build a proposal.</p>`;
+}
+function playoffRacePanel(){
+ const conf=mine().conf,arr=seeds(conf),rank=arr.findIndex(x=>x.id===game.userTeam),labels=['#1 BYE','#2','#3','#4','#5 WC','#6 WC','#7 WC'];
+ let rows=arr.map((x,i)=>{const t=team(x.id);return `<div class="resultrow" style="${x.id===game.userTeam?'background:rgba(66,199,152,.1);border-radius:8px':''}"><b class="ranknum">${i+1}</b>${teamIcon(x.id,25)}<span>${esc(t?.nickname||x.id)} ${x.id===game.userTeam?'<b>(YOU)</b>':''}</span><span class="push sub">${t.w}-${t.l} · ${labels[i]}</span></div>`}).join('');
+ return `<div class="card section"><div class="sectionhead"><h3>${esc(conf)} Playoff Race</h3>${chip('LIVE',game.phase==='season'?'WEEK '+game.week:'PROJECTED')}</div><p class="sub">Updated from league results. Division winners take seeds 1–4; seven teams qualify. ${rank<0?'Your team currently sits outside the top seven.':`Your current position: seed #${rank+1}.`}</p>${rows}<div class="section">${button('VIEW FULL STANDINGS / BRACKET','A.page("league")','tiny')}</div></div>`;
+}
+function advanceTeamSeason(){
+ if(isPlayer())return say('Player Career cannot skip the season. Play each week or progress while injured.',true);
+ if(!['preseason','season'].includes(game.phase))return say('Season simulation is available only during preseason or the regular season.',true);
+ if(game.currentGame)return say('Finish the current game before simulating the season.',true);
+ if(!confirm('Simulate all remaining '+(game.phase==='preseason'?'preseason and regular-season':'regular-season')+' games? Your team, injuries, standings and player development will advance.'))return;
+ let max=24,done=0;
+ while(['preseason','season'].includes(game.phase)&&done++<max){
+  if(game.phase==='preseason'){
+   let opp=(game.preOpponents||[])[game.preWeek-1];if(!opp){endWeek(null);continue;}
+   let score=scoreGame(game.userTeam,opp,game.preWeek,'preseason');endWeek(score);
+  }else {
+   let pair=nextMatchup(),opp=pair?.find(x=>x!==game.userTeam);
+   if(!opp)advanceBye();else endWeek(scoreGame(game.userTeam,opp,game.week));
+  }
+ }
+ news('Season simulation complete. Review final standings, the injury report, and the playoff race.');page='games';store();render();
+}
+function sidelineWeek(){
+ if(!isPlayer()||!['preseason','season'].includes(game.phase))return;
+ let p=game.players.find(x=>x.id===game.careerPlayer),injured=(p?.injuryWeeks||0)>0;
+ if(!injured)return say('You are cleared to play. Prepare for kickoff.',true);
+ let pair=nextMatchup(),opp=game.phase==='preseason'?(game.preOpponents||[])[game.preWeek-1]:pair?.find(id=>id!==game.userTeam);
+ if(!opp){advanceBye();return;}
+ let r=scoreGame(game.userTeam,opp,game.week,game.phase==='preseason'?'preseason':'regular');game.lastGame={...r,log:[`${p.name} did not play: ${p.injuryReason||'injury'} (${p.injuryWeeks} weeks remaining before this week's recovery).`],stats:{pass:0,rush:0}};
+ news('TEAM GAME WHILE SIDELINED: '+mine().nickname+' '+r.sa+'–'+r.sb+' '+team(opp).nickname+'. '+p.name+' did not play.');
+ endWeek(r);page='games';store();render();
+}
+function gamePage(){
+ if(game.currentGame)return liveGame()+(isPlayer()?playerInjuryPanel():injuryBanner());
+ let phase=game.phase,pm=phase==='playoffs'?nextPlayoff():null,pair=nextMatchup();
+ let opp=phase==='playoffs'&&pm?(pm.a===game.userTeam?pm.b:pm.a):phase==='preseason'?(game.preOpponents||[])[game.preWeek-1]:pair?.find(id=>id!==game.userTeam);
+ let seasonPhase=['preseason','season'].includes(phase),p=game.players.find(x=>x.id===game.careerPlayer),sidelined=isPlayer()&&p?.injuryWeeks>0;
+ let intro=opp?(sidelined?`<div class="card section"><h3>Game week · Watching from the sidelines</h3><p class="sub">${esc(p.name)} cannot play while injured. The team will continue competing as you rehabilitate.</p>${button('SIM TEAM GAME WHILE SIDELINED','A.sidelined()','primary wide')}</div>`:`${gameReport(opp)}${previewUniform()}<div class="card section"><div class="matchintro">${teamIcon(game.userTeam,55)}<div class="gamepoints smallscore">VS</div>${teamIcon(opp,55)}</div><h2>${esc(mine().nickname)} vs ${esc(team(opp)?.nickname||opp)}</h2><p class="sub">${isPlayer()?'Choose only your player-side plan, then play possession by possession.':gmRole()?'Your coaching staff handles play-calling.':'Select your game plan before kickoff.'}</p>${button('KICKOFF · WATCH THE GAME ▶',phase==='playoffs'?`A.kickoff('${opp}','${pm.round}')`:'A.kickoff()','primary wide')}</div>`):phase==='season'?`<div class="card"><h3>Bye week</h3>${button('ADVANCE BYE WEEK','A.bye()','primary')}</div>`:'';
+ let offStatus=['offseason','offseason_review'].includes(phase)?`<div class="card section"><h2>${phase==='offseason_review'?'Season review ready':'NFL Offseason'}</h2><p class="sub">You control when the next stage begins.</p>${button(phase==='offseason_review'?'REVIEW THE SEASON':'OPEN OFFSEASON CONTRACTS',phase==='offseason_review'?'A.openOffseason()':'A.page("offseason")','primary')}</div>`:'';
+ let postStatus=phase==='playoffs'&&!pm?`<div class="card"><h3>Postseason results</h3><p class="sub">The league is completing its remaining playoff games. No automatic advance to the draft.</p>${button('ADVANCE PLAYOFF RESULTS','A.continuePost()','primary')}</div>`:'';
+ let preStatus=phase==='preseason'?`<div class="card section"><h3>Preseason</h3><p class="sub">Exhibition ${game.preWeek} of 3. Prepare for the regular season.</p></div>`:'';
+ let sim=seasonPhase&&!isPlayer()?`<div class="card section"><h3>Season control</h3><p class="sub">Sim the rest of the season or play every matchup yourself. This does not skip the playoffs.</p>${button('SIM REMAINING SEASON','A.simSeason()','tiny')}</div>`:'';
+ let latest=game.lastGame?`<div class="card section"><h3>Last game</h3><div class="lastbox">${teamIcon(game.lastGame.a,40)}<strong>${game.lastGame.sa} – ${game.lastGame.sb}</strong>${teamIcon(game.lastGame.b,40)}</div><div class="playlog postbox">${(game.lastGame.log||[]).slice(0,8).map(x=>`<p>${esc(x)}</p>`).join('')}</div></div>`:'';
+ let updates=coachRole()?'':gmRole()&&game.pendingMoves?.length?`<div class="card section"><h3>Front-office decisions</h3>${game.pendingMoves.map(m=>`<div class="newsitem"><b>${esc(m.description)}</b><div class="toolbar">${button('REVIEW','A.move("'+m.id+'",true)','tiny primary')}${button('DECLINE','A.move("'+m.id+'",false)','tiny')}</div></div>`).join('')}</div>`:'';
+ return `${title('Game Center',`${game.year} · ${phase==='season'?'Week '+game.week:phase==='preseason'?'Preseason '+game.preWeek:phase.replace(/_/g,' ')}`,chip('RECORD',mine().w+'-'+mine().l))}${coachRole()||isPlayer()?'':injuryBanner()}${playerInjuryPanel()}${updates}${phase==='playoffs'?postStatus||intro:seasonPhase?intro+preStatus:offStatus||`<div class="card"><p class="sub">Finish offseason preparation to begin your season.</p></div>`}${sim}${latest}${phase==='season'||phase==='preseason'?playoffRacePanel():''}`;
+}
+function settingsPage(){
+ let rows=[['simple','Simple display','Streamlined UI only.'],['autoInjury','Automatic injured-starter replacement','If OFF, personnel managers change the depth chart manually.'],['autoContracts','Contract recommendations','You review and approve recommended deals.'],['autoFree','Free-agent assistance','Assistant GM suggests free agents.'],['autoTrades','Trade recommendations','Trades require approval by an Owner or GM.']];
+ return `${title('Settings','Your game automatically saves in this browser.')}<div class="two"><div class="card"><h3>Gameplay & assistance</h3>${rows.map(([id,label,desc])=>`<label class="setting"><div><b>${label}</b><p class="sub">${desc}</p></div><input type="checkbox" ${game.settings[id]?'checked':''} onchange="A.setting('${id}',this.checked)"></label>`).join('')}<label class="lab">CPU trade difficulty</label><select class="field wide" onchange="A.setting('difficulty',this.value)">${selectOptions(['Easy','Normal','Hard'].map(v=>[v,v]),game.settings.difficulty)}</select></div><div class="card"><h3>Autosave</h3><p class="sub">Your franchise is automatically saved on this device after games, transactions and settings changes. Game updates will not overwrite your career.</p><details><summary class="sub" style="cursor:pointer">Advanced save backup / roster updates</summary>${button('REFRESH NFL ROSTERS','A.sync()','tiny')}${button('EXPORT SAVE BACKUP','A.export()','tiny')}<label class="button tiny">IMPORT BACKUP<input type="file" hidden accept=".json" onchange="A.import(this.files[0])"></label></details></div></div>`;
+}
+
+// NFL GM: additional franchise systems. All new data is saved inside the existing career save.
+function extras(){if(!game.extraSystems)game.extraSystems={news:[],finances:{fans:65,facilities:1,ticket:115,cash:125,sponsors:12},battles:[],combine:{},awards:[],records:[],pressure:55,carousel:[],lastSeason:'',lastWeek:'',rumorWeek:'',campYear:0};return game.extraSystems}
+function extraItem(message,category='LEAGUE'){let x=extras();x.news.unshift({message,category,year:game.year,week:game.week});x.news=x.news.slice(0,90)}
+function extraRefresh(){if(!game||game.phase==='setup')return;let x=extras(),key=game.year+'-'+game.phase+'-'+game.week;if(x.lastWeek!==key){x.lastWeek=key;if(game.phase==='season'&&game.week%3===0){let t=teams().filter(t=>t.id!=='EXP').sort((a,b)=>b.w-a.w)[0];if(t)extraItem(`${t.name} lead the league conversation at ${t.w}-${t.l}. Trade deadline and coaching pressure are building.`,'RUMOR')}if(game.phase==='season'&&game.week===9)extraItem('TRADE DEADLINE WATCH: Teams are evaluating expiring contracts and positional needs.','TRADE');if(game.phase==='preseason'&&x.campYear!==game.year){x.campYear=game.year;extraItem('Training camps opened. Position battles can change starting jobs.','CAMP')}}}
+function extraNewsPage(){extraRefresh();let x=extras(),recent=(game.news||[]).slice(0,24).map(n=>({message:n.text,year:n.year,week:n.week,category:'FRANCHISE'})),rows=[...x.news,...recent].sort((a,b)=>b.year-a.year||b.week-a.week);return `${title('NFL News & Rumors','Your simulated league newsroom · trades, staff moves, contracts and season stories')}${rows.length?rows.slice(0,45).map(n=>`<div class="card section"><small class="sub">${esc(n.category)} · ${n.year} · Week ${n.week}</small><p>${esc(n.message)}</p></div>`).join(''):'<div class="card"><p class="sub">League stories will appear as your career progresses.</p></div>'}`}
+function extraCombinePage(){if(isPlayer())return `${title('NFL Combine','Your player career follows your own college and combine journey. Team scouting interviews are restricted to staff.')}`;let x=extras(),available=(game.prospects||[]).filter(p=>!p.drafted).slice(0,45),offseason=['draft','offseason','offseason_intro','offseason_review','expansion'].includes(game.phase);return `${title('Combine & Pro Days','Interview real named prospects when available; testing results are game-generated estimates')}${!offseason?'<div class="notice">Combine activities are available during the offseason and draft period.</div>':''}<div class="two"><div class="card"><h3>Prospect interviews</h3><p class="sub">Interviewing reveals a scouting note, not the player’s hidden true overall. Each prospect can be interviewed once per year.</p>${available.map(p=>`<div class="marketrow"><div class="minzero"><b>${esc(p.name)}</b><small class="sub">${esc(p.school||'College')} · ${p.pos}</small></div>${button(x.combine[game.year+':'+p.id]?'SCOUTED':'INTERVIEW',`A.extraInterview('${p.id}')`,'tiny',!offseason||!!x.combine[game.year+':'+p.id])}</div>`).join('')||'<p>No available prospects.</p>'}</div><div class="card"><h3>Scouting reports</h3>${Object.entries(x.combine).filter(([key])=>key.startsWith(game.year+':')).map(([key,v])=>`<div class="newsitem"><b>${esc(v.name)}</b><p class="sub">${esc(v.note)} · ${esc(v.test)}</p></div>`).join('')||'<p class="sub">Interview a prospect to unlock a scouting report.</p>'}</div></div>`}
+function extraInterview(id){if(!['draft','offseason','offseason_intro','offseason_review','expansion'].includes(game.phase))return say('Combine interviews are only available in the offseason.',true);let p=game.prospects.find(p=>p.id===id);if(!p)return;let x=extras(),k=game.year+':'+id;if(x.combine[k])return;let scouts=(game.scouts||[]),lvl=scouts.reduce((a,s)=>a+(s.level||1),0)/Math.max(1,scouts.length),range=lvl>=4?'Narrow projection':'Broad projection';x.combine[k]={name:p.name,note:`${range}; ${p.pos} prospect. Scheme fit and film matter.`,test:`Pro-day testing: ${rnd(65,95)} percentile (simulated)`};extraItem(`Scouting department interviewed ${p.name} at the combine.`,'DRAFT');store();render()}
+function extraCampPage(){let x=extras(),on=game.phase==='preseason',r=roster(game.userTeam).filter(p=>p.status!=='IR'&&p.injuryWeeks<=0),positions=['QB','RB','WR','TE','OL','EDGE','DT','LB','CB','S'];return `${title('Training Camp','Evaluate positional competitions before finalizing the depth chart')}${!on?'<div class="notice">Training camp competitions can be resolved during preseason.</div>':''}<div class="two"><div class="card"><h3>Position battles</h3>${positions.map(pos=>{let a=r.filter(p=>p.pos===pos).sort((a,b)=>b.ovr-a.ovr).slice(0,2);if(a.length<2)return'';let key=game.year+':'+pos,done=x.battles.find(b=>b.key===key);return `<div class="marketrow"><div class="minzero"><b>${pos} · ${esc(a[0].name)} vs ${esc(a[1].name)}</b><small class="sub">${a[0].ovr} vs ${a[1].ovr} OVR · preseason performance can cause an upset</small></div>${button(done?'COMPLETE':'RUN BATTLE',`A.extraBattle('${pos}')`,'tiny',!on||!!done)}</div>`}).join('')||'<p class="sub">Not enough players for positional battles.</p>'}</div><div class="card"><h3>Camp results</h3>${x.battles.filter(b=>b.year===game.year).map(b=>`<div class="newsitem"><b>${esc(b.pos)}: ${esc(b.winner)}</b><p class="sub">${esc(b.detail)}</p></div>`).join('')||'<p class="sub">Run camp battles to see who earns a starting opportunity.</p>'}</div></div>`}
+function extraBattle(pos){if(game.phase!=='preseason')return say('Training camp is only available in preseason.',true);let x=extras(),key=game.year+':'+pos;if(x.battles.some(b=>b.key===key))return;let a=roster(game.userTeam).filter(p=>p.pos===pos&&p.injuryWeeks<=0).sort((a,b)=>b.ovr-a.ovr).slice(0,2);if(a.length<2)return;let s0=a[0].ovr+rnd(-9,9),s1=a[1].ovr+rnd(-9,13),winner=s1>s0?a[1]:a[0];x.battles.push({key,year:game.year,pos,winner:winner.name,detail:`Camp performance ${s0}–${s1}; result affects depth chart, not hidden ability.`});if(!isPlayer()&&game.lineup[pos+'1']!==undefined)game.lineup[pos+'1']=winner.id;extraItem(`${winner.name} won the ${pos} training camp competition.`,'CAMP');store();render()}
+function extraOwnerPage(){let x=extras(),f=x.finances,can=game.career==='owner';return `${title('Stadium & Fan Management','Ownership decisions influence franchise revenue and long-term development')}${!can?'<div class="notice">Stadium finance controls are reserved for the franchise Owner.</div>':''}<div class="two"><div class="card"><h3>Franchise finances</h3><div class="inlinechips">${chip('CASH',money(f.cash))}${chip('FAN SUPPORT',f.fans+'/100')}${chip('FACILITIES','LEVEL '+f.facilities)}${chip('SPONSORS',money(f.sponsors))}</div><label class="lab">Average ticket price</label><select class="field wide" ${!can?'disabled':''} onchange="A.extraTicket(this.value)">${selectOptions([[75,'$75 · affordable'],[115,'$115 · standard'],[165,'$165 · premium'],[220,'$220 · luxury']],f.ticket)}</select><p class="fine">Higher prices can increase game-day revenue but reduce fan satisfaction.</p></div><div class="card"><h3>Facility improvements</h3><p class="sub">Upgraded facilities improve offseason player-development odds. These bonuses are small and not guaranteed.</p>${button('UPGRADE TRAINING CENTER · $20M', 'A.extraFacility()','primary',!can||f.cash<20||f.facilities>=5)}<p class="fine">The facility level persists across seasons. Owner cash is a separate game economy from salary cap.</p></div></div>`}
+function extraTicket(v){if(game.career!=='owner')return;let f=extras().finances;f.ticket=+v;f.fans=clamp(f.fans+(f.ticket<=115?3:-5),5,100);extraItem('Ownership revised season ticket pricing.','BUSINESS');store();render()}
+function extraFacility(){if(game.career!=='owner')return;let f=extras().finances;if(f.cash<20||f.facilities>=5)return;f.cash-=20;f.facilities++;extraItem(`${mine().name} upgraded its training facilities to level ${f.facilities}.`,'BUSINESS');store();render()}
+function extraAwardsPage(){let x=extras();return `${title('NFL Awards & Records','Season honors, franchise history and career milestones')}${x.awards.length?x.awards.slice().reverse().map(a=>`<div class="card section"><h3>${a.year} NFL Honors</h3>${a.items.map(i=>`<div class="marketrow"><b>${esc(i.label)}</b><span class="sub">${esc(i.name)}</span></div>`).join('')}</div>`).join(''):'<div class="card"><p class="sub">Awards will be determined when a season ends. These are game-simulated honors.</p></div>'}<div class="card section"><h3>Franchise records</h3>${(game.histories||[]).map(h=>`<div class="newsitem">${h.year} · ${esc(h.record||'')} · Champion ${esc(h.champ||'')}</div>`).join('')||'<p class="sub">Your completed seasons will appear here.</p>'}</div>`}
+function extraAwardSeason(){let x=extras(),yr=game.year;if(x.awards.some(a=>a.year===yr))return;let eligible=game.players.filter(p=>p.team!=='FA'&&p.ovr>55),top=arr=>arr.sort((a,b)=>b.ovr-a.ovr)[0],mvp=top(eligible.filter(p=>['QB','RB','WR'].includes(p.pos))),def=top(eligible.filter(p=>['EDGE','DT','LB','CB','S'].includes(p.pos))),rook=top(eligible.filter(p=>Number(p.draftYear)===Number(game.year)));let items=[{label:'Most Valuable Player',name:mvp?.name||'Not awarded'},{label:'Defensive Player of the Year',name:def?.name||'Not awarded'},{label:'Rookie of the Year',name:rook?.name||'Not awarded'}];x.awards.push({year:yr,items});extraItem(`${yr} NFL Honors announced: ${mvp?.name||'a league star'} wins MVP (simulated).`,'AWARDS')}
+function extraPoliticsPage(){if(isPlayer())return `${title('My Career','Coaching hires are handled by NFL front offices. Your career focuses on playing, contracts, and development.')}`;let x=extras(),w=mine().w||0,l=mine().l||0,pct=w/Math.max(1,w+l),pressure=clamp(Math.round(45+((pct-.5)*65)+(x.finances.fans-65)*.12),5,95);x.pressure=pressure;let hc=game.coaches.find(c=>c.club===game.userTeam&&c.role==='HC');return `${title('Coaching Carousel & Front Office','Staff job security, offseason hiring and ownership expectations')}<div class="two"><div class="card"><h3>Job security</h3><div class="inlinechips">${chip('CONFIDENCE',pressure+'/100')}${chip('RECORD',w+'-'+l)}</div><p class="sub">${pressure>=70?'Ownership is pleased with the current direction.':pressure>=40?'The front office expects improvement.':'Ownership is considering major changes.'}</p><p class="fine">Expectations respond to season results and fan support; job changes happen during the offseason.</p></div><div class="card"><h3>Coaching carousel</h3>${x.carousel.slice(-14).reverse().map(c=>`<div class="newsitem"><b>${esc(c.team)}</b><p class="sub">${esc(c.message)}</p></div>`).join('')||'<p class="sub">Coaching changes and job openings appear after the season.</p>'}<p class="fine">Coordinators can pursue HC opportunities through the existing career job market.</p></div></div>`}
+function extraSeasonComplete(){let x=extras(),yr=game.year;if(x.lastSeason===yr)return;x.lastSeason=yr;extraAwardSeason();let f=x.finances;f.cash=Math.round((f.cash+(f.ticket/115)*12*(f.fans/70)+f.sponsors)*10)/10;f.fans=clamp(f.fans+(mine().w>=10?7:mine().w<=5?-8:0),5,100);let candidates=teams().filter(t=>t.id!=='EXP'&&t.l>=11).slice(0,4);for(let t of candidates){let hc=game.coaches.find(c=>c.club===t.id&&c.role==='HC');if(!hc)continue;let msg=`${hc.name} is on the hot seat after ${t.w}-${t.l}.`;if(rand()<.32){let replacement=game.coaches.filter(c=>!c.club&&c.role==='HC'&&c.id!==game.careerCoach).sort((a,b)=>b.level-a.level)[0];if(replacement){hc.club=null;replacement.club=t.id;msg=`Fired ${hc.name}; hired ${replacement.name} as head coach.`}}x.carousel.push({team:t.name,message:msg});extraItem(`${t.name}: ${msg}`,'COACHING')}extraItem(`Season ${yr} ended. Stadium revenue and fan support have been updated.`,'BUSINESS')}
+// Hook season transitions without altering the existing simulation mechanics.
+const originalExtraEnterOffseason=enterOffseason;
+enterOffseason=function(){if(game.phase==='offseason_review')extraSeasonComplete();return originalExtraEnterOffseason()};
+const originalExtraAdvanceOffseason=advanceOffseason;
+advanceOffseason=function(...args){let level=extras().finances.facilities,yr=game.year,players=roster(game.userTeam).filter(p=>p.age<29&&p.ovr<95);let before=game.phase;let result=originalExtraAdvanceOffseason(...args);if(before==='offseason'&&game.year!==yr&&level>1){let gains=0;for(let p of players){if(rand()<(level-1)*.025){p.ovr=Math.min(p.ovr+1,p.potential||98);gains++}}if(gains)extraItem(`Upgraded facilities helped ${gains} young players improve this offseason.`,'DEVELOPMENT');store()}return result};
+const originalExtraBeginPreseason=beginPreseason;
+beginPreseason=function(...args){let result=originalExtraBeginPreseason(...args);if(game?.phase==='preseason')extraRefresh();return result};
+
+// Hook injury announcements into on-field injury results without affecting an unaffected player.
+function render(){let root=$('root');if(!root)return;if(game.phase==='setup'){root.innerHTML=setupPage();return}ensurePlayerFields();ensureUniformState();extraRefresh();let t=mine(),active={newsroom:extraNewsPage,combinecenter:extraCombinePage,trainingcamp:extraCampPage,honors:extraAwardsPage,politics:extraPoliticsPage,stadium:extraOwnerPage,rosterhub:rosterHubPage,frontoffice:frontofficePage,dashboard,expansion:expansionPage,roster:rosterPage,free:freePage,trades:tradesPage,draft:draftPage,coaches:coachesPage,uniforms:uniformPlannerPage,games:gamePage,league:leaguePage,career:careerPage,settings:settingsPage,offseason:offseasonPage};if(game.phase==='offseason_intro'&&page==='dashboard')page='frontoffice';if(['college','combine','interview'].includes(game.phase)&&page==='dashboard')page='career';if(!active[page])page='dashboard';if(isPlayer()&&['free','draft','trades','coaches','expansion','uniforms','combinecenter','trainingcamp','politics','stadium'].includes(page))page='career';if(coachRole()&&['free','draft','trades','expansion','uniforms'].includes(page))page='dashboard';root.innerHTML=`<div class="app"><header class="topbar"><div class="brand">NFL <span>GM</span><small>YOUR LEAGUE. YOUR CAREER.</small></div><div class="topteam">${teamIcon(t.id,35)}<div><b>${esc(['college','combine'].includes(game.phase)?(game.college+' · College Career'):game.phase==='interview'?'Coaching Job Market':t.name)}</b><small>${game.year} · ${game.phase.toUpperCase()}</small></div></div><div class="topcap">${isPlayer()?('OVR '+(game.players.find(x=>x.id===game.careerPlayer)?.ovr||'—')):money(cap())}<small>${isPlayer()?'PLAYER RATING':'CAP AVAILABLE'}</small></div></header><div class="shell">${tabs()}<main class="content">${active[page]()}</main></div><footer>NFL GM · UNOFFICIAL FOOTBALL CAREER SIMULATOR · AUTOSAVED</footer></div>`}
+
+/* Career-specific trade workflow and midseason honors. */
+let coachChosenTarget=null,coachOfferPlayer=null;
+function coachTarget(id){
+ if(!coachRole())return say('This is a coaching recommendation, not a GM trade.',true);
+ let p=game.players.find(x=>x.id===id);
+ if(!p||p.team===game.userTeam||p.team==='FA')return say('Choose an NFL player on another team.',true);
+ coachChosenTarget=id;coachOfferPlayer=null;selectedRosterPlayer=null;page='rosterhub';render();
+}
+function coachOffer(id){coachOfferPlayer=id;render()}
+function coachTradeInbox(){
+ if(!coachRole())return '';
+ let history=(game.coachTradeRequests||[]).slice(0,10);
+ let p=game.players.find(x=>x.id===coachChosenTarget);
+ let assets=own().filter(x=>x.id!==game.careerPlayer&&x.status!=='IR'&&x.team===game.userTeam).sort((a,b)=>b.ovr-a.ovr);
+ let offer=p?`<div class="card section"><h3>Propose a trade to your GM</h3><p class="sub">Target: <b>${esc(p.name)}</b> · ${esc(p.pos)} · ${p.ovr} OVR · ${esc(team(p.team)?.nickname||p.team)}</p><label class="lab">Player you propose sending</label><select class="field wide" onchange="A.coachOffer(this.value)"><option value="">Choose a player to offer</option>${assets.map(a=>`<option value="${a.id}" ${coachOfferPlayer===a.id?'selected':''}>${esc(a.name)} · ${a.pos} · ${a.ovr} OVR</option>`).join('')}</select><p class="fine">The GM will evaluate the exact player you selected. No automatic substitution of a different player.</p>${button('SEND THIS PROPOSAL','A.suggestTrade()','primary',!coachOfferPlayer)} ${button('CANCEL','A.coachTargetCancel()','tiny')}</div>`:'';
+ return `${offer}<div class="card section"><h3>GM Trade Decisions</h3><p class="sub">To propose a trade, open NFL Rosters, select a player on another team, and choose your outgoing player. Only your submitted proposals appear here.</p>${history.length?history.map(r=>`<div class="newsitem"><b>${r.status==='PENDING'?'AWAITING GM':r.status==='COMPLETED'?'TRADE COMPLETED':'GM DECLINED'} · ${esc(game.players.find(p=>p.id===r.playerId)?.name||'Target')}</b><p class="sub">Offered: ${esc(game.players.find(p=>p.id===r.offerId)?.name||'Unspecified')} · ${esc(r.response||'Pending review')}</p></div>`).join(''):'<p class="fine">No proposals submitted yet.</p>'}</div>`;
+}
+function submitCoachTrade(){
+ if(!coachRole())return;
+ let p=game.players.find(x=>x.id===coachChosenTarget),o=game.players.find(x=>x.id===coachOfferPlayer);
+ if(!p||!o||p.team===game.userTeam||o.team!==game.userTeam)return say('Select a target and the player you want to offer.',true);
+ if((game.coachTradeRequests||[]).some(x=>x.status==='PENDING'))return say('Wait for the GM to review your pending offer.',true);
+ game.coachTradeRequests=game.coachTradeRequests||[];
+ game.coachTradeRequests.unshift({id:uuid('proposal'),playerId:p.id,offerId:o.id,team:p.team,year:game.year,week:game.week,status:'PENDING',response:'GM evaluating your proposed player-for-player trade.'});
+ coachChosenTarget=null;coachOfferPlayer=null;news(`COACH TRADE PROPOSAL: Requested ${p.name}; offered ${o.name}.`);store();render();say('Trade proposal sent to your GM.');
+}
+function resolveCoachTradeRequests(){
+ for(const req of game.coachTradeRequests||[]){
+  if(req.status!=='PENDING')continue;
+  let p=game.players.find(x=>x.id===req.playerId),o=game.players.find(x=>x.id===req.offerId);
+  if(!p||!o||p.team!==req.team||o.team!==game.userTeam){req.status='DECLINED';req.response='One of the players is no longer available.';continue}
+  let affordable=cap()+o.salary-p.salary>=0&&cap(p.team)+p.salary-o.salary>=0;
+  if(affordable&&playerValue(o)>=playerValue(p)*.93){let old=p.team;p.team=game.userTeam;o.team=old;req.status='COMPLETED';req.response=`GM accepted: ${p.name} acquired for ${o.name}.`;setDefaultLineup(true)}
+  else{req.status='DECLINED';req.response='GM declined this specific offer due to value or salary-cap constraints.'}
+  news(req.response);
+ }
+}
+A.coachTargetCancel=()=>{coachChosenTarget=null;coachOfferPlayer=null;render()};
+function advanceTeamSeasonFixed(){
+ if(isPlayer())return say('Player careers advance one game at a time.',true);
+ if(!['preseason','season'].includes(game.phase))return say('Season simulation is not available at this stage.',true);
+ if(game.currentGame)return say('Finish the current game first.',true);
+ let count=0;
+ try{
+  while(['preseason','season'].includes(game.phase)&&count++<28){
+   if(game.phase==='preseason'){
+    let opp=(game.preOpponents||[])[game.preWeek-1];endWeek(opp?scoreGame(game.userTeam,opp,game.preWeek,'preseason'):null);
+   }else{
+    let pair=nextMatchup(),opp=pair?.find(id=>id!==game.userTeam);
+    if(opp)endWeek(scoreGame(game.userTeam,opp,game.week));else if(!pair)endWeek(null);else break;
+   }
+  }
+  news('Season simulation advanced '+count+' weeks.');page='games';store();render();
+  say('Season advanced. Check standings and the playoff race.');
+ }catch(e){console.error(e);say('Season simulation stopped: '+e.message,true)}
+}
+function extraAwardsPage(){
+ let x=extras();let awards=x.awards.slice().reverse().map(a=>`<div class="card section"><h3>${a.year} NFL Honors</h3>${a.items.map(i=>`<div class="marketrow"><b>${esc(i.label)}</b><span class="sub">${esc(i.name)}</span></div>`).join('')}</div>`).join('');
+ let candidates=game.players.filter(p=>p.team&&p.team!=='FA'&&p.team!=='COLLEGE'&&p.status!=='PS');
+ let leaders=[['MVP watch',candidates.filter(p=>p.pos==='QB')],['Offensive Player watch',candidates.filter(p=>['WR','RB','TE'].includes(p.pos))],['Defensive Player watch',candidates.filter(p=>['EDGE','LB','CB','S','DT'].includes(p.pos))],['Rookie watch',candidates.filter(p=>Number(p.draftYear)===Number(game.year))]];
+ let board=leaders.map(([label,list])=>`<div class="card"><h3>${label}</h3><p class="fine">In-game award race · updated as the season progresses.</p>${list.sort((a,b)=>b.ovr-a.ovr).slice(0,5).map((p,i)=>`<div class="marketrow"><b>${i+1}. ${esc(p.name)}</b><span class="sub">${esc(team(p.team)?.nickname||p.team)} · ${p.pos} · ${p.ovr}</span></div>`).join('')||'<p class="sub">No eligible candidates yet.</p>'}</div>`).join('');
+ return `${title('NFL Awards & Records','Weekly watch lists and season-end awards')}<div class="two">${board}</div>${awards||'<div class="card section"><p class="sub">Official season awards will be decided after the season ends.</p></div>'}<div class="card section"><h3>Franchise history</h3>${(game.histories||[]).map(h=>`<div class="newsitem">${h.year} · ${esc(h.record||'')} · Champion ${esc(h.champ||'')}</div>`).join('')||'<p class="sub">Complete a season to create your history.</p>'}</div>`;
+}
+
+
+/* Gameplay integrity fixes: season transitions, trade proposals and player career. */
+const previousOffseasonAdvance=advanceOffseason;
+advanceOffseason=function(){
+ if(game.phase!=='offseason')return say('The offseason has not started yet.',true);
+ const yearBefore=game.year;
+ previousOffseasonAdvance();
+ // Coordinator and player careers never draft for the team. If the CPU cannot
+ // finish its board, end the draft without trapping the user on a disabled page.
+ if(!gmRole()&&game.phase==='draft'){
+   let guard=0;
+   while(nextPick()&&guard++<350){
+     let pick=nextPick();let prospect=bestDraftPickFor(pick.owner);
+     if(!prospect)break;
+     if(!draftPlayer(prospect.id,pick.owner))break;
+   }
+   if(game.phase==='draft')beginPreseason();
+   page=isPlayer()?'career':'games';store();render();
+ }
+};
+// Repair invalid preseason opponents in existing saves and stop kickoff against self.
+function repairPreseasonSchedule(){
+ if(game.phase!=='preseason')return;
+ let pool=teams().filter(t=>t.id!==game.userTeam&&t.id!=='FA'&&t.id!=='COLLEGE');
+ let seen=new Set();
+ let picks=(game.preOpponents||[]).filter(id=>id!==game.userTeam&&!!team(id)&&!seen.has(id)&&seen.add(id));
+ for(let t of pool){if(picks.length>=3)break;if(!seen.has(t.id)){picks.push(t.id);seen.add(t.id)}}
+ game.preOpponents=picks.slice(0,3);
+ if(!Number.isFinite(game.preWeek)||game.preWeek<1)game.preWeek=1;
+ if(game.preWeek>3){game.phase='season';game.week=1;if(!game.schedule?.length)makeSchedule()}
+}
+const previousGamePage=gamePage;
+gamePage=function(){repairPreseasonSchedule();return previousGamePage()};
+const previousKickoff=playNow;
+playNow=function(opponent=null,round=null){
+ repairPreseasonSchedule();
+ let target=opponent||nextMatchup()?.find(id=>id!==game.userTeam);
+ if(game.phase==='preseason'&&!target)return say('No valid preseason opponent. Advance to the next week.',true);
+ if(target===game.userTeam)return say('Schedule error corrected. Try kickoff again.',true);
+ return previousKickoff(opponent,round);
+};
+// The player has no control over the coaching carousel or scouting interviews.
+const previousPageAction=A.page;
+A.page=function(target){
+ if(isPlayer()&&['combinecenter','politics','trainingcamp','coaches','trades'].includes(target))return say('That menu is reserved for coaches and front-office staff.',true);
+ return previousPageAction(target);
+};
+// Trade proposals are reviewed only after the user explicitly selects both players.
+A.suggestTrade=function(){return submitCoachTrade()};
+A.coachTarget=function(id){return coachTarget(id)};
+A.coachOffer=function(id){return coachOffer(id)};
+// Restore saved career state with clean preseason scheduling.
+const previousRestore=restore;
+restore=function(){previousRestore();if(game?.phase==='preseason')repairPreseasonSchedule()};
+
+/* NFL GM — integrated career, offseason, draft and trade quality-of-life corrections */
+const rosterV2State = {coachPlayers:[],coachPicks:[],managerOutPlayers:[],managerInPlayers:[],managerOutPicks:[],managerInPicks:[],combinePos:'QB'};
+const TRADE_LAST_WEEK = 9;
+function tradeWindowActive(){return game.phase==='preseason'||(game.phase==='season'&&game.week<=TRADE_LAST_WEEK)||game.phase==='offseason'||game.phase==='draft'}
+function tradeWindowLabel(){return game.phase==='season'?(game.week>TRADE_LAST_WEEK?`TRADE WINDOW CLOSED — deadline passed in Week ${TRADE_LAST_WEEK}`:`Week ${TRADE_LAST_WEEK} trade deadline · Currently week ${game.week}`):game.phase==='playoffs'||game.phase==='offseason_review'?'TRADE WINDOW CLOSED — postseason':game.phase==='offseason'?'Offseason trade window':game.phase==='draft'?'Draft-day trade window':'Preseason trade window'}
+function escOr(s){return esc(String(s??''))}
+function checkedOffer(kind,id){return rosterV2State[kind]?.includes(id)}
+function toggleOffer(kind,id,value){if(!rosterV2State[kind])return;let items=rosterV2State[kind];rosterV2State[kind]=value?[...new Set([...items,id])]:items.filter(x=>x!==id);render()}
+A.offerAsset=(k,id,v)=>toggleOffer(k,id,v);
+function assetCheckboxes(group,items,kind,capCount=100){return `<div class="assetchoices">${items.slice(0,capCount).map(a=>`<label class="assetchoice"><input type="checkbox" ${checkedOffer(group,a.id)?'checked':''} onchange="A.offerAsset('${group}','${a.id}',this.checked)"><span class="minzero">${kind==='pick'?`${a.year} Round ${a.round} · ${escOr(a.source)} pick`:`${escOr(a.name)} · ${a.pos} · ${a.ovr} OVR`}</span></label>`).join('')||'<p class="sub">No available assets</p>'}</div>`}
+const careerPreviousRequest = requestPlayer;
+requestPlayer=function(kind){
+ if(isPlayer()&&['release','trade'].includes(kind)){
+  const played=game.playerCareerStats?.games||0;
+  if(played<12||game.year<=2027)return say('Your rookie contract is in effect. Finish your first NFL season before requesting a trade or release.',true);
+  if(!['offseason','offseason_review'].includes(game.phase))return say('Formal trade and release requests are handled during your offseason.',true);
+ }
+ return careerPreviousRequest(kind);
+};
+const previousPlayerFinancialPanel=playerFinancialPanel;
+playerFinancialPanel=function(){let html=previousPlayerFinancialPanel();if(isPlayer()&&(game.playerCareerStats?.games||0)<12){html=html.replace('The front office can accept or deny requests.','Trade and release requests unlock after your rookie season. The front office can accept or deny eligible requests.');}return html};
+// Medical care belongs to Game Center. My Career links to the treatment screen rather than duplicating it.
+const legacyPlayerCareerPage=nflCareerPage;
+nflCareerPage=function(){let html=legacyPlayerCareerPage();if(!isPlayer())return html;let duplicate=playerInjuryPanel();if(duplicate)html=html.replace(duplicate,'<div class="card section"><b>Player health</b><p class="sub">Your injury timeline and rehab activities are in Game Center.</p>'+button('OPEN MEDICAL ROOM','A.page("games")','tiny')+'</div>');let p=game.players.find(x=>x.id===game.careerPlayer);if(p&&p.team===game.userTeam){const trust=game.playerCoachTrust??38;let playing=Object.entries(game.lineup||{}).some(([k,id])=>id===p.id);html+=`<div class="card section"><h3>Earn your starting job</h3><div class="inlinechips">${chip('COACH TRUST',trust+'/100')}${chip('ROLE',playing?'STARTING':'DEVELOPING')}</div><p class="sub">A low overall doesn't automatically mean a bad player. Earn snaps with practices, preseason reps and game performance. The coaching staff can promote you as trust rises.</p>${button('POSITION PRACTICE','A.playerPractice()','primary',game.phase!=='preseason'&&game.phase!=='season'||game.practiceStamp===game.year+':'+game.phase+':'+game.week)}</div>`;}return html};
+A.playerPractice=function(){if(!isPlayer()||!['preseason','season'].includes(game.phase))return;let stamp=game.year+':'+game.phase+':'+game.week;if(game.practiceStamp===stamp)return say('You have already practiced this week.');game.practiceStamp=stamp;game.playerCoachTrust=Math.min(100,(game.playerCoachTrust??38)+6+rnd(0,4));game.playerXP=(game.playerXP||0)+5;let p=game.players.find(x=>x.id===game.careerPlayer);if(p&&game.playerCoachTrust>=64){p.depthRank=0;setDefaultLineup(true);news(`${p.name} earned more first-team reps through practice and coach trust.`)}store();render();say('Practice completed — you earned XP and coach trust.')};
+// Keep a player's game-week experience on Game Center, even when sidelined.
+const originalSidelineWeek=sidelineWeek;
+sidelineWeek=function(){originalSidelineWeek();if(isPlayer()&&game.phase!=='setup'){page='games';store();render()}};
+// Sim controls: front office & coaches may select a stopping point, players advance each week.
+function simToStop(target){
+ if(isPlayer())return say('Player Career advances game by game. Play or watch each week.',true);
+ if(!['preseason','season'].includes(game.phase))return say('Season simulation is only available during preseason or the regular season.',true);
+ if(game.currentGame)return say('Finish the current game first.',true);
+ const start=game.phase+':'+game.week+':'+game.preWeek;
+ let count=0;
+ try {
+  while(['preseason','season'].includes(game.phase)&&count<24){
+   if(target==='week'&&count>=1)break;
+   if(target==='midseason'&&game.phase==='season'&&game.week>=10)break;
+   if(target==='playoffs'&&game.phase==='playoffs')break;
+   if(game.phase==='preseason'){
+    repairPreseasonSchedule();let opp=(game.preOpponents||[])[game.preWeek-1];if(opp&&opp!==game.userTeam)endWeek(scoreGame(game.userTeam,opp,game.preWeek,'preseason'));else endWeek(null);
+   } else {
+    let pair=nextMatchup(),opp=pair?.find(t=>t!==game.userTeam);
+    if(opp)endWeek(scoreGame(game.userTeam,opp,game.week));else endWeek(null);
+   }
+   count++;
+   if(typeof mediaIsPending==='function'&&mediaIsPending())break;
+   if(target==='midseason'&&game.phase==='season'&&game.week>=10)break;
+   if(target==='playoffs'&&game.phase==='playoffs')break;
+  }
+  if(!count)return say('No weeks advanced. '+start,true);
+  page='games';store();render();say('Advanced '+count+' game week'+(count===1?'':'s')+'.');
+ }catch(e){console.error('SIM STOP ERROR',e);say('Could not advance: '+e.message,true)}
+}
+A.simStop=simToStop;
+// Trade Center: multiple selected picks and players, no prefilled offers or hidden trade executions.
+function managerTradePage(){
+ const otherTeams=teams().filter(t=>t.id!==game.userTeam&&t.id!=='EXP'&&t.id!=='FA');
+ if(!team(tradeTo)||tradeTo===game.userTeam){tradeTo=otherTeams[0]?.id||'DAL';}
+ let tgt=team(tradeTo),allowed=tradeWindowActive();
+ let out=own().filter(p=>p.status!=='IR').sort((a,b)=>b.ovr-a.ovr),incoming=roster(tradeTo).filter(p=>p.status!=='IR').sort((a,b)=>b.ovr-a.ovr),outp=teamPickList(game.userTeam),inp=teamPickList(tradeTo);
+ let offers=(game.cpuOffers||[]).filter(o=>!o.resolved);
+ return `${title('Trade Center','Build multi-player and multi-pick offers, then negotiate with another GM.',chip('WINDOW',allowed?'OPEN':'CLOSED',allowed?'ok':'danger'))}<div class="notice"><b>${escOr(tradeWindowLabel())}</b><p class="fine">No new trades during the playoffs or season review. Every accepted trade updates the rosters and pick ownership.</p></div>
+ ${offers.length?`<div class="card section"><h3>Incoming offers from NFL GMs</h3>${offers.map(o=>{let their=game.players.find(p=>p.id===o.theirPlayer),our=game.players.find(p=>p.id===o.ourPlayer);return `<div class="marketrow"><div class="minzero"><b>${escOr(team(o.from)?.name)} proposes a trade</b><small class="sub">They offer ${escOr(their?.name)} (${their?.pos}) for ${escOr(our?.name)} (${our?.pos})</small></div>${button('ACCEPT',`A.cpuOffer('${o.id}',true)`,'tiny primary',!allowed)}${button('DECLINE',`A.cpuOffer('${o.id}',false)`,'tiny')}</div>`}).join('')}</div>`:''}
+ <div class="card section"><div class="sectionhead"><h3>Choose trade partner</h3><select class="field" onchange="A.tradeTeam2(this.value)">${otherTeams.map(t=>`<option value="${t.id}" ${tradeTo===t.id?'selected':''}>${escOr(t.name)}</option>`).join('')}</select></div><p class="fine">Target club: ${escOr(tgt?.name)}</p></div>
+ <div class="two section"><div class="card"><h3>YOU GIVE</h3><p class="sub">Choose multiple players and draft picks.</p><h4>Players</h4>${assetCheckboxes('managerOutPlayers',out,'player',45)}<h4>Draft picks</h4>${assetCheckboxes('managerOutPicks',outp,'pick',25)}</div><div class="card"><h3>YOU GET · ${escOr(tgt?.nickname)}</h3><p class="sub">Select what you'd like in return.</p><h4>Players</h4>${assetCheckboxes('managerInPlayers',incoming,'player',45)}<h4>Draft picks</h4>${assetCheckboxes('managerInPicks',inp,'pick',25)}</div></div><div class="card section"><p class="sub">Your package: ${rosterV2State.managerOutPlayers.length} player(s), ${rosterV2State.managerOutPicks.length} pick(s) · Requested: ${rosterV2State.managerInPlayers.length} player(s), ${rosterV2State.managerInPicks.length} pick(s).</p>${button('SUBMIT TRADE OFFER','A.submitMultiTrade()','primary wide',!allowed)}</div>`;
+}
+tradesPage=managerTradePage;
+A.tradeTeam2=function(id){tradeTo=id;for(let key of ['managerInPlayers','managerInPicks','managerOutPlayers','managerOutPicks'])rosterV2State[key]=[];render()};
+A.submitMultiTrade=function(){
+ if(!gmRole())return say('Only a GM or owner can complete a trade.',true);
+ if(!tradeWindowActive())return say('Trade deadline passed. Transactions reopen in the offseason.',true);
+ const k=rosterV2State, getPlayer=id=>game.players.find(p=>p.id===id), getPick=id=>teamPickList(game.userTeam).concat(teamPickList(tradeTo)).find(p=>p.id===id);
+ let give=k.managerOutPlayers.map(getPlayer),want=k.managerInPlayers.map(getPlayer),giveP=k.managerOutPicks.map(getPick),wantP=k.managerInPicks.map(getPick);
+ if(!give.length&&!giveP.length||!want.length&&!wantP.length)return say('Choose at least one asset from both teams.',true);
+ if([...give,...want,...giveP,...wantP].some(x=>!x))return say('An asset is no longer available. Refresh the trade center.',true);
+ if(give.some(p=>p.team!==game.userTeam)||want.some(p=>p.team!==tradeTo))return say('One player changed teams.',true);
+ let received=want.reduce((a,p)=>a+Number(p.salary||0),0),sent=give.reduce((a,p)=>a+Number(p.salary||0),0);
+ if(cap()+sent-received<0||cap(tradeTo)+received-sent<0)return say('Salary cap: one of the teams cannot absorb that package.',true);
+ let offerValue=give.reduce((a,p)=>a+playerValue(p),0)+giveP.reduce((a,p)=>a+pickValue(p),0),askValue=want.reduce((a,p)=>a+playerValue(p),0)+wantP.reduce((a,p)=>a+pickValue(p),0);
+ if(offerValue<askValue*(game.settings.difficulty==='Hard'?1.09:game.settings.difficulty==='Easy'?.78:.94))return say('Trade declined: their GM wants a stronger package or more draft capital.',true);
+ if(!confirm('Submit this '+(give.length+giveP.length)+'-for-'+(want.length+wantP.length)+' asset deal?'))return;
+ for(let p of give)p.team=tradeTo;
+ for(let p of want)p.team=game.userTeam;
+ for(let p of giveP){game.futureOwners[p.id]=tradeTo;let active=game.picks.find(x=>x.id===p.id);if(active)active.owner=tradeTo}
+ for(let p of wantP){game.futureOwners[p.id]=game.userTeam;let active=game.picks.find(x=>x.id===p.id);if(active)active.owner=game.userTeam}
+ news('TRADE CONFIRMED: '+give.map(p=>p.name).concat(giveP.map(p=>p.year+' R'+p.round)).join(', ')+' exchanged for '+want.map(p=>p.name).concat(wantP.map(p=>p.year+' R'+p.round)).join(', '));
+ for(let key of ['managerOutPlayers','managerOutPicks','managerInPlayers','managerInPicks'])k[key]=[];
+ setDefaultLineup(true);store();render();say('Trade accepted — your roster and draft picks are updated.');
+};
+const previousTradeTarget=A.tradeTarget;
+A.tradeTarget=function(id){let p=game.players.find(x=>x.id===id);if(!p||!gmRole())return;tradeTo=p.team;tradeRequestedPlayer=id;selectedRosterPlayer=null;rosterV2State.managerInPlayers=[id];rosterV2State.managerInPicks=[];rosterV2State.managerOutPlayers=[];rosterV2State.managerOutPicks=[];page='trades';render()};
+// Coach recommendation menu is strictly opt-in: pick the player in NFL Rosters, then explicitly choose your own assets.
+coachTradeInbox=function(){
+ if(!coachRole())return '';
+ let p=game.players.find(x=>x.id===coachChosenTarget),history=(game.coachTradeRequests||[]).slice(0,10),allow=tradeWindowActive();
+ let offer=p?`<div class="card section"><h3>Build your GM recommendation</h3><p class="sub">Target: <b>${escOr(p.name)}</b> · ${p.pos} · ${p.ovr} OVR · ${escOr(team(p.team)?.nickname)}</p><p class="fine">Optional: offer players and/or draft picks. The GM may accept or reject your exact proposal.</p><h4>Players to send</h4>${assetCheckboxes('coachPlayers',own().filter(x=>x.id!==game.careerPlayer).sort((a,b)=>b.ovr-a.ovr),'player',38)}<h4>Draft picks to send</h4>${assetCheckboxes('coachPicks',teamPickList(game.userTeam),'pick',30)}${button('SUBMIT TO GENERAL MANAGER', 'A.sendCoachAssets()','primary',!allow)} ${button('CANCEL','A.coachTargetCancel()','tiny')}</div>`:'';
+ return `${offer}<div class="card section"><h3>GM Decision Inbox</h3><p class="sub">Only proposals you personally submit appear here. Decisions are processed when your team advances a week.</p>${history.length?history.map(r=>`<div class="newsitem"><b>${r.status==='PENDING'?'AWAITING GM':r.status==='COMPLETED'?'ACCEPTED & COMPLETED':'DECLINED'} · ${escOr(game.players.find(p=>p.id===r.playerId)?.name||'Player')}</b><p class="sub">Your offer: ${(r.offerIds||[r.offerId].filter(Boolean)).map(id=>escOr(game.players.find(p=>p.id===id)?.name||id)).concat((r.offerPickIds||[]).map(id=>{let parts=id.split('_');return parts[1]+' R'+parts[2]})).join(', ')||'None'} · ${escOr(r.response)}</p></div>`).join(''):'<p class="fine">No submitted trade recommendations yet.</p>'}</div>`;
+};
+A.coachTarget=function(id){coachChosenTarget=id;rosterV2State.coachPlayers=[];rosterV2State.coachPicks=[];selectedRosterPlayer=null;page='rosterhub';render()};
+A.coachTargetCancel=function(){coachChosenTarget=null;rosterV2State.coachPlayers=[];rosterV2State.coachPicks=[];render()};
+A.sendCoachAssets=function(){
+ if(!coachRole())return;
+ if(!tradeWindowActive())return say('Trade deadline passed. Your GM can revisit recommendations in the offseason.',true);
+ let p=game.players.find(x=>x.id===coachChosenTarget),give=rosterV2State.coachPlayers,picks=rosterV2State.coachPicks;
+ if(!p||p.team===game.userTeam)return say('Open another team’s roster and choose a target first.',true);
+ if(!give.length&&!picks.length)return say('Add at least one player or draft pick to your proposed trade package.',true);
+ if((game.coachTradeRequests||[]).some(r=>r.status==='PENDING'))return say('Your prior proposal is still with the GM.',true);
+ game.coachTradeRequests=game.coachTradeRequests||[];
+ game.coachTradeRequests.unshift({id:uuid('proposal'),playerId:p.id,offerIds:[...give],offerPickIds:[...picks],team:p.team,year:game.year,week:game.week,status:'PENDING',response:'GM reviewing your selected trade package.'});
+ coachChosenTarget=null;rosterV2State.coachPlayers=[];rosterV2State.coachPicks=[];news(`Coach recommended trading for ${p.name}. Awaiting GM response.`);store();render();say('Proposal submitted. Your GM will respond after the next week.')
+};
+A.suggestTrade=A.sendCoachAssets;
+resolveCoachTradeRequests=function(){
+ for(const r of game.coachTradeRequests||[]){if(r.status!=='PENDING')continue;
+  if(!tradeWindowActive()){r.status='DECLINED';r.response='Deadline passed before GM approval.';continue}
+  const target=game.players.find(x=>x.id===r.playerId),outs=(r.offerIds||[r.offerId].filter(Boolean)).map(id=>game.players.find(p=>p.id===id)),picks=(r.offerPickIds||[]).map(id=>teamPickList(game.userTeam).find(p=>p.id===id));
+  if(!target||target.team!==r.team||outs.some(p=>!p||p.team!==game.userTeam)||picks.some(p=>!p)){r.status='DECLINED';r.response='Trade assets changed or became unavailable.';continue}
+  let give=outs.reduce((a,p)=>a+playerValue(p),0)+picks.reduce((a,p)=>a+pickValue(p),0),want=playerValue(target),paid=outs.reduce((a,p)=>a+Number(p.salary||0),0),can=cap()+paid-Number(target.salary||0)>=0&&cap(r.team)+Number(target.salary||0)-paid>=0;
+  if(give>=want*.9&&can){for(let p of outs)p.team=r.team;target.team=game.userTeam;for(let p of picks){game.futureOwners[p.id]=r.team;let active=game.picks.find(x=>x.id===p.id);if(active)active.owner=r.team}r.status='COMPLETED';r.response=`GM approved and completed: acquired ${target.name} in exchange for your chosen package.`;setDefaultLineup(true)}
+  else{r.status='DECLINED';r.response='GM declined: your selected assets did not meet the other team’s asking price or cap requirements.'}
+  news('GM DECISION: '+r.response);
+ }
+};
+function processCpuOffer(id,accept){let x=(game.cpuOffers||[]).find(o=>o.id===id);if(!x||x.resolved)return;x.resolved=true;const give=game.players.find(p=>p.id===x.ourPlayer),get=game.players.find(p=>p.id===x.theirPlayer);if(accept&&!tradeWindowActive())return say('Trade window is closed.',true);if(accept&&give&&get&&give.team===game.userTeam&&get.team===x.from&&cap()+give.salary-get.salary>=0){give.team=x.from;get.team=game.userTeam;news(`${team(x.from)?.nickname} offer accepted: acquired ${get.name} for ${give.name}.`);setDefaultLineup(true)}else news(`Declined incoming trade proposal from ${team(x.from)?.name}.`);store();render()}
+A.cpuOffer=processCpuOffer;
+function generateCpuOffer(){
+ if(!gmRole()||!tradeWindowActive()||!['preseason','season'].includes(game.phase)||game.week>TRADE_LAST_WEEK)return;
+ if((game.cpuOffers||[]).some(o=>!o.resolved)||rand()>.75)return;
+ const ours=own().filter(p=>p.ovr>=67&&p.status!=='IR').sort((a,b)=>a.ovr-b.ovr).slice(0,18),cand=ours[rnd(0,ours.length-1)];if(!cand)return;
+ const other=teams().filter(t=>t.id!==game.userTeam).sort((a,b)=>Math.abs(rating(a.id)-rating(game.userTeam))-Math.abs(rating(b.id)-rating(game.userTeam)))[rnd(0,5)];if(!other)return;
+ const theirs=roster(other.id).filter(p=>p.pos===cand.pos&&Math.abs(p.ovr-cand.ovr)<7).sort((a,b)=>Math.abs(playerValue(a)-playerValue(cand))-Math.abs(playerValue(b)-playerValue(cand)))[0];if(!theirs)return;
+ game.cpuOffers=game.cpuOffers||[];game.cpuOffers.unshift({id:uuid('incoming'),ourPlayer:cand.id,theirPlayer:theirs.id,from:other.id,year:game.year,week:game.week,resolved:false});news(`TRADE OFFER: ${other.name} has contacted your GM desk. Review in Trade Center.`)
+}
+const oldEndWeekFix=endWeek;
+endWeek=function(played){let before=game.phase,week=game.week;oldEndWeekFix(played);if(before==='preseason'||before==='season'){
+ if(game.phase==='season'&&game.week<=TRADE_LAST_WEEK&&(week===2||week===5||week===7||week===8))generateCpuOffer();
+ if(game.phase==='playoffs'||game.phase==='offseason_review')for(let o of game.cpuOffers||[])if(!o.resolved)o.resolved=true;
+ }
+ store();
+};
+// Position-based draft scouting; never disguise a list of hundreds of prospects as the combine interview room.
+extraCombinePage=function(){
+ if(isPlayer())return `${title('NFL Combine','Your career combine is on your My Career journey. Other prospects’ team interviews are staff-only.')}`;
+ const available=(game.prospects||[]).filter(p=>!p.drafted&&p.pos===rosterV2State.combinePos).slice(0,70),x=extras(),isOpen=['draft','offseason','offseason_intro','offseason_review','expansion'].includes(game.phase);
+ return `${title('Combine & Pro Days','Filter by position, then interview prospects and review their athletic testing.')}${!isOpen?'<div class="notice">Combine interviews are only conducted during the scouting/offseason window.</div>':''}<div class="card section"><label class="lab">Prospect position</label><select class="field wide" onchange="A.combinePosition(this.value)">${POS.map(pos=>`<option value="${pos}" ${pos===rosterV2State.combinePos?'selected':''}>${pos}</option>`).join('')}</select></div><div class="two"><div class="card"><h3>${rosterV2State.combinePos} prospects</h3>${available.map(p=>`<div class="marketrow"><div class="minzero"><b>${escOr(p.name)}</b><small class="sub">${escOr(p.school)} · projected #${p.rank}</small></div>${button(x.combine[game.year+':'+p.id]?'INTERVIEWED':'INTERVIEW',`A.extraInterview('${p.id}')`,'tiny',!isOpen||!!x.combine[game.year+':'+p.id])}</div>`).join('')||'<p class="sub">No prospects at this position.</p>'}</div><div class="card"><h3>Scouting notes & Pro Days</h3>${Object.entries(x.combine).filter(([key])=>key.startsWith(game.year+':')).map(([key,r])=>`<div class="newsitem"><b>${escOr(r.name)}</b><p class="sub">${escOr(r.note)} · ${escOr(r.test)}</p></div>`).join('')||'<p class="sub">Interview prospects to unlock scouting notes and simulated athletic testing.</p>'}</div></div>`;
+};
+A.combinePosition=function(p){if(POS.includes(p)){rosterV2State.combinePos=p;render()}};
+// Drafted players receive standard four-year rookie contracts. They are not immediate free agents the next offseason.
+const draftRookieOriginal=draftPlayer;
+draftPlayer=function(id,forTeam){let p=game.prospects.find(x=>x.id===id),ok=draftRookieOriginal(id,forTeam);if(ok&&p){let rookie=game.players.find(x=>x.id==='rookie_'+p.id);if(rookie){rookie.contractYears=4;rookie.salary=Number(rookie.salary)||1;rookie.status='ACT';}}return ok};
+const originalPlayerDraftCareer=finishPlayerDraft;
+finishPlayerDraft=function(){originalPlayerDraftCareer();if(isPlayer()&&game.phase==='preseason'){let p=game.players.find(x=>x.id===game.careerPlayer);if(p){p.contractYears=4;store()}}};
+const oldSelectDraft=selectDraft;
+selectDraft=function(id){const pick=nextPick(),p=game.prospects.find(x=>x.id===id);if(!pick||!p||pick.owner!==game.userTeam)return say('Your club is not on the clock.',true);if(!confirm('Draft '+p.name+' ('+p.pos+') with pick #'+pick.number+'? The other 31 teams will select before your next pick.'))return;return oldSelectDraft(id)};
+// Draft cards: CPU completes all preceding selections and reveal a readable selection history.
+const oldDraftPage=draftPage;
+draftPage=function(){if(game.phase==='draft'&&nextPick()?.owner!==game.userTeam)cpuToNext();let html=oldDraftPage();if(game.draftHistory?.length){let last=game.draftHistory.slice(-12).reverse();html+=`<div class="card section"><h3>Earlier selections</h3>${last.map(h=>`<div class="marketrow"><b>#${h.number} · ${escOr(team(h.team)?.nickname||h.team)}</b><span class="sub">${escOr(h.name)} · ${h.pos} · ${escOr(h.school)}</span></div>`).join('')}</div>`}return html};
+const oldGetProspects=getProspects;
+getProspects=function(year){let list=oldGetProspects(year);for(let p of list){if(p.real){p.ovr=clamp(p.ovr,69,80);p.potential=Math.max(p.potential,p.ovr+6)}else{p.ovr=clamp(p.ovr,67,79);p.potential=Math.max(p.potential,p.ovr+3)}}return list};
+// Reopen healthy each new year, except injuries sustained in that new season.
+const oldBeginPreseason=beginPreseason;
+beginPreseason=function(){oldBeginPreseason();for(let p of game.players){if(p.team!=='FA'&&p.team!=='COLLEGE'&&p.team!=='RETIRED'){p.injuryWeeks=0;p.outUntil=0;if(p.status==='INJ'||p.status==='IR')p.status='ACT'}}game.cpuOffers=[];game.pendingMoves=[];setDefaultLineup(true);store()};
+// Clear stale trade leads at season boundaries.
+const oldEnterOffseason=enterOffseason;
+enterOffseason=function(){oldEnterOffseason();for(let o of game.cpuOffers||[])o.resolved=true;game.pendingMoves=[];store()};
+// Uniform clash depends on actual opposing colors, not simply whether both shirts are labelled 'dark'.
+uniformReviewFor=function(week){let m=getSeasonMatchup(week),kit=selectedUniform(week);if(!m)return{ok:true,text:'Bye week'};if(!kit.alternate)return{ok:true,text:'Standard home/away uniform'};const prev=getSeasonMatchup(week-1),prior=week>1?selectedUniform(week-1):null;if(prior?.id===kit.id&&prev&&!m.home)return{ok:false,text:'Back-to-back special uniforms on away games are not approved.'};return{ok:true,text:'League appearance window approved for this matchup'}};
+// Offseason must have visible requirements and a way through for the player and coordinator.
+const previousOffseasonPage=offseasonPage;
+offseasonPage=function(){let html=previousOffseasonPage();if(game.phase!=='offseason')return html;
+ const status=`<div class="card section"><h3>Offseason checklist</h3><p class="sub">${isPlayer()?'Optional: complete one training block and review your contract.':'Review your team’s development, transactions, and draft board. Scouts and team management handle their assigned duties.'}</p><p class="fine">Nothing else is required to advance. Continue to the next draft; if you are not the GM, the CPU drafts on behalf of your team.</p>${button(gmRole()?'CONTINUE TO NEXT NFL DRAFT →':'FINISH OFFSEASON → NEXT PRESEASON','A.advanceOffseason()','primary wide')}</div>`;
+ return status+html};
+// Simplify non-GM offseason transitions by running the entire CPU draft with a bounded guard.
+advanceOffseason=function(){
+ if(game.phase!=='offseason')return say('Finish the season review before entering the offseason.',true);
+ let exp=(game.expiringPlayers||[]).filter(id=>own().some(p=>p.id===id));
+ if(gmRole()&&exp.length&&!confirm(exp.length+' contracts will expire and players become free agents. Continue?'))return;
+ for(let id of exp){let p=game.players.find(x=>x.id===id);if(p){p.team='FA';p.status='ACT'}}game.expiringPlayers=[];
+ game.histories=game.histories||[];game.histories.push({year:game.year,champ:game.champions.at(-1)?.id||'',record:mine().w+'-'+mine().l});
+ if(!game.prevDraftOrder?.length)game.prevDraftOrder=sortRecords();developRoster();
+ for(let t of teams()){t.w=0;t.l=0;t.pf=0;t.pa=0}game.results=[];game.post=null;game.lastGame=null;game.currentGame=null;game.week=1;game.preResults=[];game.playerOffseasonTraining=null;game.pendingMoves=[];
+ openDraft(game.year+1);
+ if(!gmRole()){let i=0;while(nextPick()&&i++<270){let pick=nextPick(),p=bestDraftPickFor(pick.owner);if(!p||!draftPlayer(p.id,pick.owner))break}if(game.phase==='draft')beginPreseason();page=isPlayer()?'games':'games';news('CPU completed the draft. Preseason begins.')}else{cpuToNext();page='draft';news(`Your ${game.year} draft is ready. CPU teams have selected ahead of your pick.`)}
+ store();render();say('Offseason advanced successfully.')
+};
+A.advanceOffseason=function(){advanceOffseason()};
+// Season options surface in Game Center but never on the Player Career timeline.
+const oldGamePageUpdated=gamePage;
+gamePage=function(){let html=oldGamePageUpdated();if(!isPlayer()&&['preseason','season'].includes(game.phase)){let panel=`<div class="card section"><h3>Advance season</h3><p class="sub">Choose when to stop simulating. All game records, awards and injuries update week by week.</p><div class="toolbar">${button('NEXT WEEK','A.simStop("week")','tiny')}${button('MIDSEASON','A.simStop("midseason")','tiny')}${button('TO PLAYOFFS','A.simStop("playoffs")','tiny')}${button('END OF SEASON','A.simStop("season")','tiny')}</div></div>`;html=html.replace('SIM REMAINING SEASON', 'SIM REMAINING SEASON');html+=panel}return html};
+// Restrict any direct requests too: coordinator cannot alter the other unit, and player careers cannot edit a lineup.
+const previousAssignStarter=setStarter;
+setStarter=function(pos,slot,id){if(isPlayer())return say('Depth charts are controlled by coaches.');if(game.career==='dc'&&!['EDGE','DT','LB','CB','S'].includes(pos))return say('You only manage defensive starters.',true);if(game.career==='oc'&&!['QB','RB','WR','TE','OL'].includes(pos))return say('You only manage offensive starters.',true);return previousAssignStarter(pos,slot,id)};
+// No trade proposals after deadline or when playoff games begin.
+const previousSeasonAdvisory=seasonAdvisory;
+seasonAdvisory=function(){if(game.phase==='season'&&game.week>TRADE_LAST_WEEK){news('LATE-SEASON REPORT: Trade deadline has passed. Scout and develop the roster for the postseason.');return}return previousSeasonAdvisory()};
+const originalInitPlayoffs=initPlayoffs;
+initPlayoffs=function(){for(let o of game.cpuOffers||[])o.resolved=true;game.pendingMoves=[];return originalInitPlayoffs()};
+// Coach role restrictions: hide offensive starter controls for DC and vice versa. Existing player views are read-only.
+const oldRosterPageUpdated=rosterPage;
+rosterPage=function(){let html=oldRosterPageUpdated();if(game.career==='dc')html=html.replaceAll('STARTER CHANGES NEEDED:','DEFENSIVE STARTER CHANGES:');return html};
+const oldRosterHubPageUpdated=rosterHubPage;
+rosterHubPage=function(){return oldRosterHubPageUpdated()};
+// A trade picked from a roster card must preserve exactly which player was inspected.
+const oldRosterProfileModal=rosterProfileModal;
+rosterProfileModal=function(){return oldRosterProfileModal()};
+// Mark stable revision for code verification.
+window.NFL_GM_FIX_BUILD='2026-11-08-career-offseason-trade';
+
+
+/* NFL GM · Draft/scouting integrity update.
+   A prospect owns a fixed hidden TRUE OVR once the class is created.
+   Scouts only reveal noisy estimates; no scout action changes TRUE OVR.
+   Ratings here are fictional gameplay attributes, not official Madden grades. */
+const draftRatingBeforeFix=getProspects;
+getProspects=function(year){
+ const classList=draftRatingBeforeFix(year);
+ for(const p of classList){
+  const seed=hashNumber(p.id+'|'+p.name+'|'+year);
+  const rank=Number(p.rank)||250;
+  const round=Math.min(7,Math.max(1,Math.ceil(rank/32)));
+  // Starting grades are generally in the 70s, with genuine busts and late-round steals.
+  // The prospect's board rank informs, but does not fix, the real talent roll.
+  let floor=rank<=10?70:round===1?68:round===2?67:round===3?67:round===4?66:65;
+  let ceiling=rank<=10?82:round===1?81:round===2?80:round===3?80:round===4?79:78;
+  const common=70+(seed%8)+(round===1?2:round===2?1:0);
+  let rating=common;
+  // Some highly touted players underperform; a minority of late picks are stars.
+  if(rank>20 && seed%23===0) rating=65+(seed%6);
+  const hiddenGem=rank>64 && (p.gem===true || seed%31===0);
+  if(hiddenGem) rating=76+(seed%8); // rare 76–83 OVR rookies after Round 2
+  p.gem=hiddenGem;
+  p.ovr=clamp(rating,hiddenGem?68:floor,hiddenGem?84:ceiling);
+  p.potential=clamp(Math.max(p.potential||0,p.ovr+5+(seed%13)),p.ovr,97);
+  p.ratingModel='fixed_true_vs_scout_estimate_v2';
+ }
+ return classList;
+};
+
+// A low-level scout can badly misread an excellent prospect (including ~40 vs ~75).
+// The same player retains exactly the same actual OVR regardless of scouts hired.
+scoutedOVR=function(p){
+ const confidence=scoutConfidence(p);
+ const seed=hashNumber('scouting|'+p.id+'|'+p.name);
+ let error;
+ if(confidence==='HIGH')error=(seed%7)-3;
+ else if(confidence==='MEDIUM')error=(seed%19)-9;
+ else {
+   error=(seed%29)-15;
+   // Rare dramatic underestimates: classic hidden draft steals.
+   if(seed%11===0 && p.ovr>=71)error=-25-(seed%10);
+ }
+ return clamp(p.ovr+error,40,89);
+};
+
+// Protect a top-ten selection's requested 70–82 true OVR range. Later picks
+// may be better or worse; a Round 5 prospect can be a gem instead of 62 OVR.
+const draftSelectionBeforeRatingFix=draftPlayer;
+draftPlayer=function(id,forTeam){
+ const selection=nextPick();
+ const prospect=game.prospects?.find(p=>p.id===id&&!p.drafted);
+ if(selection?.number<=10 && prospect){
+   prospect.ovr=clamp(prospect.ovr,70,82);
+   prospect.potential=Math.max(prospect.potential||prospect.ovr,prospect.ovr);
+ }
+ return draftSelectionBeforeRatingFix(id,forTeam);
+};
+
+// Make the distinction unmistakable on the actual draft page.
+const pageBeforeDraftExplanation=draftPage;
+draftPage=function(){
+ let html=pageBeforeDraftExplanation();
+ const explanation='<div class="notice"><b>SCOUT ESTIMATE ≠ TRUE OVR.</b> The number on the board is a guess, not the rookie’s rating. An estimate of 40 can hide a 75 OVR player. Hiring better scouts improves information only; it never improves or reduces the player. Top-ten selections start at 70–82 true OVR. Later picks can be hidden gems.</div>';
+ return html.replace('<div class="draftbanner">',explanation+'<div class="draftbanner">');
+};
+window.NFL_GM_DRAFT_RATINGS_BUILD='2026-11-08-fixed-hidden-scouting';
+
+/* NFL GM — Connected Careers & Living League update (single-file add-on).
+ * All new state is stored IN the existing franchise save. No external libraries.
+ * This module intentionally leaves the original franchise simulation as source of truth.
+ */
+const CAREER_SLOTS_INDEX = 'nflgm_career_slots_v1';
+const CAREER_SLOT_PREFIX = 'nflgm_career_slot_';
+let activeCareerSlot = null;
+let spotlightFA = null;
+let frenzyPos = 'ALL';
+let selectedPerspectivePlayer = null;
+const CAREER_NAMES = {owner:'Owner',gm:'General Manager',hc:'Head Coach',oc:'Offensive Coordinator',dc:'Defensive Coordinator',player:'Player'};
+function careerSlots(){try{return JSON.parse(localStorage.getItem(CAREER_SLOTS_INDEX)||'[]').filter(s=>s&&s.id)}catch(e){return []}}
+function slotSaveInfo(){return {id:activeCareerSlot,name:game.careerName||CAREER_NAMES[game.career]||'New Career',role:game.career,team:game.userTeam,year:game.year,week:game.week,phase:game.phase,updated:Date.now()}}
+function careerSlotId(){return 'career_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,6)}
+const _baseStore=store;
+store=function(){
+ const ok=_baseStore();
+ if(activeCareerSlot&&game&&game.phase!=='setup'){
+  try{
+   localStorage.setItem(CAREER_SLOT_PREFIX+activeCareerSlot,JSON.stringify(game));
+   let arr=careerSlots();let info=slotSaveInfo(),i=arr.findIndex(s=>s.id===activeCareerSlot);
+   if(i>=0)arr[i]=info;else arr.unshift(info);
+   localStorage.setItem(CAREER_SLOTS_INDEX,JSON.stringify(arr));
+   localStorage.setItem('nflgm_last_career_slot',activeCareerSlot);
+  }catch(e){console.warn('Save slots unavailable:',e); if(window.A) say('Storage space full. Export a backup from Settings.',true)}
+ }
+ return ok;
+};
+const _baseRestore=restore;
+restore=function(){
+ _baseRestore();
+ const last=localStorage.getItem('nflgm_last_career_slot');
+ let s=last?localStorage.getItem(CAREER_SLOT_PREFIX+last):null;
+ if(!s){let first=careerSlots()[0];if(first){s=localStorage.getItem(CAREER_SLOT_PREFIX+first.id);if(s)activeCareerSlot=first.id}}
+ else activeCareerSlot=last;
+ if(s){try{let candidate=JSON.parse(s);if(candidate?.version===7&&candidate.players?.length){game=candidate;setDefaultLineup();return}}catch(e){console.warn('Could not restore career slot',e)}}
+ if(game?.phase!=='setup'&&game?.teams?.length){activeCareerSlot=careerSlotId();store()}
+};
+const _baseBegin=begin;
+begin=function(mode){
+ _baseBegin(mode);
+ if(game?.phase!=='setup'){
+  activeCareerSlot=careerSlotId();
+  initImmersion();
+  store();
+ }
+};
+const _baseImport=importSave;
+importSave=function(file){
+ if(!file)return;
+ const reader=new FileReader();reader.onload=()=>{try{
+  const g=JSON.parse(reader.result);
+  if(g.version!==7||!Array.isArray(g.teams)||!Array.isArray(g.players)||!g.settings)throw Error('This must be an NFL GM version 7 save.');
+  if(game?.phase!=='setup')store();
+  game=g;activeCareerSlot=careerSlotId();initImmersion();setDefaultLineup();page='dashboard';store();render();say('Backup imported as a new career slot.');
+ }catch(e){say('Could not import backup: '+e.message,true)}};reader.readAsText(file);
+};
+const _resetCareer=A.reset;
+A.reset=function(){A.createCareer()};
+A.createCareer=function(){
+ if(game?.phase!=='setup')store();
+ activeCareerSlot=null;game=initial();game.phase='setup';page='dashboard';
+ formCareer='gm';formMode='existing';render();
+};
+A.showCareers=function(){if(game?.phase!=='setup')store();page='careerhub';render();window.scrollTo?.(0,0)};
+A.loadCareer=function(id){
+ if(game?.phase!=='setup')store();
+ let s=localStorage.getItem(CAREER_SLOT_PREFIX+id);
+ if(!s)return say('Save not found. It might have been deleted.',true);
+ try{let loaded=JSON.parse(s);if(loaded.version!==7||!loaded.teams?.length)throw Error('Invalid save');
+  game=loaded;activeCareerSlot=id;setDefaultLineup();initImmersion();page=(game.media?.pending)?'media':'dashboard';store();render();window.scrollTo?.(0,0);
+ }catch(e){say('This career could not be opened.',true)}
+};
+A.deleteCareer=function(id){
+ const s=careerSlots().find(x=>x.id===id);if(!s)return;
+ if(!confirm('Permanently delete '+(s.name||s.role)+'? This cannot be undone.'))return;
+ const next=careerSlots().filter(x=>x.id!==id);
+ localStorage.setItem(CAREER_SLOTS_INDEX,JSON.stringify(next));localStorage.removeItem(CAREER_SLOT_PREFIX+id);
+ if(activeCareerSlot===id){activeCareerSlot=null;localStorage.removeItem('nflgm_last_career_slot');game=initial();game.phase='setup'}
+ page='careerhub';render();
+};
+function initImmersion(){if(!game)return;
+ game.pulse||={fans:62,locker:65,media:50,owner:65,coachTrust:50};
+ game.mediaHistory||=[];game.moments||=[];game.weeklyStories||=[];game.faMarket||={year:game.year,bids:{},offers:{}};
+ game.reporterMemory||={};game.perspectives||={};game.roleMilestones||=[];
+ game.prep||={};
+}
+// Press answers and weekly stories feed into real matchup performance, not just UI text.
+const _baseTeamFit=fit;
+fit=function(id){
+ const result=_baseTeamFit(id);
+ if(game&&id===game.userTeam&&game.pulse){
+  const bonus=clamp(((game.pulse.locker??65)-55)/30,-1.5,1.5);
+  result.value=+(result.value+bonus).toFixed(2);
+ }
+ return result;
+};
+function pushMoment(kind,headline,detail){initImmersion();game.moments.unshift({id:uuid('moment'),kind,headline,detail,week:game.week,year:game.year,team:game.userTeam,role:game.career});game.moments=game.moments.slice(0,140)}
+function pulseDelta(effects){initImmersion();for(const [k,v]of Object.entries(effects||{})){
+  if(k==='security')game.jobSecurity=clamp((game.jobSecurity||75)+v,0,100);
+  else if(k==='xp')game.playerXP=clamp((game.playerXP||0)+v,0,9999);
+  else game.pulse[k]=clamp((game.pulse[k]||50)+v,0,100);
+ }}
+function showGauge(k){return `<div class="pulseStat"><span>${esc(k)}</span><b>${game.pulse?.[k]??50}/100</b><i style="--w:${game.pulse?.[k]??50}%"></i></div>`}
+function roleReady(){return game&&game.phase!=='setup'}
+function hubPage(){
+ const slots=careerSlots().sort((a,b)=>(b.updated||0)-(a.updated||0));
+ return `<div class="hubOuter"><div class="hubHero"><div class="tinyTag">NFL GM · YOUR LEAGUE</div><h1>Every career.<br><span class="green">One menu.</span></h1><p>Continue any franchise, start a new journey, or explore another role without leaving the game.</p><div class="hubActions">${button('＋ CREATE NEW CAREER','A.createCareer()','primary')}${roleReady()?button('↩ RETURN TO CURRENT GAME','A.resumeCurrent()','subtle'):''}</div></div><div class="wideSection"><div class="rowTitle"><h2>Your career saves</h2><span class="dim">${slots.length} saved</span></div><div class="slotGrid">${slots.map(s=>`<div class="slotCard"><span class="tinyTag">${esc(CAREER_NAMES[s.role]||s.role)}</span><h3>${esc(s.name||CAREER_NAMES[s.role])}</h3><p>${esc(teamNameFromId(s.team)||s.team)} · ${esc(s.year)} · ${esc(s.phase)}${s.week?' · Week '+s.week:''}</p><div class="hubActions">${button('CONTINUE','A.loadCareer('+JSON.stringify(s.id)+')','primary')}${button('DELETE','A.deleteCareer('+JSON.stringify(s.id)+')','tiny')}</div></div>`).join('')||'<div class="card"><h3>No saved careers yet</h3><p class="sub">Start with any of the six career paths. Switching saves takes one tap.</p></div>'}</div>${roleReady()?`<div class="card section"><h3>Connected Universe · experimental sandbox</h3><p class="sub">Switch your role inside your CURRENT franchise without changing the roster, draft, season or history. Realistic separate career journeys remain available above.</p>${button('EXPLORE ROLES IN THIS FRANCHISE','A.page("perspectives")','tiny')}</div>`:''}</div></div>`;
+}
+A.resumeCurrent=function(){if(!roleReady())return A.createCareer();page=game.media?.pending?'media':'dashboard';render()};
+function careerPerspectivePage(){
+ initImmersion();let current=game.career;
+ return `${title('Connected Universe','Try a different job in the same ongoing franchise. Your league, players, standings and history do not reset.')}
+ <div class="notice"><b>Sandbox perspective switch:</b> Role permissions still apply. Coach and Player perspectives use people ALREADY on this team. For a traditional career start, use Career Hub → New Career.</div>
+ <div class="roleTiles">${Object.entries(CAREER_NAMES).map(([role,label])=>`<button class="roleTile ${role===current?'current':''}" onclick="A.perspective('${role}')"><span>${role==='player'?'01':role==='owner'?'05':role==='gm'?'02':role==='hc'?'03':'04'}</span><b>${esc(label)}</b><small>${role===current?'CURRENT PERSPECTIVE':'SWITCH ROLE'}</small></button>`).join('')}</div>
+ ${game.career==='player'?`<div class="card section"><b>Current player</b><p class="sub">${esc(game.players.find(x=>x.id===game.careerPlayer)?.name||'Not chosen')}</p></div>`:''}
+ ${button('BACK TO CAREER HUB','A.showCareers()','subtle')}`;
+}
+A.perspective=function(role){
+ if(!CAREER_NAMES[role]||role===game.career)return;
+ if(game.media?.pending)return say('Finish the mandatory press conference before changing perspective.',true);
+ initImmersion();
+ if(role==='player'){
+  page='chooseplayer';render();return;
+ }
+ const previous=game.career;
+ game.perspectives[previous]={careerName:game.careerName,careerPlayer:game.careerPlayer,careerCoach:game.careerCoach};
+ game.career=role;game.careerPlayer=null;game.careerCoach=null;
+ const saved=game.perspectives[role];
+ if(['hc','oc','dc'].includes(role)){
+  const found=game.coaches.find(c=>c.club===game.userTeam&&c.role===role.toUpperCase());
+  game.careerCoach=found?.id||null;game.careerName=found?.name||`${team(game.userTeam).nickname} Coach`;
+ }else game.careerName=CAREER_NAMES[role];
+ if(saved?.careerName)game.careerName=saved.careerName;
+ if(!game.settings)game.settings={};
+ pushMoment('career',`New perspective: ${CAREER_NAMES[role]}`,`Switched from ${CAREER_NAMES[previous]} in the same league.`);
+ news(`CONNECTED UNIVERSE: You now control the ${CAREER_NAMES[role]} perspective for ${mine().name}.`);
+ page='dashboard';store();render();
+};
+function choosePlayerPage(){
+ const players=own().filter(p=>p.pos!=='LS').sort((a,b)=>b.ovr-a.ovr).slice(0,35);
+ return `${title('Choose Your Player',`Connected universe · ${mine().name}`)}<div class="notice">Choose an existing player from YOUR roster. Other team players and imaginary roster additions are not permitted.</div><div class="card">${players.map(p=>`<div class="marketrow"><div class="minzero"><b>${esc(p.name)}</b><small class="sub">${p.pos} · ${p.ovr} OVR · Age ${p.age}</small></div>${button('PLAY AS','A.usePlayer('+JSON.stringify(p.id)+')','tiny')}</div>`).join('')}</div>`;
+}
+A.usePlayer=function(id){let p=own().find(x=>x.id===id);if(!p)return say('Choose a player on your team.',true);
+ game.perspectives[game.career]={careerName:game.careerName,careerPlayer:game.careerPlayer,careerCoach:game.careerCoach};
+ game.career='player';game.careerName=p.name;game.careerPlayer=p.id;game.careerCoach=null;
+ game.playerCareerStats||={games:0,wins:0,passing:0,rushing:0,receiving:0,touchdowns:0,tackles:0,sacks:0,interceptions:0};
+ game.playerGameHistory||=[];game.playerXP||=0;game.playerTraining||='balanced';
+ game.playerCoachTrust||=45;pushMoment('career','New player perspective',`${p.name} · ${p.pos} · ${mine().name}`);
+ news(`CONNECTED UNIVERSE: You now play as ${p.name}.`);
+ page='career';store();render();
+};
+const REPORTERS=[{name:'Maya Hayes',style:'Accountability',angle:'tough'},{name:'Jordan Blake',style:'Film Room',angle:'football'},{name:'Denise Carter',style:'League Insider',angle:'insider'},{name:'Alex Rivera',style:'Local Beat',angle:'community'}];
+function mediaIsPending(){return !!game?.media?.pending}
+function mediaReporter(){return REPORTERS[Number(game.media?.reporter||0)%REPORTERS.length]}
+function mediaQuestions(kind,context={}){
+ const t=mine(),person=game.players.find(x=>x.id===game.careerPlayer),subject=person?.name||'you',name=t.nickname;
+ let q=[];
+ if(kind==='game'){
+  const win=context.won?'win':'loss',score=context.score||'the final score';
+  if(game.career==='player')q=[`You ${context.won?'helped deliver a win':'came up short'} for ${name}. How do you evaluate your game?`,`What do you say to your teammates after ${score}?`,`What is the one thing ${subject} needs to improve before the next matchup?`];
+  else if(game.career==='owner')q=[`What does today's ${win} say about your investment in the ${name} organization?`,`Fans are judging this franchise. What should they expect from ownership next?`,`Do you still believe in the people running your football operation?`];
+  else if(game.career==='gm')q=[`After ${score}, how confident are you in the roster you assembled for ${name}?`,`The supporters want answers. Do you believe the team has enough talent to contend?`,`How much responsibility belongs to you rather than the coaching staff?`];
+  else q=[`After ${score}, what was the biggest factor in the ${name} performance?`,`How should your players respond at the next practice?`,`Are you satisfied with the way your game plan was executed?`];
+ }else if(kind==='trade')q=[`You just approved a major ${name} transaction. Why is this the right move?`,`Some players worry their futures are uncertain. What do you say to your locker room?`,`How will you measure whether this trade was a success?`];
+ else if(kind==='signing')q=[`Why did ${name} prioritize this signing over other options?`,`What role do you expect this new addition to play?`,`Should supporters expect more movement from the front office?`];
+ else if(kind==='draft')q=[`Why was this prospect the best choice for ${name}?`,`Did you consider moving the pick or choosing a different position?`,`What expectations are fair for this rookie?`];
+ else if(kind==='job')q=[`What attracted you to the ${name} organization?`,`How do you plan to earn the trust of this locker room?`,`What is a realistic first-year target?`];
+ else q=[`What message do you have for ${name} supporters today?`,`How do you respond to criticism of this decision?`,`What should the locker room expect next?`];
+ if(kind==='game'&&game.week%5===0)q.push(`The same question came up earlier this season. What's actually different this time?`);
+ return q.slice(0,game.phase==='playoffs'?4:kind==='game'?game.week%3===0?3:2:3).map((text,i)=>({id:i,text,followup:false}));
+}
+function startMedia(kind,context={}){
+ if(!roleReady()||mediaIsPending()||game.currentGame)return false;
+ initImmersion();
+ const rep=Number(hashNumber(`${game.userTeam}/${game.year}/${game.week}/${kind}/${game.mediaHistory.length}`)%REPORTERS.length);
+ game.media={id:uuid('media'),pending:true,kind,context,reporter:rep,questions:mediaQuestions(kind,context),index:0,answers:[],summary:[],stage:'live',year:game.year,week:game.week};
+ page='media';store();render();return true;
+}
+function mediaOptionSet(){return [
+ {title:'Back the team',detail:'Stand up for your teammates and take responsibility.',effects:{locker:4,fans:2,coachTrust:2,media:1},tone:'supportive'},
+ {title:'Keep it focused',detail:'Explain the next steps without making promises.',effects:{media:3,owner:2},tone:'measured'},
+ {title:'Challenge expectations',detail:'Speak forcefully and demand immediate improvement.',effects:{fans:3,locker:-3,media:-2,security:-1},tone:'bold'}
+ ]}
+function dynamicPressScene(t){return `<svg class="stage-svg" viewBox="0 0 1440 660" role="img" aria-label="Stylized broadcast view of a professional NFL football press conference with speaker, cameras, podium and reporters" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#173b43"/><stop offset=".48" stop-color="#0e262e"/><stop offset="1" stop-color="#071921"/></linearGradient><linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#24343b"/><stop offset="1" stop-color="#040b11"/></linearGradient><linearGradient id="podium" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#475c66"/><stop offset=".3" stop-color="#22343e"/><stop offset=".7" stop-color="#14242d"/><stop offset="1" stop-color="#0e1c27"/></linearGradient><linearGradient id="coat" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#07121b"/><stop offset=".55" stop-color="#30424e"/><stop offset="1" stop-color="#07131c"/></linearGradient><radialGradient id="lightpool"><stop stop-color="#7cf9c8" stop-opacity=".22"/><stop offset="1" stop-color="#0f3643" stop-opacity="0"/></radialGradient><radialGradient id="vignette"><stop offset=".36" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".48"/></radialGradient><filter id="soft"><feGaussianBlur stdDeviation="20"/></filter><filter id="castshadow"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#010a13" flood-opacity=".75"/></filter><pattern height="180" id="branded" patternUnits="userSpaceOnUse" width="440"><text x="45" y="82" fill="#d7efe7" opacity=".35" font-family="Arial,sans-serif" font-size="34" font-weight="900" letter-spacing="3">${esc(t.id)}</text><text x="45" y="114" fill="#d9f5ed" opacity=".3" font-family="Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="4">${esc(t.nickname.toUpperCase())}</text></pattern>
+</defs>
+<rect width="1440" height="660" fill="#07151d"/><rect width="1440" height="480" fill="url(#wall)"/><rect width="1440" height="460" fill="url(#branded)"/>
+<ellipse cx="720" cy="135" rx="590" ry="360" fill="url(#lightpool)"/><rect x="0" y="0" width="1440" height="29" fill="#09131c"/>
+<g opacity=".65"><rect x="75" y="0" width="82" height="30" fill="#1a2830"/><rect x="1283" y="0" width="82" height="30" fill="#1a2830"/><path d="M105 25L-30 430L310 430z" fill="#3bbfa1" opacity=".055"/><path d="M1328 25L1130 430L1490 430z" fill="#3bbfa1" opacity=".055"/></g>
+<path d="M0 454h1440v206H0z" fill="url(#floor)"/><path d="M0 454h1440" stroke="#53656d" stroke-width="4"/><ellipse cx="720" cy="560" rx="290" ry="39" fill="#000" opacity=".5" filter="url(#soft)"/>
+<g opacity=".8"><rect x="212" y="0" width="6" height="460" fill="#549b91" opacity=".17"/><rect x="1212" y="0" width="6" height="460" fill="#549b91" opacity=".17"/><rect x="0" y="380" width="1440" height="4" fill="#73bdad" opacity=".16"/></g>
+<!-- speaker -->
+<g filter="url(#castshadow)">
+<path d="M622 349q28-40 63-45l26 16h37l24-15q60 12 77 65l23 162H581z" fill="url(#coat)"/>
+<path d="M688 309l17 29 15 12 17-15 10-28z" fill="#d7ac8b"/><path d="M686 315l37 65-23-10-31-54z" fill="#e6ebeb"/><path d="M751 316l-32 67 29-13 24-54z" fill="#cfdde0"/><path d="M711 350l11 6 11-6-5 23-12 27-10-27z" fill="#216d6a"/>
+<ellipse cx="718" cy="258" rx="47" ry="59" fill="#b78e72"/><path d="M669 248q-3-63 45-66 50-3 54 60-19-9-27-34-32 31-72 40z" fill="#101d26"/><path d="M677 261q13-2 22 0m33 0q13-2 22 0" stroke="#765544" stroke-width="3" opacity=".55"/><path d="M704 285q14 9 27 0" fill="none" stroke="#7c5745" stroke-width="3"/>
+<path d="M621 357q-33 26-29 78l23 31 27-16-5-69z" fill="#142530"/><path d="M813 357q31 24 32 74l-22 32-30-18 10-65z" fill="#172b34"/>
+</g>
+<!-- microphones -->
+<g stroke-linecap="round"><path d="M685 391l-22-48" stroke="#09141c" stroke-width="9"/><path d="M754 393l26-45" stroke="#0a141a" stroke-width="8"/><path d="M717 389v-53" stroke="#0a141c" stroke-width="8"/><rect x="639" y="327" width="46" height="15" rx="7" transform="rotate(27 660 335)" fill="#172932" stroke="#728b8e" stroke-width="2"/><rect x="764" y="332" width="46" height="15" rx="7" transform="rotate(-28 785 340)" fill="#182a32" stroke="#778b8e" stroke-width="2"/><rect x="708" y="321" width="20" height="31" rx="8" fill="#16252c" stroke="#708785" stroke-width="2"/><rect x="655" y="357" width="21" height="18" rx="3" fill="#54d9b2"/><rect x="766" y="354" width="21" height="18" rx="3" fill="#91b9bb"/></g>
+<!-- lectern -->
+<g filter="url(#castshadow)"><path d="M573 393h293l-13 35H585z" fill="#576873"/><path d="M589 424h267l-41 195H624z" fill="url(#podium)" stroke="#768d94" stroke-width="2"/><path d="M608 427h230l-25 181H634z" fill="none" stroke="#456372" stroke-width="2"/><path d="M573 393l34-13h226l33 13z" fill="#2b4048"/><rect x="655" y="485" width="128" height="86" rx="6" fill="#10272e" stroke="#3fc79f" stroke-width="2"/><path d="M672 535l30-20 19 5 24-25 20 9-23 16-26 27-21-10z" fill="#53ddb4"/><text x="720" y="561" text-anchor="middle" font-size="17" font-weight="900" letter-spacing="3" fill="#dbfff1" font-family="Arial, sans-serif">${esc(t.id)}</text></g>
+<!-- press cameras and foreground -->
+<g opacity=".93"><path d="M92 565l40-116 98 9 45 109z" fill="#08131c"/><rect x="118" y="370" width="112" height="71" rx="9" fill="#253944" stroke="#4a6873" stroke-width="4"/><circle cx="170" cy="406" r="27" fill="#07111a" stroke="#587c86" stroke-width="8"/><circle cx="170" cy="406" r="13" fill="#263d47"/><path d="M218 380l60-25v98l-60-27z" fill="#1b2c36"/><path d="M144 443l-49 145M192 445l72 145" stroke="#203039" stroke-width="12"/><rect x="139" y="355" width="68" height="16" rx="2" fill="#1b333c"/><circle cx="174" cy="350" r="8" fill="#f15a65"/>
+<path d="M1285 550l-32-119-88 3-42 127z" fill="#07131c"/><rect x="1180" y="375" width="104" height="70" rx="9" fill="#233a44" stroke="#547583" stroke-width="4"/><circle cx="1228" cy="411" r="25" fill="#070f15" stroke="#5e7e87" stroke-width="8"/><circle cx="1228" cy="411" r="12" fill="#1e353f"/><path d="M1184 386l-53-17v75l53-17z" fill="#1a303b"/><path d="M1197 444l-49 144M1263 446l46 142" stroke="#25363e" stroke-width="11"/>
+</g>
+<g opacity=".94" fill="#05121b"><ellipse cx="351" cy="567" rx="63" ry="58"/><ellipse cx="360" cy="496" rx="32" ry="40"/><path d="M261 660q9-111 92-119 84 4 93 119z"/><ellipse cx="1084" cy="558" rx="70" ry="66"/><ellipse cx="1081" cy="485" rx="36" ry="42"/><path d="M986 660q9-116 95-122 96 4 105 122z"/><ellipse cx="910" cy="612" rx="45" ry="40"/><ellipse cx="914" cy="558" rx="25" ry="32"/><path d="M850 660q4-78 64-80 69 0 77 80z"/></g>
+<rect x="0" y="0" width="1440" height="660" fill="url(#vignette)"/>
+</svg>`;}
+function mediaPage(){initImmersion();let m=game.media;
+ if(!m)return `${title('Press Room','No mandatory media availability currently scheduled.')}${(game.mediaHistory||[]).slice(0,8).map(h=>`<div class="card section"><b>${esc(h.headline)}</b><p class="sub">${esc(h.year)} · Week ${esc(h.week)} · ${esc(h.team)}</p></div>`).join('')}`;
+ let t=mine(),r=mediaReporter(),answered=m.answers?.length||0,total=m.questions.length;
+ return `${title('The Media Room',`${t.name} · ${CAREER_NAMES[game.career]||'Career'}`)}
+ <div class="pressStage" style="--club:${esc(t.color)}"><div class="pressTop"><span>● ${m.stage==='live'?'LIVE':'CONFERENCE COMPLETE'}</span><span>${esc(t.id)} · ${esc(m.kind.toUpperCase())}</span></div><div class="pressSvgWrap">${dynamicPressScene(t)}</div><div class="pressLower"><strong>${esc(game.careerName||CAREER_NAMES[game.career])}</strong><span>${esc(CAREER_NAMES[game.career])} · ${esc(t.name)}</span></div></div>
+ ${m.stage==='live'?`<div class="card mediaQuestion"><div class="mediaMeta"><span>REPORTER · ${esc(r.name)}</span><span>QUESTION ${Math.min(m.index+1,total)} / ${total}</span></div><small class="sub">${esc(r.style)} · ${esc(t.city)} press pool</small><h2>“${esc(m.questions[m.index]?.text||'What can you tell us?')}”</h2><div class="mediaChoices">${mediaOptionSet().map((a,i)=>`<button class="mediaAnswer" onclick="A.answerMedia(${i})"><b>${String.fromCharCode(65+i)}. ${esc(a.title)}</b><small>${esc(a.detail)}</small></button>`).join('')}</div><div class="notice">Answer locks immediately and affects your ongoing franchise. There are no do-overs.</div></div>`:`<div class="card mediaQuestion"><div class="tinyTag">MEDIA RECAP · FINAL</div><h2>${esc(m.headline||'Press conference completed')}</h2><p class="sub">Your answers have been saved. Players, supporters, coaches and reporters may respond later in your career.</p><div class="pulses">${['fans','locker','media','owner','coachTrust'].map(showGauge).join('')}</div>${(m.summary||[]).map(x=>`<div class="newsitem"><b>${esc(x.label)}</b><p class="sub">${esc(x.text)}</p></div>`).join('')}${button('ACKNOWLEDGE & CONTINUE','A.finishMedia()','primary wide')}</div>`}
+ <div class="card section"><h3>Reporter memory</h3><p class="sub">${esc(r.name)} has recorded ${(game.reporterMemory[r.name]||[]).length} previous statement(s) from your career.</p><div class="mediaHistoryMini">${(game.mediaHistory||[]).slice(0,4).map(x=>`<div>W${x.week} · ${esc(x.headline)}</div>`).join('')||'Your media history starts here.'}</div></div>`;
+}
+A.answerMedia=function(i){let m=game.media;if(!m?.pending||m.stage!=='live'||i<0||i>2)return;
+ const q=m.questions[m.index];if(!q)return;
+ const a=mediaOptionSet()[i];m.answers.push({question:q.text,answer:a.title,tone:a.tone,reporter:mediaReporter().name,week:game.week});
+ pulseDelta(a.effects);game.reporterMemory[mediaReporter().name]||=[];
+ game.reporterMemory[mediaReporter().name].push({week:game.week,year:game.year,question:q.text,answer:a.title,tone:a.tone});
+ game.reporterMemory[mediaReporter().name]=game.reporterMemory[mediaReporter().name].slice(-35);
+ m.summary.push({label:a.title,text:i===0?'Teammates appreciated the support.':i===1?'The organization valued your composed approach.':'Your strong words drew headlines and divided the locker room.'});
+ // Occasional contextual follow-up after a forceful answer. No infinite follow-up chain.
+ if(i===2&&!q.followup&&m.questions.length<5&&hashNumber(m.id+':'+m.index)%3===0){m.questions.splice(m.index+1,0,{text:`You just challenged expectations. What will you personally do to back that statement up?`,followup:true});}
+ m.index++;
+ if(m.index>=m.questions.length){m.stage='recap';const winning=Object.values(m.answers).filter(x=>x.tone==='supportive').length>=2;
+  m.headline=winning?`${mine().nickname} leadership stands by the locker room`:`${mine().nickname} ${CAREER_NAMES[game.career]} faces tough questions`;
+  news('PRESS: '+m.headline);pushMoment('media',m.headline,m.answers.map(x=>x.answer).join(' · '));}
+ store();render();
+};
+A.finishMedia=function(){let m=game.media;if(!m?.pending||m.stage!=='recap')return;
+ game.mediaHistory.unshift({id:m.id,headline:m.headline,year:m.year,week:m.week,team:game.userTeam,role:game.career,reporter:mediaReporter().name,answers:m.answers});
+ game.mediaHistory=game.mediaHistory.slice(0,80);m.pending=false;game.media=null;page='dashboard';store();render(); // Recap already confirms completion; no stale global toast on the next screen.
+};
+function assertMediaClear(){if(mediaIsPending()){page='media';render();say('Complete the press conference before making another move.',true);return false}return true}
+function mediaOnGame(played,week,phase){
+ if(!played||game.currentGame)return;
+ const won=played.winner===game.userTeam;
+ if(phase==='preseason'&&week!==3)return;
+ if(phase==='season'&&week!==1&&week%4!==0&&won)return;
+ if(phase==='season'&&week!==1&&week%4!==0&&!won&&week%3!==0)return;
+ startMedia('game',{won,score:`${played.sa}–${played.sb}`,opponent:played.a===game.userTeam?played.b:played.a});
+}
+function eventWeekKey(){return `${game.year}:${game.phase}:${game.week}:${game.career}`}
+function storySeed(){initImmersion();const key=eventWeekKey();if((game.weeklyStories||[]).some(s=>s.key===key))return;
+ if(!['season','preseason'].includes(game.phase)||game.week%3!==0)return;
+ let title,body,choices;
+ const role=game.career;
+ if(role==='player'){
+  title='The Veteran Conversation';body='A veteran tells you the team wants a stronger practice effort. How do you respond?';
+  choices=[['Ask for extra film time',{coachTrust:5,locker:2,xp:4}],['Focus on the next game',{coachTrust:1,xp:3}],['Dismiss the feedback',{locker:-5,coachTrust:-4}]];
+ }else if(role==='gm'){
+  title='A Scout Disagrees';body='Your top scout says the coaching staff is overlooking a young backup. How do you handle it?';
+  choices=[['Request a full evaluation',{locker:2,owner:2}],['Trust the coaching staff',{coachTrust:4,owner:1}],['Demand an immediate lineup change',{coachTrust:-4,fans:2}]];
+ }else if(role==='owner'){
+  title='A Franchise Decision';body='Supporters want cheaper tickets, while staff want resources for stadium improvements.';
+  choices=[['Prioritize fan affordability',{fans:6,owner:-2}],['Invest in the stadium',{fans:1,owner:4}],['Keep current spending',{fans:-2,owner:2}]];
+ }else{
+  title='Film Room Conflict';body='Two assistants disagree about the lineup and who should receive first-team reps.';
+  choices=[['Let performance decide',{locker:4,coachTrust:2}],['Back your lead assistant',{coachTrust:4,locker:-1}],['Rotate the starters',{locker:2,security:-2}]];
+ }
+ game.weeklyStories.unshift({id:uuid('story'),key,title,body,choices,status:'open'});game.weeklyStories=game.weeklyStories.slice(0,36);
+ pushMoment('story','NEW STORY: '+title,body);
+}
+function storyPage(){initImmersion();const x=game.weeklyStories||[],open=x.filter(s=>s.status==='open');
+ return `${title('Weekly Storylines','Role-specific decisions emerge from your season. Every choice has an effect.')}
+ ${open.map(s=>`<div class="card section storyCard"><div class="tinyTag">NEW · ${esc(CAREER_NAMES[game.career])}</div><h2>${esc(s.title)}</h2><p>${esc(s.body)}</p><div class="mediaChoices">${s.choices.map((c,i)=>`<button class="mediaAnswer" onclick="A.chooseStory('${s.id}',${i})"><b>${esc(c[0])}</b><small>Make this decision</small></button>`).join('')}</div></div>`).join('')||'<div class="card"><h3>No urgent decisions right now</h3><p class="sub">Stories appear in the regular season based on your role. Keep playing to generate more.</p></div>'}
+ <div class="card section"><h3>Recent decisions</h3>${x.filter(s=>s.status!=='open').slice(0,9).map(s=>`<div class="newsitem"><b>${esc(s.title)}</b><p class="sub">${esc(s.resolution||s.status)}</p></div>`).join('')||'<p class="sub">Your choices will build a history here.</p>'}</div>`;
+}
+A.chooseStory=function(id,idx){let s=(game.weeklyStories||[]).find(x=>x.id===id&&x.status==='open');if(!s||!s.choices[idx]||!assertMediaClear())return;
+ const c=s.choices[idx];pulseDelta(c[1]);s.status='resolved';s.resolution=c[0];
+ news(`LOCKER ROOM: ${s.title} — ${c[0]}.`);pushMoment('decision',s.title,c[0]);store();render();
+};
+function practicePage(){initImmersion();let p=game.players.find(x=>x.id===game.careerPlayer);if(!p)return title('Player Training','Create or choose a player to begin.');
+ const stamp=eventWeekKey(),done=game.practiceStamp===`${game.year}:${game.phase}:${game.week}`;
+ let isOff=['QB','RB','WR','TE','OL'].includes(p.pos);
+ let q=isOff?'Your position coach notices a defense crowding the line. What is your best adjustment?':'Film shows the offense using motion before the snap. How do you react?';
+ const opts=isOff?[['Identify the mismatch and communicate','film'],['Ignore the coverage','ignore'],['Force the original route','force']]:[['Communicate the change to teammates','film'],['Overcommit before the snap','force'],['Ignore the motion','ignore']];
+ return `${title('Practice Lab',`${p.name} · ${p.pos} · ${mine().nickname}`)}<div class="card section"><div class="tinyTag">WEEK ${game.week} · POSITION CHALLENGE</div><h2>${done?'Practice complete':q}</h2><p class="sub">${done?'Your weekly XP and coach-trust rewards are saved.':'One scored challenge per week. Your decision affects coach trust and XP.'}</p><div class="mediaChoices">${opts.map(([name,code],i)=>`<button class="mediaAnswer" ${done?'disabled':''} onclick="A.practiceAnswer('${code}')"><b>${String.fromCharCode(65+i)}. ${esc(name)}</b></button>`).join('')}</div></div><div class="statsgrid">${kpi('COACH TRUST',game.playerCoachTrust??38)}${kpi('PLAYER XP',game.playerXP||0)}${kpi('OVERALL',p.ovr)}</div>`;
+}
+A.practiceAnswer=function(choice){if(!isPlayer()||!['season','preseason'].includes(game.phase)||!assertMediaClear())return;
+ let stamp=`${game.year}:${game.phase}:${game.week}`;if(game.practiceStamp===stamp)return say('You already completed this week’s practice.',true);
+ const good=choice==='film',p=game.players.find(x=>x.id===game.careerPlayer);
+ if(!p)return;game.practiceStamp=stamp;game.playerCoachTrust=clamp((game.playerCoachTrust??38)+(good?9:-2),0,100);
+ game.playerXP=(game.playerXP||0)+(good?10:3);pulseDelta({locker:good?2:-1});
+ if(game.playerCoachTrust>=64){p.depthRank=0;setDefaultLineup(true)}
+ news(`${p.name} ${good?'impressed coaches in':'completed'} positional practice.`);pushMoment('practice','Training Camp & Practice',`${p.name} ${good?'made the right read':'needs more film study'}.`);
+ store();render();say(good?'Good read! +10 XP and +9 coach trust.':'Practice completed. +3 XP; coach trust fell by 2.');
+};
+const _oldPlayerPractice=A.playerPractice;
+A.playerPractice=function(){if(isPlayer()){page='practice';render();return}return _oldPlayerPractice?.()};
+function filmRoomPage(){initImmersion();if(!coachRole())return title('Coach Film Room','Only head coaches and coordinators control the staff film board.');
+ let opp=nextMatchup()?.find(x=>x!==game.userTeam);
+ if(!opp)return `${title('Coach Film Room','There is no opponent on your schedule for this week.')}`;
+ const r=matchPreview(opp),stamp=eventWeekKey(),done=game.prep.stamp===stamp;
+ const side=game.career==='dc'?'defense':game.career==='oc'?'offense':'both';
+ return `${title('Opponent Film Room',`${mine().nickname} vs ${team(opp).nickname} · Week ${game.week}`)}<div class="two"><div class="card"><div class="tinyTag">FILM BREAKDOWN</div><h2>${team(opp).name}</h2><div class="pulses">${[['Defensive front',r.line],['Secondary',r.secondary],['Run offense',r.run],['Passing offense',r.pass]].map(([k,v])=>`<div class="pulseStat"><span>${k}</span><b>${v}</b><i style="--w:${v}%"></i></div>`).join('')}</div><p class="sub">${esc(side==='defense'?r.defSummary:r.summary)}</p></div><div class="card"><div class="tinyTag">WEEKLY GAME PLAN</div><h3>${done?'Film review complete':'What should you emphasize?'}</h3>${(side==='defense'?[['blitz','Pressure the backfield'],['zone','Protect against the pass'],['man','Play tight man coverage']]:[['pass','Attack through the air'],['balanced','Run a balanced approach'],['run','Establish the ground game']]).map(([key,label])=>`<button class="mediaAnswer" ${done?'disabled':''} onclick="A.filmChoice('${key}')"><b>${esc(label)}</b></button>`).join('')}<p class="fine">One formal film decision per opponent. A strong read provides a small game-day advantage.</p></div></div>`;
+}
+A.filmChoice=function(choice){if(!coachRole()||!assertMediaClear())return;
+ let opp=nextMatchup()?.find(x=>x!==game.userTeam);if(!opp)return;
+ const stamp=eventWeekKey();if(game.prep?.stamp===stamp)return say('Film session already complete.',true);
+ const r=matchPreview(opp);const expected=game.career==='dc'?r.defSuggested:r.suggested;
+ const correct=expected===choice;
+ if(game.career==='dc')game.gameplan.def=choice;
+ else game.gameplan.off=choice;
+ game.prep={stamp,boost:correct?3:0,choice,opponent:opp};
+ pulseDelta(correct?{coachTrust:3,security:1}:{coachTrust:-1});
+ news(`FILM ROOM: ${correct?'Good matchup read':'Mixed staff reaction'} for ${team(opp).nickname} game.`);
+ store();render();say(correct?'Scouting read was right. Small game-day boost earned.':'Not the coaching staff’s preferred matchup.');
+};
+// Coaching preparation affects ACTUAL scoring, not only text badges.
+const _oldRecordResult=recordResult;
+recordResult=function(a,b,sa,sb,week,type='regular'){
+ const pr=game?.prep;let boost=pr?.boost||0;
+ if(pr&&pr.opponent&&(a===game.userTeam||b===game.userTeam)&&pr.opponent===(a===game.userTeam?b:a)&&pr.stamp===eventWeekKey()&&boost){
+  if(a===game.userTeam)sa+=boost;else sb+=boost;
+ }
+ return _oldRecordResult(a,b,sa,sb,week,type);
+};
+function makeFaBid(p){initImmersion();if(game.faMarket.year!==game.year)game.faMarket={year:game.year,bids:{},offers:{}};
+ if(!game.faMarket.bids[p.id]){
+  let competitors=teams().filter(t=>t.id!==game.userTeam).sort((a,b)=>hashNumber(`${p.id}${a.id}${game.year}`)-hashNumber(`${p.id}${b.id}${game.year}`)).slice(0,2);
+  let offers=competitors.map((t,i)=>({team:t.id,annual:+(p.salary*(.95+((hashNumber(p.id+t.id+game.year)%38)/100))).toFixed(1),years:2+i,guarantee:35+i*15}));
+  game.faMarket.bids[p.id]={offers,status:'open',tries:0};
+ }
+ return game.faMarket.bids[p.id];
+}
+function frenzyPage(){initImmersion();if(!gmRole())return title('Free Agency Frenzy','Only owners and general managers can negotiate contracts.');
+ let pool=unsigned().filter(p=>p.pos!=='LS'&&(frenzyPos==='ALL'||p.pos===frenzyPos)).sort((a,b)=>b.ovr-a.ovr).slice(0,75),selected=pool.find(p=>p.id===spotlightFA)||pool[0];
+ if(!selected)return title('Free Agency Frenzy','No unsigned free agents are available.');
+ let bid=makeFaBid(selected),best=Math.max(...bid.offers.map(x=>x.annual)),stamp=bid.status;
+ return `${title('Free Agency Frenzy','Compete with other clubs and agents for talent. Offers are not guaranteed.')}
+ <div class="notice">Cap available: <b>${money(cap())}</b>. Market competition is fixed for each player and season, so repeating the same offer cannot reroll the outcome.</div><div class="two frenzyLayout"><div class="card"><div class="tinyTag">FREE AGENT BOARD</div><label class="lab">Browse by position</label><select class="field wide" onchange="A.frenzyPosition(this.value)"><option value="ALL" ${frenzyPos==='ALL'?'selected':''}>Top available · all positions</option>${POS.filter(pos=>pos!=='LS').map(pos=>`<option value="${pos}" ${frenzyPos===pos?'selected':''}>${pos}</option>`).join('')}</select><p class="sub">Showing ${Math.min(pool.length,12)} of ${pool.length} candidates</p>${pool.slice(0,12).map(p=>`<button class="faListRow ${selected.id===p.id?'focused':''}" onclick="A.frenzySelect('${p.id}')"><span><b>${esc(p.name)}</b><small>${p.pos} · ${p.ovr} OVR · Base ${money(p.salary)}</small></span><span>›</span></button>`).join('')}</div><div class="card"><div class="tinyTag">AGENT NEGOTIATION</div><h2>${esc(selected.name)}</h2><p class="sub">${selected.pos} · Age ${selected.age} · ${selected.ovr} OVR</p><div class="pulses"><div class="pulseStat"><span>Top competing annual offer</span><b>${money(best)}</b><i style="--w:${Math.min(best*4,100)}%"></i></div></div><div class="newsitem"><b>Other teams interested</b><p class="sub">${bid.offers.map(o=>team(o.team)?.name||o.team).map(esc).join(' · ')}</p></div>${stamp==='open'?`<label class="lab">Annual salary ($M)</label><input class="field wide" id="faAnnual" type="number" min="0.5" max="200" step="0.1" value="${Math.ceil(Math.max(selected.salary,best)*10)/10}"><label class="lab">Contract length</label><select id="faYears" class="field wide"><option value="1">1 year</option><option value="2">2 years</option><option value="3" selected>3 years</option><option value="4">4 years</option><option value="5">5 years</option></select><label class="lab">Guaranteed share</label><select id="faGuarantee" class="field wide"><option value="25">25% guaranteed</option><option value="50" selected>50% guaranteed</option><option value="75">75% guaranteed</option></select>${button('SEND CONTRACT OFFER','A.sendFaOffer()','primary wide')}<p class="fine">${bid.tries}/2 negotiation rounds used</p>`:`<div class="notice">${esc(bid.response||'Offer closed for this season.')}</div>`}</div></div>`;
+}
+A.frenzySelect=function(id){spotlightFA=id;render()};
+A.frenzyPosition=function(pos){if(pos==='ALL'||POS.includes(pos)){frenzyPos=pos;spotlightFA=null;render()}};
+A.sendFaOffer=function(){if(!gmRole()||!assertMediaClear())return;
+ let p=unsigned().find(p=>p.id===spotlightFA)||unsigned().filter(p=>p.pos!=='LS').sort((a,b)=>b.ovr-a.ovr)[0];if(!p)return;
+ const bid=makeFaBid(p);if(bid.status!=='open'||bid.tries>=2)return say('Negotiations are closed for this season.',true);
+ const annual=Number($('faAnnual')?.value),years=Number($('faYears')?.value),guarantee=Number($('faGuarantee')?.value);
+ if(!Number.isFinite(annual)||annual<.5||annual>200||!Number.isInteger(years)||years<1||years>5||![25,50,75].includes(guarantee))return say('Choose a valid offer.',true);
+ if(annual>cap())return say('Your contract exceeds the available salary cap.',true);
+ bid.tries++;
+ const best=Math.max(...bid.offers.map(o=>o.annual));
+ const strength=annual*(1+(guarantee-25)*.0025)+(years>=3?.3:0);
+ const threshold=best*1.06;
+ if(strength>=threshold){p.salary=annual;p.contractYears=years;p.guaranteePct=guarantee;p.team=game.userTeam;
+  bid.status='signed';bid.response=`Signed ${p.name} for ${years} years at ${money(annual)}/year. The ${team(game.userTeam).nickname} beat the competition.`;
+  news('FREE AGENCY: '+bid.response);pushMoment('signing','Major free-agent addition',bid.response);setDefaultLineup(true);spotlightFA=null;store();startMedia('signing');render();say('Free agent signed — press availability scheduled.');
+ }else if(bid.tries>=2){bid.status='lost';bid.response=`${p.name} rejected your final offer. ${team(bid.offers[0].team).name} won the bidding.`;
+  p.team=bid.offers[0].team;p.salary=best;p.contractYears=bid.offers[0].years;
+  news('FREE AGENCY: '+bid.response);pushMoment('freeagency','Lost bidding war',bid.response);store();render();say('The player chose another club.');
+ }else{bid.response='The agent wants a stronger total package. One final round remains.';news(`AGENT COUNTER: ${p.name} is asking for more guaranteed compensation.`);store();render();say('Offer rejected. One counter-offer remains.');}
+};
+const _baseSignAction=A.sign;
+A.sign=function(id){if(mediaIsPending())return assertMediaClear();
+ if(gmRole()&&['draft','offseason','offseason_intro','offseason_review','preseason'].includes(game.phase)){
+  spotlightFA=id;page='frenzy';render();return;
+ }
+ return _baseSignAction(id);
+};
+const _baseTradeSubmit=A.submitMultiTrade;
+A.submitMultiTrade=function(){if(!assertMediaClear())return;
+ let before=game.news[0]?.text||'';const r=_baseTradeSubmit?.();
+ if(game.news[0]?.text!==before&&String(game.news[0]?.text||'').startsWith('TRADE CONFIRMED')){
+  pushMoment('trade','Blockbuster trade',game.news[0].text);startMedia('trade');}
+ return r;
+};
+const _baseDraftPlayer=draftPlayer;
+draftPlayer=function(id,forTeam){if(mediaIsPending()&&forTeam===game.userTeam)return assertMediaClear();
+ let selection=nextPick(),who=game.prospects?.find(p=>p.id===id),minePick=gmRole()&&forTeam===game.userTeam;
+ const result=_baseDraftPlayer(id,forTeam);
+ if(minePick&&who?.drafted&&selection){pushMoment('draft',`${who.name} drafted`,`${who.pos} · ${who.school} · Pick #${selection.number}`);
+  if(selection.number<=32&&!game.media?.pending)startMedia('draft');}
+ return result;
+};
+const _baseEndWeekImmersion=endWeek;
+endWeek=function(played){if(mediaIsPending())return assertMediaClear();
+ const w=game.week,phase=game.phase;
+ for(const s of game.weeklyStories||[])if(s.status==='open'){s.status='expired';s.resolution='No response before the next week';}
+ _baseEndWeekImmersion(played);
+ initImmersion();game.prep={};storySeed();
+ if(played){pushMoment('game',`${mine().nickname} ${played.winner===game.userTeam?'win':'loss'}`,`${played.sa}–${played.sb} · Week ${w}`);
+  mediaOnGame(played,w,phase);}
+ store();render();
+};
+// No sim-to-playoffs bypass: pause at the next mandatory interview, otherwise retain checkpoint selections.
+const _oldSimToStop=simToStop;
+simToStop=function(target){if(mediaIsPending())return assertMediaClear();return _oldSimToStop(target)};
+A.simStop=function(target){return simToStop(target)};
+// Wrap the multi-week loop in the source (see build script) so it stops on a pending interview.
+const _oldGameA=A.play;
+for(const name of ['play','kickoff','playPlayoff','bye','advancePlayoff','continuePost','openOffseason','advanceOffseason','nextSeason','advanceFront','exp','draft','trade','cut','offerContract','move','sidelined','hiringWindow']){
+ if(typeof A[name]!=='function')continue;
+ const previous=A[name]; A[name]=function(...args){if(!assertMediaClear())return;return previous.apply(A,args)};
+}
+function considerCareerOffers(){
+ if(!roleReady()||!['player','hc','oc','dc'].includes(game.career))return;
+ initImmersion();
+ const fingerprint=`${game.year}:${game.career}`;
+ if(game.offersYear===fingerprint)return;
+ game.offersYear=fingerprint;
+ if(game.career==='player'&&(game.playerCareerStats?.games||0)<12)return;
+ const pool=teams().filter(t=>t.id!==game.userTeam&&t.id!=='EXP').sort((a,b)=>{
+  return hashNumber(`${game.year}/${game.career}/${a.id}`)-hashNumber(`${game.year}/${game.career}/${b.id}`)
+ }).slice(0,3);
+ game.roleOffers=pool.map((t,i)=>({id:uuid('joboffer'),team:t.id,role:game.career,year:game.year,status:'available',amount:game.career==='player'?+(2.5+i*1.1).toFixed(1):0}));
+ pushMoment('career','Career offers are arriving',`Teams are interested in your ${CAREER_NAMES[game.career]} career.`);
+}
+function careerOffersPage(){
+ initImmersion();let offers=(game.roleOffers||[]).filter(x=>x.status==='available');
+ return `${title('Career Turning Points','New opportunities can appear after successful seasons and career milestones.')}
+ ${offers.map(x=>`<div class="card section"><div class="tinyTag">${esc(x.role==='player'?'AGENT DESK':'COACHING INTERVIEW')}</div><h2>${esc(team(x.team)?.name||x.team)}</h2><p class="sub">${x.role==='player'?`Contract opportunity · ${money(x.amount)} per year`:`A chance to interview for the ${CAREER_NAMES[x.role]} role.`} This changes the franchise you work for, but preserves the league and career record.</p><div class="toolbar">${button('ACCEPT OFFER','A.takeCareerOffer('+JSON.stringify(x.id)+')','primary tiny')}${button('DECLINE','A.turnDownOffer('+JSON.stringify(x.id)+')','tiny')}</div></div>`).join('')||'<div class="card"><h3>No offers on your desk</h3><p class="sub">Keep earning starts, wins, and trust. Career opportunities appear after full seasons.</p></div>'}`;
+}
+A.turnDownOffer=function(id){let offer=(game.roleOffers||[]).find(x=>x.id===id&&x.status==='available');if(!offer)return;offer.status='declined';store();render()};
+A.takeCareerOffer=function(id){
+ if(!assertMediaClear())return;
+ let offer=(game.roleOffers||[]).find(x=>x.id===id&&x.status==='available');if(!offer)return;
+ let newTeam=team(offer.team);if(!newTeam)return;
+ if(!confirm(`Accept the offer from ${newTeam.name}? You will leave your current team.`))return;
+ let old=mine().name;
+ if(game.career==='player'){
+  const p=game.players.find(x=>x.id===game.careerPlayer);if(!p||p.team!==game.userTeam)return say('Your player is no longer on the active roster.',true);
+  if(cap(offer.team)<offer.amount)return say('The destination cannot afford this contract.',true);
+  p.team=offer.team;p.salary=offer.amount;p.contractYears=3;
+ }else{
+  const me=game.coaches.find(c=>c.id===game.careerCoach);
+  if(me){let other=game.coaches.find(c=>c.club===offer.team&&c.role===game.career.toUpperCase());if(other)other.club=null;me.club=offer.team}
+ }
+ game.userTeam=offer.team;offer.status='accepted';for(let x of game.roleOffers)x.status=x.id===id?'accepted':'expired';
+ setDefaultLineup(true);news(`CAREER CHANGE: ${game.careerName||CAREER_NAMES[game.career]} left ${old} for ${newTeam.name}.`);
+ pushMoment('career','New team, same career',`${old} → ${newTeam.name}`);page='dashboard';store();startMedia('job');render();
+};
+const _baseEnterOffseason=enterOffseason;
+enterOffseason=function(...args){const b=game.phase;const r=_baseEnterOffseason(...args);if(b==='offseason_review'||b==='playoffs'){considerCareerOffers();store();}return r};
+function leagueLegacyPage(){initImmersion();let items=game.moments||[];
+ return `${title('Franchise Legacy','Every chapter of your save has a permanent timeline.')}
+ <div class="statsgrid">${kpi('SEASONS',Math.max(1,game.year-2026))}${kpi('CHAMPIONSHIPS',(game.champions||[]).filter(c=>c===game.userTeam||c?.winner===game.userTeam||c?.id===game.userTeam).length)}${kpi('STORY EVENTS',items.length)}${kpi('PRESS HISTORY',(game.mediaHistory||[]).length)}</div>
+ <div class="card section"><h3>Career timeline</h3><div class="timelineFeed">${items.slice(0,75).map(m=>`<div class="timelineEntry"><span>${esc(m.year)} W${esc(m.week)} · ${esc(m.kind).toUpperCase()}</span><b>${esc(m.headline)}</b><p>${esc(m.detail||'')}</p></div>`).join('')||'<p class="sub">Your first game, first transaction and first press conference will appear here.</p>'}</div></div>
+ <div class="card section"><h3>League champions</h3>${(game.champions||[]).map(x=>`<p>${esc(typeof x==='object'?JSON.stringify(x):x)}</p>`).join('')||'<p class="sub">No champions recorded in this save yet.</p>'}</div>`;
+}
+function eventTicker(){let newest=(game.news||[])[0];return newest?`<div class="leagueTicker"><span>BREAKING</span><div>${esc(newest.text)}</div></div>`:''}
+function liveFieldMarkup(){let g=game.currentGame;if(!g)return '';
+ const pct=clamp(8+(g.drive||0)*11.2,8,96);return `<div class="gameFieldPanel"><div class="fieldTop"><span>LIVE GAME SIMULATION</span><b>${esc(mine().nickname)} ${g.us} — ${g.them} ${esc(team(g.opponent)?.nickname||'OPP')}</b></div><div class="turf"><div class="yardLabels"><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span><span>40</span><span>30</span><span>20</span><span>10</span></div><div class="fieldMarker" style="left:${pct}%"><span>●</span></div><div class="endZone">${esc(mine().id)}</div></div><div class="fieldTop"><small>Q${g.quarter} · Drive ${Math.min(g.drive+1,8)} of 8</small><small>Drive-by-drive simulation · not a live NFL clock</small></div></div>`;
+}
+const _oldLiveGame=liveGame;
+liveGame=function(){return liveFieldMarkup()+_oldLiveGame()};
+const _oldTabs=tabs;
+tabs=function(){let base=_oldTabs();if(!roleReady())return base;
+ const links=[['careerhub','⌂','Career Hub'],['media','◉','Press Room'],['opportunities','♜','Job & Agent Offers'],['storylines','◇','Weekly Stories'],['legacy','▥','Franchise Legacy']];
+ if(gmRole())links.push(['frenzy','♧','FA Frenzy']);
+ if(isPlayer())links.push(['practice','↗','Practice Lab']);
+ if(coachRole())links.push(['filmroom','◫','Film Room']);
+ let html=links.map(([id,ico,name])=>`<button class="navbutton ${page===id?'active':''}" onclick="A.page('${id}')"><span class="navicon">${ico}</span><span>${name}</span>${id==='media'&&mediaIsPending()?'<span class="notificationDot"></span>':''}</button>`).join('');
+ return base.replace('</nav>',html+'</nav>');
+};
+const _oldPageNav=A.page;
+A.page=function(target){
+ if(target==='careerhub')return A.showCareers();
+ const routes=['media','opportunities','storylines','legacy','frenzy','filmroom','practice','perspectives','chooseplayer'];
+ if(routes.includes(target)){
+  if(!roleReady())return A.showCareers();
+  if(target==='frenzy'&&!gmRole()||target==='filmroom'&&!coachRole()||target==='practice'&&!isPlayer())return say('This feature belongs to another career role.',true);
+  if(mediaIsPending()&&target!=='media'){page='media';render();return say('The press conference is mandatory.',true)}
+  page=target;render();window.scrollTo?.(0,0);return;
+ }
+ if(mediaIsPending()){page='media';render();return say('Complete the mandatory interview to unlock progression.',true)}
+ return _oldPageNav(target);
+};
+const _oldRenderMain=render;
+render=function(){
+ if(!game)return;
+ const extras={careerhub:hubPage,media:mediaPage,opportunities:careerOffersPage,storylines:storyPage,legacy:leagueLegacyPage,frenzy:frenzyPage,practice:practicePage,filmroom:filmRoomPage,perspectives:careerPerspectivePage,chooseplayer:choosePlayerPage};
+ if(mediaIsPending()&&page!=='careerhub'&&page!=='media')page='media';
+ if(extras[page]){
+  if(page!=='careerhub'&&game.phase==='setup'){page='careerhub';}
+  initImmersion();const root=$('root');let content=extras[page]();
+  const bar=`<header class="topbar"><div class="brand">NFL <span>GM</span><small>CONNECTED CAREERS EDITION</small></div><div class="topteam"><div><b>${page==='careerhub'?'Career Hub':esc(mine()?.name||'NFL GM')}</b><small>${page==='careerhub'?'SELECT YOUR GAMEPLAY':`${game.year} · ${game.phase.toUpperCase()}`}</small></div></div><button class="button subtle tiny topSwitch" onclick="A.showCareers()">⇄ SWITCH</button></header>`;
+  root.innerHTML=`<div class="app">${bar}${page==='careerhub'?`<main class="careerHubMain">${content}</main>`:`<div class="shell">${tabs()}<main class="content">${eventTicker()}${content}</main></div>`}<footer>NFL GM · UNOFFICIAL SIMULATOR · LOCAL SAVE SLOTS</footer></div>`;
+  return;
+ }
+ _oldRenderMain();
+ let root=$('root'),top=root.querySelector('.topbar');
+ if(top&&!top.querySelector('.topSwitch'))top.insertAdjacentHTML('beforeend','<button class="button subtle tiny topSwitch" onclick="A.showCareers()">⇄ SWITCH CAREER</button>');
+ let main=root.querySelector('main.content');if(main&&!main.querySelector('.leagueTicker'))main.insertAdjacentHTML('afterbegin',eventTicker());
+ if(game.phase==='setup'&&careerSlots().length){let el=root.querySelector('.setupwrap');if(el)el.insertAdjacentHTML('beforebegin',`<div class="savedCareerLink"><b>${careerSlots().length} existing career save(s) available.</b> ${button('OPEN CAREER HUB','A.showCareers()','primary tiny')}</div>`)}
+};
+// New careers and imported careers initialize optional systems, while older saves keep working.
+window.NFL_GM_INTEGRATION_BUILD='2026-11-08-connected-careers-living-league';
+
+restore();initImmersion();render();
+
+/* CAREER MEDIA PATCH — playthrough-driven fix, 2026-11-08.
+   Additions are event hooks only. Original draft, roster, season, save,
+   free agency and drive engines are intentionally unchanged. */
+
+// Distinguish introductory interviews from ordinary game-day availability.
+const _careerMediaQuestionsBeforePatch = mediaQuestions;
+mediaQuestions = function(kind, context={}) {
+  const t = mine(), nickname = t?.nickname || 'team';
+  const coachName = game.careerName || 'Coach';
+  const person = game.players.find(p => p.id===game.careerPlayer);
+  const playerName = person?.name || coachName;
+  const teamName = t?.name || nickname;
+  let prompts = null;
+  if(kind === 'intro_frontoffice') {
+    if(game.career==='owner') prompts = [
+      `Why did you want to take ownership of the ${teamName} franchise?`,
+      `How do you intend to earn the trust of ${nickname} fans and the local community?`,
+      `What standards will you set for the people leading the football operation?`
+    ];
+    else prompts = [
+      `You're taking over as ${teamName} general manager. What is your roster-building philosophy?`,
+      `What should ${nickname} supporters expect from your first offseason and draft?`,
+      `How do you intend to work with the coaching staff while making difficult personnel decisions?`
+    ];
+  } else if(kind === 'intro_coach') {
+    const title = game.career === 'hc' ? 'head coach' : game.career === 'oc' ? 'offensive coordinator' : 'defensive coordinator';
+    const unit = game.career === 'oc' ? 'offense' : game.career === 'dc' ? 'defense' : 'team';
+    prompts = [
+      `${coachName}, you've just been hired as ${teamName} ${title}. Why was this the right opportunity?`,
+      `What changes should fans expect from your ${unit} this season?`,
+      `How will you earn the trust of your players and the rest of the coaching staff?`
+    ];
+  } else if(kind === 'intro_draft') {
+    prompts = [
+      `${playerName}, ${teamName} just selected you out of ${game.college || 'college'}. What's going through your mind?`,
+      `What can ${nickname} fans expect from you during your rookie season?`,
+      `How do you plan to compete for playing time and earn your teammates' respect?`
+    ];
+  } else if(kind === 'intro_player') {
+    prompts = [
+      `${playerName}, you're beginning this chapter with ${teamName}. What excites you about this opportunity?`,
+      `What does your position group need from you this season?`,
+      `What do you want ${nickname} fans to know about you?`
+    ];
+  } else if(kind === 'player_trade') {
+    const prior = context.from ? team(context.from)?.name : null;
+    prompts = [
+      `${playerName}, you${prior ? ' were traded from '+prior : ' have been traded'} to ${teamName}. How are you approaching the change?`,
+      `What have the coaches told you about your role with the ${nickname}?`,
+      `What would you like to say to the fans and teammates in both cities?`
+    ];
+  } else if(kind === 'player_signing') {
+    prompts = [
+      `${playerName}, what persuaded you to sign with ${teamName}?`,
+      `What should the ${nickname} locker room expect from you?`,
+      `What do you hope to accomplish in your first year with this club?`
+    ];
+  }
+  if(prompts) return prompts.map((text,i)=>({id:i,text,followup:false}));
+  return _careerMediaQuestionsBeforePatch(kind,context);
+};
+
+// The existing opportunity screen emits the legacy "job" kind. Normalize it
+// by career role while retaining the same serialized press-conference format.
+const _careerStartMediaBeforePatch = startMedia;
+startMedia = function(kind, context={}) {
+  if(kind==='job') kind = game.career==='player' ? 'player_signing' :
+    game.career==='owner'||game.career==='gm' ? 'intro_frontoffice' : 'intro_coach';
+  return _careerStartMediaBeforePatch(kind,context);
+};
+
+// New careers: GM and owners speak to the media before making their first
+// personnel decision. Existing players have an arrival interview, but a newly
+// created college prospect waits until he is actually drafted.
+const _careerBeginBeforePatch = begin;
+begin = function(mode) {
+  _careerBeginBeforePatch(mode);
+  if(!game || game.phase==='setup'||game.media?.pending)return;
+  if(['gm','owner'].includes(game.career)&&game.phase==='offseason_intro') {
+    startMedia('intro_frontoffice',{careerStart:true});
+  } else if(game.career==='player'&&playerStart==='real'&&game.phase!=='college'&&game.careerPlayer) {
+    startMedia('intro_player',{careerStart:true});
+  }
+};
+
+// Hiring via a coaching job interview: the media room opens immediately.
+const _careerAcceptJobBeforePatch = A.acceptJob;
+A.acceptJob = function(...args) {
+  const wasInterview = game?.phase==='interview';
+  const result = _careerAcceptJobBeforePatch.apply(A,args);
+  if(wasInterview && game?.careerCoach && game.phase!=='interview' && !game.media?.pending) {
+    startMedia('intro_coach',{careerStart:true});
+  }
+  return result;
+};
+
+// The combine/draft finishes first, then the rookie's introductory presser.
+const _careerPlayerDraftBeforePatch = A.playerDraft;
+A.playerDraft = function(...args) {
+  const wasCombine = game?.phase==='combine';
+  const result = _careerPlayerDraftBeforePatch.apply(A,args);
+  if(wasCombine && game?.draftedBy && game.phase!=='combine' && !game.media?.pending) {
+    startMedia('intro_draft',{careerStart:true,school:game.college});
+  }
+  return result;
+};
+
+// A player who actually changes teams receives a player-specific arrival
+// conference. Rejected requests never trigger a fake interview.
+const _careerPlayerRequestBeforePatch = A.request;
+A.request = function(kind) {
+  if(!assertMediaClear()) return;
+  // One formal trade/release request per offseason. Without this restriction,
+  // repeatedly pressing the button could brute-force the randomized approval.
+  if(game?.career==='player' && ['trade','release'].includes(kind) &&
+     ['offseason','offseason_review'].includes(game.phase) &&
+     game.year>2027 && (game.playerCareerStats?.games||0)>=12) {
+    game.playerAgentRequests ||= {};
+    const fingerprint=game.year+':'+kind;
+    if(game.playerAgentRequests[kind]===fingerprint)
+      return say('Your agent already filed this request this offseason. The decision is final.',true);
+    game.playerAgentRequests[kind]=fingerprint;
+  }
+  const previousTeam = game?.userTeam;
+  const result = _careerPlayerRequestBeforePatch.call(A,kind);
+  if(kind==='trade' && game?.career==='player' && game.userTeam!==previousTeam && !game.media?.pending) {
+    startMedia('player_trade',{from:previousTeam,to:game.userTeam});
+  }
+  return result;
+};
+const _careerPlayerSigningBeforePatch = A.acceptPlayerOffer;
+A.acceptPlayerOffer = function(...args) {
+  if(!assertMediaClear()) return;
+  const previousTeam = game?.userTeam;
+  const result = _careerPlayerSigningBeforePatch.apply(A,args);
+  if(game?.career==='player' && game.userTeam!==previousTeam && !game.media?.pending) {
+    startMedia('player_signing',{from:previousTeam,to:game.userTeam});
+  }
+  return result;
+};
+
+// Correct broadcast event captions for player arrival and introductory press.
+const _careerMediaPageBeforePatch = mediaPage;
+mediaPage = function() {
+  let html=_careerMediaPageBeforePatch();
+  const m=game?.media;
+  const names={intro_frontoffice:'INTRODUCTORY PRESS CONFERENCE',intro_coach:'NEW COACH INTRODUCTION',intro_draft:'ROOKIE INTRODUCTION',intro_player:'PLAYER INTRODUCTION',player_trade:'TRADE ARRIVAL INTERVIEW',player_signing:'NEW SIGNING INTERVIEW'};
+  if(m?.kind && names[m.kind])html=html.replace(` · ${esc(m.kind.toUpperCase())}</span>`,` · ${names[m.kind]}</span>`);
+  return html;
+};
+window.NFL_GM_MEDIA_BUILD='2026-11-08-career-introductions-trade-arrivals';
+
+// Ownership menu integrity: changing the same ticket price repeatedly must not
+// create unlimited fan approval. Price revisions are limited to one per week.
+const _ownerTicketBeforePatch=A.extraTicket;
+A.extraTicket=function(value){
+  if(game?.career!=='owner')return;
+  const price=Number(value),f=extras().finances;
+  if(![75,115,165,220].includes(price))return say('Choose a listed ticket price.',true);
+  if(f.ticket===price)return say('Your ticket price is already set to that amount.',true);
+  const thisWeek=`${game.year}:${game.phase}:${game.week}`;
+  if(game.ownerTicketDecision===thisWeek)
+    return say('You have already changed ticket pricing this week.',true);
+  game.ownerTicketDecision=thisWeek;
+  return _ownerTicketBeforePatch.call(A,price);
+};
+
+/* LIVE GAME 2D — interactive, save-safe, role-aware game presentation.
+   Game and league results still flow through the existing recordResult/endWeek/progressPlayoffs.
+   Installed after all Connected Careers modules, replacing only the watched-game path. */
+const LIVE2D_VERSION='2026-11-08-role-specific-2d-v4';
+function live2dState(){let g=game?.currentGame;return g?.live2d?g:null}
+function live2dTeam(isUser){return isUser?game.userTeam:game.currentGame.opponent}
+function live2dTime(sec){return Math.floor(Math.max(0,sec)/60)+':'+String(Math.max(0,sec)%60).padStart(2,'0')}
+function live2dDown(n){return n===1?'1st':n===2?'2nd':n===3?'3rd':'4th'}
+function live2dCanDecide(){return ['hc','oc','dc'].includes(game.career)}
+function live2dMayOffense(){return game.career==='hc'||game.career==='oc'}
+function live2dMayDefense(){return game.career==='hc'||game.career==='dc'}
+function live2dMayFourth(){return game.career==='hc'}
+function live2dPlayerName(){return game.players?.find(p=>p.id===game.careerPlayer)}
+function live2dRoleTitle(){const p=live2dPlayerName();return game.career==='player'?'PLAYER · '+(p?.pos||'POSITION NOT SET'):CAREER_ROLES[game.career]||'CAREER'}
+function live2dRoleHint(){return ({hc:'Your calls: OFFENSE + DEFENSE + FOURTH DOWN',oc:'Your calls: OFFENSE ONLY · HC makes fourth-down calls',dc:'Your calls: DEFENSE ONLY · offense handled by OC',gm:'WATCH MODE · coaching staff handles all play calls',owner:'WATCH MODE · coaching staff handles all play calls',player:'PLAYER CAREER · coaches call the plays; track your position'})[game.career]||'Watch the simulation'}
+function live2dNeedUserFourth(s){return s.off===0&&live2dMayFourth()}
+function live2dDefChoice(s){return ['zone','man','blitz','contain'].includes(s.defSelected)?s.defSelected:'zone'}
+function live2dInit(){let g=game.currentGame;if(!g)return;g.live2d={q:1,sec:900,off:0,ball:25,down:1,need:10,plays:0,possessions:[0,0],firstDowns:[0,0],turnovers:[0,0],yards:[0,0],clockSpeed:1,auto:false,await4:false,selected:'balanced',defSelected:'zone',overtime:false,otPoss:[false,false],message:'Opening kickoff · '+mine().nickname+' starts at its 25.',moments:[],started:true};g.quarter=1;g.drive=0;g.log=['Opening kickoff. '+mine().nickname+' takes possession at the 25-yard line.'];store();render()}
+function live2dStart(opponent=null,round=null){live2dStopTimer();if(typeof mediaIsPending==='function'&&mediaIsPending())return assertMediaClear();if(game.currentGame)return say('Finish your current game first.',true);startPreparedGame(opponent,round);if(game.currentGame)live2dInit()}
+function live2dLog(message){let g=live2dState();if(!g)return;const s=g.live2d;g.log.unshift(`${s.overtime?'OT':'Q'+s.q} ${live2dTime(s.sec)} · ${message}`);if(g.log.length>64)g.log.length=64;s.message=message}
+function live2dStopTimer(){if(window.__nflLive2dTimer){clearInterval(window.__nflLive2dTimer);window.__nflLive2dTimer=null}}
+function live2dFlip(reason,at){const g=live2dState();if(!g)return;let s=g.live2d;let former=s.off;s.possessions[former]++;if(s.overtime)s.otPoss[former]=true;s.off=1-s.off;s.ball=clamp(Math.round(at??25),1,99);s.down=1;s.need=Math.min(10,100-s.ball);s.await4=false;g.drive++;live2dLog(`${reason} · ${live2dTeam(s.off===0)?(s.off===0?mine().nickname:team(g.opponent)?.nickname):'Team'} ball at the ${s.ball}.`)}
+function live2dFinish(){let g=live2dState();if(!g)return;live2dStopTimer();let s=g.live2d;
+ if(g.us===g.them){ // Existing league engine requires a winner; play an untimed sudden-death decider rather than fabricate a tie.
+  const userAdv=(rating(game.userTeam)-rating(g.opponent))*0.015;const userWins=Math.random()<clamp(0.5+userAdv,0.2,0.8);if(userWins)g.us+=3;else g.them+=3;live2dLog(`Final overtime possession: ${userWins?mine().nickname:team(g.opponent)?.nickname} wins with a field goal.`);
+ }
+ let result=recordResult(game.userTeam,g.opponent,g.us,g.them,game.week,g.playoff?'playoff':game.phase==='preseason'?'preseason':'regular');
+ game.lastGame={...result,log:[...g.log],stats:{...g.stats}};game.currentGame=null;
+ news(`${g.playoff?g.round:'Week '+game.week}: ${mine().nickname} ${result.sa}–${result.sb} ${team(g.opponent).nickname}.`);
+ if(g.playoff){let m=game.post?.rounds.at(-1)?.matches.find(m=>m.a===game.userTeam||m.b===game.userTeam);if(m){m.result=result;m.winner=result.winner}progressPlayoffs()}else endWeek(result);
+ store();render();
+}
+function live2dPeriod(){let g=live2dState();if(!g)return;let s=g.live2d;if(s.sec>0)return;
+ if(!s.overtime&&s.q<4){s.q++;s.sec=900;g.quarter=s.q;live2dLog(`Start of quarter ${s.q}.`);return}
+ if(!s.overtime&&s.q===4){if(g.us!==g.them){live2dFinish();return}s.overtime=true;s.sec=600;s.otPoss=[false,false];live2dLog('Regulation tied. Overtime begins, 10:00 on the clock.');live2dFlip('Overtime kickoff',25);return}
+ if(s.overtime){if(g.us===g.them&&g.playoff){s.sec=600;live2dLog('Playoff overtime continues. Another period begins.');return}live2dFinish()}
+}
+function live2dScore(points,why){let g=live2dState();if(!g)return;let s=g.live2d;if(s.off===0)g.us+=points;else g.them+=points;live2dLog(`${points===7?'TOUCHDOWN + PAT':points===3?'FIELD GOAL GOOD':'SCORE'}! ${why}`);live2dFlip('Kickoff',25);
+ if(s.overtime&&s.otPoss[0]&&s.otPoss[1]&&g.us!==g.them)live2dFinish();
+}
+function live2dKick(kind,byCpu=false){let g=live2dState();if(!g)return;let s=g.live2d;if(!s.await4||(s.off===0&&!byCpu&&!live2dMayFourth()))return;
+ const pos=s.ball,offTeam=s.off===0?game.userTeam:g.opponent;
+ if(kind==='punt'){let distance=live2dRand(37,59);let newStart=clamp(100-pos-distance+live2dRand(0,10),2,35);s.sec=Math.max(0,s.sec-live2dRand(7,13));live2dLog(`${offTeam} punts ${distance} yards.`);live2dFlip('Punt return',newStart)}
+ else if(kind==='fg'){let kickDist=117-pos;let kicker=game.players?.filter(p=>p.team===offTeam&&p.pos==='K').sort((a,b)=>b.ovr-a.ovr)[0];let pct=clamp(96-Math.max(0,kickDist-30)*2.1+(kicker?(kicker.ovr-75)*.5:0),5,98);s.sec=Math.max(0,s.sec-live2dRand(6,12));if(Math.random()*100<pct){live2dScore(3,`${kickDist}-yard kick converted.`);return}else{live2dLog(`MISSED FIELD GOAL from ${kickDist} yards.`);live2dFlip('Missed kick / change of possession',clamp(100-pos,20,80))}}
+ else if(kind==='go'){s.await4=false;s.selected=s.selected||'balanced';live2dPlayOne(s.selected);return}
+ else return;
+ if(!game.currentGame)return;live2dPeriod();if(game.currentGame&&!window.__nflLive2dBatch){store();render()}
+}
+function live2dRand(a,b){return Math.floor(Math.random()*(b-a+1))+a}
+function live2dCpuFourth(){let g=live2dState();if(!g)return;const s=g.live2d;if(!s.await4)return;
+ const scoreGap=(s.off===0?g.us-g.them:g.them-g.us);const late=(s.q===4||s.overtime)&&s.sec<=200;
+ let choice=s.ball>=59&&s.need>=3?'fg':s.ball>=58&&s.need<=4?'go':'punt';
+ if((late&&scoreGap<0&&s.need<=8)||s.need<=1&&s.ball>=48)choice='go';
+ if(choice==='fg'&&s.ball<57)choice='punt';live2dKick(choice,true);
+}
+function live2dPlayOne(call='balanced'){
+ let g=live2dState();if(!g)return;let s=g.live2d;if(s.await4){if(!live2dNeedUserFourth(s))live2dCpuFourth();else{store();render()}return}
+ if(s.off===0&&live2dMayOffense()&&['run','quick','deep','balanced'].includes(call))s.selected=call;
+ const ownOff=s.off===0,offTeam=ownOff?game.userTeam:g.opponent,otherTeam=ownOff?g.opponent:game.userTeam;
+ const teamPower=(rating(offTeam)-rating(otherTeam))*.13;const offMode=ownOff?(live2dMayOffense()?s.selected:(Math.random()<.29?'run':Math.random()<.48?'quick':'balanced')):'balanced';
+ const defMode=!ownOff?(live2dMayDefense()?live2dDefChoice(s):(game.gameplan?.def||'zone')):(game.gameplan?.def||'zone');
+ let passChance=offMode==='run'?.14:offMode==='quick'?.86:offMode==='deep'?.88:offMode==='pass'?.77:.54;
+ if(!ownOff)passChance=.54+((g.them<g.us && s.q===4)?.12:0);
+ let isPass=Math.random()<passChance;let gain=0,desc='',turnover=false;
+ const roll=Math.random();
+ if(isPass){let sack=.055,interception=.035,completion=.65,big=.12;
+  if(offMode==='quick'){sack=.03;interception=.019;completion=.83;big=.025}
+  if(offMode==='deep'){sack=.105;interception=.065;completion=.48;big=.35}
+  if(ownOff&&game.gameplan?.off==='pass')completion+=.025;
+  if(!ownOff){
+   if(defMode==='blitz'){sack+=.085;interception+=.008;completion-=.05;big+=.09}
+   else if(defMode==='man'){completion-=.105;big+=.045}
+   else if(defMode==='zone'){completion-=.06;interception+=.015;big=Math.max(.02,big-.02)}
+   else if(defMode==='contain'){sack=Math.max(.015,sack-.015);big=Math.max(.02,big-.055)}
+  }
+  if(roll<sack){gain=-live2dRand(3,10);desc='Quarterback sacked for '+(-gain)+' yards.'}
+  else if(roll<sack+interception){turnover=true;desc='Pass intercepted!'}
+  else if(roll<sack+interception+completion){gain=Math.random()<big?live2dRand(21,44):live2dRand(2,offMode==='quick'?13:20);gain=Math.max(1,gain+Math.round(teamPower));desc='Complete pass for '+gain+' yards.'}
+  else desc='Pass incomplete.';
+ }else{if(roll<.018){turnover=true;desc='Fumble lost on the run!'}else{gain=live2dRand(-3,12)+Math.round(teamPower);if(offMode==='run')gain+=live2dRand(0,3);if(!ownOff&&defMode==='contain')gain-=live2dRand(2,5);if(!ownOff&&defMode==='blitz')gain-=live2dRand(0,3);gain=Math.max(-7,gain);desc='Rush for '+gain+' yards.'}}
+ s.plays++;s.yards[s.off]+=gain;const sStats=ownOff?g.stats:g.statsOpp;if(isPass)sStats.pass=(sStats.pass||0)+Math.max(0,gain);else sStats.rush=(sStats.rush||0)+Math.max(0,gain);
+ s.sec=Math.max(0,s.sec-live2dRand(isPass?8:22,isPass?32:43));
+ let newBall=s.ball+gain;
+ if(turnover){s.turnovers[s.off]++;if(ownOff)g.stats.turnovers++;live2dLog(desc);live2dFlip('Turnover',clamp(100-s.ball,1,99))}
+ else if(newBall<=0){live2dLog('SAFETY! '+desc);if(ownOff)g.them+=2;else g.us+=2;live2dFlip('Free kick after safety',25)}
+ else if(newBall>=100){s.ball=100;live2dLog(desc);live2dScore(7,'Offensive touchdown and extra point.');if(!game.currentGame)return}
+ else{ s.ball=clamp(newBall,1,99);s.need-=gain;live2dLog(`${live2dDown(s.down)} & ${Math.max(1,s.need+gain)} — ${desc}`);
+  if(s.need<=0){s.firstDowns[s.off]++;if(ownOff)g.stats.firstDowns++;s.down=1;s.need=Math.min(10,100-s.ball);live2dLog('FIRST DOWN! Chains move.');}
+  else if(s.down<4){s.down++;if(s.down===4){s.await4=true;live2dLog(`${live2dTeam(s.off===0)} faces FOURTH & ${s.need} at the ${s.ball}.`);}}
+  else{ // A declared fourth-down try that did not convert
+   live2dLog('TURNOVER ON DOWNS.');live2dFlip('Turnover on downs',clamp(100-s.ball,1,99));
+  }
+ }
+ if(Math.random()<.006&&ownOff){const ps=own().filter(healthy);if(ps.length){const victim=ps[live2dRand(0,ps.length-1)],weeks=live2dRand(1,3);victim.outUntil=game.week+weeks;victim.injuryWeeks=weeks+1;victim.status='INJ';victim.injuryReason='Game injury';live2dLog(`INJURY: ${victim.name} (${victim.pos}) — expected ${weeks} weeks.`);news(`Injury report: ${victim.name} (${victim.pos}), ${weeks} weeks.`);gameHealthEvent(victim)}}
+ if(!game.currentGame)return;
+ // Fewer than 5 real minutes per auto-run; games still use regulation and OT clocks.
+ if(s.plays>=440){live2dLog('League review: game reaches safety play limit.');live2dFinish();return}
+ live2dPeriod();if(game.currentGame){g.quarter=s.q;if(!window.__nflLive2dBatch){store();render()}}
+}
+function live2dStep(call){live2dStopTimer();let g=live2dState();if(!g)return;if(g.live2d.await4){if(live2dNeedUserFourth(g.live2d))return;live2dCpuFourth()}else live2dPlayOne(live2dMayOffense()?call||g.live2d.selected:'balanced')}
+function live2dAdvanceUntil(target){live2dStopTimer();let s=live2dState()?.live2d;if(!s)return;let startQ=s.q,guard=0;window.__nflLive2dBatch=true;
+ try{while(live2dState() && guard++<340){let x=live2dState().live2d;if(x.await4){if(live2dNeedUserFourth(x))break;live2dCpuFourth()}else live2dPlayOne(live2dMayOffense()?x.selected:'balanced');
+  if(!live2dState()||target==='quarter'&&live2dState().live2d.q!==startQ)break;
+ }}finally{window.__nflLive2dBatch=false}
+ if(live2dState()){store();render()}
+}
+function live2dAutoTick(){let g=live2dState();if(!g){live2dStopTimer();return}let s=g.live2d;
+ if(s.await4){if(live2dNeedUserFourth(s)){live2dStopTimer();store();render();return}live2dCpuFourth();return}
+ live2dPlayOne(s.selected)}
+function live2dToggle(){if(window.__nflLive2dTimer){live2dStopTimer();render();return}const g=live2dState();if(!g)return;
+ const pace=()=>({1:650,2:300,4:125}[live2dState()?.live2d.clockSpeed||1]||650);
+ window.__nflLive2dTimer=setInterval(live2dAutoTick,pace());render()}
+function live2dSetSpeed(x){const g=live2dState();if(!g)return;g.live2d.clockSpeed=[1,2,4].includes(Number(x))?Number(x):1;if(window.__nflLive2dTimer){live2dStopTimer();live2dToggle()}store();render()}
+function live2dQuickGame(opponent=null,round=null){live2dStopTimer();if(typeof mediaIsPending==='function'&&mediaIsPending())return assertMediaClear();if(!game.currentGame)startPreparedGame(opponent,round);if(!game.currentGame)return;
+ if(game.currentGame.live2d){live2dAutoResolve();return}autoFinish()}
+function live2dAutoResolve(){live2dStopTimer();let i=0;window.__nflLive2dBatch=true;try{while(live2dState()&&i++<460){let s=live2dState().live2d;if(s.await4)live2dCpuFourth();else live2dPlayOne(live2dMayOffense()?s.selected:'balanced')}}finally{window.__nflLive2dBatch=false}if(live2dState())live2dFinish();store();render()}
+function live2dView(){
+ let g=live2dState();if(!g)return '';let s=g.live2d;
+ let pos=s.off===0?s.ball:100-s.ball;
+ let pct=(8+pos*.84).toFixed(2),q=s.overtime?'OT':'Q'+s.q;
+ let offenseTurn=s.off===0&&!s.await4, defenseTurn=s.off===1&&!s.await4;
+ let controlOff=offenseTurn&&live2dMayOffense(),controlDef=defenseTurn&&live2dMayDefense();
+ let needFourth=s.await4&&live2dNeedUserFourth(s);
+ let next=s.await4?(needFourth?'HEAD COACH: decide go for it, kick or punt':'Coaching AI handles this fourth down'):
+  (controlOff?'You are calling OFFENSE':controlDef?'You are calling DEFENSE':'Coaching staff calls this possession');
+ let role=esc(live2dRoleTitle()),hint=esc(live2dRoleHint());
+ let profile=game.career==='player'?live2dPlayerName():null;
+ let playerStrip=profile?`<div class="live2dRolePlayer"><b>👤 ${esc(profile.name)}</b><span>${esc(profile.pos)} · ${profile.ovr} OVR · ${esc(game.userTeam)}</span></div>`:'';
+ let callInfo=controlOff?`<div class="live2dControls"><div class="eyebrow">🏈 YOUR OFFENSIVE PLAY CALL · ${esc(game.career==='oc'?'OFFENSIVE COORDINATOR':'HEAD COACH')}</div><p class="fine">Choose a play, then tap NEXT PLAY. Your offensive choice changes the result.</p><div class="live2dChoices">${[['run','RUN'],['quick','SHORT PASS'],['balanced','BALANCED'],['deep','DEEP PASS']].map(([v,label])=>button(label,`A.liveCall('${v}')`,s.selected===v?'primary':'')).join('')}</div></div>`:'';
+ let defInfo=controlDef?`<div class="live2dControls"><div class="eyebrow">🛡️ YOUR DEFENSIVE CALL · ${esc(game.career==='dc'?'DEFENSIVE COORDINATOR':'HEAD COACH')}</div><p class="fine">Tap a scheme to run the next defensive snap. Blitz boosts sack chances but risks big plays; Contain limits rushing lanes.</p><div class="live2dChoices">${[['zone','ZONE COVERAGE'],['man','MAN COVERAGE'],['blitz','BLITZ'],['contain','CONTAIN RUN']].map(([v,label])=>button(label,`A.liveDefCall('${v}')`,live2dDefChoice(s)===v?'primary':'')).join('')}</div></div>`:'';
+ let fourthInfo=needFourth?`<div class="live2dDecision"><div class="eyebrow">HEAD COACH DECISION · 4TH & ${s.need} · AT THE ${s.ball}</div><h3>What do you want to do?</h3><div class="live2dChoices">${button('🏈 GO FOR IT','A.liveSpecial("go")','primary')}${button(`🥅 KICK FG · ${117-s.ball} YDS`,'A.liveSpecial("fg")')}${button('↗ PUNT','A.liveSpecial("punt")')}</div><p class="fine">Only the head coach decides fourth down. Going for it uses your selected offensive play.</p></div>`:'';
+ let aiInfo=!controlOff&&!controlDef&&!needFourth?`<div class="live2dObserve"><b>${s.await4?'COACHES DECIDING FOURTH DOWN':s.off===0?'YOUR TEAM IS ON OFFENSE':'YOUR TEAM IS ON DEFENSE'}</b><p class="fine">${game.career==='oc'&&s.off===1?'Your defensive coordinator handles this possession.':game.career==='dc'&&s.off===0?'Your offensive coordinator handles this possession.':game.career==='player'?'You control your player career outside this drive-level Game Center. Team coaches make the calls.':'The coaching staff handles this possession automatically.'}</p></div>`:'';
+ return `<div class="card live2dGame section"><div class="sectionhead"><h3>🏈 LIVE GAME CENTER 2D</h3><span class="chip ${needFourth?'danger':'status'}">${needFourth?'YOUR 4TH-DOWN CALL':'LIVE'}</span></div>
+ <div class="live2dRoleTag"><strong>🎮 PLAYING AS: ${role}</strong><small>${hint}</small></div>${playerStrip}
+ <div class="live2dScore"><div>${teamIcon(game.userTeam,38)}<b>${esc(mine().nickname)}</b><strong>${g.us}</strong></div><div class="live2dTime"><b>${q} · ${live2dTime(s.sec)}</b><span>${live2dDown(s.down)} & ${s.need} · ${s.off===0?esc(mine().id):esc(g.opponent)} BALL</span></div><div>${teamIcon(g.opponent,38)}<b>${esc(team(g.opponent)?.nickname||g.opponent)}</b><strong>${g.them}</strong></div></div>
+ <div class="live2dTurf" aria-label="2D football field showing ball possession at ${s.ball} yards"><div class="live2dEnd left">${esc(mine().id)}</div><div class="live2dEnd right">${esc(g.opponent)}</div><div class="live2dYard">${[10,20,30,40,50,40,30,20,10].map(n=>`<span>${n}</span>`).join('')}</div><div class="live2dBall" style="left:${pct}%"><span>🏈</span></div><div class="live2dLine" style="left:${pct}%"></div><div class="live2dPlayers" style="left:${pct}%"><i></i><i></i><i></i></div></div>
+ <div class="live2dSub"><b>${esc(s.message)}</b><small>${esc(next)}</small></div>
+ ${fourthInfo}${callInfo}${defInfo}${aiInfo}
+ <div class="live2dControls"><div class="eyebrow">GAME VIEWING CONTROLS</div><div class="live2dChoices">${button('NEXT PLAY ▶','A.liveNext()','primary',needFourth)}${button(window.__nflLive2dTimer?'Ⅱ PAUSE':'▶ AUTOPLAY','A.liveToggle()','',needFourth)}${button('SIM QUARTER','A.liveQuarter()','',needFourth)}${button('SIM TO FINAL','A.liveFinish()')}</div><div class="live2dChoices">${[1,2,4].map(n=>button(n+'× SPEED',`A.liveSpeed(${n})`,s.clockSpeed===n?'primary':'')).join('')}</div><p class="fine">Play calls are restricted by career role. Autoplay pauses for the head coach's fourth-down decisions. SIM TO FINAL lets the coaching AI finish.</p></div>
+ <div class="live2dStats">${[['PLAYS',s.plays],['OFFENSE YDS',s.yards[0]],['1ST DOWNS',s.firstDowns[0]],['TAKEAWAYS',s.turnovers[1]]].map(([name,v])=>`<div><b>${v}</b><small>${name}</small></div>`).join('')}</div><div class="playlog postbox live2dLog">${g.log.slice(0,26).map(x=>`<p>${esc(x)}</p>`).join('')}</div></div>`;
+}
+// Preserve quick sim for users who prefer career management and no mini-game.
+A.liveNext=function(){live2dStep()};
+A.liveCall=function(v){const g=live2dState();if(!g||!live2dMayOffense()||g.live2d.off!==0||g.live2d.await4||!['run','quick','balanced','deep'].includes(v))return;g.live2d.selected=v;live2dStep(v)};
+A.liveDefCall=function(v){const g=live2dState();if(!g||!live2dMayDefense()||g.live2d.off!==1||g.live2d.await4||!['zone','man','blitz','contain'].includes(v))return;g.live2d.defSelected=v;live2dStep()};
+A.liveSpecial=function(v){if(!live2dMayFourth()||live2dState()?.live2d?.off!==0)return;live2dStopTimer();live2dKick(v)};
+A.liveQuarter=function(){live2dAdvanceUntil('quarter')};
+A.liveFinish=function(){live2dAutoResolve()};
+A.liveToggle=function(){live2dToggle()};
+A.liveSpeed=function(v){live2dSetSpeed(v)};
+A.quickGame=function(o=null,r=null){live2dQuickGame(o,r)};
+A.play=function(){live2dStart()};
+A.kickoff=function(o=null,r=null){live2dStart(o,r)};
+A.playPlayoff=function(){let m=nextPlayoff();if(m)live2dStart(m.a===game.userTeam?m.b:m.a,m.round)};
+A.nextDrive=function(){if(live2dState())live2dStep();else if(game.currentGame)drive(game.gameplan?.off||'balanced',game.gameplan?.def||'zone')};
+A.simQuarter=function(){if(live2dState())live2dAdvanceUntil('quarter');else{let count=0;while(game.currentGame&&count++<2)drive(game.gameplan?.off||'balanced',game.gameplan?.def||'zone');store();render()}};
+A.autoGame=function(){if(live2dState())live2dAutoResolve();else autoFinish()};
+const _live2dOriginalLiveGame=liveGame;
+liveGame=function(){return live2dState()?live2dView():_live2dOriginalLiveGame()};
+const _live2dOriginalGamePage=gamePage;
+gamePage=function(){if(live2dState())return live2dView()+(isPlayer()?playerInjuryPanel():injuryBanner());let html=_live2dOriginalGamePage();if(game.currentGame)return html;
+ if(['season','playoffs','preseason'].includes(game.phase)){
+ const next=game.phase==='playoffs'?nextPlayoff():null,other=next?(next.a===game.userTeam?next.b:next.a):nextMatchup()?.find(id=>id!==game.userTeam);
+ if(other){const args=game.phase==='playoffs'?`'${other}','${next.round}'`:'';
+ html=html.replace(/KICKOFF · WATCH THE GAME ▶/g,'KICKOFF · WATCH INTERACTIVE 2D ▶');
+ html+=`<div class="card section"><h3>🎮 Pick how to play the matchup</h3><p class="sub">${esc(live2dRoleTitle())} — ${esc(live2dRoleHint())}. Interactive 2D uses a game clock and role-specific calls. Quick Sim uses the original franchise engine.</p><div class="toolbar">${button('PLAY INTERACTIVE 2D',`A.kickoff(${args})`,'primary')}${button('QUICK SIM GAME',`A.quickGame(${args})`)}</div></div>`;
+ }
+ }return html};
+window.NFL_GM_GAME_BUILD=LIVE2D_VERSION;
+// Stop the live clock when a user changes careers or leaves the Game Center.
+for(const method of ['showCareers','loadCareer','createCareer','resumeCurrent','page']){
+ if(typeof A[method]!=='function')continue;
+ const oldMethod=A[method];
+ A[method]=function(...args){
+  if(method!=='page'||args[0]!=='games')live2dStopTimer();
+  return oldMethod.apply(A,args);
+ };
+}
+
+/* NFL GM v5 — Playtester corrections. Isolated patch; v4 left untouched. */
+const NFL_V5_BUILD='NFL GM Connected Careers v5 — Draft & Media Fixes';
+window.NFL_GM_GAME_BUILD=NFL_V5_BUILD;
+const nflv5Off=new Set(['QB','RB','WR','TE','OL']);
+const nflv5Def=new Set(['EDGE','DT','LB','CB','S']);
+const nflv5RoleName={gm:'General Manager',owner:'Owner',hc:'Head Coach',oc:'Offensive Coordinator',dc:'Defensive Coordinator',player:'Player'};
+let nflv5DeleteId=null;
+function nflv5SeasonRecord(id=game.userTeam){
+ let played=(game.results||[]).filter(r=>r.type==='regular'&&(r.a===id||r.b===id));
+ let wins=played.filter(r=>r.winner===id).length;
+ return {w:wins,l:played.length-wins};
+}
+function nflv5FixRecords(){
+ if(!game?.teams?.length||!['draft','preseason','season'].includes(game.phase))return;
+ // Only reset counts when zero regular-season games exist; this avoids changing historical saves.
+ if((game.results||[]).some(r=>r.type==='regular'))return;
+ for(let t of teams()){t.w=0;t.l=0;t.pf=0;t.pa=0;}
+}
+const nflv5BaseBeginPreseason=beginPreseason;
+beginPreseason=function(){nflv5BaseBeginPreseason();nflv5FixRecords();store()};
+const nflv5Restore=restore;
+restore=function(){nflv5Restore();nflv5FixRecords()};
+const nflv5BaseDashboard=dashboard;
+dashboard=function(){let html=nflv5BaseDashboard();
+ if(game.phase==='preseason')html=html.replace(/VIEW POSTSEASON/g,'VIEW PRESEASON GAMES');
+ else if(!['playoffs','offseason_review','offseason'].includes(game.phase))html=html.replace(/VIEW POSTSEASON/g,'VIEW GAME CENTER');
+ if(['draft','preseason','season'].includes(game.phase)){
+  const r=nflv5SeasonRecord();html=html.replace(/(<div class="record">)\d+[–-]\d+/,`$1${r.w}–${r.l}`);
+ }
+ return html;
+};
+// Media options are no longer the same three vague slogans for every question.
+const nflv5BaseMediaQs=mediaQuestions;
+mediaQuestions=function(kind,ctx={}){
+ let qs=nflv5BaseMediaQs(kind,ctx);
+ if(kind==='game'){
+  let name=team(ctx.opponent)?.nickname||'the opponent';
+  if(qs[0])qs[0].text=game.career==='dc'?`Against the ${name}, how do you assess your defense's execution today?`:
+   game.career==='oc'?`Against the ${name}, did your offense execute the plan you installed this week?`:
+   game.career==='hc'?`What decided this game against the ${name}, and where do you take responsibility?`:
+   qs[0].text;
+  if(qs[1]&&game.career==='dc')qs[1].text=`What specific adjustment will your defensive unit make before the next game?`;
+  if(qs[1]&&game.career==='oc')qs[1].text=`Will you change your play-calling or personnel packages after this performance?`;
+ }
+ return qs;
+};
+function nflv5Answer(title,detail,tone,effects){return {title,detail,tone,effects}}
+function nflv5BuildMediaOptions(){
+ const m=game.media||{},kind=m.kind||'',i=m.index||0,t=mine(),nickname=t?.nickname||'team',opponent=team(m.context?.opponent)?.nickname||'opponent';
+ const question=m.questions?.[i]?.text||'';
+ const positive=nflv5Answer, A=(x,y,z)=>positive(x,y||'Team and staff reaction',z||'supportive',{locker:3,coachTrust:2,media:1}),
+ B=(x,y,z)=>positive(x,y||'Measured response',z||'measured',{media:3,owner:1}),
+ C=(x,y,z)=>positive(x,y||'Public accountability',z||'bold',{fans:2,locker:-2,media:-1});
+ const ownRole=game.career;
+ let out;
+ if(kind==='intro_coach'||kind==='job'){
+  const unit=ownRole==='oc'?'offense':ownRole==='dc'?'defense':'football program';
+  out=[
+   [A(`This is the right place to build something with the ${nickname}.`,'Respectful introduction'),B('I studied the staff, roster, and expectations before accepting.','Prepared and specific'),C('I came here to win. That is the standard I expect.','High expectations')],
+   [A(`I'll build our ${unit} around what these players do best.`,'Player-first approach'),B('First I need to evaluate the film and identify our strengths.','Careful evaluation'),C(`I expect our ${unit} to set a much higher standard immediately.`,'Ambitious public promise')],
+   [A('I will communicate clearly and earn trust through my work.','Locker-room confidence'),B('Every player will know exactly what is expected of them.','Structured approach'),C('Playing time will be earned, regardless of reputation.','Competitive standards')]
+  ];
+ }else if(kind==='intro_frontoffice'){
+  if(ownRole==='owner')out=[
+   [A(`I believe in the ${nickname} and the community behind this franchise.`,'Fans respond positively'),B('This is a long-term investment built on strong leadership.','Disciplined message'),C('My expectation is to compete for championships.','Pressure rises')],
+   [A('I want fans to feel heard and proud of this organization.','Fan confidence'),B('We will be transparent about our priorities and decisions.','Media trust'),C('The fans should hold us accountable for results.','Bold promise')],
+   [A('I will empower good people and provide the resources they need.','Staff trust'),B('Performance reviews will guide important personnel decisions.','Measured expectations'),C('No leadership position is guaranteed without progress.','Job pressure')]
+  ];else out=[
+   [A('Build through the draft and develop players the right way.','Player development focus'),B('Stay flexible with contracts, draft capital, and the salary cap.','Balanced roster-building'),C('We will be aggressive when the right star becomes available.','High expectations')],
+   [A('Every pick has to help us build a competitive roster.','Scouting confidence'),B('We will follow our board and avoid reaching for a need.','Disciplined draft'),C('Expect moves if they give this team a real advantage.','Fans expect action')],
+   [A('I want our coaches involved in evaluating every major move.','Coaching relationship'),B('I will make the final roster call using the best information available.','Clear authority'),C('If a difficult decision helps us win, I will make it.','Firm approach')]
+  ];
+ }else if(['intro_draft','intro_player','player_trade','player_signing'].includes(kind)){
+  out=[
+   [A(`I'm excited to represent the ${nickname} and earn my role here.`,'Positive arrival'),B('I know nothing is guaranteed. I have to put the work in.','Professional response'),C('I believe I can become a difference-maker for this team.','Confident arrival')],
+   [A('I want to earn the respect of my coaches and teammates.','Trust improves'),B('I will learn the playbook before making promises about playing time.','Focused approach'),C('I am here to compete for snaps from day one.','Position battle pressure')],
+   [A('I appreciate the fans and the teammates who helped me reach this point.','Supportive message'),B('My focus now is preparing for the upcoming season.','Steady message'),C('I want people to remember what we accomplish together.','Ambitious expectation')]
+  ];
+ }else if(kind==='game'){
+  if(ownRole==='player')out=[
+   [A('I helped where I could, but our team result is what matters.','Teammates appreciate it'),B('I need to study my snaps before grading my performance.','Accountable response'),C('I have to make more impact plays next week.','Personal expectations rise')],
+   [A('I told the guys to stay together and prepare for the next one.','Locker room response'),B('We will review the film and correct the mistakes.','Professional focus'),C('We cannot accept the same mistakes again.','Demanding response')],
+   [A('I am going to work on the details my position coach identified.','Coach trust'),B('I will keep improving my reads and assignments.','Focused response'),C('I expect a much better performance from myself.','Public promise')]
+  ];else if(ownRole==='oc')out=[
+   [A('We had to make better use of our players in key situations.','Take responsibility'),B('We had opportunities against their coverage; execution was uneven.','Tactical explanation'),C('I need to call a more aggressive game when we have the chance.','Offensive expectations')],
+   [A('We will correct protections and route timing in practice.','Players appreciate clarity'),B('We will examine personnel packages before changing the playbook.','Film-led changes'),C('We need more explosive plays. That is on me.','Bold offensive promise')],
+   [A('The quarterback needs a plan that fits his strengths.','Support quarterback'),B('We will review every pressure look before changing anything.','Deliberate process'),C('Our passing attack has to become much more dangerous.','Performance pressure')]
+  ];else if(ownRole==='dc')out=[
+   [A('I am responsible for putting our defenders in the right spots.','Accountability'),B('We need cleaner tackling and stronger communication.','Technical answer'),C('We have to create more negative plays and turnovers.','Aggressive expectation')],
+   [A('We will tighten assignments and spend more time on situational football.','Defensive trust'),B('I will review our coverages against their formations first.','Film-room emphasis'),C('I will bring more pressure when the matchup calls for it.','Risk-taking response')],
+   [A('Our leaders will help us correct the mistakes together.','Locker-room support'),B('The tape will determine which packages stay in the plan.','Measured answer'),C('Nobody on defense gets a free pass for missed assignments.','Demands accountability')]
+  ];else if(ownRole==='hc')out=[
+   [A('That result starts with me. I have to prepare us better.','Leadership accountability'),B(`We matched up well in spots against the ${opponent}, but not consistently.`,'Measured analysis'),C('We need a sharper performance in every phase of the game.','Public standard')],
+   [A('We will prepare differently in the areas that cost us today.','Supports players'),B('The staff will evaluate the film before we make changes.','Organizational confidence'),C('There will be competition for playing time this week.','Pressure rises')],
+   [A('I trust our staff to make the adjustments we need.','Coordinator relationships'),B('Our calls will reflect the situation and personnel.','Tactical explanation'),C('We have to be more decisive when the game is on the line.','Ambitious response')]
+  ];else out=[
+   [A('I believe in the roster and coaches we have assembled.','Team-first message'),B('One result does not change our entire roster evaluation.','Patient assessment'),C('Everyone in this organization should expect more.','Higher expectations')],
+   [A('Our football staff deserves time to make adjustments.','Coach confidence'),B('We will study where we need more depth and competition.','Practical plan'),C('I am ready to make a move if the roster needs help.','Trade expectations')],
+   [A('As a leader, I am responsible for the people and resources here.','Leadership ownership'),B('We will review performance across the organization.','Measured statement'),C('The standard is winning, and that will not change.','Firm expectation')]
+  ];
+ }else if(kind==='draft')out=[
+  [A('Our scouts love the player and his long-term potential.','Staff alignment'),B('His skill set fits a real need on our roster.','Roster rationale'),C('We believe he was the best talent left on the board.','Public confidence')],
+  [A('We considered other options, but this was the right decision.','Committed to selection'),B('The trade market did not beat the value on our board.','Value-driven answer'),C('We were not going to let another team take our guy.','Bold claim')],
+  [A('We will give him the time and coaching he needs to grow.','Low-pressure development'),B('His opportunities will be earned in camp.','Competition focus'),C('We expect him to contribute early.','Raises expectations')]
+ ];else if(kind==='trade')out=[
+  [A('This trade gives both sides a chance to move forward.','Respectful rationale'),B('We studied the contract, roster fit and draft value.','Front-office explanation'),C('We believe this deal improves our team immediately.','Strong promise')],
+  [A('I have talked to our leaders about the reasons behind it.','Locker-room confidence'),B('Players will know their roles as we adjust the depth chart.','Direct communication'),C('The competition standard applies to everyone here.','Uncertainty increases')],
+  [A('We will judge it by our development and wins over time.','Long-term view'),B('The impact on our cap and roster will matter as much as headlines.','Practical evaluation'),C('I expect this move to pay off sooner than people think.','Short-term pressure')]
+ ];else if(kind==='signing')out=[
+  [A('He fills a need our coaches have been discussing.','Staff-aligned signing'),B('His production and contract fit our offseason plan.','Measured rationale'),C('He is here to help us compete right now.','Fans expect impact')],
+  [A('We will give him a chance to earn a significant role.','Player-friendly approach'),B('The staff will determine his snaps based on performance.','Merit-based explanation'),C('We brought him in to make an immediate difference.','Raises expectations')],
+  [A('We are still evaluating ways to improve the roster.','Keeps options open'),B('Every additional move needs to make financial sense.','Cap discipline'),C('We are not done trying to get better.','Fans anticipate moves')]
+ ];
+ if(!out){out=[
+  [A('I want our players to understand why this decision was made.','Leadership-first'),B('I will evaluate the details before making more promises.','Measured answer'),C('The results will speak for themselves.','Confident answer')],
+  [A('Our focus will be on our next opportunity.','Team-first'),B('We will make decisions based on the information we have.','Careful response'),C('We have to meet a higher standard.','Challenge')],
+  [A('We are all accountable for making this work.','Shared responsibility'),B('I will discuss specifics when the plan is finalized.','Cautious response'),C('I expect progress immediately.','Bold commitment')]
+ ];}
+ const picked=out[Math.min(i,out.length-1)];
+ // Follow-up always responds to the exact preceding statement, not a recycled slogan.
+ if(m.questions?.[i]?.followup){let previous=m.answers?.at(-1)?.answer||'your earlier answer';return [
+  A(`I'll back that up with specific preparation this week.`,'Concrete follow-through'),
+  B(`I'll explain the plan privately to my coaches and teammates.`,'Keep plans in-house'),
+  C(`Judge me by the results. I stand behind what I said.`,'Doubles down')];}
+ return picked;
+}
+mediaOptionSet=function(){return nflv5BuildMediaOptions()};
+const nflv5OriginalMediaAnswer=A.answerMedia;
+A.answerMedia=function(i){
+ const m=game.media;if(!m?.pending||m.stage!=='live'||!Number.isInteger(i)||i<0||i>2)return;
+ const q=m.questions[m.index],o=mediaOptionSet()[i];if(!q||!o)return;
+ m.answers.push({question:q.text,answer:o.title,tone:o.tone,reporter:mediaReporter().name,week:game.week});
+ pulseDelta(o.effects);const rep=mediaReporter().name;
+ game.reporterMemory[rep]||=[];game.reporterMemory[rep].push({week:game.week,year:game.year,question:q.text,answer:o.title,tone:o.tone});game.reporterMemory[rep]=game.reporterMemory[rep].slice(-35);
+ m.summary.push({label:`Answer ${String.fromCharCode(65+i)}`,text:`“${o.title}” — ${o.detail}.`});
+ if(i===2&&!q.followup&&m.questions.length<5&&hashNumber(m.id+':'+m.index)%4===0){
+  m.questions.splice(m.index+1,0,{text:`You just said, “${o.title}” What concrete step will you take to back that up?`,followup:true});
+ }
+ m.index++;
+ if(m.index>=m.questions.length){m.stage='recap';m.headline=`${nicknameForV5()} ${nflv5RoleName[game.career]||'leader'} faces the media after ${m.kind.replaceAll('_',' ')}`;news('PRESS: '+m.headline);pushMoment('media',m.headline,m.answers.map(a=>a.answer).join(' · '));}
+ store();render();
+};
+function nicknameForV5(){return mine()?.nickname||'NFL'}
+// Preseason and draft label correctness, and clear early-season record display.
+const nflv5PrevGamePage=gamePage;
+gamePage=function(){let html=nflv5PrevGamePage();if(game.phase==='preseason')html=html.replace(/VIEW POSTSEASON/g,'VIEW PRESEASON GAMES');return html};
+// Role-based training camp: no DC calling offense, no OC handling defenders.
+const nflv5PrevCamp=extraCampPage;
+extraCampPage=function(){
+ const on=game.phase==='preseason',positions=['QB','RB','WR','TE','OL','EDGE','DT','LB','CB','S'];
+ const visible=positions.filter(p=>game.career==='dc'?nflv5Def.has(p):game.career==='oc'?nflv5Off.has(p):true);
+ const mayChoose=['hc','oc','dc'].includes(game.career);
+ const x=extras(),r=roster(game.userTeam).filter(p=>p.status!=='IR'&&(p.injuryWeeks||0)<=0);
+ const cards=visible.map(pos=>{let a=r.filter(p=>p.pos===pos).sort((u,v)=>v.ovr-u.ovr).slice(0,2);if(a.length<2)return '';const key=game.year+':'+pos,done=x.battles.find(b=>b.key===key);
+  return `<div class="marketrow"><div class="minzero"><b>${pos} · ${esc(a[0].name)} vs ${esc(a[1].name)}</b><small class="sub">${a[0].ovr} vs ${a[1].ovr} OVR · camp performance affects the depth chart</small></div>${button(done?'COMPLETE':mayChoose?'RUN BATTLE':'COACHES DECIDE',`A.extraBattle('${pos}')`,'tiny',!on||!!done||!mayChoose)}</div>`;}).join('');
+ return `${title('Training Camp',`${nflv5RoleName[game.career]} · ${game.career==='dc'?'Defensive position battles':game.career==='oc'?'Offensive position battles':'Team position battles'}`)}<div class="notice">${!on?'Battles become available during preseason.':!mayChoose?'You can review the results, but position battles are run by the coaching staff.':game.career==='dc'?'Your job: manage defense only.':game.career==='oc'?'Your job: manage offense only.':'Head coach: manage both sides of the ball.'}</div><div class="two"><div class="card"><h3>${game.career==='dc'?'Defensive':game.career==='oc'?'Offensive':'Available'} competitions</h3>${cards||'<p class="sub">Not enough healthy players at these positions.</p>'}</div><div class="card"><h3>Camp results</h3>${x.battles.filter(b=>b.year===game.year&&visible.includes(b.pos)).map(b=>`<div class="newsitem"><b>${esc(b.pos)}: ${esc(b.winner)}</b><p class="sub">${esc(b.detail)}</p></div>`).join('')||'<p class="sub">Results will appear here after battles are run.</p>'}</div></div>`;
+};
+const nflv5PrevBattle=extraBattle;
+extraBattle=function(pos){if(!['hc','oc','dc'].includes(game.career)||game.career==='oc'&&!nflv5Off.has(pos)||game.career==='dc'&&!nflv5Def.has(pos))return say('Your career role cannot manage that side of training camp.',true);return nflv5PrevBattle(pos)};
+A.extraBattle=function(pos){if(!assertMediaClear())return;return extraBattle(pos)};
+// Scout personnel is finalized BEFORE draft night, not hired during picks.
+const nflv5PrevScoutHire=signScout,nflv5PrevScoutDrop=dropScout;
+function nflv5ScoutWindow(){return !['draft','expansion'].includes(game.phase)}
+signScout=function(id){if(!nflv5ScoutWindow())return say('Scouting staff is locked during the draft. Hire or replace scouts before draft night.',true);return nflv5PrevScoutHire(id)};
+dropScout=function(id){if(!nflv5ScoutWindow())return say('Scouting staff is locked during the draft.',true);return nflv5PrevScoutDrop(id)};
+A.signScout=function(id){return signScout(id)};
+A.dropScout=function(id){return dropScout(id)};
+const nflv5PrevCoaches=coachesPage;
+coachesPage=function(){let html=nflv5PrevCoaches();if(!nflv5ScoutWindow()){
+ html=`<div class="notice"><b>Draft-day personnel lock:</b> Your scouting team is finalized. Staff hiring resumes after the draft.</div>`+html;
+ html=html.replace(/onclick="A\.(?:signScout|dropScout)\([^"]*\)"/g,'disabled title="Scouting staff locked during the draft"');
+ }return html;};
+// Draft picks: remove native confirm() dialog, which mobile file preview can suppress.
+selectDraft=function(id){
+ if(!assertMediaClear())return;
+ const pick=nextPick(),p=game.prospects.find(x=>x.id===id&&!x.drafted);
+ if(game.phase!=='draft'||!pick||pick.owner!==game.userTeam)return say('It is not your turn to draft. CPU picks advance automatically.',true);
+ if(!p)return say('Choose an available prospect from the board.',true);
+ if(!gmRole())return say('Your GM controls draft selections in this career.',true);
+ const success=draftPlayer(id,game.userTeam);
+ if(!success)return say('Draft selection could not be completed. Please choose a different player.',true);
+ selectedProspect=null;game.draftNotice=`${p.name} (${p.pos}) selected at #${pick.number}.`;
+ if(!mediaIsPending()){cpuToNext();page='draft'}
+ store();render();
+};
+A.draft=function(id){return selectDraft(id)};
+A.draftCpuToNext=function(){if(game.phase!=='draft'||!assertMediaClear())return;if(nextPick()?.owner===game.userTeam)return say('You are on the clock. Choose a prospect before the next pick.',true);cpuToNext();store();render()};
+const nflv5PrevDraftPage=draftPage;
+draftPage=function(){let html=nflv5PrevDraftPage();if(game.phase!=='draft')return html;
+ const pick=nextPick(),ourTurn=pick?.owner===game.userTeam,canDraft=ourTurn&&gmRole()&&!mediaIsPending();
+ const choices=game.prospects.filter(x=>!x.drafted).sort((a,b)=>a.rank-b.rank).slice(0,6);
+ const banner=`<div class="card section nflv5-draftcard"><h3>🎯 ${ourTurn?'YOU ARE ON THE CLOCK':'DRAFT IN PROGRESS'}</h3><p class="sub">${ourTurn?`Pick #${pick.number} · Select a prospect below. Your pick submits immediately—no blocked pop-up.`:'Other teams are selecting. Advance to your next pick.'}</p>${game.draftNotice?`<div class="notice">${esc(game.draftNotice)}</div>`:''}${ourTurn?`${canDraft?`<div class="nflv5DraftChoices">${choices.map(p=>`<div class="nflv5Pick"><b>${esc(p.name)}</b><small>${esc(p.pos)} · ${esc(p.school)} · rank #${p.rank}</small>${button('DRAFT',`A.draft('${p.id}')`,'tiny primary')}</div>`).join('')}</div>`:'<div class="notice">Your GM is responsible for this selection.</div>'}`:button('SIM CPU PICKS TO MY TURN','A.draftCpuToNext()','primary wide')}</div>`;
+ // Place the interactive draft action above the scrolling prospect table.
+ html=banner+html.replace('TRADE THIS PICK ↔','TRADE CURRENT PICK ↔');return html;
+};
+// When a draft-day media availability ends, return to the draft (not an unrelated dashboard).
+const nflv5PrevFinishMedia=A.finishMedia;
+A.finishMedia=function(){const kind=game.media?.kind,wasDraft=game.phase==='draft';nflv5PrevFinishMedia();if(wasDraft&&['draft','trade'].includes(kind)){
+ if(nextPick()?.owner!==game.userTeam)cpuToNext();page='draft';store();render();}
+};
+// Draft trade: preselect the pick from the active round in the modern multi-asset trade UI.
+const nflv5PrevPickTrade=pickTrade;
+pickTrade=function(){if(!gmRole())return say('Only owners and GMs can trade a draft pick.',true);if(!assertMediaClear())return;const p=nextPick();if(game.phase!=='draft'||!p||p.owner!==game.userTeam)return say('You may trade this pick only while on the clock.',true);
+ draftTradePrefill=p.id;tradeReturn='draft';rosterV2State.managerOutPicks=[p.id];rosterV2State.managerOutPlayers=[];rosterV2State.managerInPlayers=[];rosterV2State.managerInPicks=[];
+ game.tradeFeedback=`Current pick #${p.number} has been added to your offer. Select what you want in return, then submit.`;
+ page='trades';store();render();};
+A.pickTrade=function(){return pickTrade()};
+function nflv5TradeFeedback(msg,isError){game.tradeFeedback=msg;game.tradeFeedbackError=!!isError;store();render()}
+const nflv5PrevTrades=tradesPage;
+tradesPage=function(){let html=nflv5PrevTrades();let note=game.tradeFeedback?`<div class="notice" role="status"><b>${game.tradeFeedbackError?'OFFER NEEDS ATTENTION':'TRADE DESK'}</b><p>${esc(game.tradeFeedback)}</p></div>`:'';
+ if(game.phase==='draft'&&draftTradePrefill){const id=draftTradePrefill,p=game.picks.find(x=>x.id===id);note=`<div class="notice"><b>ON-THE-CLOCK TRADE · PICK #${p?.number||'?'}</b><p>Your current pick is selected under YOU GIVE. Choose at least one player or pick to receive from the other club. You can return to the draft at any time.</p>${button('BACK TO DRAFT','A.page("draft")','tiny')}</div>`+note;}
+ return note+html;
+};
+// In-page validation and results replace native confirm(), and the answer stays visible.
+A.submitMultiTrade=function(){
+ if(!assertMediaClear())return;
+ if(!gmRole())return nflv5TradeFeedback('Only the owner or GM can finalize a trade.',true);
+ if(!tradeWindowActive())return nflv5TradeFeedback('The trade window is closed.',true);
+ const k=rosterV2State,getPlayer=id=>game.players.find(p=>p.id===id),getPick=id=>teamPickList(game.userTeam).concat(teamPickList(tradeTo)).find(p=>p.id===id);
+ const give=k.managerOutPlayers.map(getPlayer),want=k.managerInPlayers.map(getPlayer),giveP=k.managerOutPicks.map(getPick),wantP=k.managerInPicks.map(getPick);
+ if((!give.length&&!giveP.length)||(!want.length&&!wantP.length))return nflv5TradeFeedback('Choose something to send AND something to receive. A pick alone is not a complete trade offer.',true);
+ if([...give,...want,...giveP,...wantP].some(x=>!x))return nflv5TradeFeedback('An asset is no longer available. Reopen the trade screen.',true);
+ if(give.some(p=>p.team!==game.userTeam)||want.some(p=>p.team!==tradeTo)||giveP.some(p=>p.owner!==game.userTeam)||wantP.some(p=>p.owner!==tradeTo))return nflv5TradeFeedback('A selected player or pick has changed teams. Please update your offer.',true);
+ const received=want.reduce((v,p)=>v+(Number(p.salary)||0),0),sent=give.reduce((v,p)=>v+(Number(p.salary)||0),0);
+ if(cap()+sent-received<0||cap(tradeTo)+received-sent<0)return nflv5TradeFeedback('Salary cap: one of the teams cannot afford the deal.',true);
+ const offerValue=give.reduce((v,p)=>v+playerValue(p),0)+giveP.reduce((v,p)=>v+pickValue(p),0),askValue=want.reduce((v,p)=>v+playerValue(p),0)+wantP.reduce((v,p)=>v+pickValue(p),0),limit=game.settings.difficulty==='Hard'?1.09:game.settings.difficulty==='Easy'?.78:.94;
+ if(offerValue<askValue*limit)return nflv5TradeFeedback(`TRADE DECLINED — ${team(tradeTo)?.nickname||'The other team'} wants more value. Your offer: ${Math.round(offerValue)}; their asking package: ${Math.round(askValue)}. Try adding a pick or changing the request.`,true);
+ const onClockId=game.phase==='draft'?nextPick()?.id:null;
+ for(let p of give)p.team=tradeTo;for(let p of want)p.team=game.userTeam;
+ for(let p of giveP){game.futureOwners[p.id]=tradeTo;let active=game.picks.find(x=>x.id===p.id);if(active)active.owner=tradeTo}
+ for(let p of wantP){game.futureOwners[p.id]=game.userTeam;let active=game.picks.find(x=>x.id===p.id);if(active)active.owner=game.userTeam}
+ const description=give.map(p=>p.name).concat(giveP.map(p=>`${p.year} R${p.round} (#${p.number||'future'})`)).join(', ')+' for '+want.map(p=>p.name).concat(wantP.map(p=>`${p.year} R${p.round} (#${p.number||'future'})`)).join(', ');
+ news('TRADE CONFIRMED: '+description);pushMoment('trade','Trade agreed',description);
+ for(let key of ['managerOutPlayers','managerOutPicks','managerInPlayers','managerInPicks'])k[key]=[];
+ game.tradeFeedback=`ACCEPTED — ${description}.`;game.tradeFeedbackError=false;draftTradePrefill=null;
+ setDefaultLineup(true);
+ if(onClockId&&nextPick()?.owner!==game.userTeam)cpuToNext();
+ store();startMedia('trade',{description});if(!mediaIsPending()){page=game.phase==='draft'?'draft':'trades';render();}
+};
+// Avoid native confirm for deletion. Make the delete action visible on every save card.
+const nflv5PrevHub=hubPage;
+hubPage=function(){let html=nflv5PrevHub();if(nflv5DeleteId){const slot=careerSlots().find(s=>s.id===nflv5DeleteId);
+  if(slot)html=`<div class="notice" role="alert"><b>Delete ${esc(slot.name||slot.role)} permanently?</b><p>This deletes only that saved career. Your other saves stay untouched.</p>${button('YES, DELETE THIS SAVE',`A.confirmDeleteCareer()`,'tiny danger')} ${button('CANCEL','A.cancelDeleteCareer()','tiny')}</div>`+html;}
+ html=`<div class="notice"><b>SAVE TIP:</b> Browser/file previews may use temporary storage. Keep the HTML in the same browser, and export your important saves before switching devices or clearing preview data.</div>`+html;
+ if(roleReady())html=`<div class="card section"><h3>Protect this career</h3><p class="sub">Your game preview may not keep storage permanently. Export the current save as a backup.</p>${button('EXPORT CURRENT SAVE', 'A.export()', 'tiny primary')}</div>`+html;
+ return html;
+};
+A.deleteCareer=function(id){if(!careerSlots().some(s=>s.id===id))return;nflv5DeleteId=id;page='careerhub';render();};
+A.cancelDeleteCareer=function(){nflv5DeleteId=null;render()};
+A.confirmDeleteCareer=function(){const id=nflv5DeleteId;if(!id)return;const s=careerSlots().find(x=>x.id===id);if(!s){nflv5DeleteId=null;return render()};
+ const next=careerSlots().filter(x=>x.id!==id);try{localStorage.setItem(CAREER_SLOTS_INDEX,JSON.stringify(next));localStorage.removeItem(CAREER_SLOT_PREFIX+id)}catch(e){return say('Deletion could not be completed. Try exporting your save first.',true)}
+ if(activeCareerSlot===id){activeCareerSlot=null;localStorage.removeItem('nflgm_last_career_slot');game=initial();game.phase='setup'}
+ nflv5DeleteId=null;page='careerhub';render();};
+const nflv5PrevCreate=A.createCareer;
+A.createCareer=function(){if(game?.phase!=='setup'&&activeCareerSlot){store();const data=localStorage.getItem(CAREER_SLOT_PREFIX+activeCareerSlot);
+ if(!data)return say('Your current career did not save. Do not start another career until you export a backup from Settings.',true);
+ }return nflv5PrevCreate()};
+const nflv5PrevLoad=A.loadCareer;
+A.loadCareer=function(id){if(game?.phase!=='setup'&&activeCareerSlot){store();if(!localStorage.getItem(CAREER_SLOT_PREFIX+activeCareerSlot))return say('The current career could not be backed up. Export it before switching.',true);}return nflv5PrevLoad(id)};
+// Remove one stale event label where the dashboard had called a preseason game postseason.
+const nflv5BaseRender=render;
+render=function(){nflv5BaseRender();const root=document.querySelector('#app')||document;
+ if(game.phase==='preseason'){
+  root.querySelectorAll('button').forEach(b=>{if(b.textContent?.trim()==='VIEW POSTSEASON')b.textContent='VIEW PRESEASON GAMES';});
+ }
+};
+
+// Startup boot occurs before this patch, so repair legacy preseason records now.
+nflv5FixRecords();
+render();
+
+/* NFL GM v6 — Gameplay integrity update, 2026-11-08.
+   Existing v5 saved careers remain readable. Fixes shared season, role,
+   media and financial systems without replacing the original game. */
+window.NFL_GM_GAME_BUILD='NFL GM Connected Careers v6 — Season & Career Integrity';
+const v6MANAGER=()=>game?.career==='gm';
+const v6OWNER=()=>game?.career==='owner';
+const v6ROLE={owner:'OWNER — franchise strategy, staff and budget',gm:'GM — roster, contracts and transactions',hc:'HEAD COACH — offense and defense',oc:'OFFENSIVE COORDINATOR — offense only',dc:'DEFENSIVE COORDINATOR — defense only',player:'PLAYER — your own position and career'};
+
+// Keep an untouched local JSON copy before the first major integrity repair.
+function v6BackupBeforeRepair(){
+ if(!game?.teams?.length||game.phase==='setup')return;
+ try{const key='nflgm_v6_pre_repair_'+(activeCareerSlot||'current');if(!localStorage.getItem(key))localStorage.setItem(key,JSON.stringify(game));}catch(e){console.warn('Backup unavailable',e)}
+}
+function v6RecordRepair(){
+ if(!game?.teams?.length||!Array.isArray(game.results))return;
+ const seen=new Set(),kept=[];
+ for(const r of game.results){
+  if(!r||r.type!=='regular'||!team(r.a)||!team(r.b)||r.a===r.b)continue;
+  const key=(r.week||0)+':'+[r.a,r.b].sort().join(':');
+  if(seen.has(key))continue;
+  seen.add(key);kept.push(r);
+ }
+ if(kept.length!==game.results.filter(r=>r?.type==='regular').length){game.results=game.results.filter(r=>r?.type!=='regular').concat(kept);}
+ for(const t of teams()){t.w=0;t.l=0;t.pf=0;t.pa=0}
+ for(const r of kept){let a=team(r.a),b=team(r.b),sa=+r.sa||0,sb=+r.sb||0;
+  if(sa===sb)continue;
+  a[sa>sb?'w':'l']++;b[sb>sa?'w':'l']++;a.pf+=sa;a.pa+=sb;b.pf+=sb;b.pa+=sa;
+ }
+}
+// Deterministic game-stat estimates for leagues simulated without detailed play-by-play.
+// Not real NFL stats; every result is counted once, including CPU games.
+function v6StatRow(id){return game.seasonStats.players[id]||(game.seasonStats.players[id]={gp:0,starts:0,passYds:0,passTD:0,ints:0,rushYds:0,rushTD:0,recYds:0,recTD:0,tackles:0,sacks:0,defINT:0});}
+function v6EnsureStats(){
+ if(!game.seasonStats||game.seasonStats.year!==game.year)game.seasonStats={year:game.year,players:{},counted:{}};
+ if(!game.seasonStats.counted)game.seasonStats.counted={};
+}
+function v6WeeklyStats(){
+ if(!game?.players?.length)return;v6EnsureStats();
+ for(const r of (game.results||[]).filter(r=>r?.type==='regular')){
+  const key=r.week+':'+[r.a,r.b].sort().join('-');if(game.seasonStats.counted[key])continue;
+  game.seasonStats.counted[key]=true;
+  for(const club of [r.a,r.b]){
+   const pts=club===r.a?r.sa:r.sb,opp=club===r.a?r.sb:r.sa;
+   const hash=hashNumber(key+':'+club);
+   const lineupQB=club===game.userTeam?game.players.find(p=>p.id===game.lineup?.QB1):null;
+   const members=roster(club).filter(p=>p.status!=='PS'&&p.status!=='IR'&&p.injuryWeeks<=0&&!(club===game.userTeam&&isPlayer()&&p.id===game.careerPlayer&&!Object.values(game.lineup||{}).includes(p.id))),byPos=p=>members.filter(x=>x.pos===p).sort((a,b)=>b.ovr-a.ovr);
+   const quarterback=lineupQB?.team===club&&lineupQB.pos==='QB'?lineupQB:byPos('QB')[0];
+   const pass=Math.max(85,Math.round(145+pts*4+(hash%80))),rush=Math.max(55,Math.round(65+pts*2+((hash>>3)%65)));
+   const passTD=Math.max(0,Math.round(pts/9)),rushTD=Math.max(0,Math.round(pts/13)-1);
+   if(quarterback){let z=v6StatRow(quarterback.id);z.gp++;z.starts++;z.passYds+=pass;z.passTD+=passTD;z.ints+=hash%4===0?1:0;z.rushYds+=20+(hash%35);}
+   let rb=byPos('RB')[0];if(rb){let z=v6StatRow(rb.id);z.gp++;z.starts++;z.rushYds+=rush;z.rushTD+=rushTD;}
+   let targets=[...byPos('WR').slice(0,3),...byPos('TE').slice(0,1)],splits=[.40,.28,.16,.16];
+   targets.forEach((p,i)=>{let z=v6StatRow(p.id);z.gp++;if(i<=1)z.starts++;z.recYds+=Math.round(pass*splits[i]);z.recTD+=i===0?Math.max(0,passTD-1):i===1?(passTD>=2?1:0):0;});
+   let defenders=[...byPos('LB').slice(0,2),...byPos('EDGE').slice(0,2),...byPos('CB').slice(0,2),...byPos('S').slice(0,1)];
+   defenders.forEach((p,i)=>{let z=v6StatRow(p.id);z.gp++;z.starts++;z.tackles+=i<2?7+(hash+i)%6:3+(hash+i)%6; if(p.pos==='EDGE')z.sacks+=((hash+i+r.week)%5===0?2:((hash+i+r.week)%3===0?1:0));if(p.pos==='CB'||p.pos==='S')z.defINT+=((hash+i+r.week)%10===0?1:0)});
+  }
+ }
+}
+const v6OldEndWeek=endWeek;
+endWeek=function(result){v6OldEndWeek(result);v6RecordRepair();v6WeeklyStats();store()};
+const v6OldPreseason=beginPreseason;
+beginPreseason=function(...args){const result=v6OldPreseason(...args);v6RecordRepair();v6EnsureStats();store();return result};
+
+// Correct unusual v5 negotiation inflation without deleting the player's contract.
+function v6MarketAnnual(p){
+ const v=clamp(Number(p?.ovr)||65,50,99),diff=Math.pow(Math.max(0,v-60)/35,2);
+ const base={QB:5.0,WR:3.2,EDGE:3.3,CB:3.0,OL:3.0,DT:2.8,LB:2.3,S:2.0,TE:2.0,RB:1.8,K:.7,P:.7,LS:.6}[p?.pos]||2;
+ const peak={QB:51,WR:35,EDGE:35,CB:31,OL:29,DT:28,LB:25,S:23,TE:20,RB:17,K:6,P:5,LS:3}[p?.pos]||20;
+ let val=base+(peak-base)*diff;
+ if(p?.age>32)val*=Math.max(.67,1-(p.age-32)*.065);
+ return Math.round(Math.max(1,val)*10)/10;
+}
+function v6RepairOverinflatedSalary(){
+ if(!game?.players?.length)return;
+ let fixed=0;
+ for(const p of game.players){const salary=Number(p.salary)||0,market=v6MarketAnnual(p);if(salary>Math.max(85,market*3.5)){
+  p.v5BrokenSalary=salary;p.salary=market;p.bonusAnnual=0;fixed++;
+ }}
+ if(fixed){game.v6SalaryRepairCount=(game.v6SalaryRepairCount||0)+fixed;news(`SAVE REPAIR: Corrected ${fixed} runaway contract salaries left by the old negotiation bug.`)}
+}
+cap=function(id=game.userTeam){return game.salaryCap-roster(id).reduce((a,p)=>a+(Number(p.salary)||0)+(Number(p.bonusAnnual)||0),0)};
+const v6OldStartContract=startContract;
+startContract=function(id){if(!v6MANAGER())return say('Your GM handles player contracts. Owners set budgets; coaches and players cannot sign teammates.',true);return v6OldStartContract(id)};
+contractModal=function(){if(!selectedContract)return '';
+ const p=game.players.find(x=>x.id===selectedContract);if(!p)return '';
+ const demand=v6MarketAnnual(p),current=p.team===game.userTeam?Number(p.salary||0)+Number(p.bonusAnnual||0):0,available=cap()+current;
+ const savedWindow=game.negotiations?.[p.id];
+ const currentWindow=game.year+':'+(game.phase==='offseason'||game.phase==='offseason_intro'||game.phase==='offseason_review'?'offseason':game.phase);
+ const st=savedWindow?.windowKey===currentWindow?savedWindow:{tries:0,response:''};
+ return `<div class="modalback" role="dialog" aria-modal="true"><div class="modalpanel"><div class="sectionhead"><h3>Agent negotiation · ${esc(p.name)}</h3>${button('CLOSE','A.closeContract()','tiny')}</div><div class="careerinfo">${face(p,true)}<div><b>${p.pos} · ${p.ovr} OVR</b><p class="sub">Market expectation: <b>${money(demand)}/year</b> · ${st.tries||0}/3 offers made</p></div></div><div class="notice">Cap room for this deal: <b>${money(available)}</b>. A rejected offer never changes a player's existing salary. Bonuses count against the cap over the contract.</div><label class="lab">Contract years</label><select id="contractLength" class="field wide">${selectOptions([[1,'1 year'],[2,'2 years'],[3,'3 years'],[4,'4 years'],[5,'5 years']],3)}</select><label class="lab">Annual base salary ($M)</label><input id="contractSalary" class="field wide" type="number" step="0.5" min="0.5" max="80" value="${demand.toFixed(1)}"><label class="lab">Total signing bonus ($M)</label><input id="contractBonus" class="field wide" type="number" step="0.5" min="0" max="100" value="${Math.round(demand*.25)}"><label class="lab">Guaranteed salary (%)</label><select id="contractGuarantee" class="field wide">${selectOptions([[25,'25%'],[50,'50%'],[75,'75%'],[100,'100%']],50)}</select><label class="setting"><span>No-trade clause (extra player protection)</span><input type="checkbox" id="contractNTC"></label>${st.response?`<div class="notice">${esc(st.response)}</div>`:''}${button(st.tries>=3?'NEGOTIATIONS CLOSED':'SEND OFFER','A.offerContract()','primary wide',st.tries>=3)}</div></div>`;
+};
+negotiateContract=function(){
+ if(!v6MANAGER()||!selectedContract)return say('Only the General Manager may submit contracts.',true);
+ const p=game.players.find(x=>x.id===selectedContract);if(!p)return;
+ const years=Number($('contractLength')?.value),base=Number($('contractSalary')?.value),bonus=Number($('contractBonus')?.value),guarantee=Number($('contractGuarantee')?.value),ntc=!!$('contractNTC')?.checked;
+ if(!Number.isInteger(years)||years<1||years>5||!Number.isFinite(base)||base<.5||base>80||!Number.isFinite(bonus)||bonus<0||bonus>100||![25,50,75,100].includes(guarantee))return say('Enter a valid contract, bonus, and guarantee.',true);
+ const demand=v6MarketAnnual(p),capHit=base+bonus/years,current=p.team===game.userTeam?(Number(p.salary)||0)+(Number(p.bonusAnnual)||0):0;
+ if(capHit>cap()+current+1e-6)return say(`Not enough cap room: offer uses ${money(capHit)}/year but only ${money(cap()+current)} is available.`,true);
+ game.negotiations=game.negotiations||{};let n=game.negotiations[p.id]||(game.negotiations[p.id]={tries:0,response:''});
+ const windowKey=game.year+':'+(game.phase==='offseason'||game.phase==='offseason_intro'||game.phase==='offseason_review'?'offseason':game.phase);
+ if(n.windowKey!==windowKey){n.tries=0;n.response='';n.lastOffer=null;n.windowKey=windowKey;}
+ if(n.tries>=3)return say('This agent has ended talks for this negotiation window.',true);
+ const fingerprint=[years,base,bonus,guarantee,ntc].join('|');
+ if(n.lastOffer===fingerprint)return say('You already sent that exact offer. Change the terms before submitting again.',true);
+ n.lastOffer=fingerprint;n.tries++;
+ const min=Math.max(demand*.92,demand*(1+(p.ovr>=90?.02:0)));
+ const strength=base+bonus/years*.65+(guarantee-25)*.009*demand+(ntc?.04*demand:0);
+ if(strength<min){n.response=`Counter: ${p.name} expects roughly ${money(demand)}/year. Your original salary did not change. ${n.tries<3?`${3-n.tries} offer(s) remain.`:'Negotiations closed until the next window.'}`;store();render();
+ // Preserve the rejected terms, rather than silently replacing them with a higher default.
+ if($('contractLength'))$('contractLength').value=String(years);
+ if($('contractSalary'))$('contractSalary').value=String(base);
+ if($('contractBonus'))$('contractBonus').value=String(bonus);
+ if($('contractGuarantee'))$('contractGuarantee').value=String(guarantee);
+ if($('contractNTC'))$('contractNTC').checked=ntc;
+ say(n.response,true);return;}
+ if(p.team!=='FA'&&p.team!==game.userTeam)return say('This player is under contract with another team.',true);
+ p.salary=base;p.bonusAnnual=bonus/years;p.signingBonus=bonus;p.guaranteePct=guarantee;p.noTradeClause=ntc;p.contractYears=years;p.team=game.userTeam;p.expiring=false;p.status='ACT';
+ game.expiringPlayers=(game.expiringPlayers||[]).filter(x=>x!==p.id);delete game.negotiations[p.id];
+ news(`SIGNED: ${p.name} agrees to ${years} years, ${money(base)}/year plus ${money(bonus)} signing bonus${ntc?' and a no-trade clause':''}.`);
+ selectedContract=null;setDefaultLineup(true);store();render();say(`Signed ${p.name}. Cap room: ${money(cap())}.`);
+};
+A.offerContract=()=>negotiateContract();A.contract=id=>startContract(id);
+
+// Do not expose free-agency bidding during the regular season or to owners.
+const v6FrenzyPhase=()=>['offseason','offseason_intro','offseason_review'].includes(game.phase);
+const v6OldFrenzy=frenzyPage;
+frenzyPage=function(){if(!v6MANAGER())return `${title('GM Free Agency','Player signings are negotiated by your general manager.')}${button('FRANCHISE HUB','A.page("dashboard")')}`;
+ if(!v6FrenzyPhase())return `${title('Free Agency Frenzy','Offseason negotiation window')}<div class="notice">The bidding-war event opens during the offseason. In-season roster moves are handled through the separate transactions process.</div>${button('BACK TO DASHBOARD','A.page("dashboard")','primary')}`;
+ return v6OldFrenzy();};
+const v6OldFaOffer=A.sendFaOffer;
+A.sendFaOffer=function(){if(!v6MANAGER()||!v6FrenzyPhase())return say('Free Agency Frenzy is an offseason GM event.',true);
+ const p=game.players.find(x=>x.id===spotlightFA);const before=p?.team;
+ const out=v6OldFaOffer();if(p&&before==='FA'&&p.team===game.userTeam){p.bonusAnnual=(Number(p.salary)||0)*(Number(p.guaranteePct)||25)/100*.06;v6RecordRepair();store()}
+ return out;
+};
+const v6OldSign=A.sign;
+A.sign=function(id){if(v6OWNER())return say('The GM handles signings. Owners can set budgets and review major decisions.',true);if(v6MANAGER()&&!v6FrenzyPhase()){if(game.phase==='season')return say('Free Agency Frenzy opens in the offseason. Your GM may pursue smaller in-season transactions separately.',true)}return v6OldSign(id)};
+A.submitMultiTrade=(function(oldFn){return function(...args){if(!v6MANAGER())return say('Owners do not run trade negotiations. Your GM handles the trade desk.',true);return oldFn.apply(A,args)}})(A.submitMultiTrade);
+const v6OldPickTrade=A.pickTrade;A.pickTrade=function(){if(!v6MANAGER())return say('Your general manager handles draft-day trades.',true);return v6OldPickTrade()};
+const v6OldTradeFn=tradesPage;
+tradesPage=function(){if(v6OWNER())return `${title('GM Transaction Report','The general manager negotiates trades and roster deals.')}<div class="notice">As Owner, evaluate team needs, approve management direction and manage coaching leadership. You do not make the trade offer yourself.</div>${v6OwnerBrief()}`;return v6OldTradeFn()};
+
+function v6OwnerBrief(){const ns=need().slice(0,4);return `<div class="card section"><h3>Front Office Weekly Briefing</h3><p class="sub">Your GM's current roster priorities. These are recommendations, not trades waiting for you to guess what to do.</p>${ns.map(n=>`<div class="marketrow"><b>${n.pos} — ${esc(n.label)}</b><small class="sub">Priority ${n.weight}/5</small></div>`).join('')}<p class="fine">Your decisions: coach hiring, facility investment, ownership expectations. Personnel execution belongs to the GM.</p></div>`}
+const v6OldDashboard=dashboard;
+dashboard=function(){let html=v6OldDashboard();if(v6OWNER())html=v6OwnerBrief()+html;return html};
+
+// Media should talk about the event, not recycle generic coach/GM answers.
+const v6OldMediaQuestions=mediaQuestions;
+mediaQuestions=function(kind,ctx={}){
+ const name=mine()?.nickname||'team',role=game.career,report=game.news?.find(n=>n.text?.startsWith('TRADE CONFIRMED')||n.text?.startsWith('SIGNED:'))?.text||'',s=game.seasonStats?.players?.[game.careerPlayer]||{};
+ const p=game.players.find(x=>x.id===game.careerPlayer),starter=p&&Object.values(game.lineup||{}).includes(p.id),op=ctx.opponent?team(ctx.opponent)?.nickname:'the opponent',score=ctx.score||'the final';
+ let candidates;
+ if(kind==='trade')candidates=role==='owner'?[`Was this transaction consistent with your long-term vision for the ${name}?`,`Your GM completed this deal. What resources did you authorize for the team?`,`Do you still have confidence in the football operation after this transaction?`]:[
+  `Your front office confirmed: ${report.replace(/^TRADE CONFIRMED:\s*/, '').slice(0,160)||'a roster transaction'}. What football need did this address?`,
+  `What part of the package was hardest for you to give up?`,`How does this trade change your draft or salary-cap strategy?`,`How will you evaluate this decision by the end of the season?`,
+  `What would you say to the players directly affected by this move?`];
+ else if(kind==='game'){
+  if(role==='owner')candidates=[`The ${name} just ${ctx.won?'won':'lost'} ${score} against ${op}. What is your assessment of the organization?`,`What should fans expect from your leadership after this ${ctx.won?'win':'loss'}?`,`Are you planning to change the coaching budget, or will you let the football staff work?`,`How is the franchise's long-term plan affected by this result?`];
+  else if(role==='player')candidates=starter?[`As a starting ${p.pos}, what was your biggest takeaway from the ${score} game against ${op}?`,`Which part of your assignment gave you trouble today?`,`How do you plan to improve your ${p.pos} play before the next matchup?`,`How did your teammates help you against ${op}?`]:[`You were not in the starting lineup against ${op}. How are you handling your role?`,`What have your position coach and you discussed about earning more snaps?`,`What did you learn watching today's ${score} game from the sideline?`,`What part of your game do you need to improve to get on the field?`];
+  else if(role==='dc')candidates=[`What coverage adjustment worked best against ${op}?`,`How do you explain the explosive plays your defense allowed in the ${score} game?`,`How will you prepare your defensive front for next week?`,`Did your blitz calls generate the pressure you wanted?`];
+  else if(role==='oc')candidates=[`How did the offensive line affect your play calling against ${op}?`,`Were you satisfied with your red-zone decisions in the ${score} game?`,`What offensive matchup did you try to exploit?`,`What adjustment will you make to improve third-down execution?`];
+  else if(role==='hc')candidates=[`After the ${score} game against ${op}, what was the turning point?`,`How did you evaluate your fourth-down decisions?`,`What changes will you ask the coordinators to make next week?`,`What does the locker room need from you after that result?`];
+  else candidates=[`Following the ${score} result against ${op}, does the roster have enough depth?`,`Which position group will you evaluate with your scouts?`,`Has the team's performance changed your plans for next year's draft?`,`How much of this outcome is on the players you assembled?`];
+ }else if(kind==='signing')candidates=[`Why did your GM prioritize this specific addition?`,`How will the new contract affect your team's cap flexibility?`,`What role does the coaching staff envision for the new player?`,`Did your team pass on other candidates to make this agreement?`];
+ else if(kind==='job')candidates=role==='owner'?[`What is your long-term vision for the ${name}?`,`How will you measure your general manager's success?`,`What will you invest in during your first year?`]:role==='player'?[`What excites you most about joining the ${name}?`,`How do you plan to compete for playing time?`,`How will you learn your new playbook?`]:[`Why was this the right next step in your coaching career?`,`What changes can your players expect from your first practices?`,`How will you work with the existing coordinators and personnel staff?`,`What are your first three priorities with the ${name}?`];
+ else candidates=v6OldMediaQuestions(kind,ctx).map(x=>x.text);
+ const seed=hashNumber([game.year,game.week,kind,game.mediaHistory?.length||0,game.userTeam,role].join(':'))%Math.max(1,candidates.length);
+ const rotated=candidates.slice(seed).concat(candidates.slice(0,seed));return rotated.slice(0,kind==='game'?3:3).map((text,i)=>({id:i,text,followup:false}));
+};
+function v6AnswerSet(){const m=game.media,i=m?.index||0,q=(m?.questions?.[i]?.text||'').toLowerCase(),role=game.career;
+ const build=(x,y,z)=>[x,y,z].map((item,k)=>({title:item,detail:['Strengthened relationships and team trust','Gave a measured and specific response','Created tougher media expectations'][k],tone:['supportive','measured','bold'][k],effects:[{locker:3,coachTrust:2,fans:1},{media:2,owner:2},{fans:2,media:-1,locker:-1}][k]}));
+ if(q.includes('cap')||q.includes('contract'))return build('We have enough flexibility for our key priorities.','We have a multiyear cap plan and will review every dollar.','We will make tough financial decisions to stay competitive.');
+ if(q.includes('draft')||q.includes('scout'))return build('Our scouting group will evaluate talent at every position.','We will rank prospects by talent, fit and cost before deciding.','We will not pass on a difference-maker just because of position.');
+ if(q.includes('start')||q.includes('snaps')||q.includes('sideline')||q.includes('playing time'))return build('I will earn reps through practice and support the starters.','My coach has outlined clear details for me to improve.','I want to compete for a bigger role, and I will prove I deserve it.');
+ if(q.includes('blitz')||q.includes('coverage')||q.includes('defensive')||q.includes('pressure'))return build('Our defenders communicate well, and we will build on that.','We will review coverage responsibilities and pressure rates on film.','I am prepared to change our defensive calls to stop big plays.');
+ if(q.includes('fourth')||q.includes('red-zone')||q.includes('offensive')||q.includes('third-down'))return build('I trust the players executing our calls.','We will study down, distance and personnel before changing calls.','We need to be more aggressive when the matchup calls for it.');
+ if(q.includes('owner')||q.includes('leadership')||role==='owner')return build('I trust our coaches and general manager to run football operations.','My responsibility is resources, accountability and long-term stability.','I expect this organization to compete and I will hold leadership accountable.');
+ if(q.includes('trade')||q.includes('transaction')||q.includes('package'))return build('I spoke with our staff about what the roster needs.','The package balanced talent, contracts and future draft value.','We took a calculated risk because standing still was not enough.');
+ if(q.includes('new')||q.includes('joining')||q.includes('career')||q.includes('playbook'))return build('I want to learn from everyone in the organization.','First I need to understand our personnel and expectations.','I came here to help change the direction of this team.');
+ if(q.includes('fans')||q.includes('supporters'))return build('Our supporters deserve an organization that keeps improving.','We will be transparent about the plan without making empty promises.','The standard is competing for championships, and we own that.');
+ // A stable per-question rotation avoids the same three canned statements in every interview.
+ const sets=[
+  ['My teammates have put in the work. I will keep supporting them.','We will go through the film and make targeted adjustments.','The outcome was not good enough, and we have to respond.'],
+  ['I will take responsibility for my part of the result.','There are positives and mistakes that both deserve attention.','We have to raise the standard before our next game.'],
+  ['We need consistent preparation from everyone.','The details will be decided after reviewing performance.','We cannot repeat the same mistakes and expect another result.']
+ ];return build(...sets[(hashNumber(q+m.kind+m.week))%sets.length]);
+}
+mediaOptionSet=function(){return v6AnswerSet()};
+
+// Coach's selected defensive call should not silently snap the ball.
+A.liveDefCall=function(v){const g=live2dState();if(!g||!live2dMayDefense()||g.live2d.off!==1||g.live2d.await4||!['zone','man','blitz','contain'].includes(v))return;
+ g.live2d.defSelected=v;g.live2d.message=`${v.toUpperCase()} selected. Press NEXT PLAY to run the snap.`;store();render();};
+A.liveCall=function(v){const g=live2dState();if(!g||!live2dMayOffense()||g.live2d.off!==0||g.live2d.await4||!['run','quick','balanced','deep'].includes(v))return;
+ g.live2d.selected=v;g.live2d.message=`${v.toUpperCase()} selected. Press NEXT PLAY to snap the ball.`;store();render();};
+const v6OldLiveView=live2dView;
+live2dView=function(){let html=v6OldLiveView(),g=live2dState();if(!g)return html;
+ const p=game.players.find(x=>x.id===game.careerPlayer),starter=p&&Object.values(game.lineup||{}).includes(p.id);
+ if(isPlayer())html=`<div class="notice"><b>PLAYER STATUS: ${starter?'STARTING '+esc(p?.pos||''): 'BENCH / SIDELINE'}</b><p>${starter?'Your simulated performance counts toward your season stats.':'You are not currently a starter. Watch the game and earn playing time through practice and camp.'}</p></div>`+html;
+ return html.replace(/Tap a scheme to run the next defensive snap\./g,'Select your coverage, then tap NEXT PLAY to run the snap.').replace(/Tap a play to run it\. Your offensive choice changes the result\./g,'Select a play, then tap NEXT PLAY to snap the ball.');
+};
+
+// Player career XP and media claims depend on actual starter status.
+const v6OldAfterGame=careerAfterGame;
+careerAfterGame=function(result){
+ if(!isPlayer())return v6OldAfterGame(result);
+ const p=game.players.find(x=>x.id===game.careerPlayer),starter=p&&Object.values(game.lineup||{}).includes(p.id)&&healthy(p);
+ if(starter)return v6OldAfterGame(result);
+ game.playerXP=(game.playerXP||0)+2;game.playerBenchWeeks=(game.playerBenchWeeks||0)+1;
+ game.playerGameHistory=game.playerGameHistory||[];game.playerGameHistory.unshift({week:game.week,year:game.year,win:result.winner===game.userTeam,yards:0,td:0,didNotPlay:true,score:`${result.sa}-${result.sb}`});game.playerGameHistory=game.playerGameHistory.slice(0,25);
+};
+const v6PrevFinishPlayer=finishPlayerDraft;
+finishPlayerDraft=function(...args){const out=v6PrevFinishPlayer(...args);if(isPlayer()&&game.careerPlayer){let p=game.players.find(x=>x.id===game.careerPlayer);if(p&&p.origin!=='NFL'&&Number(p.ovr)<70){p.ovr=70;news(`${p.name} enters the NFL as a 70 OVR rookie prospect. Starting status must still be earned.`);store();render()}}return out};
+
+function v6AwardsPage(){v6EnsureStats();const rows=Object.entries(game.seasonStats.players).map(([id,s])=>({p:game.players.find(p=>p.id===id),s})).filter(x=>x.p&&x.s.gp>0);
+ const metric=(p,s,type)=>type==='MVP'?p.pos==='QB'?s.passYds+45*s.passTD-30*s.ints:0:type==='OFF'?s.recYds+12*s.recTD+s.rushYds+12*s.rushTD:type==='DEF'?s.tackles*4+s.sacks*35+s.defINT*45:0;
+ const leaders=[['MVP WATCH','MVP',rows.filter(x=>x.p.pos==='QB'),x=>`${x.s.passYds.toLocaleString()} pass yds · ${x.s.passTD} TD · ${x.s.ints} INT`],['OFFENSIVE PLAYER','OFF',rows.filter(x=>['RB','WR','TE'].includes(x.p.pos)),x=>`${(x.s.recYds+x.s.rushYds).toLocaleString()} yards · ${x.s.recTD+x.s.rushTD} TD`],['DEFENSIVE PLAYER','DEF',rows.filter(x=>['LB','EDGE','DT','CB','S'].includes(x.p.pos)),x=>`${x.s.tackles} tackles · ${x.s.sacks} sacks · ${x.s.defINT} INT`]];
+ let board=leaders.map(([label,code,data,describe])=>{
+   let list=data.sort((a,b)=>metric(b.p,b.s,code)-metric(a.p,a.s,code)).slice(0,5);
+   let items=list.map((x,i)=>'<div class="marketrow"><b>'+(i+1)+'. '+esc(x.p.name)+' <small>'+esc(x.p.pos)+' · '+esc(x.p.team)+'</small></b><span class="sub">'+describe(x)+'</span></div>').join('');
+   return '<div class="card"><h3>'+label+'</h3><p class="sub">'+game.year+' simulated season statistics · updates after each regular-season week</p>'+(items||'<p class="sub">Regular-season games have not produced statistics yet.</p>')+'</div>';
+ }).join('');
+ let old=extras().awards||[];
+ return `${title('NFL Awards & Records',`2027 onward · ${game.year} simulated season production`)}<div class="notice">These are fictional season statistics from your franchise simulation, not real NFL box scores. Player ratings influence outcomes, but do not determine the rankings alone.</div><div class="two">${board}</div>${old.slice().reverse().map(a=>`<div class="card section"><h3>${a.year} NFL Honors</h3>${a.items.map(i=>`<div class="marketrow"><b>${esc(i.label)}</b><span>${esc(i.name)}</span></div>`).join('')}</div>`).join('')}<div class="card section"><h3>Franchise history</h3>${(game.histories||[]).map(h=>`<p>${h.year} · ${esc(h.record||'')} · ${esc(h.champ||'')}</p>`).join('')||'<p class="sub">Complete a season to build your history.</p>'}</div>`;
+}
+extraAwardsPage=v6AwardsPage;
+const v6OldExtraAward=extraAwardSeason;
+extraAwardSeason=function(){if(game?.phase==='setup')return;v6WeeklyStats();let x=extras(),year=game.year;if(x.awards.some(a=>a.year===year))return;
+ const entries=Object.entries(game.seasonStats?.players||{}).map(([id,s])=>({p:game.players.find(x=>x.id===id),s})).filter(x=>x.p&&x.s.gp>=5);
+ if(entries.length<20)return v6OldExtraAward();
+ const top=(positions,fn)=>entries.filter(x=>positions.includes(x.p.pos)).sort((a,b)=>fn(b.s)-fn(a.s))[0]?.p;
+ const picks=[['MVP',top(['QB'],s=>s.passYds+40*s.passTD-35*s.ints)],['Offensive Player of the Year',top(['WR','RB','TE'],s=>s.rushYds+s.recYds+15*(s.rushTD+s.recTD))],['Defensive Player of the Year',top(['EDGE','LB','CB','S','DT'],s=>s.tackles*4+s.sacks*35+s.defINT*45)],['Offensive Rookie of the Year',top(['QB','RB','WR','TE'],s=>s.passYds+s.recYds+s.rushYds)]];
+ x.awards.push({year,items:picks.filter(x=>x[1]).map(([label,p])=>({label,name:p.name,team:p.team}))});news('NFL Honors '+year+': awards decided from simulated season production.');
+};
+
+// Sim controls survive mandatory interviews: pause with a specific resume target.
+const v6SimNames={week:'next week',midseason:'Week 10',playoffs:'the playoffs',season:'the end of the season'};
+function v6SimTo(target){
+ if(isPlayer())return say('Player Career progresses one week at a time.',true);
+ if(!['preseason','season','playoffs'].includes(game.phase))return say('Simulation is available in preseason, regular season or postseason.',true);
+ if(game.currentGame)return say('Finish your live game before simulating.',true);
+ if(!['week','midseason','playoffs','season'].includes(target))target='week';
+ if(mediaIsPending()){game.v6SimGoal=target;page='media';render();return}
+ game.v6SimGoal=target;let advanced=0;
+ while(advanced<34){
+  if(mediaIsPending())break;
+  if(target==='week'&&advanced>=1)break;
+  if(target==='midseason'&&game.phase==='season'&&game.week>=10)break;
+  if(target==='playoffs'&&game.phase==='playoffs')break;
+  if(['preseason','season'].includes(game.phase)){
+   if(game.phase==='preseason')repairPreseasonSchedule();let pair=nextMatchup(),opp=pair?.find(id=>id!==game.userTeam);
+   const w=game.phase==='preseason'?game.preWeek:game.week,type=game.phase==='preseason'?'preseason':'regular';
+   endWeek(opp?scoreGame(game.userTeam,opp,w,type):null);advanced++;
+  }else if(target==='season'&&game.phase==='playoffs'){
+   // Full-season simulations acknowledge the elimination bracket review automatically.
+   // Leaving reviewPending set makes every later request loop on the same frozen bracket.
+   if(game.reviewPending){game.reviewPending=false;game.eliminationNotified=true;progressPlayoffs();advanced++;continue;}
+   let next=nextPlayoff();if(next){let other=next.a===game.userTeam?next.b:next.a,res=scoreGame(game.userTeam,other,game.week,'playoff');next.result=res;next.winner=res.winner;
+    news(`PLAYOFF ${next.round}: ${mine().nickname} ${res.sa}–${res.sb} ${team(other)?.nickname}.`);progressPlayoffs();advanced++;
+   }else{progressPlayoffs();advanced++}
+  }else break;
+  if(!['preseason','season','playoffs'].includes(game.phase))break;
+ }
+ v6RecordRepair();v6WeeklyStats();
+ const finished=target==='week'||target==='midseason'&&game.phase==='season'&&game.week>=10||target==='playoffs'&&game.phase==='playoffs'||target==='season'&&['offseason','offseason_review'].includes(game.phase);
+ if(finished)game.v6SimGoal=null;
+ store();render();
+ if(mediaIsPending())say(`Simulation paused for a mandatory interview. After finishing, resume toward ${v6SimNames[target]}.`);
+ else say(`${advanced} week${advanced===1?'':'s'} advanced. ${finished?'Destination reached.':'Resume the simulation when ready.'}`);
+}
+simToStop=v6SimTo;A.simStop=v6SimTo;A.simSeason=()=>v6SimTo('season');
+const v6OldFinishMedia=A.finishMedia;
+A.finishMedia=function(){const goal=game.v6SimGoal;v6OldFinishMedia();if(goal&&game.phase!=='setup'){game.v6SimGoal=goal;page='games';store();render();say(`Interview complete. Use RESUME TO ${v6SimNames[goal].toUpperCase()} to continue the paused simulation.`)}};
+
+const v6GamePage=gamePage;
+gamePage=function(){let html=v6GamePage();if(game.currentGame)return html;
+ const season=['preseason','season','playoffs'].includes(game.phase);
+ if(season&&!isPlayer()){
+  const tag='<div class="card section" data-v6-season><h3>Season Control · '+game.year+'</h3><p class="sub">Simulations pause when a required press conference starts. Your league standings, records and injuries update as the weeks advance.</p><div class="toolbar">'+
+   button('NEXT WEEK','A.simStop("week")','tiny')+button('TO MIDSEASON (W10)','A.simStop("midseason")','tiny')+button('TO PLAYOFFS','A.simStop("playoffs")','tiny')+button('FULL SEASON + PLAYOFFS','A.simStop("season")','primary tiny')+'</div>'+ (game.v6SimGoal?'<div class="notice">SIM PAUSED · Target: '+esc(v6SimNames[game.v6SimGoal])+' '+button('RESUME TO '+v6SimNames[game.v6SimGoal].toUpperCase(),`A.simStop("${game.v6SimGoal}")`,'tiny primary')+'</div>':'')+'</div>';
+  // Remove v5's duplicate/less useful season control panels.
+  html=html.replace(/<div class="card section"><h3>Advance season<\/h3>[\s\S]*?<\/div><\/div>/g,'');
+  html=html.replace(/<div class="card section"><h3>Season control<\/h3>[\s\S]*?<\/div><\/div>/gi,'');
+  html+=tag;
+ }
+ // Hide the redundant selector at the bottom. Kickoff and quick simulation already appear above.
+ html=html.replace(/<div class="card section"><h3>🎮 Pick how to play the matchup<\/h3>[\s\S]*?<\/div><\/div>/g,'');
+ if(v6OWNER()){
+  html=html.replace(/<div class="card section"><h3>Front-office decisions<\/h3>[\s\S]*?<\/div><\/div>/g,'');
+  html=html.replace(/<div class="card section"><h3>Front Office Decisions<\/h3>[\s\S]*?<\/div><\/div>/g,'');
+ }
+ // Never show an inflated cached record even if v5 previously corrupted it.
+ const r=nflv5SeasonRecord();return html.replace(/(<h1>Game Center<\/h1>[\s\S]{0,350}?)(\d{1,3})[–-](\d{1,3})/i,(all,a)=>a+r.w+'-'+r.l);
+};
+
+// Hide irrelevant owner/player navigation and make no-op menus role-aware.
+const v6PrevTabs=tabs;
+tabs=function(){let html=v6PrevTabs();if(v6OWNER())html=html.replace(/<button[^>]*onclick="A\.page\(&quot;opportunities&quot;\)[^>]*>[\s\S]*?<\/button>/g,'');return html};
+const v6OldApage=A.page;
+A.page=function(target){
+ if(v6OWNER()&&['frenzy','opportunities','trades','free'].includes(target)){
+  page='dashboard';render();return say('Ownership role: your GM handles trades, free agents, and individual contracts.',true);
+ }
+ if(isPlayer()&&['legacy','politics','frenzy','trades'].includes(target)&&target!=='legacy')return say('Player Career: use My Career for your agent and personal development.',true);
+ return v6OldApage(target);
+};
+const v6OldOpportunity=careerOffersPage;
+careerOffersPage=function(){if(v6OWNER()||v6MANAGER())return `${title('Front Office Career','Owners and GMs are not represented by player agents.')}<p>Focus on your franchise.</p>`;return v6OldOpportunity()};
+const v6OldOffer=A.acceptOffer;
+if(typeof v6OldOffer==='function')A.acceptOffer=function(id){if(v6OWNER()||v6MANAGER())return say('Your current career cannot accept a player/coach agent offer.',true);return v6OldOffer(id)};
+const v6OldRender=render;
+render=function(){if(game?.phase!=='setup'&&game?.teams?.length){v6RecordRepair();v6WeeklyStats()}
+ v6OldRender();
+ if(v6OWNER()){document.querySelectorAll('button').forEach(b=>{const txt=b.textContent?.trim().toUpperCase()||'';
+  if(['TRADE CENTER','FREE AGENCY FRENZY','JOBS & AGENT OFFERS'].some(t=>txt.includes(t))){b.style.display='none'}
+ });}
+};
+
+// Owners supervise the organization; the GM makes draft selections offscreen.
+function v6OwnerCpuDraft(){
+ if(!v6OWNER()||game.phase!=='draft'||mediaIsPending())return;
+ let savedRole=game.career;
+ try{game.career='oc';cpuDraftAll();}
+ finally{game.career=savedRole;}
+ if(game.phase==='draft'){
+  let guard=0;game.career='oc';try{while(nextPick()&&guard++<260){const pk=nextPick(),prospect=bestDraftPickFor(pk.owner);if(!prospect||!draftPlayer(prospect.id,pk.owner))break}if(!nextPick())beginPreseason();}finally{game.career=savedRole}
+ }
+ news('GM DRAFT REPORT: Your front office has completed draft selections. Review the new roster and team priorities.');page='games';store();render();
+}
+const v6OldAdvanceFront=advanceFront;
+advanceFront=function(...args){const r=v6OldAdvanceFront(...args);if(v6OWNER()&&game.phase==='draft')v6OwnerCpuDraft();return r};
+const v6OldAdvanceOffseason=advanceOffseason;
+advanceOffseason=function(...args){const r=v6OldAdvanceOffseason(...args);if(v6OWNER()&&game.phase==='draft')v6OwnerCpuDraft();return r};
+A.advanceOffseason=()=>advanceOffseason();
+const v6OwnerDraftAction=A.draft;
+A.draft=function(id){if(v6OWNER())return say('The GM makes draft selections for an owner career.',true);return v6OwnerDraftAction(id)};
+// Owner review takes you to an explanation, not a trade desk they cannot operate.
+const v6OldApproveMove=approveMove;
+approveMove=function(id,yes){if(!v6OWNER())return v6OldApproveMove(id,yes);
+ const item=(game.pendingMoves||[]).find(m=>m.id===id);if(!item)return say('This briefing is no longer active.',true);
+ game.pendingMoves=game.pendingMoves.filter(x=>x.id!==id);
+ const msg=yes?`Owner authorized GM review: ${item.description} (No transaction has been made.)`:`Owner declined proposal: ${item.description}`;
+ game.ownerDirectives=game.ownerDirectives||[];game.ownerDirectives.unshift({year:game.year,week:game.week,approved:!!yes,text:msg});news(msg);store();render();say(yes?'The GM received your direction. No trade or signing has happened.':'Proposal declined.');
+};
+// Owner press room never labels the owner as a combined Owner/GM.
+const v6OldMediaPage=mediaPage;
+mediaPage=function(){let html=v6OldMediaPage();if(v6OWNER())html=html.replace(/OWNER \/ GM/g,'OWNER').replace(/Owner \/ GM/g,'Owner');return html};
+// Suppress irrelevant navigation at the source, not just the click handler.
+const v6TabsEarlier=tabs;
+tabs=function(){let html=v6TabsEarlier();if(v6OWNER())html=html.replace(/<button\b[^>]*onclick="A\.page\('(free|trades|frenzy|opportunities)'\)"[^>]*>[\s\S]*?<\/button>/g,'');return html};
+
+// Recover saved careers once and then apply game-state consistency checks.
+v6BackupBeforeRepair();v6RepairOverinflatedSalary();v6RecordRepair();v6WeeklyStats();store();render();
+
+/* v6.1 targeted playtester refinements — role-authentic UI and contracts */
+const v6PriorDashboard=dashboard;
+dashboard=function(){
+ if(!v6OWNER())return v6PriorDashboard();
+ const t=mine(),f=extras().finances,record=nflv5SeasonRecord();
+ return `${title('Owner’s Office',`${game.year} · ${esc(t.name)} · Ownership`,chip('PHASE',game.phase.toUpperCase(),'status'))}
+ <div class="franchisehero" style="--team:${esc(t.color)}"><div class="heroinfo">${teamIcon(t.id,65)}<div><span class="eyebrow">FRANCHISE OWNER</span><h2>${esc(t.name)}</h2><p class="sub">The GM handles player trades, contracts, the draft and day-to-day roster moves.</p></div></div><div class="record">${record.w}–${record.l}<small>${game.year} SEASON</small></div></div>
+ <div class="statsgrid">${kpi('FAN SUPPORT',f.fans+'/100')}${kpi('OWNER CASH',money(f.cash))}${kpi('FACILITIES','LV '+f.facilities)}${kpi('TEAM RECORD',record.w+'–'+record.l)}</div>
+ <div class="card section"><h3>Ownership decisions</h3><div class="actiongrid">
+ <button class="action" onclick="A.page('stadium')"><b>Stadium & fans →</b><small>Ticket strategy, fan approval and facilities</small></button>
+ <button class="action" onclick="A.page('coaches')"><b>Football leadership →</b><small>Hire or evaluate your head coach and staff</small></button>
+ <button class="action" onclick="A.page('games')"><b>Watch the season →</b><small>See your team, schedule and season simulation</small></button>
+ <button class="action" onclick="A.page('league')"><b>League standings →</b><small>Wins, losses and the playoff picture</small></button>
+ <button class="action" onclick="A.page('honors')"><b>Honors & history →</b><small>Awards and franchise milestones</small></button>
+ <button class="action" onclick="A.page('newsroom')"><b>NFL news →</b><small>Transactions, reporters and league events</small></button>
+ </div></div>${v6OwnerBrief()}
+ <div class="card section"><h3>Latest franchise news</h3>${(game.news||[]).slice(0,7).map(n=>`<div class="newsitem"><small class="sub">${n.year}${n.week?' · Week '+n.week:''}</small><p>${esc(n.text)}</p></div>`).join('')||'<p class="sub">Your ownership career is underway.</p>'}</div>`;
+};
+const v6PreviousGameReport=gameReport;
+gameReport=function(op){
+ if(!v6OWNER())return v6PreviousGameReport(op);
+ const f=extras().finances,them=team(op);
+ return `<div class="card section"><h3>Owner matchup briefing</h3><div class="inlinechips">${chip('OPPONENT',them?.nickname||op)}${chip('FAN SUPPORT',f.fans+'/100')}${chip('FACILITIES','LV '+f.facilities)}</div><p class="sub">Your coaches set game plans and call plays. Watch the ${esc(mine().nickname)} take on ${esc(them?.nickname||op)}; you handle franchise leadership and business decisions.</p></div>`;
+};
+// Only coaches change tactics. Owner may hire and evaluate coaches, not call their plays.
+const v6CoachPagePrior=coachesPage;
+coachesPage=function(){let html=v6CoachPagePrior();if(v6OWNER()){
+  html=html.replace(/<label class="lab">Offensive identity<\/label><select class="field wide"/g,'<label class="lab">Offensive identity · set by coaching staff</label><select class="field wide" disabled');
+  html=html.replace(/<label class="lab">Defensive identity<\/label><select class="field wide"/g,'<label class="lab">Defensive identity · set by coaching staff</label><select class="field wide" disabled');
+  html=html.replace(/<h3>Your three scouting roles<\/h3>/,'<h3>GM scouting department</h3><p class="fine">Your GM manages individual scout contracts. Owners oversee leadership and department budgets.</p>');
+ }return html};
+const v6PreviousScheme=A.scheme;
+A.scheme=function(t,v){if(v6OWNER())return say('Your coaching staff sets the offensive and defensive schemes.',true);return v6PreviousScheme(t,v)};
+const v6PreviousCut=A.cut;A.cut=function(id){if(v6OWNER())return say('Player releases are handled by your General Manager.',true);return v6PreviousCut(id)};
+const v6PreviousSignScout=A.signScout;A.signScout=function(id){if(v6OWNER())return say('Your GM manages scout contracts.',true);return v6PreviousSignScout(id)};
+const v6PreviousDropScout=A.dropScout;A.dropScout=function(id){if(v6OWNER())return say('Your GM manages the scouting department.',true);return v6PreviousDropScout(id)};
+const v6PreviousTrade=A.trade;A.trade=function(...args){if(!v6MANAGER())return say('Only the General Manager may submit trades.',true);
+ const id=$('offPlayer')?.value,p=game.players.find(p=>p.id===id);if(p?.noTradeClause)return say(`${p.name} has a no-trade clause and must agree to a move. Trade blocked.`,true);
+ return v6PreviousTrade.apply(A,args)};
+const v6PreviousMultiTrade=A.submitMultiTrade;
+A.submitMultiTrade=function(...args){if(v6MANAGER()){
+  const protectedPlayers=(rosterV2State?.managerOutPlayers||[]).map(id=>game.players.find(p=>p.id===id)).filter(p=>p?.noTradeClause);
+  if(protectedPlayers.length)return say(`${protectedPlayers.map(p=>p.name).join(', ')} has a no-trade clause. The player must waive it before a trade.`,true);
+ }return v6PreviousMultiTrade.apply(A,args)};
+// Each media answer belongs to its actual question, particularly in Owner Career.
+const v6PreviousAnswers=mediaOptionSet;
+mediaOptionSet=function(){
+ const m=game.media;if(!m)return [];const q=String(m.questions?.[m.index||0]?.text||'').toLowerCase(),kind=m.kind;
+ const mk=(a,b,c)=>[a,b,c].map((title,i)=>({title,detail:['Supports relationships and job trust','Sets realistic expectations','Raises public scrutiny'][i],tone:['supportive','measured','bold'][i],effects:[{fans:2,coachTrust:2},{media:2,owner:1},{fans:1,media:-2,owner:1}][i]}));
+ if(v6OWNER()){
+  if(q.includes('resources')||q.includes('authorize'))return mk('I provided our staff the resources to improve this franchise.','The GM presented a plan within the football budget I approved.','We are investing in talent, but the return must justify the cost.');
+  if(q.includes('confidence')||q.includes('football operation'))return mk('I trust the people we hired to do their jobs.','We will evaluate the staff against clear seasonal goals.','Nobody in leadership is guaranteed a job without progress.');
+  if(q.includes('fans')||q.includes('support')||q.includes('community'))return mk('Fans deserve a team they can be proud to support.','We will be transparent about ticket value, facilities and our plan.','The fans should expect us to compete, not make excuses.');
+  if(q.includes('coaching budget')||q.includes('staff work'))return mk('Our head coach has the resources to prepare this roster.','We will review football spending at the end of the season.','If leadership asks for more, I need measurable results in return.');
+  if(q.includes('gm')||q.includes('general manager'))return mk('I hired our GM because I believe in the direction of the team.','I review the GM on roster quality, cap health and long-term wins.','The general manager has authority, but also accountability.');
+  if(q.includes('win')||q.includes('loss')||q.includes('result')||q.includes('assessment'))return mk('The result matters, but one game does not define the franchise.','We will evaluate the season, the fan experience and leadership together.','The standard is winning; we must improve if we fall short.');
+  if(q.includes('first year')||q.includes('invest'))return mk('Facilities and fan experience will be top priorities.','I will review staffing, stadium operations and our financial plan.','We plan to make this one of the most ambitious organizations in football.');
+  if(q.includes('vision')||q.includes('long-term')||q.includes('ownership'))return mk('I want a sustainable contender and a strong fan community.','Our goal is patient development without ignoring this season.','I expect championship-level leadership and will fund a plan to get there.');
+  if(q.includes('transaction')||q.includes('deal')||q.includes('trade'))return mk('I asked our GM to explain how this deal fits our long-term plan.','I will judge the trade by roster development, cap cost and future results.','If the deal fails, the front office will have to explain what went wrong.');
+  return mk('I believe our leadership team deserves an opportunity to build.','We will measure progress through results and responsible spending.','This franchise is going to be held to a higher standard.');
+ }
+ if(game.career==='player'&&(q.includes('sideline')||q.includes('starting')||q.includes('snaps')||q.includes('playing time')||q.includes('role')))
+  return mk('I will support my teammates while earning reps in practice.','My position coach and I have specific goals for getting on the field.','I want a bigger role, and my work has to prove I deserve it.');
+ if(game.career==='dc'&&q.includes('blitz'))return mk('Our rushers brought energy; we have to keep our lanes disciplined.','We will compare our pressure rate with the big plays we allowed.','I will keep sending pressure if the matchup calls for it.');
+ if(game.career==='dc'&&q.includes('explosive'))return mk('Our defensive backs have the ability to respond next week.','We have to check safety help and tackle angles on the film.','We cannot keep giving up chunk plays and expect to win.');
+ if(game.career==='hc'&&q.includes('turning point'))return mk('The team battled, but execution changed the momentum.','We will evaluate the key down-and-distance decisions on film.','I take responsibility for the turning point in that game.');
+ return v6PreviousAnswers();
+};
+// Expose the player's real role before and after games. Media promises don't directly boost OVR.
+const v6PriorCareerPage=nflCareerPage;
+nflCareerPage=function(){let html=v6PriorCareerPage();if(!isPlayer())return html;
+ const p=game.players.find(x=>x.id===game.careerPlayer),starter=!!p&&Object.values(game.lineup||{}).includes(p.id),s=game.seasonStats?.players?.[p?.id];
+ let tag=`<div class="notice"><b>${starter?'STARTING '+esc(p?.pos||'PLAYER'):'BENCH / SIDELINE · '+esc(p?.pos||'PLAYER')}</b><p>${starter?'Your game production counts toward your season stats.':'You are not an established starter. Win position battles and earn trust; watching games does not give you fictional touchdowns.'}</p><p class="fine">${game.playerXP||0}/20 development XP toward your next possible OVR upgrade. Press conferences build relationships, not instant skill ratings.</p>${s?`<p class="sub">Season: ${s.gp||0} game appearances · ${s.passYds||0} passing yards · ${s.recYds||0} receiving yards · ${s.rushYds||0} rushing yards</p>`:''}</div>`;
+ return tag+html;
+};
+// AI fourth-down decisions must have an explanation in the play-by-play.
+const v6PrevCpuFourth=live2dCpuFourth;
+live2dCpuFourth=function(){const g=live2dState();if(g?.live2d?.await4){
+ const s=g.live2d,gap=(s.off===0?g.us-g.them:g.them-g.us),late=(s.q===4||s.overtime)&&s.sec<=200;
+ let choice=s.ball>=59&&s.need>=3?'field goal':s.ball>=58&&s.need<=4?'go for it':'punt';
+ if((late&&gap<0&&s.need<=8)||(s.need<=1&&s.ball>=48))choice='go for it';if(choice==='field goal'&&s.ball<57)choice='punt';
+ const reason=choice==='punt'?`outside their preferred kicking range on 4th & ${s.need}`:choice==='field goal'?`in range for a ${117-s.ball}-yard attempt`:`down, distance and scoreboard favor keeping the drive alive`;
+ live2dLog(`COACHING DECISION: ${s.off===0?mine().nickname:team(g.opponent)?.nickname} choose to ${choice} (${reason}).`);
+ }return v6PrevCpuFourth()};
+// Market-aligned offers across FREE AGENCY FRENZY, not just the offseason contract modal.
+const v6PreviousMakeFaBid=makeFaBid;
+makeFaBid=function(p){const bid=v6PreviousMakeFaBid(p);if(!bid.v6MarketCorrected){
+ const demand=v6MarketAnnual(p);bid.offers=bid.offers.map((o,i)=>({...o,annual:Math.round(demand*(.96+i*.065)*10)/10}));
+ bid.v6MarketCorrected=true;
+ }return bid};
+const v6PriorFrenzyUI=frenzyPage;
+frenzyPage=function(){let html=v6PriorFrenzyUI();if(!v6MANAGER()||!v6FrenzyPhase())return html;
+ // The original bidding panel already includes years and guarantee %. Extend it.
+ return html.replace(/(<label class="lab">Guaranteed share<\/label><select id="faGuarantee"[\s\S]*?<\/select>)/,
+ '$1<label class="lab">Total signing bonus ($M)</label><input class="field wide" id="faBonus" type="number" min="0" max="100" step="0.5" value="2"><label class="setting"><span>No-trade clause</span><input type="checkbox" id="faNTC"></label>');
+};
+A.sendFaOffer=function(){if(!v6MANAGER()||!v6FrenzyPhase())return say('Free Agency Frenzy is available to GMs during the offseason.',true);
+ if(!assertMediaClear())return;
+ let p=unsigned().find(p=>p.id===spotlightFA)||unsigned().filter(p=>p.pos!=='LS').sort((a,b)=>b.ovr-a.ovr)[0];if(!p)return say('Choose a free agent first.',true);
+ const bid=makeFaBid(p);if(bid.status!=='open'||bid.tries>=2)return say('This negotiation is closed.',true);
+ const annual=Number($('faAnnual')?.value),years=Number($('faYears')?.value),guarantee=Number($('faGuarantee')?.value),bonus=Number($('faBonus')?.value||0),ntc=!!$('faNTC')?.checked;
+ if(!Number.isFinite(annual)||annual<.5||annual>80||!Number.isInteger(years)||years<1||years>5||![25,50,75].includes(guarantee)||!Number.isFinite(bonus)||bonus<0||bonus>100)return say('Enter realistic years, salary, guarantee and bonus.',true);
+ const hit=annual+bonus/years;if(hit>cap())return say(`This deal costs ${money(hit)}/year against the cap. You have ${money(cap())} remaining.`,true);
+ bid.tries++;let best=Math.max(...bid.offers.map(o=>o.annual)),strength=annual*(1+(guarantee-25)*.0025)+(years>=3?.3:0)+(bonus/years)*.45+(ntc?annual*.03:0),threshold=best*1.06;
+ if(strength>=threshold){p.salary=annual;p.bonusAnnual=bonus/years;p.signingBonus=bonus;p.contractYears=years;p.guaranteePct=guarantee;p.noTradeClause=ntc;p.team=game.userTeam;p.status='ACT';bid.status='signed';bid.response=`Signed ${p.name}: ${years} years at ${money(annual)}/year, ${money(bonus)} bonus${ntc?' with a no-trade clause':''}. Cap hit: ${money(hit)}/year.`;
+ news('FREE AGENCY: '+bid.response);pushMoment('signing','Major free-agent addition',bid.response);setDefaultLineup(true);spotlightFA=null;store();startMedia('signing');render();say('Signing completed — a press conference is scheduled.');
+ }else if(bid.tries>=2){bid.status='lost';bid.response=`${p.name} rejected the final offer. ${team(bid.offers[0].team)?.nickname||'Another team'} won the bidding.`;
+ p.team=bid.offers[0].team;p.salary=best;p.contractYears=bid.offers[0].years;news('FREE AGENCY: '+bid.response);store();render();say(bid.response,true);
+ }else{bid.response=`The agent asks for a stronger total package. Competing offers are around ${money(best)}/year. One final offer remains.`;news(`AGENT COUNTER: ${p.name} requests a stronger guaranteed package.`);store();render();say(bid.response,true)}
+};
+// Apply non-destructive v5 salary repairs whenever a different career is loaded.
+const v6PriorLoad=A.loadCareer;
+A.loadCareer=function(id){const r=v6PriorLoad(id);if(game?.phase!=='setup'){
+ v6BackupBeforeRepair();v6RepairOverinflatedSalary();v6RecordRepair();v6WeeklyStats();store();render();
+ }return r;};
+// Keep old corrupted saves from importing regular-season results from other
+// years. Current-season fixtures are the authority for standings and stats.
+const v6PriorRecordRepair=v6RecordRepair;
+v6RecordRepair=function(){
+ if(game?.phase==='setup'||!Array.isArray(game?.results))return;
+ if(Array.isArray(game.schedule)&&game.schedule.length===18){
+  const allowed=new Set();for(const week of game.schedule){for(const pair of week.pairings||[]){if(pair?.length===2)allowed.add(week.week+':'+[...pair].sort().join(':'))}}
+  const before=game.results.length;
+  game.results=game.results.filter(r=>r?.type!=='regular'||Number.isInteger(r.week)&&r.week>=1&&r.week<=18&&allowed.has(r.week+':'+[r.a,r.b].sort().join(':')));
+  if(before!==game.results.length){game.v6RemovedOutOfSeasonResults=(game.v6RemovedOutOfSeasonResults||0)+(before-game.results.length);game.seasonStats={year:game.year,players:{},counted:{}};}
+ }
+ v6PriorRecordRepair();
+};
+// Make the league statistic estimates and career progress available on a saved
+// career when switching, without requiring the user to begin a new franchise.
+// Player Career is simulation-led: player choices happen through training,
+// performance and career decisions, not by controlling the head coach's plan.
+const v6PreviousPlan=A.plan;
+A.plan=function(k,v){if(isPlayer())return say('Your coaches call the game. Focus on training and earning playing time.',true);return v6PreviousPlan(k,v)};
+const v6PreviousPlayerReport=gameReport;
+gameReport=function(op){if(!isPlayer())return v6PreviousPlayerReport(op);
+ const p=game.players.find(x=>x.id===game.careerPlayer),starter=!!p&&Object.values(game.lineup||{}).includes(p.id),name=team(op)?.nickname||op;
+ return `<div class="card section"><h3>${starter?'Player game-day briefing':'Sideline viewing · player not starting'}</h3><div class="inlinechips">${chip('YOUR POSITION',p?.pos||'—')}${chip('DEPTH ROLE',starter?'STARTER':'BENCH')}${chip('OPPONENT',name)}</div><p class="sub">${starter?'Your position coach sets your assignments. Your simulated production follows from actual playing time.':'You are not in the starting lineup. Watch this matchup from the sideline, then train and compete for more snaps.'} The coaching staff makes all play calls.</p></div>`;
+};
+const v6PreviousGamePagePlayer=gamePage;
+gamePage=function(){let html=v6PreviousGamePagePlayer();if(isPlayer()&&!game.currentGame){
+ const p=game.players.find(x=>x.id===game.careerPlayer),starter=!!p&&Object.values(game.lineup||{}).includes(p.id);
+ html=html.replace(/KICKOFF · WATCH INTERACTIVE 2D ▶/g,starter?'WATCH YOUR TEAM PLAY ▶':'WATCH GAME FROM SIDELINE ▶');
+ }return html};
+const v6PriorLegacy=leagueLegacyPage;
+leagueLegacyPage=function(){if(!isPlayer())return v6PriorLegacy();
+ const p=game.players.find(x=>x.id===game.careerPlayer),stats=game.playerCareerStats||{},moments=(game.moments||[]).filter(x=>['career','game','draft','signing','press','award'].includes(x.kind));
+ return `${title('My Player Legacy',`Career timeline for ${esc(p?.name||'your player')}`)}<div class="statsgrid">${kpi('NFL GAMES',stats.games||0)}${kpi('WINS',stats.wins||0)}${kpi('PASS YARDS',stats.passing||0)}${kpi('TOUCHDOWNS',stats.touchdowns||0)}</div><div class="card section"><h3>Player milestones</h3>${moments.slice(0,65).map(m=>`<div class="timelineEntry"><small>${m.year} W${m.week}</small><b>${esc(m.headline)}</b><p>${esc(m.detail||'')}</p></div>`).join('')||'<p class="sub">Your draft, first start and career milestones will appear as you progress.</p>'}</div>`;
+};
+const v6PriorTabsRole=tabs;
+tabs=function(){let html=v6PriorTabsRole();if(isPlayer())html=html.replace(/Franchise Legacy/g,'Player Legacy').replace(/Job & Agent Offers/g,'Agent & Career Offers');return html};
+// Normalize the initial displayed screen as well as later loaded careers.
+if(game?.phase!=='setup'){v6RecordRepair();v6WeeklyStats();store();render()}
+
+
+/* QA fix: expansion owner hands the 2027 draft to the CPU general manager
+   when 16 expansion selections have been made. Previously owner was stranded
+   on pick #1 without permission to draft. */
+const qaOriginalExpansionChoice=A.exp;
+A.exp=function(id){
+ const wasExpansion=game.phase==='expansion',countBefore=game.expCount||0;
+ const result=qaOriginalExpansionChoice(id);
+ if(wasExpansion && v6OWNER() && countBefore<16 && game.expCount>=16 && game.phase==='draft' && !mediaIsPending())v6OwnerCpuDraft();
+ return result;
+};
+
+/* v6.3: Complete expansion-season schedule integrity.
+   33 teams x 17 games cannot be paired (561 team appearances is odd).
+   Add a CPU-managed second expansion club (SAT), then schedule 34 teams:
+   17 full round-robin matchings, with one disjoint fixture moved from
+   each of weeks 1-17 to week 18. All clubs play 17 unique opponents,
+   get exactly one bye, and stay within an 18-week regular season. */
+const NFL_EXPANSION_CPU_ID='SAT';
+const NFL_EXPANSION_BYE_MATCHES=[2,8,2,2,15,2,15,13,0,14,4,14,1,3,15,3,1];
+function nflExpansionPartner(){
+ if(game?.mode!=='expansion'||!team('EXP')||team(NFL_EXPANSION_CPU_ID))return false;
+ game.teams.push({id:NFL_EXPANSION_CPU_ID,city:'San Antonio',nickname:'Stallions',name:'San Antonio Stallions',color:'#a85cd6',stadium:'Alamo Dome',off:'Balanced',def:'4-3',conf:'AFC',w:0,l:0,pf:0,pa:0,expansionCpu:true});
+ // Give the CPU team a full, functional roster rather than a dummy
+ // placeholder: injuries, roster needs, cap and draft logic all use this.
+ const counts={QB:3,RB:3,WR:6,TE:3,OL:8,EDGE:5,DT:4,LB:5,CB:6,S:5,K:1,P:1,LS:1};
+ let serial=0;
+ for(const pos of POS){
+  const n=counts[pos]||Math.max(2,DEPTH_REQ[pos]||2);
+  for(let i=0;i<n;i++){
+   const ovr=clamp(78-Math.floor(i*2.5)+(serial*7)%5,56,81);
+   game.players.push({id:`exp_sat_${pos}_${i}`,name:`${FIRST[(serial*3+2)%FIRST.length]} ${LAST[(serial*5+4)%LAST.length]}`,pos,team:NFL_EXPANSION_CPU_ID,ovr,age:22+(serial*3)%10,salary:+Math.max(.8,(ovr-53)*.12).toFixed(1),potential:clamp(ovr+5+(serial%9),ovr,91),origin:'SIM',real:false,status:'ACT',injuryWeeks:0,outUntil:0,contractYears:3});
+   serial++;
+  }
+ }
+ for(const role of ['HC','OC','DC'])game.coaches.push({id:'cpu_sat_'+role,role,name:role==='HC'?'Damon Reed':role==='OC'?'Marcus Bell':'Jordan Price',club:NFL_EXPANSION_CPU_ID,off:'Balanced',def:'4-3',level:3,leadership:78,development:77,real:false});
+ game.expansionPartnerAdded=game.year;
+ game.news?.unshift({week:game.week,year:game.year,text:'EXPANSION LEAGUE: The San Antonio Stallions join as a CPU-run club. Portland and all original 32 NFL teams remain; all 34 clubs get 17 games and a bye.'});
+ return true;
+}
+// Give the CPU AFC expansion team a division, so its division finish and
+// playoff eligibility follow the same rules as everyone else's.
+if(!DIV.AFC.some(group=>group.includes(NFL_EXPANSION_CPU_ID)))DIV.AFC[3].push(NFL_EXPANSION_CPU_ID);
+
+const nflBeforeExpansionDraftOrder=draftOrder;
+draftOrder=function(year){
+ const original=nflBeforeExpansionDraftOrder(year);
+ if(game?.mode==='expansion' && team(NFL_EXPANSION_CPU_ID) && year===2027 && !game.prevDraftOrder?.length && !original.includes(NFL_EXPANSION_CPU_ID))return [...original,NFL_EXPANSION_CPU_ID];
+ return original;
+};
+
+function nflCreateBalanced34(){
+ const entrants=[...teams()].sort((a,b)=>hashNumber(game.year+':'+a.id)-hashNumber(game.year+':'+b.id)||a.id.localeCompare(b.id)).map(t=>t.id);
+ if(entrants.length!==34||new Set(entrants).size!==34)throw Error('Expansion schedule requires 34 unique clubs');
+ const rotating=[...entrants],result=[],finalWeek=[];
+ for(let w=0;w<17;w++){
+  const pairs=[];
+  for(let i=0;i<17;i++){
+   const a=rotating[i],b=rotating[33-i];
+   // Rotate home/away assignments; week 18 is handled below.
+   pairs.push((w+i+game.year)%2?[b,a]:[a,b]);
+  }
+  const moved=pairs.splice(NFL_EXPANSION_BYE_MATCHES[w],1)[0];
+  finalWeek.push(moved);
+  result.push({week:w+1,pairings:pairs});
+  rotating.splice(1,0,rotating.pop());
+ }
+ result.push({week:18,pairings:finalWeek});
+ // Validate before the new schedule replaces the old one. A bad fixture
+ // must NEVER silently produce a 16-game record again.
+ const appearances=new Map(entrants.map(id=>[id,0]));
+ const byes=new Map(entrants.map(id=>[id,0]));
+ const rivals=new Map(entrants.map(id=>[id,new Set()]));
+ const seenFixtures=new Set();
+ for(const week of result){
+  const active=new Set();
+  for(const pair of week.pairings){
+   if(pair.length!==2||pair[0]===pair[1])throw Error('Invalid expansion game');
+   const [a,b]=pair;
+   if(active.has(a)||active.has(b))throw Error('Team has two games in week '+week.week);
+   active.add(a);active.add(b);
+   const fixture=[a,b].sort().join(':');
+   if(seenFixtures.has(fixture))throw Error('Duplicate expansion opponent: '+fixture);
+   seenFixtures.add(fixture);
+   appearances.set(a,appearances.get(a)+1);appearances.set(b,appearances.get(b)+1);
+   rivals.get(a).add(b);rivals.get(b).add(a);
+  }
+  for(const id of entrants)if(!active.has(id))byes.set(id,byes.get(id)+1);
+ }
+ for(const id of entrants)if(appearances.get(id)!==17||byes.get(id)!==1||rivals.get(id).size!==17)throw Error('Expansion schedule count broken for '+id);
+ return result;
+}
+const nflBeforeExpansionSchedule=makeSchedule;
+makeSchedule=function(){
+ if(game?.mode!=='expansion')return nflBeforeExpansionSchedule();
+ nflExpansionPartner();
+ if(teams().length!==34)return nflBeforeExpansionSchedule();
+ game.schedule=nflCreateBalanced34();game.week=1;game.results=[];
+ game.scheduleFormat='34-team balanced, 17 games and one bye';
+};
+
+const nflBeforeExpansionStart=A.start;
+A.start=function(...args){
+ const out=nflBeforeExpansionStart(...args);
+ if(game?.mode==='expansion'&&nflExpansionPartner()){
+  // This happens before the 2027 expansion/rookie drafts open.
+  if(game.phase==='preseason'&&game.results.length===0)makeSchedule();
+  store();render();
+ }
+ return out;
+};
+
+// Upgrade pre-kickoff v6.2 expansion careers safely. A season already
+// underway has scored games that cannot be retroactively rewritten; keep
+// those results intact and apply balanced scheduling next season.
+function nflUpgradeOldExpansion(){
+ if(!game||game.mode!=='expansion'||!team('EXP'))return false;
+ if(team(NFL_EXPANSION_CPU_ID))return false;
+ const played=(game.results||[]).filter(r=>r.type==='regular').length;
+ const active=game.phase==='season'||game.phase==='playoffs'||game.phase==='offseason_review';
+ if(active&&played){game.expansionScheduleUpgradePending=true;return false;}
+ const added=nflExpansionPartner();
+ if(added&&game.phase==='preseason'){
+  makeSchedule();game.week=game.preWeek||1;
+ }
+ if(added&&game.phase==='season'&&played===0)makeSchedule();
+ if(added&&game.phase==='draft'&&game.draftIndex===0){
+  game.picks=createPicks(game.year); // 2027 draft gains SAT's seven picks.
+ }
+ return added;
+}
+
+const nflBeforeExpansionLoad=A.loadCareer;
+A.loadCareer=function(id){
+ const out=nflBeforeExpansionLoad(id);
+ if(nflUpgradeOldExpansion()){store();render();}
+ return out;
+};
+
+// Next season fixes old 33-team careers while preserving their current
+// career saves and preventing a draft from starting with the wrong team count.
+const nflBeforeExpansionNextSeason=A.nextSeason;
+A.nextSeason=function(...args){
+ if(game?.mode==='expansion')nflExpansionPartner();
+ return nflBeforeExpansionNextSeason(...args);
+};
+
+// Existing expansions opened from the currently active save, not only the
+// multi-save manager, are checked without touching current game results.
+if(nflUpgradeOldExpansion()){store();render();}
+
+const nflBeforeExpansionGamePage=gamePage;
+gamePage=function(){
+ const html=nflBeforeExpansionGamePage();
+ if(game?.mode!=='expansion'||teams().length!==34)return html;
+ return `<div class="notice"><b>34-team expansion league · 17 games per club</b><p class="fine">The San Antonio Stallions are CPU-managed. Every team has one bye across 18 weeks. Your Portland Pioneers and all original NFL clubs remain.</p></div>`+html;
+};
+
+/* v6.4 stress-test fix: guarantee exactly 8 or 9 home games per franchise
+   in 34-team expansion while keeping the same fixtures, weeks and byes.
+   Eulerian orientation proof: 34 vertices each have degree 17. Adding a
+   dummy vertex joined once to every team makes each degree even. Directing
+   an Euler tour gives 9 incoming and 9 outgoing games per original vertex;
+   dropping the dummy edges leaves 8 or 9 home games and 8 or 9 away games. */
+function nflBalanceExpansionHomeAway(schedule){
+ if(!Array.isArray(schedule)||schedule.length!==18)return schedule;
+ const ids=teams().map(t=>t.id);
+ if(ids.length!==34||new Set(ids).size!==34)return schedule;
+ const dummy='__exp_balance_dummy__';
+ const adj=new Map([...ids,dummy].map(id=>[id,[]]));
+ const edges=[];
+ function edge(a,b,week,index){
+  const e={a,b,week,index,used:false};edges.push(e);adj.get(a).push(e);adj.get(b).push(e);
+ }
+ schedule.forEach((w,wi)=>w.pairings.forEach(([a,b],pi)=>edge(a,b,wi,pi)));
+ for(const id of ids)edge(dummy,id,-1,-1);
+ if(edges.length!==323)throw Error('Expected 289 fixtures and 34 dummy balancing edges');
+ const stack=[{v:dummy,enter:null}],tour=[];
+ while(stack.length){
+  const top=stack[stack.length-1];
+  const list=adj.get(top.v);
+  while(list.length&&list[list.length-1].used)list.pop();
+  if(!list.length){const done=stack.pop();if(done.enter)tour.push(done.enter);continue}
+  const e=list.pop();if(e.used)continue;e.used=true;
+  const nxt=e.a===top.v?e.b:e.a;
+  stack.push({v:nxt,enter:{edge:e,from:top.v,to:nxt}});
+ }
+ if(tour.length!==edges.length)throw Error('Home/away graph was not fully traversed');
+ for(const {edge:e,from,to} of tour){if(e.week>=0)schedule[e.week].pairings[e.index]=[from,to]}
+ const homes=new Map(ids.map(id=>[id,0])),aways=new Map(ids.map(id=>[id,0]));
+ for(const week of schedule)for(const [a,b]of week.pairings){homes.set(a,homes.get(a)+1);aways.set(b,aways.get(b)+1)}
+ for(const id of ids)if(!([8,9].includes(homes.get(id))&&[8,9].includes(aways.get(id))))throw Error('Expansion home/away balance invalid: '+id);
+ return schedule;
+}
+const nflOriginalBalanced34=nflCreateBalanced34;
+nflCreateBalanced34=function(){return nflBalanceExpansionHomeAway(nflOriginalBalanced34())};
+// Migrate an existing save only if its regular season has not begun.
+// We preserve played results, so midseason saves get a fair new schedule next year.
+function nflUpgradeExpansionHomeAway(){
+ if(!game||game.mode!=='expansion'||teams().length!==34||game.schedule?.length!==18)return false;
+ if((game.results||[]).some(r=>r.type==='regular'))return false;
+ let counts=new Map(teams().map(t=>[t.id,0]));
+ for(const week of game.schedule)for(const pair of week.pairings)counts.set(pair[0],counts.get(pair[0])+1);
+ if([...counts.values()].every(n=>n===8||n===9))return false;
+ nflBalanceExpansionHomeAway(game.schedule);store();render();return true;
+}
+const nflPreBalanceCareerLoad=A.loadCareer;
+A.loadCareer=function(id){const r=nflPreBalanceCareerLoad(id);nflUpgradeExpansionHomeAway();return r};
+nflUpgradeExpansionHomeAway();
+
+/* NFL GM v6.5 PLAYTEST REPAIR PACK — additive, save-safe functionality. */
+window.NFL_GM_GAME_BUILD='NFL GM Connected Careers v6.5 Playtest Repair';
+const V65_BUILD='6.5';
+function v65Key(){return `${game.year}:${game.phase}:${game.phase==='preseason'?(game.preWeek||game.week):game.week}`}
+function v65Stable(s){return hashNumber(String(s))>>>0}
+function v65Player(){return game.players.find(p=>p.id===game.careerPlayer)}
+function v65Starter(p=v65Player()){return !!p&&healthy(p)&&Object.values(game.lineup||{}).includes(p.id)}
+function v65OpponentAt(pos){return own().filter(p=>p.pos===pos&&healthy(p)&&p.id!==game.careerPlayer).sort((a,b)=>b.ovr-a.ovr)[0]}
+function v65GoodRole(role){return game.career===role}
+function v65Notify(msg){news(msg);store();render();say(msg)}
+function v65LogStatus(){if(!game.v65History)game.v65History=[];game.v65History=game.v65History.slice(-40)}
+
+// Unique weekly questions by position, with correct answers at varied letters.
+const v65Drills={
+ QB:[
+ ['The defense shows a late safety rotation before the snap. What do you do?', ['Identify the new coverage and reset the protection','Throw immediately at your first read','Ignore the safety and force the deep route'],0],
+ ['A blitzing linebacker walks into the A-gap. What is your first adjustment?', ['Hold the ball for a long-developing route','Alert your protection and find the hot receiver','Change nothing because the play was called'],1],
+ ['Your first read is covered and the pocket is shrinking. What is the best decision?', ['Force the ball over the middle','Run backwards to buy time','Move through the progression and protect possession'],2],
+ ['The defense repeatedly takes away deep routes. How do you respond?', ['Take the available underneath completion','Keep throwing the same deep ball','Refuse to check the ball down'],0],
+ ['It is third-and-short against a crowded box. What should you assess?', ['The stadium crowd','The defensive leverage and safest first-down matchup','Your season highlight total'],1]],
+ RB:[['The offensive line opens a cutback lane. What should you read?', ['Bounce outside regardless of leverage','Follow your aiming point and read the blocking','Stop until a defender arrives'],1],['A defender runs free on a pass blitz. What is your assignment?', ['Ignore the pass rush','Run a route even though you are protecting','Pick up the designated rusher to protect the QB'],2],['Your team is protecting a late lead. What matters most?', ['Ball security and staying in bounds','Trying to hurdle every defender','Stopping the clock voluntarily'],0]],
+ WR:[['The cornerback gives a soft cushion on third down. What is the response?', ['Run a route unrelated to the call','Recognize leverage and hit the route landmark','Stop running entirely'],1],['Your QB scrambles outside the pocket. What should you do?', ['Continue standing in the original spot','Block an unrelated defender downfield','Work toward a legal throwing lane and stay available'],2],['The defense disguises press-man at the line. How do you win your release?', ['Use footwork and the designed route technique','Push the defender after the whistle','Quit your route'],0]],
+ TE:[['The defense overloads your edge in protection. What is your responsibility?', ['Release without reading the call','Know the protection assignment before the snap','Ignore the defensive end'],1],['You settle in a zone-coverage opening. What should you do?', ['Keep drifting into coverage','Run away from the quarterback','Present a reliable target in the soft spot'],2]],
+ OL:[['The defense walks two rushers into the same gap. What should your unit do?', ['Communicate the slide and protection rules','Block the closest player without a call','Leave the protection unchanged without checking'],0],['Your defender counters from power to speed. What is the response?', ['Grab his jersey','Reset your feet, hands and leverage','Turn your back'],1]],
+ DEF:[['The offense uses motion to change its formation. What should you do?', ['Ignore the formation','Communicate the assignment adjustment','Abandon your coverage'],1],['Your unit faces a hurry-up offense. What is the priority?', ['Substitute without checking','Celebrate the previous stop','Get the call communicated and aligned quickly'],2],['A receiver breaks inside your zone. What should you do?', ['Honor your coverage rules and pass off routes correctly','Chase every route across the entire field','Guess and leave your responsibility'],0],['On third-and-long, the quarterback starts climbing the pocket. What matters?', ['Run past the quarterback with no contain','Keep rush-lane discipline and close under control','Stop pursuing'],1]]
+};
+function v65Question(){const p=v65Player(),type=v65Drills[p?.pos]||v65Drills.DEF;const i=(v65Stable(`${game.year}:${game.phase}:${p?.pos}`)+(Number(game.week)||1)-1)%type.length;return {question:type[i][0],answers:type[i][1],correct:type[i][2],index:i}}
+function v65PracticeStatus(){const p=v65Player();if(!p)return '';
+ const starter=own().find(x=>x.id===game.lineup[p.pos+'1']&&healthy(x)&&x.id!==p.id)||v65OpponentAt(p.pos),slot=v65Starter(p),trust=game.playerCoachTrust??38;
+ return `<div class="card section"><h3>Your depth chart outlook</h3><div class="inlinechips">${chip('ROLE',slot?'STARTER':'BACKUP')}${chip('YOUR RATING',p.ovr+' OVR')}${chip('COACH TRUST',trust+'/100')}</div><p class="sub">${!healthy(p)?'You are currently injured or inactive and cannot compete until cleared by the medical staff.':slot?'You earned a starting spot. The coaches can still change the lineup after future games.':starter?`${esc(starter.name)} is the top available competitor (${starter.ovr} OVR). Your rating, preparation and position battle results determine who starts.`:'No healthy player at your position is ahead of you; complete practice to request a lineup review.'}</p>${(game.playerBattleLog||[]).slice(0,2).map(x=>`<p class="fine">${esc(x.message)}</p>`).join('')}</div>`;
+}
+practicePage=function(){if(!isPlayer())return title('Practice Lab','Player-only practice.');const p=v65Player();if(!p)return title('Practice Lab','No player selected');
+ const k=v65Key(),done=game.practiceStamp===k,q=v65Question(),last=game.v65PracticeOutcome;
+ return `${title('Practice Lab',`${esc(p.name)} · ${esc(p.pos)} · Week ${game.week}`)}${v65PracticeStatus()}<div class="card section"><div class="tinyTag">${done?'PRACTICE COMPLETED':'NEW WEEKLY POSITION SCENARIO'}</div><h2>${done?'Practice report':esc(q.question)}</h2><p class="sub">${done?esc(last?.message||'This week’s practice result is saved.'):'Read the play and choose one response. Different situations appear across the season.'}</p><div class="mediaChoices">${done?'':q.answers.map((label,i)=>`<button class="mediaAnswer" onclick="A.practiceAnswer(${i})"><b>${'ABC'[i]}. ${esc(label)}</b></button>`).join('')}</div></div><div class="statsgrid">${kpi('COACH TRUST',game.playerCoachTrust??38)}${kpi('PLAYER XP',game.playerXP||0)}${kpi('OVR',p.ovr)}</div>${!v65Starter(p)&&['season','preseason'].includes(game.phase)?`<div class="card section"><h3>Challenge the starter</h3><p class="sub">Practice first, then request a competitive depth-chart battle. Overall rating, coach trust and this week's preparation are scored against the current starter. One battle per week.</p>${button('REQUEST POSITION BATTLE','A.v65PositionBattle()','primary',!done||game.v65BattleStamp===k||!healthy(p))}</div>`:''}`;
+};
+A.practiceAnswer=function(value){if(!isPlayer()||!['season','preseason'].includes(game.phase)||!assertMediaClear())return;const key=v65Key();if(game.practiceStamp===key)return say('You already practiced this week.',true);
+ const p=v65Player(),q=v65Question(),i=Number(value);if(!p||![0,1,2].includes(i))return;let correct=i===q.correct;
+ game.practiceStamp=key;game.playerCoachTrust=clamp((game.playerCoachTrust??38)+(correct?10:-2),0,100);game.playerXP=(game.playerXP||0)+(correct?10:4);game.v65PracticeReps=(game.v65PracticeReps||0)+(correct?9:2);
+ game.v65PracticeOutcome={key,correct,message:correct?'Correct read: +10 XP, +10 coach trust, +9 battle prep.':'Film review needed: +4 XP, -2 coach trust, +2 battle prep.'};
+ pulseDelta({coachTrust:correct?3:-1,locker:correct?2:0});news(`${p.name} finished Week ${game.week} position practice (${correct?'strong read':'film correction'}).`);store();render();say(game.v65PracticeOutcome.message);
+};
+A.v65PositionBattle=function(){if(!isPlayer()||!['season','preseason'].includes(game.phase))return;const k=v65Key(),p=v65Player();if(!p||!healthy(p))return say('You need to be healthy to compete.',true);if(game.practiceStamp!==k)return say('Finish this week’s Practice Lab first.',true);if(game.v65BattleStamp===k)return say('You already held a position battle this week.',true);
+ const opp=v65OpponentAt(p.pos);game.v65BattleStamp=k;let trust=game.playerCoachTrust??38,reps=game.v65PracticeReps||0,score=p.ovr+Math.round(trust*.12)+Math.min(7,Math.floor(reps/10))+((v65Stable(k+':player')%11)-5),their=opp?opp.ovr+5+((v65Stable(k+':starter')%11)-5):0;
+ const won=!opp||score>=their;game.playerBattleLog=game.playerBattleLog||[];
+ if(won){const slot=p.pos+'1',previous=game.players.find(x=>x.id===game.lineup[slot]);if(previous?.id!==p.id&&previous?.pos===p.pos)previous.depthRank=Math.max(2,previous.depthRank||2);p.depthRank=0;game.lineup[slot]=p.id;setDefaultLineup(false);game.playerCoachTrust=clamp(trust+5,0,100);}
+ else game.playerCoachTrust=clamp(trust+2,0,100);
+ const message=`Week ${game.week}: ${won?`Won starting ${p.pos} reps`:`Stayed in the ${p.pos} rotation`} · evaluation ${score}–${their}${opp?' vs '+opp.name:''}. ${won?'Your lineup has been updated.':'Practice and challenge again next week.'}`;
+ game.playerBattleLog.unshift({year:game.year,week:game.week,won,message});news(message);store();render();say(message,!won);
+};
+const v65PreviousPlayerCareer=nflCareerPage;
+nflCareerPage=function(){let html=v65PreviousPlayerCareer();if(!isPlayer())return html;const p=v65Player();if(!p||!['season','preseason','playoffs'].includes(game.phase))return html;
+ const games=(game.playerGameHistory||[]).slice(0,6),status=v65Starter(p)?'STARTER':'BACKUP';
+ return `${v65PracticeStatus()}<div class="card section"><h3>Playing-time record</h3><p class="fine">Appearances only count if you entered the game. Sitting on the sideline does not create game stats.</p>${games.map(g=>`<div class="marketrow"><b>${g.year} W${g.week}</b><span class="sub">${g.didNotPlay?'DID NOT PLAY':(g.snaps?g.snaps+' simulated snaps':'STARTED')} · ${g.yards||0} yds</span></div>`).join('')||'<p class="sub">No games recorded yet.</p>'}<div class="inlinechips">${chip('CURRENT ROLE',status)}${chip('COACH TRUST',game.playerCoachTrust??38)}</div>${button('PRACTICE / POSITION BATTLE','A.page("practice")','primary')}</div>`+html;
+};
+const v65PlayerAfterGame=careerAfterGame;
+careerAfterGame=function(result){if(!isPlayer())return v65PlayerAfterGame(result);const p=v65Player();if(!p)return;
+ if(v65Starter(p)){v65PlayerAfterGame(result);const h=game.playerGameHistory?.[0];if(h){h.didNotPlay=false;h.snaps=h.snaps||rnd(37,65);h.role='starter'}return;}
+ // A reserve can earn genuine *simulated* rotational snaps after practice and trust improve.
+ const trust=game.playerCoachTrust??38,eligible=healthy(p)&&trust>=60&&(game.v65PracticeReps||0)>=13;
+ const played=eligible&&(v65Stable(`${game.year}:${game.week}:${p.id}:rotation`)%100)<Math.min(76,18+Math.floor((trust-55)*1.4));
+ const h={week:game.week,year:game.year,win:result.winner===game.userTeam,score:`${result.sa}-${result.sb}`,didNotPlay:!played,role:played?'reserve':'inactive',snaps:played?6+(v65Stable(`${game.week}:${p.id}`)%19):0,yards:0,td:0};
+ if(played){const st=game.playerCareerStats||{};st.games=(st.games||0)+1;if(h.win)st.wins=(st.wins||0)+1;game.playerXP=(game.playerXP||0)+6;
+  const count=h.snaps;if(['QB','RB','WR','TE'].includes(p.pos)){h.yards=Math.round(count*(p.pos==='QB'?2.4:p.pos==='RB'?1.8:1.4));if(p.pos==='QB')st.passing=(st.passing||0)+h.yards;else if(p.pos==='RB')st.rushing=(st.rushing||0)+h.yards;else st.receiving=(st.receiving||0)+h.yards;}
+  news(`${p.name} earned ${h.snaps} simulated reserve snaps in Week ${game.week}.`);
+ }else{game.playerXP=(game.playerXP||0)+2;game.playerBenchWeeks=(game.playerBenchWeeks||0)+1;}
+ game.playerGameHistory=game.playerGameHistory||[];game.playerGameHistory.unshift(h);game.playerGameHistory=game.playerGameHistory.slice(0,25);
+};
+const v65PriorLiveStatus=live2dView;
+live2dView=function(){let html=v65PriorLiveStatus();if(isPlayer()){const p=v65Player(),starter=v65Starter(p);if(!starter){html=html.replace('BENCH / SIDELINE','BACKUP · ROTATIONAL REPS POSSIBLE');html=html.replace('You are not currently a starter. Watch the game and earn playing time through practice and camp.','Reserve snaps are simulated only when you earn enough preparation and coach trust. Your appearance is confirmed after the game, not before.');}}return html;};
+
+// Contextual interview question pools; do not claim a player played if he did not.
+const v65PreviousQuestions=mediaQuestions;
+mediaQuestions=function(kind,context={}){let c=v65PreviousQuestions(kind,context);if(kind!=='game')return c;
+ const role=game.career,name=mine()?.nickname||'team',h=game.playerGameHistory?.[0],p=v65Player(),bench=role==='player'&&(!v65Starter(p)||h?.didNotPlay),outcome=context.won?'win':'loss';
+ const options=role==='player'?(bench?[
+ `You were a reserve against ${team(context.opponent)?.nickname||'the opponent'}. What does your practice week need to look like?`,
+ `How are you working with your position coach to earn a real opportunity?`,
+ `What did you pick up from the sideline during this ${outcome}?`,
+ `What would you say to the other backups competing for reps?`,
+ `How will you approach your next position battle?`,
+ `Do you think your coach trust reflects what you have shown in practice?`]:[
+ `What adjustment mattered most in your performance against ${team(context.opponent)?.nickname||'the opponent'}?`,
+ `What are you focused on improving before your next start?`,
+ `How did your position group execute the game plan?`,
+ `What will you take from the film room after this ${outcome}?`,
+ `Which assignment was the toughest in the game?`,
+ `How can you help your teammates prepare for next week?`]):role==='hc'?[`What did your offensive play calls reveal about the matchup?`,`How will your practice focus change following the ${outcome}?`,`What will you ask your coordinators to improve?`,`Was your rotation of starters and backups effective?`,`How will you address the most important missed assignment on film?`,`What is your plan to keep the locker room together after this game?`]:role==='gm'?[`How will the ${outcome} shape your evaluation of the roster?`,`Which position group needs more depth?`,`Does the cap give you room to improve the team?`,`What can the scouting department do ahead of the next draft?`,`Are you expecting trade calls from other general managers?`,`What will you tell the head coach about personnel needs?`]:role==='owner'?[`What does this ${outcome} mean for the club's long-term plan?`,`How do you evaluate your head coach without taking over play calling?`,`What should fans expect from the ticket and stadium experience?`,`What standards have you set for your general manager?`,`Will the staff budget change after this result?`,`How do you balance stability and accountability?`]:c.map(x=>x.text);
+ const history=new Set((game.mediaHistory||[]).slice(0,3).flatMap(x=>(x.answers||[]).map(a=>a.question))),seed=v65Stable(`${game.year}:${game.week}:${kind}:${role}:${game.mediaHistory?.length||0}`),fresh=options.filter(q=>!history.has(q)),pool=fresh.length>=3?fresh:options;
+ return [0,1,2].map((n)=>({id:n,text:pool[(seed+n*2)%pool.length],followup:false}));
+};
+const v65MediaBanks={
+ bench:[['The next practice is my chance to show the coaches a better read.','I want my coach to grade my film and explain the depth chart.','I am asking for another fair position battle.'],['I can learn from the game even when I do not take a snap.','I will ask my position coach exactly what needs to change.','I want the staff to measure me against the other players fairly.'],['The other backups and I all want to contribute.','My goal is consistent practice reps, not promises.','I am ready to compete the next time the opportunity opens.'],['My preparation is going to be more specific this week.','I am reviewing the playbook with my position coach.','I want to earn an actual role rather than talk about it.']],
+ player:[['I trusted my assignment and kept communicating with the offense.','Film will show where my timing can improve.','Next week I want to attack the toughest matchup.'],['The important thing is making the right read.','I will review my snaps with the staff.','I expect more from myself when the ball is in play.'],['My position group helped keep everybody organized.','We have to improve our execution on specific downs.','We are going to challenge ourselves in the next practice.']],
+ hc:[['The players need a clear practice plan from me.','Our assistants and I will review the specific matchup on film.','We are prepared to change our approach if it is not working.'],['I take responsibility for the staff decisions we made.','We will examine substitutions and the execution of our calls.','The coaches have to set a higher standard this week.'],['We owe the team a clear explanation of their roles.','We are evaluating preparation and playcalling separately.','If a lineup change helps the team, we will make it.'],['Every coordinator needs specific objectives for the next game.','The next practice will target the problems we saw.','No position is protected from competition.']],
+ owner:[['The football staff has my support and clear expectations.','We will review results alongside finances and fan experience.','I expect our leadership to be accountable.'],['Fans deserve a plan they can see improving.','Our GM has authority over roster decisions.','Our next leadership review will be thorough.'],['We will keep investing responsibly in our franchise.','I will evaluate our coaches on their season-long work.','We are committed to improving the organization.']],
+ gm:[['Our scouts and coaching staff need to be aligned.','We will study positional depth before making a move.','We are open to a fair deal if it improves our team.'],['The salary cap matters as much as the immediate matchup.','We will review roster efficiency and contract terms.','I will prioritize long-term value over a flashy headline.'],['Our draft board reflects both talent and need.','The front office will evaluate every position honestly.','If the roster needs help, that is my responsibility.']],
+ dc:[['Our secondary and front must communicate as one unit.','We will identify the missed coverage rules on film.','I am willing to adjust the pressure package.'],['The players need clear defensive assignments.','We will drill tackling angles and zone responsibilities.','Our next game plan needs a better answer for explosive plays.']],
+ oc:[['Our offensive spacing will improve with preparation.','I want to review down-and-distance results on film.','We will adapt the calls to the players we have.'],['Protecting the quarterback begins with communication.','We will study where our drives stalled.','I expect our offense to execute faster next week.']]
+};
+mediaOptionSet=function(){const m=game.media;if(!m)return [];const q=m.questions?.[m.index||0]?.text||'',role=game.career,p=v65Player(),bench=role==='player'&&(!v65Starter(p)||game.playerGameHistory?.[0]?.didNotPlay),group=bench?'bench':v65MediaBanks[role]?role:'hc',bank=v65MediaBanks[group],k=v65Stable(q+'|'+(m.index||0)+'|'+game.week),row=bank[k%bank.length],shift=(k+Number(m.index||0))%3;
+ return [0,1,2].map((i)=>{const src=(i+shift)%3;return {title:row[src],detail:[`Build trust with a specific response`,`Offer a practical film-and-preparation plan`,`Set clear expectations for improvement`][src],tone:['supportive','measured','bold'][src],effects:[{locker:2,coachTrust:2,fans:1},{media:2,owner:1},{fans:2,media:-1,locker:-1}][src]}});
+};
+
+// Head Coach and coordinator weekly practice and real actionable scenarios.
+const v65Focuses=[['offense','Offensive timing','Better passing and decision timing'],['run','Run blocking','Better rushing efficiency and protection'],['defense','Coverage and tackling','Stronger communication and coverage'],['pressure','Pass rush and contain','Better edge pressure and rush discipline'],['development','Young-player development','Build a prospect toward a rating increase'],['recovery','Recovery and fundamentals','Lower weekly workload and emphasize health']];
+function v65CoachingPracticePage(){if(!coachRole())return title('Team Practice','Only the coaching staff selects practice focus.');const key=v65Key(),state=game.v65TeamPractice?.[key],canAttack=game.career!=='dc',canStop=game.career!=='oc',choices=v65Focuses.filter(f=>f[0]==='development'||f[0]==='recovery'||(canAttack&&['offense','run'].includes(f[0]))||(canStop&&['defense','pressure'].includes(f[0]))),opp=nextMatchup()?.find(x=>x!==game.userTeam),n=opp?matchPreview(opp):null;
+ const scenarios=[['Your receivers are having trouble with a late safety rotation.','offense'],['The opponent has a strong pass rush and heavy run front.','run'],['Opposing wideouts have found space in your zone looks.','defense'],['Your pass rush is losing contain on mobile quarterbacks.','pressure'],['Young backups need more controlled first-team reps.','development'],['Several starters have played a heavy workload.','recovery']];const scenario=scenarios[(v65Stable(game.year+':'+game.phase+':'+game.career)+(Number(game.week)||1)-1)%scenarios.length];
+ return `${title('Coaching Practice',`${mine().name} · ${game.phase} · Week ${game.week}`)}<div class="card section"><h3>This week's staff challenge</h3><p>${esc(scenario[0])}</p><p class="sub">Choose ONE practice focus for the week. An offensive coordinator controls offense, a defensive coordinator defense, and the head coach can choose any focus.</p>${n?`<div class="inlinechips">${chip('OPPONENT FRONT',n.line)}${chip('OPPONENT SECONDARY',n.secondary)}</div>`:''}</div>${state?`<div class="notice"><b>Focus confirmed: ${esc(v65Focuses.find(x=>x[0]===state.focus)?.[1]||state.focus)}</b><p>${esc(state.effect)}</p></div>`:`<div class="card section"><h3>Set weekly practice</h3><div class="mediaChoices">${choices.map((f,i)=>`<button class="mediaAnswer" onclick="A.v65CoachFocus('${f[0]}')"><b>${esc(f[1])}</b><small>${esc(f[2])}</small></button>`).join('')}</div></div>`}<div class="card section"><h3>Recent coaching decisions</h3>${(game.v65PracticeHistory||[]).slice(0,7).map(x=>`<p class="fine">${esc(x.year+' Week '+x.week+': '+x.label+' — '+x.effect)}</p>`).join('')||'<p class="sub">Your first practice is ready.</p>'}</div>`;
+}
+A.v65CoachFocus=function(focus){if(!coachRole()||!['preseason','season'].includes(game.phase))return say('Team practice is only available during preseason and regular-season weeks.',true);if(!assertMediaClear())return;const key=v65Key();game.v65TeamPractice=game.v65TeamPractice||{};if(game.v65TeamPractice[key])return say('You have already set practice for this week.',true);const allowed=game.career==='hc'?v65Focuses.map(f=>f[0]):game.career==='oc'?['offense','run','development','recovery']:['defense','pressure','development','recovery'];if(!allowed.includes(focus))return say('That belongs to the other coordinator.',true);
+ let effect=({offense:'Offense receives a small scheme-preparation boost.',run:'Run execution receives an extra scheme-preparation boost.',defense:'Defensive preparation improves against this opponent.',pressure:'Pass-rush preparation improves against this opponent.',development:'A young player receives development progress.',recovery:'Practice intensity reduced; morale and recovery are emphasized.'})[focus];
+ if(focus==='development'){const youth=own().filter(p=>p.age<=26&&healthy(p)&&(p.ovr||0)<(p.potential||p.ovr)).sort((a,b)=>(a.ovr||0)-(b.ovr||0))[0];if(youth){youth.v65DevPoints=(youth.v65DevPoints||0)+1;let improved=false;if(youth.v65DevPoints>=4){youth.v65DevPoints-=4;youth.ovr=clamp(youth.ovr+1,48,youth.potential||98);improved=true;}effect=`${youth.name} earned development progress${improved?' and +1 OVR':''}.`;}}
+ if(focus==='recovery')game.jobSecurity=clamp((game.jobSecurity||70)+1,0,100);
+ const entry={key,year:game.year,week:game.week,focus,label:v65Focuses.find(f=>f[0]===focus)?.[1]||focus,effect};game.v65TeamPractice[key]=entry;game.v65PracticeHistory=game.v65PracticeHistory||[];game.v65PracticeHistory.unshift(entry);news('PRACTICE: '+entry.label+' — '+effect);store();render();say('Practice plan saved.');
+};
+const v65PreviousFit=fit;
+fit=function(id){const f=v65PreviousFit(id);if(id!==game.userTeam||!coachRole())return f;const st=game.v65TeamPractice?.[v65Key()];if(!st)return f;const val=['offense','run','defense','pressure'].includes(st.focus)?2.0:st.focus==='recovery'?.7:.4;return {...f,value:f.value+val,effective:clamp(f.effective+val*.12,1,5)};};
+
+// Staff and GM leadership, with enforced per-role authorization.
+const v65GMNames=['Alex Mercer','Jordan Tate','Marcus Ellis','Casey Reed','Devin Brooks','Taylor Morgan'];
+function v65Exec(){game.v65Executive=game.v65Executive||{name:'Interim General Manager',level:2,interim:true};return game.v65Executive}
+function v65LeadershipPage(){if(!['owner','gm','hc','oc','dc'].includes(game.career))return title('Leadership','Staff members cannot be managed from Player Career.');const role=game.career,owner=role==='owner',hcRole=role==='hc',gm=role==='gm',canAssistant=hcRole||gm,exec=v65Exec();let roles=owner||gm?['HC','OC','DC']:['OC','DC'];if(role==='oc')roles=['OC'];if(role==='dc')roles=['DC'];const staff=roles.map(r=>({role:r,current:game.coaches.find(c=>c.club===game.userTeam&&c.role===r)}));
+ return `${title('Football Leadership',`${CAREER_ROLES[role]} · ${mine().name}`)}<div class="notice">${owner?'Owners hire and evaluate the GM and Head Coach. Your GM makes player transactions and draft decisions.':hcRole?'Head Coaches manage assistant coordinators and preparation; the GM handles player contracts and the draft.':gm?'General Managers manage scouting and coaching hires; owners control franchise finances.':'Coordinators can view their own department and practice focus, not hire their head coach.'}</div>${owner?`<div class="card section"><h3>General manager</h3><div class="marketrow"><b>${esc(exec.name)}</b>${chip('LEVEL',exec.level+'/5')}${button(exec.interim?'INTERIM':'FIRE GM','A.v65FireGM()','tiny danger',exec.interim)}</div><p class="sub">GM quality helps evaluate owner-led personnel decisions; changing executives does not hand Owner Career direct trade or draft controls.</p><h4>Available executive candidates (fictional)</h4>${v65GMNames.filter(n=>n!==exec.name).slice(0,5).map((n,i)=>`<div class="marketrow"><b>${esc(n)}</b><small class="sub">Evaluation ${2+((i+2)%4)}/5</small>${button('HIRE GM',`A.v65HireGM('${esc(n)}',${2+((i+2)%4)})`,'tiny primary')}</div>`).join('')}</div>`:''}<div class="card section"><h3>${owner?'Football leadership':hcRole?'Your coordinators':'Coaching staff'}</h3>${staff.map(x=>`<div class="marketrow"><div class="minzero"><b>${x.role}: ${esc(x.current?.name||'VACANT')}</b><small class="sub">${x.current?'Level '+x.current.level+'/5':'Interim staff required'}</small></div>${x.current&&(owner||gm||hcRole)&&x.current.id!==game.careerCoach?button('FIRE',`A.v65FireStaff('${x.role}')`,'tiny danger'):''}</div>`).join('')}</div>${owner||gm||hcRole?`<div class="card section"><h3>Hire a coach</h3><p class="sub">Available fictional and former staff candidates from this save. Hiring replaces the current coach in that role.</p>${roles.flatMap(r=>game.coaches.filter(x=>!x.club&&x.role===r).sort((a,b)=>b.level-a.level).slice(0,3).map(c=>`<div class="marketrow"><b>${esc(c.name)}</b><small class="sub">${r} · L${c.level}/5</small>${button('HIRE',`A.v65HireStaff('${c.id}')`,'tiny primary')}</div>`)).join('')||'<p class="sub">No candidates available.</p>'}</div>`:''}<div class="card section"><h3>Staff consequences</h3>${(game.v65LeadershipLog||[]).slice(0,8).map(x=>`<div class="newsitem"><p class="sub">${esc(x)}</p></div>`).join('')||'<p class="sub">Leadership decisions and coaching changes will appear here.</p>'}</div>`;
+}
+function v65LeadershipNote(s){game.v65LeadershipLog=game.v65LeadershipLog||[];game.v65LeadershipLog.unshift(`${game.year} W${game.week}: ${s}`);news('STAFF: '+s);store();render();say(s)}
+A.v65HireGM=function(name,level){if(game.career!=='owner'||!v65GMNames.includes(name)||!Number.isInteger(level)||level<2||level>5)return say('Only owners may hire a GM.',true);game.v65Executive={name,level,interim:false};v65LeadershipNote(`Hired ${name} as general manager (level ${level}/5).`)};
+A.v65FireGM=function(){if(game.career!=='owner')return say('Only an owner can fire the GM.',true);const gm=v65Exec();if(gm.interim)return say('An interim GM is already in place.',true);if(!confirm(`Fire ${gm.name} as general manager?`))return;game.v65Executive={name:'Interim General Manager',level:2,interim:true};v65LeadershipNote(`${gm.name} was fired; interim leadership has taken over.`)};
+function v65MayStaff(role){return game.career==='owner'||game.career==='gm'||game.career==='hc'&&['OC','DC'].includes(role)}
+A.v65HireStaff=function(id){let c=game.coaches.find(x=>x.id===id&&!x.club);if(!c||!v65MayStaff(c.role))return say('Your current role cannot hire that coach.',true);let prior=game.coaches.find(x=>x.club===game.userTeam&&x.role===c.role);if(prior?.id===game.careerCoach)return say('You cannot replace your own coaching career.',true);if(prior)prior.club=null;c.club=game.userTeam;v65LeadershipNote(`Hired ${c.name} (${c.role}, level ${c.level}/5); scheme fit now ${fit(game.userTeam).effective.toFixed(1)}/5.`)};
+A.v65FireStaff=function(role){if(!v65MayStaff(role))return say('Your role cannot fire that staff member.',true);let c=game.coaches.find(x=>x.club===game.userTeam&&x.role===role);if(!c||c.id===game.careerCoach)return say('You cannot fire your own coaching position.',true);if(!confirm(`Fire ${c.name} (${role})?`))return;c.club=null;v65LeadershipNote(`Fired ${c.name} (${role}); vacancy reduces team scheme chemistry until a replacement is hired.`)};
+const v65PriorCoachPanel=coachesPage;
+coachesPage=function(){return `<div class="notice"><b>Staff actions:</b> Coaching and ownership staff changes are in Football Leadership. ${button('OPEN LEADERSHIP','A.page("leadership")','tiny')}</div>`+v65PriorCoachPanel();};
+
+// Actual on-field lineup substitutions for head coaches and their coordinators.
+function v65SubPanel(){if(!game.currentGame||!coachRole())return '';const allowed=game.career==='hc'?POS:game.career==='oc'?['QB','RB','WR','TE','OL']:['EDGE','DT','LB','CB','S'];let pos=game.v65SubPos||allowed[0];if(!allowed.includes(pos))pos=allowed[0];const count=STARTER_REQ[pos]||1,selected=game.lineup[pos+'1'],cur=game.players.find(p=>p.id===selected),bench=own().filter(p=>p.pos===pos&&healthy(p)&&p.id!==selected).sort((a,b)=>b.ovr-a.ovr).slice(0,12);
+ return `<div class="card section"><h3>Game-day substitutions</h3><p class="sub">Make a personnel swap before the next snap. The new starter takes over the remaining game. Changes to the depth chart also persist afterward.</p><label class="lab">Position</label><select class="field wide" onchange="A.v65SubPos(this.value)">${selectOptions(allowed.map(x=>[x,x]),pos)}</select><p class="fine">Current ${pos}1: ${esc(cur?.name||'VACANT')} · ${cur?.ovr||'—'} OVR</p>${bench.length?`<select id="v65SubPlayer" class="field wide">${bench.map(p=>`<option value="${esc(p.id)}">${esc(p.name)} · ${p.ovr} OVR</option>`).join('')}</select>${button('SUBSTITUTE NEXT SNAP','A.v65Sub()','primary')}`:'<p class="fine">No healthy backups at this position.</p>'}${(game.currentGame.v65SubLog||[]).slice(-4).map(x=>`<p class="fine">${esc(x)}</p>`).join('')}</div>`;
+}
+A.v65SubPos=function(pos){game.v65SubPos=pos;render()};
+A.v65Sub=function(){if(!coachRole()||!game.currentGame)return say('Substitutions require an active game and a coaching role.',true);const pos=game.v65SubPos||(game.career==='dc'?'EDGE':'QB'),allow=game.career==='hc'||game.career==='oc'&&['QB','RB','WR','TE','OL'].includes(pos)||game.career==='dc'&&['EDGE','DT','LB','CB','S'].includes(pos);if(!allow)return say('Your coordinator role cannot change that unit.',true);const p=own().find(x=>x.id===$('v65SubPlayer')?.value&&x.pos===pos&&healthy(x));if(!p)return say('Choose an available backup.',true);const old=game.players.find(x=>x.id===game.lineup[pos+'1']);if(old)old.depthRank=Math.max(2,old.depthRank||2);p.depthRank=0;game.lineup[pos+'1']=p.id;game.currentGame.v65SubLog=game.currentGame.v65SubLog||[];const msg=`${p.name} entered at ${pos} in place of ${old?.name||'vacant starter'}.`;game.currentGame.v65SubLog.push(msg);if(game.currentGame.log)game.currentGame.log.unshift('SUBSTITUTION: '+msg);store();render();say(msg)};
+const v65PriorGamePage=gamePage;
+gamePage=function(){return v65PriorGamePage()+v65SubPanel()};
+
+// GM trade inbox: show the difference between no offer and a broken system.
+const v65PriorTrades=tradesPage;
+tradesPage=function(){let html=v65PriorTrades();if(game.career!=='gm')return html;const offers=(game.cpuOffers||[]).filter(o=>!o.resolved);const info=`<div class="card section"><h3>GM phone · incoming proposals</h3><p class="sub">${offers.length?`${offers.length} incoming proposal(s) await your response. Approve or decline each; nothing executes automatically.`:'No incoming offers yet. Other GMs only contact you occasionally, so zero offers does not mean the inbox is broken.'}</p>${button('ASK LEAGUE GMS FOR PROPOSALS','A.v65RequestTrade()','tiny',!tradeWindowActive())}</div>`;
+ if(offers.length){html=html.replace('Incoming offers from NFL GMs','Incoming offers from NFL GMs (accept / decline / counter)');html=html.replace(/(<button class="button tiny primary"[^>]*onclick="A\.cpuOffer\('[^']+',true\)"[^>]*>ACCEPT<\/button>)/g,'$1');}
+ return info+html;
+};
+A.v65RequestTrade=function(){if(game.career!=='gm'||!tradeWindowActive())return say('Only the GM may request trade proposals during an open trade window.',true);let key=v65Key();if(game.v65LastTradeRequest===key)return say('Your GM phone has already been checked this week.',true);game.v65LastTradeRequest=key;
+ const ownPlayers=own().filter(p=>healthy(p)&&p.ovr>=65&&!p.noTradeClause).sort((a,b)=>a.ovr-b.ovr);
+ const proposals=[];for(const ours of ownPlayers){for(const other of teams().filter(t=>t.id!==game.userTeam)){const their=roster(other.id).filter(p=>p.pos===ours.pos&&healthy(p)&&!p.noTradeClause&&Math.abs(playerValue(p)-playerValue(ours))<Math.max(12,playerValue(ours)*.33)&&cap()+ours.salary-p.salary>=0&&cap(other.id)+p.salary-ours.salary>=0)[0];if(their)proposals.push({ours,their,other});if(proposals.length>=30)break;}if(proposals.length>=30)break;}
+ if(!proposals.length){store();render();return say('No realistic two-player swap is available this week. Try again next week.',true)}let chosen=proposals[v65Stable(key+game.userTeam)%proposals.length];game.cpuOffers=game.cpuOffers||[];if(game.cpuOffers.some(x=>!x.resolved))return say('Resolve your current incoming trade proposal first.',true);
+ game.cpuOffers.unshift({id:uuid('incoming'),ourPlayer:chosen.ours.id,theirPlayer:chosen.their.id,from:chosen.other.id,year:game.year,week:game.week,resolved:false});v65Notify(`${chosen.other.nickname} sent an offer: ${chosen.their.name} for ${chosen.ours.name}. Approve or decline in the Trade Center.`);
+};
+const v65PrevIncoming=processCpuOffer;
+processCpuOffer=function(id,accept){if(game.career!=='gm')return say('Only GMs accept or reject incoming trade proposals.',true);const x=(game.cpuOffers||[]).find(y=>y.id===id&&!y.resolved);if(!x)return;let us=game.players.find(p=>p.id===x.ourPlayer),them=game.players.find(p=>p.id===x.theirPlayer);
+ if(accept&&(!us||!them||us.team!==game.userTeam||them.team!==x.from||us.noTradeClause||them.noTradeClause||cap()+Number(us.salary||0)-Number(them.salary||0)<0||cap(x.from)+Number(them.salary||0)-Number(us.salary||0)<0))return say('Trade cannot be accepted: an asset, no-trade clause, or cap situation changed.',true);
+ return v65PrevIncoming(id,accept);
+};
+A.cpuOffer=(id,accept)=>processCpuOffer(id,accept);
+
+// Clear targeted scouting UI and explicitly visible draft order.
+function v65ScoutingPage(){if(game.career!=='gm')return title('Scouting Department','Only the General Manager manages prospect scouting.');const available=(game.prospects||[]).filter(p=>!p.drafted).sort((a,b)=>a.rank-b.rank).slice(0,35);return `${title('Scouting Department',`${game.year} draft board · scouting affects information, not actual ability`)}<div class="notice">Your scout reports become more precise when you study a prospect. You do not change a prospect's true rating, potential, or draft rank.</div><div class="card section"><h3>Prospect reports</h3><div class="tablewrap">${table(['PROSPECT','POSITION','RANK','REPORT','ACTION'],available.map(p=>{let n=game.v65ScoutReports?.[p.id]||0;return `<tr><td>${playerCell(p)}</td><td>${p.pos}</td><td>#${p.rank}</td><td>${n?`${scoutedOVR(p)} OVR est. · ${n>=2?'higher confidence':'early evaluation'}`:'Not scouted individually'}</td><td>${button(n>=2?'REVIEWED':'SCOUT',`A.v65Scout('${p.id}')`,'tiny primary',n>=2||!['draft','offseason','offseason_intro','offseason_review'].includes(game.phase))}</td></tr>`} ))}</div></div>${button('VIEW DRAFT ORDER & STANDINGS','A.page("league")','primary')}`;}
+A.v65Scout=function(id){if(game.career!=='gm')return say('Only the GM can direct prospect scouting.',true);const p=(game.prospects||[]).find(p=>p.id===id&&!p.drafted);if(!p||!['draft','offseason','offseason_intro','offseason_review'].includes(game.phase))return say('Scouting opens before and during the draft.',true);game.v65ScoutReports=game.v65ScoutReports||{};game.v65ScoutReports[id]=Math.min(2,(game.v65ScoutReports[id]||0)+1);news(`SCOUTING: ${p.name} evaluated; report confidence improved without changing actual talent.`);store();render();say(`${p.name}: ${game.v65ScoutReports[id]===2?'Full report recorded.':'Initial report recorded.'}`)};
+const v65PrevScouted=scoutedOVR;
+scoutedOVR=function(p){const n=game.v65ScoutReports?.[p.id]||0;if(!n)return v65PrevScouted(p);const initial=v65PrevScouted(p);return clamp(Math.round(initial+(p.ovr-initial)*(n===1?.5:.82)),48,98)};
+const v65PrevDraftPage=draftPage;
+draftPage=function(){let html=v65PrevDraftPage();if(game.career==='gm')html=`<div class="notice">${button('OPEN SCOUTING DEPARTMENT','A.page("scouting")','primary')} ${button('VIEW FULL DRAFT ORDER','A.page("league")','tiny')} · Scout estimates improve with research; the player's hidden actual ability stays unchanged.</div>`+html;return html;};
+
+// Expansion roster verification, league placement and schedule audit.
+function v65ExpansionAudit(){const ids=teams().map(t=>t.id),counts=Object.fromEntries(ids.map(x=>[x,0])),homes=Object.fromEntries(ids.map(x=>[x,0])),byes=Object.fromEntries(ids.map(x=>[x,0])),errors=[],opponents=Object.fromEntries(ids.map(x=>[x,new Set()]));
+ if(!Array.isArray(game.schedule)||game.schedule.length!==18)return {status:'Not scheduled yet',errors:['Regular-season schedule has not been generated.'],counts,homes,byes};
+ for(const [wi,w] of game.schedule.entries()){const seen=new Set();for(const pair of (w.pairings||[])){if(!Array.isArray(pair)||pair.length!==2||pair[0]===pair[1]||!team(pair[0])||!team(pair[1])){errors.push('Invalid game in Week '+(wi+1));continue}for(const id of pair){if(seen.has(id))errors.push(`Duplicate team in Week ${wi+1}: ${id}`);seen.add(id);counts[id]++;}homes[pair[0]]++;opponents[pair[0]].add(pair[1]);opponents[pair[1]].add(pair[0]);}for(const id of ids)if(!seen.has(id))byes[id]++;}
+ for(const id of ids){if(counts[id]!==17)errors.push(id+' plays '+counts[id]+' games, not 17');if(byes[id]!==1)errors.push(id+' has '+byes[id]+' byes');if(opponents[id].size!==17)errors.push(id+' has duplicate opponents');if(homes[id]<8||homes[id]>9)errors.push(id+' has '+homes[id]+' home games')}
+ return {status:errors.length?'Issues found':'Verified 17 games / one bye / 8–9 home games',errors,counts,homes,byes};
+}
+function v65ExpansionReportPage(){if(game.mode!=='expansion')return title('Expansion Franchise','This is not an expansion save.');const rosterList=own().sort((a,b)=>b.ovr-a.ovr),audit=v65ExpansionAudit(),t=mine(),standing=[...teams()].sort(standingsSort).findIndex(x=>x.id===game.userTeam)+1;
+ return `${title('Expansion Franchise Report',`${t.name} · ${game.year}`)}<div class="statsgrid">${kpi('LEAGUE TEAMS',teams().length)}${kpi('ROSTER SIZE',rosterList.length)}${kpi('STANDING','#'+standing)}${kpi('RECORD',t.w+'–'+t.l)}</div><div class="card section"><h3>Expanded league schedule</h3><p class="sub">${esc(audit.status)}</p>${audit.errors.length?audit.errors.slice(0,6).map(x=>`<p class="negative">${esc(x)}</p>`).join(''):'<p class="fine">Every club is scheduled for 17 different opponents and one bye. Counts are checked from this save.</p>'}${button('VIEW LEAGUE STANDINGS','A.page("league")','primary')}</div><div class="card section"><h3>${esc(t.nickname)} active roster</h3><p class="sub">Expansion selections appear here as soon as their team changes. A player cannot remain on both teams.</p><div class="tablewrap">${table(['PLAYER','POS','OVR','ORIGIN','STATUS'],rosterList.map(p=>`<tr><td>${playerCell(p)}</td><td>${p.pos}</td><td>${p.ovr}</td><td>${esc(p.v65ExpansionSource||'Draft, signing or legacy selection')}</td><td>${esc(p.status||'ACT')}</td></tr>`))}</div></div>`;
+}
+const v65PriorChoose=chooseExpansion;
+chooseExpansion=function(id){const p=game.players.find(x=>x.id===id),prior=p?.team;v65PriorChoose(id);if(p?.team==='EXP'&&prior!=='EXP'){p.v65ExpansionSource=team(prior)?.name||prior;store();render()}};
+const v65PriorLeague=leaguePage;
+leaguePage=function(){let html=v65PriorLeague();if(game?.mode==='expansion')html=`<div class="notice"><b>EXPANSION LEAGUE:</b> ${teams().length} teams · ${esc(mine().name)} is included in standings. ${button('VERIFY EXPANSION ROSTER & SCHEDULE','A.page("expansionreport")','tiny')}</div>`+html;return html;};
+
+// Make the new systems discoverable without altering saved career roles.
+const v65PriorTabs=tabs;
+tabs=function(){let html=v65PriorTabs();let links=[];if(isPlayer())links.push(['practice','🎯','Practice & Battles']);if(coachRole())links.push(['coachingpractice','◈','Weekly Practice']);if(['owner','gm','hc','oc','dc'].includes(game.career))links.push(['leadership','♟','Leadership']);if(game.career==='gm')links.push(['scouting','🔎','Scouting']);if(game.mode==='expansion')links.push(['expansionreport','▦','Expansion Report']);
+ const controls=links.map(([id,emoji,label])=>`<button class="navbutton ${page===id?'active':''}" onclick="A.page('${id}')"><span class="navicon">${emoji}</span><span>${label}</span></button>`).join('');return html.replace('</nav>',controls+'</nav>');};
+// Install four new content panels in the original page router. These panels are
+// selected by page ID and do not require a new-save migration.
+const v65PrevRender=render;
+render=function(){if(game?.phase==='setup'){return v65PrevRender();}const special={practice:practicePage,coachingpractice:v65CoachingPracticePage,leadership:v65LeadershipPage,scouting:v65ScoutingPage,expansionreport:v65ExpansionReportPage};if(special[page]){
+ const requested=page;page='dashboard';v65PrevRender();page=requested;const main=document.querySelector('main.content');if(main){main.innerHTML=special[requested]();document.querySelectorAll('nav .navbutton').forEach(b=>b.classList.toggle('active',b.getAttribute('onclick')===`A.page('${requested}')`));}return;}
+ v65PrevRender();const tag=document.querySelector('footer');if(tag)tag.textContent='NFL GM · CONNECTED CAREERS v6.6 DEEP TESTED · UNOFFICIAL SIMULATOR · AUTOSAVED';
+};
+// Make original media answer serialization and QA available for diagnostic tests.
+window.NFL_GM_v65_QA={version:V65_BUILD,practiceQuestion:v65Question,expansionAudit:v65ExpansionAudit,mediaOptions:()=>mediaOptionSet(),getState:()=>game};
+if(game?.phase!=='setup'){store();render()};
+
+
+// Ensure the finished 34-team expansion schedule is 8/9 home and away games
+// immediately after generation. Legacy unplayed schedules are repairable too.
+function v65BalanceIfNeeded(){if(game?.mode!=='expansion'||teams().length!==34||game.schedule?.length!==18||(game.results||[]).some(r=>r.type==='regular'))return false;
+ const report=v65ExpansionAudit();if(!report.errors.length)return false;
+ if(report.errors.some(e=>/not 17|duplicate|byes|Invalid/.test(e)))return false; // Never silently overwrite structurally invalid fixtures.
+ try{nflBalanceExpansionHomeAway(game.schedule);return true}catch(e){console.warn('Expansion balance repair failed',e);return false}
+}
+const v65PrevMakeSchedule=makeSchedule;
+makeSchedule=function(...args){const out=v65PrevMakeSchedule.apply(this,args);if(v65BalanceIfNeeded())store();return out;};
+const v65PrevLoadCareer=A.loadCareer;
+A.loadCareer=function(id){const out=v65PrevLoadCareer(id);if(v65BalanceIfNeeded()){store();render()}return out;};
+// Explicit contract actions instead of hiding negotiations in an unrelated menu.
+function v65ContractDeskPage(){if(game.career!=='gm')return title('Contract Desk','Only the GM negotiates player contracts.');const players=own().slice().sort((a,b)=>(a.contractYears||1)-(b.contractYears||1)||b.ovr-a.ovr);
+ return `${title('Contract Desk',`Cap space ${money(cap())} · ${players.length} contracted players`)}<div class="notice">Extensions are negotiated, not automatically approved. Rejected terms leave the player's current salary untouched. A signing bonus is spread across contract years for cap accounting.</div><div class="card section"><h3>Contract queue</h3><div class="tablewrap">${table(['PLAYER','OVR','YEARS','CAP HIT','NEGOTIATE'],players.map(p=>`<tr><td>${playerCell(p)}</td><td>${p.ovr}</td><td>${p.contractYears||1}</td><td>${money(Number(p.salary||0)+Number(p.bonusAnnual||0))}</td><td>${button('OFFER DEAL',`A.contract('${p.id}')`,'tiny primary')}</td></tr>`))}</div></div>${contractModal()}`;
+}
+const v65PrevRosterPage=rosterPage;
+rosterPage=function(){let html=v65PrevRosterPage();if(game.career==='gm')html=`<div class="notice">${button('OPEN CONTRACT DESK','A.page("contractdesk")','primary')} · Negotiate extensions and track yearly cap hits.</div>`+html;return html;};
+const v65PrevTabsContract=tabs;
+tabs=function(){let html=v65PrevTabsContract();if(game.career==='gm')html=html.replace('</nav>',`<button class="navbutton ${page==='contractdesk'?'active':''}" onclick="A.page('contractdesk')"><span class="navicon">▤</span><span>Contracts</span></button></nav>`);return html};
+const v65PriorSpecialRender=render;
+render=function(){if(page==='contractdesk'&&game?.phase!=='setup'){
+ const goal=page;page='dashboard';v65PriorSpecialRender();page=goal;const main=document.querySelector('main.content');if(main){main.innerHTML=v65ContractDeskPage();document.querySelectorAll('nav .navbutton').forEach(b=>b.classList.toggle('active',b.getAttribute('onclick')===`A.page('${goal}')`));}return;
+ }return v65PriorSpecialRender();};
+// CPU teams independently address roster holes during the season, but never
+// automatically transact for a user-owned franchise (approval stays required).
+function v65LeagueManagerWeek(week){if(!['season','playoffs','offseason_review'].includes(game.phase)||!Number.isInteger(week)||week<1||week>18||week%3!==0)return;
+ game.v65AIActivity=game.v65AIActivity||[];const stamp=`${game.year}:regular:${week}`;if(game.v65AIActivity.some(x=>x.stamp===stamp))return;
+ const clubs=teams().filter(x=>x.id!==game.userTeam).sort((a,b)=>v65Stable(stamp+a.id)-v65Stable(stamp+b.id));const records=[];
+ for(const t of clubs){if(records.length>=3)break;let ns=need(t.id).filter(n=>n.weight>=3);if(!ns.length||cap(t.id)<2)continue;
+ const n=ns[0],current=roster(t.id).filter(p=>p.pos===n.pos&&healthy(p)).sort((a,b)=>b.ovr-a.ovr)[0];const target=unsigned().filter(p=>p.pos===n.pos&&healthy(p)&&p.salary<=cap(t.id)&&p.ovr>=(current?.ovr||60)+2).sort((a,b)=>b.ovr-a.ovr||a.salary-b.salary)[0];
+ if(!target)continue;target.team=t.id;target.contractYears=Math.max(1,target.contractYears||2);const entry=`${t.name} signed ${target.name} (${n.pos}, ${target.ovr} OVR) to address ${n.label.toLowerCase()} roster depth.`;records.push(entry);news('CPU GM: '+entry);
+ }
+ game.v65AIActivity.unshift({stamp,year:game.year,week,entries:records});game.v65AIActivity=game.v65AIActivity.slice(0,40);store();
+}
+const v65PreviousEndWeek=endWeek;
+endWeek=function(result){const oldWeek=game.week,oldPhase=game.phase;const out=v65PreviousEndWeek(result);if(oldPhase==='season'){v65LeagueManagerWeek(oldWeek);store();}return out;};
+// Owners who hire stronger general managers should see a smaller draft-day
+// decision noise, while still controlling neither picks nor personnel menus.
+const v65BeforeOwnerDraftEvaluation=bestDraftPickFor;
+bestDraftPickFor=function(id){if(game.career!=='owner'||game.userTeam!==id)return v65BeforeOwnerDraftEvaluation(id);const level=v65Exec().level||2,items=(game.prospects||[]).filter(p=>!p.drafted);if(!items.length)return null;const weights=Object.fromEntries(need(id).map(n=>[n.pos,n.weight]));return items.map(p=>({p,score:110-p.rank*.18+(weights[p.pos]||0)*2+rand()*(15-level*2)})).sort((a,b)=>b.score-a.score)[0]?.p;};
+// Restore actively selected page after add-on initialization.
+if(game?.phase!=='setup'){v65BalanceIfNeeded();store();render();}
+// Some legacy UI renderers normalize expansion schedules on navigation; audit
+// again after rendering so mobile standings never show an out-of-balance save.
+const v65BeforeFinalRender=render;
+render=function(...args){const out=v65BeforeFinalRender.apply(this,args);if(v65BalanceIfNeeded()){
+ store();if(page==='expansionreport'){const main=document.querySelector('main.content');if(main)main.innerHTML=v65ExpansionReportPage();}
+ }return out;};
+/* Expansion creators can serve as OWNER and ALSO take GM duties without
+ * permanently changing their save's career role. Existing-team owners don't
+ * inherit general-manager powers, and existing GMs never get owner powers. */
+function v65OwnerGMAllowed(){return !!game&&game.career==='owner'&&game.mode==='expansion'&&!!game.v65OwnerGMSeat}
+const v65PreviousOwnerDraft=v6OwnerCpuDraft;
+v6OwnerCpuDraft=function(...args){if(v65OwnerGMAllowed())return;return v65PreviousOwnerDraft.apply(this,args)};
+A.v65ToggleOwnerGM=function(){if(game.career!=='owner'||game.mode!=='expansion')return say('The combined Owner/GM option is for expansion-franchise founders only.',true);
+ game.v65OwnerGMSeat=!game.v65OwnerGMSeat;page='dashboard';news(`EXPANSION CONTROL: ${game.v65OwnerGMSeat?'Owner assumed direct general manager duties.':'Owner delegated football operations to the CPU general manager.'}`);store();render();say(game.v65OwnerGMSeat?'Owner + GM control enabled. You now handle trades, free agents, contracts and the draft.':'CPU GM controls restored.');
+};
+const v65OwnerPriorDashboard=dashboard;
+dashboard=function(){let html=v65OwnerPriorDashboard();if(game.career!=='owner'||game.mode!=='expansion')return html;
+ return `<div class="card section"><h3>Expansion founder · football authority</h3><p class="sub">As the franchise Owner you can also act as your own GM, or delegate roster decisions to the computer. You keep stadium and staff authority either way.</p><p class="fine">Current: <b>${game.v65OwnerGMSeat?'OWNER + GM (YOU CONTROL FOOTBALL OPERATIONS)':'OWNER ONLY (CPU GM MAKES PERSONNEL MOVES)'}</b></p>${button(game.v65OwnerGMSeat?'DELEGATE GM DUTIES':'TAKE GM DUTIES','A.v65ToggleOwnerGM()','primary')} ${game.v65OwnerGMSeat?button('OPEN TRADES','A.page("trades")','tiny')+button('DRAFT & SCOUTING','A.page("draft")','tiny'):''}</div>`+html;
+};
+const v65OwnerPriorExpansionPage=expansionPage;
+expansionPage=function(){const original=v65OwnerPriorExpansionPage();if(game.career!=='owner'||game.mode!=='expansion')return original;
+ return `<div class="notice"><b>EXPANSION FOUNDER:</b> ${game.v65OwnerGMSeat?'You also serve as GM. The first NFL Draft is yours to manage.':'Your CPU GM will select draft picks unless you take the GM seat.'} ${button(game.v65OwnerGMSeat?'DELEGATE GM':'ACT AS OWNER + GM','A.v65ToggleOwnerGM()','tiny primary')}</div>`+original;
+};
+// Route authorized Owner/GM actions through the established GM validations,
+// then immediately restore and persist the original Owner career role.
+function v65CallAsGM(action){const actual=game.career;if(!v65OwnerGMAllowed())return action();game.career='gm';try{return action()}finally{game.career=actual;store();render()}}
+const v65GMActionNames=['sign','cut','trade','submitMultiTrade','cpuOffer','draft','pickTrade','contract','offerContract','signScout','dropScout','assign','v65Scout','v65RequestTrade'];
+for(const name of v65GMActionNames){const fn=A[name];if(typeof fn!=='function')continue;A[name]=function(...args){if(v65OwnerGMAllowed())return v65CallAsGM(()=>fn.apply(A,args));return fn.apply(A,args)}}
+const v65PreviousOwnerPage=A.page;
+A.page=function(target){if(v65OwnerGMAllowed()&&['trades','free','draft','scouting','contractdesk','roster','combinecenter','frenzy'].includes(target)){page=target;render();return}return v65PreviousOwnerPage(target)};
+const v65PreviousOwnerTabs=tabs;
+tabs=function(){let html=v65PreviousOwnerTabs();if(!v65OwnerGMAllowed())return html;
+ return html.replace('</nav>',[['trades','↔','Trades'],['free','＋','Free Agents'],['draft','★','Draft'],['scouting','🔎','Scouting'],['contractdesk','▤','Contracts']].map(([id,ico,label])=>`<button class="navbutton ${page===id?'active':''}" onclick="A.page('${id}')"><span class="navicon">${ico}</span><span>${label}</span></button>`).join('')+'</nav>');
+};
+const v65OwnerGMRender=render;
+render=function(...args){if(v65OwnerGMAllowed()&&['trades','free','draft','scouting','contractdesk','combinecenter','frenzy'].includes(page)){
+ const actual=game.career;game.career='gm';try{const out=v65OwnerGMRender.apply(this,args);const main=document.querySelector('main.content');if(main)main.insertAdjacentHTML('afterbegin','<div class="notice"><b>EXPANSION OWNER ACTING AS GENERAL MANAGER.</b> Your career role remains Owner. Football actions require your approval; stadium and executive powers remain yours.</div>');return out}
+ finally{game.career=actual;store();}
+ }return v65OwnerGMRender.apply(this,args);
+};
+
+
+/* QA stress regression: avoid repeating response A across adjacent press questions
+   or at the start of the next press conference. Preserve the authored effects. */
+const v65QAOriginalPressOptions=mediaOptionSet;
+mediaOptionSet=function(){
+ const choices=v65QAOriginalPressOptions();
+ const m=game?.media;
+ if(!m?.pending||!choices?.length)return choices;
+ const previous=m.answers?.length?m.answers[m.answers.length-1]?.answer:game.mediaHistory?.[0]?.answers?.[0]?.answer;
+ if(previous&&choices[0].title===previous){
+  const k=choices.findIndex((c,i)=>i>0&&c.title!==previous);
+  if(k>0)return [...choices.slice(k),...choices.slice(0,k)];
+ }
+ return choices;
+};
+/* Injured and inactive players must rehabilitate or reactivate before drills. */
+const v65QAOriginalPractice=practicePage;
+practicePage=function(){
+ if(isPlayer()&&v65Player()&&!healthy(v65Player())){
+  const p=v65Player();
+  return title('Practice Lab','Practice unavailable while you are injured or inactive')+v65PracticeStatus()+
+   `<div class="notice">${esc(p.name)} is not currently eligible for active position drills or a starting battle. ${p.injuryWeeks>0?'Continue rehabilitation and wait for medical clearance.':'Return to an active roster status before requesting a practice evaluation.'}</div>`+
+   (typeof playerInjuryPanel==='function'?playerInjuryPanel():'');
+ }
+ return v65QAOriginalPractice();
+};
+const v65QAOriginalPracticeAction=A.practiceAnswer;
+A.practiceAnswer=function(...args){
+ if(isPlayer()&&v65Player()&&!healthy(v65Player()))return say('You cannot complete on-field practice while inactive or injured.',true);
+ return v65QAOriginalPracticeAction.apply(A,args);
+};
+
+/* v6.5 deep multi-year QA: repair 32-team home/away imbalance.
+   The original circle rotation generated 17 games and a bye but gave some
+   franchises 17 home games and others 1, distorting season results.
+   This preserves the exact matchups, opponents, weeks, and byes while
+   orienting every team to eight or nine home games using Euler tours. */
+function qaBalanced32Schedule(){
+ if(!game || game.mode==='expansion' || teams().length!==32 || game.schedule?.length!==18 || (game.results||[]).some(r=>r.type==='regular'))return false;
+ const ids=teams().map(t=>t.id),deg=Object.fromEntries(ids.map(id=>[id,0])),homes=Object.fromEntries(ids.map(id=>[id,0])),bye=Object.fromEntries(ids.map(id=>[id,0])),opp=Object.fromEntries(ids.map(id=>[id,new Set()]));
+ const scheduled=new Set();let valid=true;
+ for(const w of game.schedule){const present=new Set();for(const [a,b] of (w.pairings||[])){
+   if(!deg.hasOwnProperty(a)||!deg.hasOwnProperty(b)||a===b||present.has(a)||present.has(b)){valid=false;break}
+   deg[a]++;deg[b]++;homes[a]++;present.add(a);present.add(b);opp[a].add(b);opp[b].add(a);
+   const key=[a,b].sort().join(':');if(scheduled.has(key))valid=false;scheduled.add(key);
+  }for(const id of ids)if(!present.has(id))bye[id]++;
+ }
+ if(!valid||ids.some(id=>deg[id]!==17||bye[id]!==1||opp[id].size!==17))return false;
+ if(ids.every(id=>homes[id]>=8&&homes[id]<=9))return false;
+ const dummy='__schedule_balance__',adj=new Map([...ids,dummy].map(x=>[x,[]])),edges=[];
+ const add=(a,b,week,index)=>{const e={a,b,week,index,used:false};edges.push(e);adj.get(a).push(e);adj.get(b).push(e)};
+ game.schedule.forEach((w,wi)=>(w.pairings||[]).forEach(([a,b],pi)=>add(a,b,wi,pi)));
+ for(const id of ids)add(dummy,id,-1,-1);
+ if(edges.length!==304)return false;
+ const stack=[{v:dummy,enter:null}],tour=[];
+ while(stack.length){const cur=stack[stack.length-1],list=adj.get(cur.v);while(list.length&&list[list.length-1].used)list.pop();if(!list.length){const done=stack.pop();if(done.enter)tour.push(done.enter);continue}const e=list.pop();if(e.used)continue;e.used=true;const dest=e.a===cur.v?e.b:e.a;stack.push({v:dest,enter:{edge:e,from:cur.v,to:dest}})}
+ if(tour.length!==edges.length)return false;
+ for(const {edge,from,to} of tour)if(edge.week>=0)game.schedule[edge.week].pairings[edge.index]=[from,to];
+ game.scheduleHomeAwayBalanced=true;return true;
+}
+const qaPreviousMakeSchedule=makeSchedule;
+makeSchedule=function(...args){const result=qaPreviousMakeSchedule.apply(this,args);qaBalanced32Schedule();return result};
+const qaPreviousRender=render;
+render=function(...args){if(qaBalanced32Schedule())store();return qaPreviousRender.apply(this,args)};
+if(game?.phase!=='setup'&&qaBalanced32Schedule()){store();render()}
+/* The existing uniform planner used to overwrite the player's home/away
+   fixture orientation every time preseason was viewed. Preserve the
+   scheduled fixtures while keeping its legitimate uniform-state setup. */
+const qaOriginalEnsureUniformState=ensureUniformState;
+ensureUniformState=function(...args){
+ const preserve=(game?.phase==='preseason'&&game.schedule?.length===18)?game.schedule.map(w=>(w.pairings||[]).find(p=>p.includes(game.userTeam))?.slice()||null):null;
+ const out=qaOriginalEnsureUniformState.apply(this,args);
+ if(preserve&&game.schedule?.length===18){
+  for(let i=0;i<18;i++){const before=preserve[i];if(!before)continue;const w=game.schedule[i],idx=w.pairings.findIndex(p=>p.includes(game.userTeam));if(idx>=0&&before.every(x=>w.pairings[idx].includes(x)))w.pairings[idx]=before;}
+ }
+ qaBalanced32Schedule();if(typeof v65BalanceIfNeeded==='function')v65BalanceIfNeeded();
+ return out;
+};
+/* Full playable expansion roster: after the owner completes 16 expansion
+   picks and the rookie draft, CPU camp signings fill missing positional
+   depth from the free-agent pool. No player is duplicated or magically
+   removed from another NFL club. */
+function qaFinishExpansionCamp(){
+ if(!game||game.mode!=='expansion'||game.year!==2027||!(game.expCount>=16)||game.v66ExpansionRosterFilled||!['preseason','season'].includes(game.phase)||game.results?.some(r=>r.type==='regular'))return false;
+ const target={QB:3,RB:3,WR:6,TE:3,OL:8,EDGE:5,DT:4,LB:5,CB:6,S:5,K:1,P:1,LS:1};
+ let added=0;
+ for(const [pos,count] of Object.entries(target)){
+  let have=own().filter(p=>p.pos===pos&&healthy(p)).length;
+  while(have<count){
+   let options=game.players.filter(p=>p.team==='FA'&&p.pos===pos&&healthy(p)&&p.ovr<=78&&Number(p.salary||1)<cap()-3);
+   options.sort((a,b)=>Number(!!b.real)-Number(!!a.real)||Math.abs(a.ovr-70)-Math.abs(b.ovr-70)||a.salary-b.salary);
+   let p=options[0];
+   if(!p){
+    // Normally the built-in free-agent pool suffices, but older saves can
+    // have already depleted it. Make a modest-rated free-agent invite.
+    const serial=game.players.length;
+    p={id:'camp_exp_'+game.year+'_'+pos+'_'+serial,name:FIRST[(serial+7)%FIRST.length]+' '+LAST[(serial+11)%LAST.length],pos,ovr:65+(serial%6),age:23+(serial%6),salary:1.1,potential:73+(serial%9),team:'FA',status:'ACT',origin:'EXP_CAMP',real:false,outUntil:0};
+    game.players.push(p);
+   }
+   p.team=game.userTeam;p.contractYears=2;p.status='ACT';p.injuryWeeks=0;p.outUntil=0;have++;added++;
+  }
+ }
+ game.v66ExpansionRosterFilled=true;game.v66ExpansionCampAdded=added;
+ news('EXPANSION CAMP: Signed '+added+' affordable free agents to complete the active roster after the expansion and rookie drafts. You can change the depth chart and contracts.');
+ setDefaultLineup(true);return true;
+}
+const qaPreviousBeginPreseason=beginPreseason;
+beginPreseason=function(...args){const ret=qaPreviousBeginPreseason.apply(this,args);if(qaFinishExpansionCamp()){store();render()}return ret};
+const qaLastRender=render;
+render=function(...args){if(qaFinishExpansionCamp())store();return qaLastRender.apply(this,args)};
+/* Multi-season CPU roster stability. Previously every expired CPU contract
+   walked directly to free agency and the CPU drafted only seven replacements,
+   leaving franchises with fewer than twenty players by season three. */
+function qaHumanGMControlsTeam(id){return id===game.userTeam&&(game.career==='gm'||(typeof v65OwnerGMAllowed==='function'&&v65OwnerGMAllowed()))}
+function qaCpuRenewBeforeOffseason(){
+ if(game?.phase!=='offseason_review')return 0;let renewed=0;
+ for(const p of game.players){
+  if(!team(p.team)||qaHumanGMControlsTeam(p.team)||(p.contractYears||1)>1||p.status==='RETIRED')continue;
+  const seed=hashNumber(`${p.id}:${p.team}:${game.year}:renew`)%100;
+  const wantsToStay=p.ovr>=84||seed<(p.age<31?77:p.age<35?57:27);
+  if(!wantsToStay)continue;
+  const previous=p.salary||1,raise=+Math.min(1.08,1+(seed%7)*.01).toFixed(2),delta=previous*(raise-1);
+  if(cap(p.team)>delta+2)p.salary=+(previous*raise).toFixed(2);
+  p.contractYears=2+(seed%3);renewed++;
+ }
+ return renewed;
+}
+const qaOriginalEnterOffseason=enterOffseason;
+enterOffseason=function(...args){qaCpuRenewBeforeOffseason();return qaOriginalEnterOffseason.apply(this,args)};
+function qaCpuPreseasonSignings(){
+ if(!game||game.phase!=='preseason'||game.v66CpuRosterYear===game.year||game.preWeek>1||(game.preResults||[]).length)return 0;
+ const aim={QB:3,RB:3,WR:6,TE:3,OL:8,EDGE:5,DT:4,LB:5,CB:6,S:5,K:1,P:1,LS:1};let signed=0;
+ for(const club of teams()){
+  if(qaHumanGMControlsTeam(club.id))continue;
+  for(const [pos,count] of Object.entries(aim)){
+   let have=roster(club.id).filter(p=>p.pos===pos&&healthy(p)).length;
+   while(have<count){
+    const funds=cap(club.id),possible=game.players.filter(p=>p.team==='FA'&&p.pos===pos&&healthy(p)&&p.age<=36&&(p.salary||1)<=funds-2);
+    possible.sort((a,b)=>Number(!!b.real)-Number(!!a.real)||Math.abs(b.ovr-73)-Math.abs(a.ovr-73)||a.salary-b.salary);
+    let p=possible[0];
+    if(!p){if(funds<=4)break;const n=game.players.length;
+     p={id:`cpu_invite_${game.year}_${club.id}_${pos}_${n}`,name:FIRST[(n+game.year)%FIRST.length]+' '+LAST[(n+5)%LAST.length],pos,team:'FA',ovr:64+(n%9),potential:76+(n%8),age:22+(n%6),salary:1.1,contractYears:2,real:false,origin:'CPU_CAMP',outUntil:0,status:'ACT'};game.players.push(p);
+    }
+    p.team=club.id;p.contractYears=2+(hashNumber(p.id+game.year)%2);p.status='ACT';p.injuryWeeks=0;p.outUntil=0;
+    signed++;have++;
+   }
+  }
+ }
+ game.v66CpuRosterYear=game.year;
+ if(signed){news('CPU FRONT OFFICES: '+signed+' free-agent signings league-wide completed preseason roster needs.');setDefaultLineup(true)}
+ return signed;
+}
+const qaBeforeCpuBeginPreseason=beginPreseason;
+beginPreseason=function(...args){const result=qaBeforeCpuBeginPreseason.apply(this,args);if(qaCpuPreseasonSignings()){store();render()}return result};
+const qaBeforeCpuRender=render;
+render=function(...args){if(qaCpuPreseasonSignings())store();return qaBeforeCpuRender.apply(this,args)};
+/* Keep CPU-managed teams at a believable 53-player active-roster ceiling.
+   Repeated drafts + multi-year extensions otherwise inflated CPU clubs to
+   80+ players and eventually pushed some above the salary cap. */
+function qaCpuTrimForSeason(force=false){
+ if(!game||(!force&&game.phase!=='preseason')||(!force&&game.v66CpuRosterYear===game.year)||(!force&&game.preWeek>1)||(!force&&(game.preResults||[]).length))return 0;
+ const aim={QB:3,RB:3,WR:6,TE:3,OL:8,EDGE:5,DT:4,LB:5,CB:6,S:5,K:1,P:1,LS:1};let released=0;
+ for(const club of teams()){
+  if(qaHumanGMControlsTeam(club.id))continue;
+  let guard=0;
+  while((roster(club.id).length>53||cap(club.id)<2)&&guard++<90){
+   const all=roster(club.id),counts=Object.fromEntries(POS.map(pos=>[pos,all.filter(p=>p.pos===pos).length]));
+   const options=all.filter(p=>p.id!==game.careerPlayer&&counts[p.pos]>(STARTER_REQ[p.pos]||1))
+    .map(p=>({p,extra:counts[p.pos]>(aim[p.pos]||2),surplus:counts[p.pos]-(aim[p.pos]||2)}))
+    .sort((a,b)=>Number(b.extra)-Number(a.extra)||b.surplus-a.surplus||a.p.ovr-b.p.ovr||b.p.salary-a.p.salary);
+   if(!options.length)break;
+   const p=options[0].p;p.team='FA';p.status='ACT';released++;
+  }
+ }
+ return released;
+}
+const qaBeforeRosterTrim=qaCpuPreseasonSignings;
+qaCpuPreseasonSignings=function(){
+ const cutBefore=qaCpuTrimForSeason();const signed=qaBeforeRosterTrim();const cutAfter=qaCpuTrimForSeason(true);const cut=cutBefore+cutAfter;
+ if(cut){game.v66CpuCuts=(game.v66CpuCuts||0)+cut;news('CPU ROSTER CUTS: '+cut+' depth players released to maintain active roster size and cap discipline.');}
+ return cut+signed;
+};
+/* The final preseason-to-week-one transition is another roster checkpoint.
+   Other offseason systems can sign an extra player after an earlier camp cut. */
+const qaOriginalEndWeekBeforeFinalRoster=endWeek;
+endWeek=function(...args){
+ const preseason=game?.phase==='preseason';const out=qaOriginalEndWeekBeforeFinalRoster.apply(this,args);
+ if(preseason&&game?.phase==='season'){
+  const finalCuts=qaCpuTrimForSeason(true);
+  if(finalCuts){game.v66CpuCuts=(game.v66CpuCuts||0)+finalCuts;store();render()}
+ }
+ return out;
+};
+/* Some route transitions bypass the public endWeek wrapper. Audit again
+   when Week 1 is first displayed, before any scheduled result is recorded. */
+const qaBeforeNewSeasonRender=render;
+render=function(...args){
+ if(game?.phase==='season'&&game.week===1&&game.v66CpuRosterYear===game.year&&!(game.results||[]).some(r=>r.type==='regular')){
+  const n=qaCpuTrimForSeason(true);if(n){game.v66CpuCuts=(game.v66CpuCuts||0)+n;store()}
+ }
+ return qaBeforeNewSeasonRender.apply(this,args);
+};
+
+
+/* NFL GM v6.7 — featured game broadcast cards (visual only).
+   These season-generated labels do not alter matchups, dates, results,
+   team ratings, game simulations, save schemas, or other gameplay rules.
+   A fictional 18-week TV calendar is used; no real NFL broadcast rights or
+   future real-world schedule is implied. */
+const TV67_RIVALRIES=new Set([
+ 'BAL|PIT','BUF|MIA','CHI|GB','CHI|DET','CIN|CLE','DAL|NYG','DAL|PHI','DAL|WAS',
+ 'DEN|KC','DEN|LV','DET|GB','GB|MIN','HOU|TEN','IND|TEN','JAX|TEN','KC|LV',
+ 'LAC|LV','LAR|SF','MIN|GB','NE|NYJ','NE|MIA','NO|ATL','NO|TB','NYG|PHI',
+ 'PHI|WAS','PIT|CLE','SEA|SF','SF|ARI','TB|ATL','WAS|NYG',
+].map(x=>x.split('|').sort().join('|')));
+function tv67Key(a,b){return [String(a),String(b)].sort().join('|')}
+function tv67Hash(v){let h=2166136261;for(let i=0;i<v.length;i++){h^=v.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+function tv67IsRival(pair){return TV67_RIVALRIES.has(tv67Key(pair[0],pair[1]))}
+const TV67_STYLES={
+ tnf:{code:'TNF',eyebrow:'THURSDAY NIGHT',title:'Thursday Night Football',theme:'tnf',sub:'Prime-time matchup'},
+ snf:{code:'SNF',eyebrow:'SUNDAY NIGHT',title:'Sunday Night Football',theme:'snf',sub:'Sunday night spotlight'},
+ mnf:{code:'MNF',eyebrow:'MONDAY NIGHT',title:'Monday Night Football',theme:'mnf',sub:'Monday night spotlight'},
+ thanks:{code:'🦃',eyebrow:'THANKSGIVING',title:'Thanksgiving Day Football',theme:'thanks',sub:'Holiday football showcase'},
+ xmas:{code:'❄',eyebrow:'CHRISTMAS DAY',title:'Christmas Day Game',theme:'xmas',sub:'Holiday football showcase'},
+ rival:{code:'VS',eyebrow:'RIVALRY WEEK',title:'Rivalry Week',theme:'rival',sub:'Rivalry spotlight'},
+ playoffs:{code:'NFL',eyebrow:'POSTSEASON',title:'Playoff Football',theme:'playoffs',sub:'Win or go home'},
+};
+function tv67Slate(week){
+ const round=(game.schedule||[]).find(r=>Number(r.week)===Number(week));
+ if(!round||!Array.isArray(round.pairings))return new Map();
+ const pairs=round.pairings.filter(p=>Array.isArray(p)&&p.length===2&&p[0]!==p[1]);
+ const selected=new Map(),used=new Set(),seed=String(game.year)+'|'+String(week);
+ function assign(type,number){for(let j=0;j<number;j++){
+  const choices=pairs.filter(p=>!used.has(tv67Key(...p))).sort((a,b)=>{
+   const score=p=>(tv67IsRival(p)?2000000000:0)+tv67Hash(seed+'|'+type+'|'+j+'|'+tv67Key(...p))%1900000000;
+   return score(b)-score(a)||tv67Key(...a).localeCompare(tv67Key(...b));
+  });
+  if(!choices.length)break;
+  const pair=choices[0],key=tv67Key(...pair);used.add(key);selected.set(key,type);
+ }}
+ // Thanksgiving slate replaces the ordinary Thursday opener; Christmas games
+ // are specially featured in the fictional Week 16 slate.
+ if(Number(week)===12)assign('thanks',3);else assign('tnf',1);
+ if(Number(week)===16)assign('xmas',2);
+ assign('snf',1);assign('mnf',1);
+ return selected;
+}
+function tv67Entry(week,pair){
+ if(!pair||pair.length!==2)return null;
+ const rival=tv67IsRival(pair),rivalWeek=Number(week)===14;
+ const slot=tv67Slate(week).get(tv67Key(...pair));
+ if(!slot&&!rival&&!rivalWeek)return null;
+ return {...(TV67_STYLES[slot||'rival']),slot:slot||'rival',rival,rivalWeek};
+}
+function tv67FeatureHTML(info,sub=''){
+ if(!info)return '';
+ const tags=[info.rivalWeek&&info.slot!=='rival'?'RIVALRY WEEK':'',info.rival?'RIVAL MATCHUP':''].filter(Boolean);
+ const label=info.eyebrow+' · FEATURED GAME';
+ return `<section class="tv-feature" data-tv="${info.theme}" aria-label="${esc(info.title)}"><div class="tv-mark" aria-hidden="true">${info.code}<small>FOOTBALL</small></div><div class="tv-copy"><span class="tv-eyebrow">${esc(label)}</span><div class="tv-name">${esc(info.title)}</div><div class="tv-sub">${esc(sub||info.sub)}</div></div>${tags.length?`<span class="tv-rival-tag">${esc(tags.join(' · '))}</span>`:''}</section>`;
+}
+function tv67CurrentEvent(){
+ if(game?.phase==='season'){
+  const round=(game.schedule||[]).find(w=>w.week===game.week);
+  const pair=round?.pairings?.find(p=>p.includes(game.userTeam));
+  return tv67Entry(game.week,pair);
+ }
+ if(game?.phase==='playoffs'){
+  const match=typeof nextPlayoff==='function'?nextPlayoff():null;
+  const round=match?.round||(game.post?.rounds?.at(-1)?.name)||'NFL Playoffs';
+  return {...TV67_STYLES.playoffs,title:round==='Super Bowl'?'Super Bowl':`${round} Football`,sub:'The road to the championship',rival:false,rivalWeek:false};
+ }
+ return null;
+}
+function tv67PersonalCalendar(){
+ if(!game?.schedule?.length)return '';
+ let highlighted=[];
+ for(const round of game.schedule){
+  const pair=round.pairings?.find(p=>p.includes(game.userTeam));if(!pair)continue;
+  const event=tv67Entry(round.week,pair);if(!event)continue;
+  const other=pair.find(id=>id!==game.userTeam),home=pair[0]===game.userTeam;
+  highlighted.push(`<div class="tv-calendar-row"><span class="tv-calendar-week">W${round.week}</span><span class="tv-calendar-name">${home?'vs':'@'} ${esc(team(other)?.nickname||other)}</span><span class="tv-calendar-event">${esc(event.title)}${event.rival&&event.slot!=='rival'?' · Rivalry':''}</span></div>`);
+ }
+ return `<details class="tv-calendar"><summary>📺 SEE YOUR SEASON'S FEATURED GAMES (${highlighted.length})</summary>${highlighted.join('')||'<p class="tv-calendar-empty">No marquee game assignments in this schedule.</p>'}<p class="fine">Fictional broadcast labels only. Actual matchups, dates, scores and simulation remain unchanged.</p></details>`;
+}
+function tv67LeagueSpotlight(){
+ if(game?.phase!=='season')return '';
+ const round=(game.schedule||[]).find(r=>r.week===game.week);if(!round)return '';
+ const slate=tv67Slate(game.week);
+ const rows=(round.pairings||[]).map(pair=>({pair,entry:tv67Entry(game.week,pair)}))
+  .filter(x=>x.entry&&slate.has(tv67Key(...x.pair)))
+  .sort((a,b)=>['thanks','xmas','tnf','snf','mnf'].indexOf(a.entry.slot)-['thanks','xmas','tnf','snf','mnf'].indexOf(b.entry.slot));
+ if(!rows.length)return '';
+ return `<div class="card section tv-league-spotlight"><h3>📺 Week ${game.week} · National TV spotlight</h3><p class="sub">Fictional broadcast slate for your league. No effects on gameplay or simulation.</p><div class="tv-league-rows">${rows.map(({pair,entry})=>`<div class="tv-spotlight-match"><span class="tv-eyebrow">${esc(entry.title)}</span><strong>${esc(team(pair[1])?.nickname||pair[1])} @ ${esc(team(pair[0])?.nickname||pair[0])}</strong><small>${entry.rival?'Rival matchup · ':''}Week ${game.week}</small></div>`).join('')}</div></div>`;
+}
+const tv67PriorGamePage=gamePage;
+gamePage=function(...args){
+ const html=tv67PriorGamePage.apply(this,args);
+ if(!['season','playoffs','preseason'].includes(game?.phase))return html;
+ const match=tv67CurrentEvent();
+ const header=match?tv67FeatureHTML(match,game.phase==='season'?`Season ${game.year} · Week ${game.week} · ${mine().nickname} football`:match.sub):'';
+ const calendar=game.phase==='season'?tv67PersonalCalendar():'';
+ return header+html+calendar;
+};
+const tv67PriorLeaguePage=leaguePage;
+leaguePage=function(...args){return tv67LeagueSpotlight()+tv67PriorLeaguePage.apply(this,args)};
+window.NFL_GM_TV67={getSlate:tv67Slate,getEntry:tv67Entry,getCurrent:tv67CurrentEvent,getCalendar:tv67PersonalCalendar};
+
+</script></body></html>
