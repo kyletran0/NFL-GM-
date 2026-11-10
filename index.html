@@ -5691,4 +5691,471 @@ A.createCareer=async function(){
 const v75OldHub=hubPage;
 hubPage=function(){const html=v75OldHub();return v75LoadingSlot?'<div class="notice"><b>Loading saved career…</b> Opening your existing league, not creating a new one.</div>'+html:html;};
 window.NFL_GM_V75_QA={version:'7.5',valid:v75ValidSlotState,loading:()=>v75LoadingSlot,load:id=>A.loadCareer(id)};
+/* v7.6 — Career recovery and durable save commit.
+   IMPORTANT: Never delete old IndexedDB records, legacy slots, or repair archives.
+   Slot metadata alone is not proof that a career payload was stored. */
+const V76_BUILD='NFL GM: Connected Careers — v7.6 Career Recovery';
+document.title=V76_BUILD;
+const V76_BACKUP_PREFIX='nflgm_v76_recovery_';
+const V76_BACKUP_MAIN='nflgm_v76_current_backup';
+let v76LoadBusy=false, v76ScanBusy=false, v76ScanResults=null;
+let v76SaveFailure=new Set();
+const v76Valid=s=>!!(s&&s.version===7&&s.phase&&s.phase!=='setup'&&Array.isArray(s.teams)&&s.teams.length&&Array.isArray(s.players)&&s.players.length);
+function v76MetaFromState(id,s){
+ return {id,name:s.careerName||CAREER_NAMES[s.career]||'Career',role:s.career,team:s.userTeam,year:s.year,week:s.week,phase:s.phase,updated:Date.now()};
+}
+function v76CommitMetadata(id,s){
+ if(!v76Valid(s))return false;
+ try{
+  const arr=careerSlots(),at=arr.findIndex(x=>x.id===id),meta=v76MetaFromState(id,s);
+  if(at<0)arr.unshift(meta);else arr[at]=meta;
+  localStorage.setItem(CAREER_SLOTS_INDEX,JSON.stringify(arr));
+  if(activeCareerSlot===id)localStorage.setItem('nflgm_last_career_slot',id);
+  return true;
+ }catch(e){console.warn('Save metadata not updated:',e);return false;}
+}
+// Existing v7 bootstrap used to delete pre-repair snapshots after migration.
+// Keep them intact, and never overwrite a valid newer DB career with a stale
+// legacy main save just because the old localStorage key is still present.
+v70MigrateLegacy=async function(){
+ let moved=0;
+ try{
+  const keys=[];
+  for(let i=0;i<localStorage.length;i++){
+   const key=localStorage.key(i);
+   if(key?.startsWith(CAREER_SLOT_PREFIX))keys.push(key);
+  }
+  for(const key of keys){
+   const s=v70ReadLegacy(key);if(!v76Valid(s))continue;
+   const id=key.slice(CAREER_SLOT_PREFIX.length);
+   let old=null;try{old=await v70DBGet(id)}catch(e){}
+   if(!v76Valid(old)){await v70DBPut(id,s);moved++;v76CommitMetadata(id,s);}
+  }
+  const oldMain=v70ReadLegacy(STORAGE) || (()=>{try{return JSON.parse(v70LegacyMainSave||'null')}catch(e){return null}})();
+  if(v76Valid(oldMain)){
+   let id=localStorage.getItem('nflgm_last_career_slot')||activeCareerSlot;
+   if(!id){id=careerSlotId();activeCareerSlot=id;}
+   let stored=null;try{stored=await v70DBGet(id)}catch(e){}
+   if(!v76Valid(stored)){await v70DBPut(id,oldMain);v76CommitMetadata(id,oldMain);moved++;}
+  }
+ }catch(e){console.warn('Non-destructive save migration:',e)}
+ return moved;
+};
+async function v76Compress(s){
+ const bytes=new TextEncoder().encode(JSON.stringify(s));
+ if(!window.CompressionStream)return JSON.stringify({codec:'json',state:s});
+ const stream=new Blob([bytes]).stream().pipeThrough(new CompressionStream('gzip'));
+ const compressed=new Uint8Array(await new Response(stream).arrayBuffer());
+ let binary='';for(let i=0;i<compressed.length;i+=8192)binary+=String.fromCharCode(...compressed.subarray(i,i+8192));
+ return JSON.stringify({codec:'gzip',data:btoa(binary)});
+}
+async function v76Uncompress(raw){
+ if(!raw)return null;
+ try{
+  const x=JSON.parse(raw);
+  if(x?.codec==='json')return x.state;
+  if(x?.codec==='gzip'&&window.DecompressionStream){
+   const binary=atob(x.data),bytes=new Uint8Array(binary.length);
+   for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);
+   const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+   return JSON.parse(await new Response(stream).text());
+  }
+  if(v76Valid(x))return x;
+ }catch(e){console.warn('Unreadable recovery snapshot:',e)}
+ return null;
+}
+async function v76Backup(id,s){
+ if(!v76Valid(s))return false;
+ try{const payload=await v76Compress(s);localStorage.setItem(V76_BACKUP_PREFIX+id,payload);return true;}
+ catch(e){console.warn('Secondary local snapshot unavailable:',e);return false;}
+}
+function v76QueueGame(){
+ if(v70Creating||!v76Valid(game))return true;
+ if(!activeCareerSlot)activeCareerSlot=careerSlotId();
+ v70Pending.set(activeCareerSlot,game);
+ if(v70BootReady)queueMicrotask(v70Flush);
+ return true;
+}
+// All writes go through the same queue, including pagehide and code that calls
+// v70QueueSave directly rather than the current store() function.
+v70QueueSave=v76QueueGame;
+store=v76QueueGame;
+v70Flush=function(){
+ if(!v70BootReady)return Promise.resolve(false);
+ if(v70Draining)return v70Draining;
+ v70Draining=(async()=>{
+  while(v70Pending.size){
+   const [id,s]=v70Pending.entries().next().value;
+   v70Pending.delete(id);
+   if(!v76Valid(s))continue;
+   let committed=false;
+   try{await v70DBPut(id,s);committed=true;}
+   catch(e){console.warn('Primary IndexedDB save failed:',e);}
+   if(committed){
+    v76CommitMetadata(id,s);v76SaveFailure.delete(id);
+    // Independent compressed recovery copy. Failure never invalidates IDB.
+    await v76Backup(id,s);
+   }else{
+    // Fallback counts as saved ONLY after its full payload is written.
+    const backedUp=await v76Backup(id,s);
+    if(backedUp){v76CommitMetadata(id,s);v76SaveFailure.delete(id);}
+    else{
+     v76SaveFailure.add(id);
+     say('Autosave could not finish. Keep this tab open; your current career is still in memory.',true);
+    }
+   }
+  }
+  return v76SaveFailure.size===0;
+ })().finally(()=>{
+  v70Draining=null;
+  if(v70Pending.size)queueMicrotask(v70Flush);
+ });
+ return v70Draining;
+};
+async function v76WaitBoot(){
+ const started=Date.now();
+ while(!v70BootReady&&Date.now()-started<12000)await new Promise(r=>setTimeout(r,60));
+ return !!v70BootReady;
+}
+async function v76GetAllDB(){
+ try{const db=await v70Database();return await new Promise((resolve,reject)=>{
+  const tx=db.transaction(V70_TABLE,'readonly'),req=tx.objectStore(V70_TABLE).getAll();
+  req.onsuccess=()=>resolve(req.result||[]);req.onerror=()=>reject(req.error);
+ });}
+ catch(e){console.warn('Could not scan save database:',e);return [];}
+}
+function v76Fingerprint(s){return `${String(s?.career||'')}:${String(s?.careerName||'')}:${String(s?.userTeam||'')}`;}
+function v76LikelyMatches(id,s){
+ const meta=careerSlots().find(x=>x.id===id);
+ return meta&&v76Valid(s)&&meta.role===s.career&&meta.team===s.userTeam&&(!meta.name||meta.name===s.careerName||meta.name===(CAREER_NAMES[s.career]||''));
+}
+async function v76CandidateCopies(id,dbRecords){
+ const out=[];
+ const offer=(source,s)=>{if(v76Valid(s))out.push({source,state:s});};
+ const rec=(dbRecords||[]).find(x=>x.id===id);
+ offer('browser database',rec?.state);
+ offer('unsaved memory',v70Pending.get(id));
+ if(id===activeCareerSlot)offer('current open game',game);
+ offer('older slot backup',v70ReadLegacy(CAREER_SLOT_PREFIX+id));
+ try{offer('recovery backup',await v76Uncompress(localStorage.getItem(V76_BACKUP_PREFIX+id)));}catch(e){}
+ try{offer('repair archive',v70ReadLegacy('nflgm_v6_pre_repair_'+id));}catch(e){}
+ const last=(()=>{try{return localStorage.getItem('nflgm_last_career_slot')}catch(e){return null}})();
+ if(last===id){
+  const legacy=v70ReadLegacy(STORAGE);
+  if(v76LikelyMatches(id,legacy))offer('earlier autosave',legacy);
+  const arch=v70ReadLegacy('nflgm_v6_pre_repair_current');
+  if(v76LikelyMatches(id,arch))offer('earlier repair archive',arch);
+ }
+ return out;
+}
+async function v76Scan(){
+ await v76WaitBoot();const db=await v76GetAllDB(),slots=careerSlots();
+ const records=[];
+ for(const s of slots){const options=await v76CandidateCopies(s.id,db);records.push({id:s.id,label:s.name||CAREER_NAMES[s.role]||'Career',role:s.role,status:options.length?'available':'missing',sources:options.map(x=>x.source)});}
+ const orphan=db.filter(r=>v76Valid(r.state)&&!slots.some(x=>x.id===r.id));
+ return {records,orphan:orphan.map(r=>({id:r.id,role:r.state.career,name:r.state.careerName||r.state.career,team:r.state.userTeam}))};
+}
+A.v76ScanSaves=async function(){
+ if(v76ScanBusy)return;
+ v76ScanBusy=true;page='careerhub';render();
+ try{v76ScanResults=await v76Scan();}
+ catch(e){console.warn('Recovery scan failed:',e);say('Could not finish recovery scan. Your saved data was not changed.',true)}
+ finally{v76ScanBusy=false;page='careerhub';render();}
+};
+A.loadCareer=async function(id){
+ if(v76LoadBusy)return;
+ v76LoadBusy=true;const previous={game,activeCareerSlot,page};
+ try{
+  if(!await v76WaitBoot())throw Error('Save database has not finished starting.');
+  if(v76Valid(game)&&activeCareerSlot){v76QueueGame();await v70Flush();}
+  const db=await v76GetAllDB();
+  const copies=await v76CandidateCopies(id,db);
+  if(!copies.length){
+   game=previous.game;activeCareerSlot=previous.activeCareerSlot;
+   page='careerhub';render();
+   say('Save listing found, but the career data is missing here. Use SCAN / RECOVER SAVES. Do not clear your browser data.',true);
+   return false;
+  }
+  // Prefer the durable main database; snapshots are fallback, not replacements
+  // for more recent real saves. This also preserves the original save ID.
+  const chosen=copies[0];
+  game=chosen.state;activeCareerSlot=id;
+  if(!game.settings)game.settings=initial().settings;
+  try{v70RatingRepair(game)}catch(e){console.warn('Rating repair:',e)}
+  initImmersion();setDefaultLineup();
+  page=game.media?.pending?'media':game.career==='player'?'career':game.career==='gm'||game.career==='owner'?'dashboard':'career';
+  v76QueueGame();render();window.scrollTo?.(0,0);
+  await v70Flush();
+  if(chosen.source!=='browser database')say('Career recovered from '+chosen.source+'!',false);
+  return true;
+ }catch(e){
+  console.error('Career recovery failure:',e);
+  game=previous.game;activeCareerSlot=previous.activeCareerSlot;page='careerhub';render();
+  say('Could not open this career. Your save data was left untouched. Run SCAN / RECOVER SAVES.',true);
+  return false;
+ }finally{v76LoadBusy=false;}
+};
+A.v76RecoverOrphan=async function(id){
+ const db=await v76GetAllDB(),rec=db.find(r=>r.id===id);
+ if(!v76Valid(rec?.state))return say('This recovery candidate is not available now.',true);
+ v76CommitMetadata(id,rec.state);
+ return A.loadCareer(id);
+};
+const v76OldCreateCareer=A.createCareer;
+A.createCareer=async function(){
+ if(v76LoadBusy||v76ScanBusy)return say('Finish checking your saved careers first.',true);
+ if(!await v76WaitBoot())return say('The save system is still starting. Nothing has been deleted.',true);
+ if(v76Valid(game)&&activeCareerSlot){
+  v76QueueGame();await v70Flush();
+  if(v76SaveFailure.has(activeCareerSlot))return say('Your current career did not save. Keep it open instead of starting a new one.',true);
+ }
+ return v76OldCreateCareer();
+};
+const v76PreviousHub=hubPage;
+hubPage=function(){
+ let html=v76PreviousHub();
+ const slots=careerSlots();
+ let status='';
+ if(v76ScanResults){
+  status=v76ScanResults.records.map(r=>`<div class="marketrow"><div class="minzero"><b>${esc(r.label)} · ${esc(CAREER_NAMES[r.role]||r.role)}</b><small>${r.status==='available'?'Career data found: '+r.sources.join(', '):'No usable career data found in this browser yet'}</small></div>${button(r.status==='available'?'OPEN RECOVERED CAREER':'RETRY RECOVERY',`A.loadCareer(${JSON.stringify(r.id)})`,'tiny primary')}</div>`).join('');
+  status+=v76ScanResults.orphan.map(r=>`<div class="marketrow"><div class="minzero"><b>${esc(r.name)} · ${esc(r.role)}</b><small>Unlisted saved career found in browser database</small></div>${button('RESTORE THIS CAREER',`A.v76RecoverOrphan(${JSON.stringify(r.id)})`,'tiny primary')}</div>`).join('');
+ }
+ const panel=`<div class="card section" style="margin-bottom:16px"><h3>🛟 Recover existing careers</h3><p class="sub">If Continue fails, search the saved game database and older backups. This scan never deletes or resets a career.</p>${button(v76ScanBusy?'SCANNING...':'SCAN / RECOVER SAVES','A.v76ScanSaves()','primary',v76ScanBusy)}${status?'<div class="section">'+status+'</div>':''}<p class="fine">If a listing has no game data in this browser, the game cannot recreate missing seasons. Try the same website and browser where you originally played. Never clear site data while recovering.</p></div>`;
+ return panel+html;
+};
+// After older v7 initialization finishes, check for stranded career records.
+(async()=>{await v76WaitBoot();if(page==='careerhub'&&careerSlots().length)A.v76ScanSaves();})();
+window.NFL_GM_V76_QA={version:'7.6',scan:v76Scan,load:id=>A.loadCareer(id),flush:()=>v70Flush(),saveStatus:()=>[...v76SaveFailure],pending:()=>v70Pending.size};
+
+/* v7.7 — zero-click autosave and automatic multi-career recovery.
+ * Always write immutable checkpoints; never navigate away from an unsaved career.
+ * Saving, backup, and recovery happen in-browser without manual user action.
+ * All preexisting records and old recovery snapshots are preserved. */
+const V77_BUILD='NFL GM: Connected Careers — v7.7 Automatic Career Saves';
+document.title=V77_BUILD;
+let v77LastStamp=0, v77Loading=false, v77BootScanning=false;
+let v77KnownSlots=new Map();
+const v77OriginalCareerSlots=careerSlots;
+careerSlots=function(){
+ const byId=new Map();
+ for(const x of v77OriginalCareerSlots()){if(x&&x.id)byId.set(x.id,x)}
+ for(const [id,x] of v77KnownSlots)if(!byId.has(id)||(Number(byId.get(id).updated)||0)<(Number(x.updated)||0))byId.set(id,x);
+ return Array.from(byId.values());
+};
+function v77Track(id,s){if(!id||!v76Valid(s))return;
+ const info=v76MetaFromState(id,s);info.updated=Number(s.v77AutosavedAt)||Date.now();
+ v77KnownSlots.set(id,info);
+}
+function v77Checkpoint(){
+ if(v70Creating||!v76Valid(game))return true;
+ if(!v70BootReady&&!activeCareerSlot)return true; // never invent a ghost slot during boot
+ if(!activeCareerSlot)activeCareerSlot=careerSlotId();
+ let snapshot;
+ try{snapshot=typeof structuredClone==='function'?structuredClone(game):JSON.parse(JSON.stringify(game));}
+ catch(err){console.error('Could not snapshot autosave:',err);v76SaveFailure.add(activeCareerSlot);say('Autosave needs attention. Keep this career open while the game retries.',true);return false;}
+ snapshot.v77AutosavedAt=Math.max(Date.now(),v77LastStamp+1,Number(game.v77AutosavedAt||0)+1);
+ v77LastStamp=snapshot.v77AutosavedAt;
+ v70Pending.set(activeCareerSlot,snapshot);
+ if(v70BootReady)queueMicrotask(v70Flush);
+ return true;
+}
+store=v77Checkpoint;
+v70QueueSave=v77Checkpoint;
+// The full roster is saved in IndexedDB. A compressed second copy is written
+// automatically when possible. Slot names are published only AFTER a write succeeds.
+v70Flush=function(){
+ if(!v70BootReady)return Promise.resolve(false);
+ if(v70Draining)return v70Draining;
+ v70Draining=(async()=>{
+  while(v70Pending.size){
+   const [id,s]=v70Pending.entries().next().value;v70Pending.delete(id);
+   if(!v76Valid(s))continue;
+   let durable=false;
+   try{await v70DBPut(id,s);durable=true;}
+   catch(err){console.warn('Autosave database failure:',err)}
+   if(!durable){try{durable=await v76Backup(id,s)}catch(err){console.warn('Autosave backup failure:',err)}}
+   else{ // backup is automatic too; failure is not fatal when the DB committed
+    try{await v76Backup(id,s)}catch(err){console.warn('Secondary autosave failed:',err)}
+   }
+   if(durable){v76SaveFailure.delete(id);v77Track(id,s);v76CommitMetadata(id,s)}
+   else{
+    v76SaveFailure.add(id);
+    // IMPORTANT: the unsaved snapshot stays queued for the next retry.
+    // Never claim it was saved or let another career replace it.
+    const newPending=v70Pending.get(id);
+    if(!newPending||Number(newPending.v77AutosavedAt)<Number(s.v77AutosavedAt))v70Pending.set(id,s);
+    say('Autosave is having trouble. Keep this tab open; the game will retry automatically.',true);
+    return false; // do not spin repeatedly when storage is unavailable
+   }
+  }
+  return !v76SaveFailure.size;
+ })().finally(()=>{
+  v70Draining=null;
+  if(v70Pending.size&&!v76SaveFailure.size)queueMicrotask(v70Flush);
+ });
+ return v70Draining;
+};
+async function v77SavedBeforeLeaving(){
+ if(!v76Valid(game)||!activeCareerSlot)return true;
+ if(!v77Checkpoint())return false;
+ await v70Flush();
+ return !v76SaveFailure.has(activeCareerSlot);
+}
+async function v77RestoreCandidates(id){
+ const db=await v76GetAllDB();
+ const list=await v76CandidateCopies(id,db);
+ // If an older listing survived but its primary DB row didn't, search
+ // archived same-role/same-team copies automatically rather than asking the
+ // player to hunt for files. Never attach an unrelated coach/player save.
+ if(!list.length){
+  const archives=[];
+  try{for(let i=0;i<localStorage.length;i++){
+   const key=localStorage.key(i);
+   if(key&&(key.startsWith('nflgm_v6_pre_repair_')||key===STORAGE))archives.push(key);
+  }}catch(e){}
+  for(const key of archives){let candidate=v70ReadLegacy(key);
+   if(v76LikelyMatches(id,candidate))list.push({source:'automatic recovery archive',state:candidate});
+  }
+ }
+ list.sort((a,b)=>{
+  const na=Number(a.state?.v77AutosavedAt)||0,nb=Number(b.state?.v77AutosavedAt)||0;
+  if(na!==nb)return nb-na;
+  const order={'unsaved memory':0,'current open game':1,'browser database':2,'recovery backup':3,'older slot backup':4,'repair archive':5,'earlier autosave':6,'earlier repair archive':7,'automatic recovery archive':8};
+  return (order[a.source]??20)-(order[b.source]??20);
+ });
+ return list;
+}
+A.loadCareer=async function(id){
+ if(v77Loading||v76LoadBusy)return false;
+ v77Loading=true;v76LoadBusy=true;
+ const before={game,activeCareerSlot,page};
+ try{
+  if(!await v76WaitBoot())throw Error('Autosave startup incomplete');
+  if(!await v77SavedBeforeLeaving()){
+   say('Your current career has not finished autosaving. The game will retry; it will NOT replace your progress.',true);
+   return false;
+  }
+  const list=await v77RestoreCandidates(id);
+  if(!list.length){
+   page='careerhub';render();
+   say('Could not recover this career from the saved copies on this browser. No career was deleted or overwritten.',true);
+   return false;
+  }
+  const selected=list[0];
+  game=selected.state;activeCareerSlot=id;
+  if(!game.settings)game.settings=initial().settings;
+  try{v70RatingRepair(game)}catch(err){console.warn('Career repair:',err)}
+  initImmersion();setDefaultLineup();
+  page=game.media?.pending?'media':game.career==='player'?'career':(['hc','oc','dc'].includes(game.career)?'career':'dashboard');
+  if(!v77Checkpoint())throw Error('Recovered career could not be checkpointed');
+  await v70Flush();
+  render();window.scrollTo?.(0,0);
+  if(selected.source!=='browser database')say('Your career was restored automatically from '+selected.source+'.');
+  return true;
+ }catch(err){
+  console.error('Automatic career load failed:',err);
+  game=before.game;activeCareerSlot=before.activeCareerSlot;page='careerhub';render();
+  say('Could not open this career right now; your other careers were left alone.',true);
+  return false;
+ }finally{v77Loading=false;v76LoadBusy=false}
+};
+const v77EarlierCreate=A.createCareer;
+A.createCareer=async function(){
+ if(v77Loading)return say('Career is opening. Nothing has been reset.',true);
+ if(!await v76WaitBoot())return say('Autosave is still starting. Your careers are safe.',true);
+ if(!await v77SavedBeforeLeaving())return say('This career has not saved yet. It will retry automatically before you start another.',true);
+ return v77EarlierCreate();
+};
+// Action rendering is a backup checkpoint for code paths that forgot to call
+// store(). This never asks players to save and does not alter game flow.
+const v77EarlierRender=render;
+render=function(...args){const result=v77EarlierRender.apply(this,args);
+ if(v70BootReady&&v76Valid(game)&&activeCareerSlot&&!v70Creating)v77Checkpoint();
+ return result;
+};
+// Older builds had one global localStorage autosave and multiple career slots.
+// Never guess that global save belongs to the last slot: verify the role and
+// team first, so a player cannot overwrite the user's head-coach career.
+v70MigrateLegacy=async function(){
+ let migrated=0;
+ const legacySlots=[];
+ try{for(let i=0;i<localStorage.length;i++){
+  const key=localStorage.key(i);if(key?.startsWith(CAREER_SLOT_PREFIX))legacySlots.push(key);
+ }}catch(e){}
+ for(const key of legacySlots){
+  const id=key.slice(CAREER_SLOT_PREFIX.length),candidate=v70ReadLegacy(key);
+  if(!v76Valid(candidate))continue;
+  let existing=null;try{existing=await v70DBGet(id)}catch(e){}
+  if(!v76Valid(existing)){
+   try{await v70DBPut(id,candidate);v77Track(id,candidate);v76CommitMetadata(id,candidate);migrated++}
+   catch(e){console.warn('Legacy career migration not yet possible:',id,e)}
+  }
+ }
+ const archiveKeys=[];
+ try{for(let i=0;i<localStorage.length;i++){
+  const key=localStorage.key(i);if(key?.startsWith('nflgm_v6_pre_repair_'))archiveKeys.push(key);
+ }}catch(e){}
+ for(const key of archiveKeys){
+  const id=key.slice('nflgm_v6_pre_repair_'.length),candidate=v70ReadLegacy(key);
+  if(id==='current'||!v76LikelyMatches(id,candidate))continue;
+  let existing=null;try{existing=await v70DBGet(id)}catch(e){}
+  if(!v76Valid(existing))try{await v70DBPut(id,candidate);v77Track(id,candidate);v76CommitMetadata(id,candidate);migrated++}catch(e){}
+ }
+ let oldMain=v70ReadLegacy(STORAGE);
+ if(!v76Valid(oldMain)){
+  try{oldMain=JSON.parse(v70LegacyMainSave||'null')}catch(e){}
+ }
+ if(v76Valid(oldMain)){
+  const last=localStorage.getItem('nflgm_last_career_slot');
+  const matching=last&&v76LikelyMatches(last,oldMain);
+  let id=matching?last:null;
+  if(!id){
+   // Only add it as a separate recovery career if no equivalent save is found.
+   const stored=await v76GetAllDB();
+   const same=stored.find(r=>v76Valid(r.state)&&r.state.career===oldMain.career&&r.state.careerName===oldMain.careerName&&r.state.userTeam===oldMain.userTeam&&r.state.year===oldMain.year&&r.state.week===oldMain.week);
+   if(same)id=same.id;
+   else id=careerSlotId();
+  }
+  let existing=null;try{existing=await v70DBGet(id)}catch(e){}
+  if(!v76Valid(existing))try{await v70DBPut(id,oldMain);v77Track(id,oldMain);v76CommitMetadata(id,oldMain);migrated++}catch(e){}
+ }
+ return migrated;
+};
+async function v77AutoFindCareers(){
+ if(v77BootScanning)return;
+ v77BootScanning=true;
+ try{
+  if(!await v76WaitBoot())return;
+  const records=await v76GetAllDB();
+  for(const x of records)if(v76Valid(x.state)){
+   v77Track(x.id,x.state);
+   if(!v77OriginalCareerSlots().some(s=>s.id===x.id))v76CommitMetadata(x.id,x.state);
+  }
+  // Backup-only careers can still be offered in the Hub automatically.
+  const keys=[];try{for(let i=0;i<localStorage.length;i++){
+   const key=localStorage.key(i);if(key?.startsWith(V76_BACKUP_PREFIX))keys.push(key);
+  }}catch(err){}
+  for(const key of keys){const id=key.slice(V76_BACKUP_PREFIX.length);
+   if(v77KnownSlots.has(id))continue;
+   const copy=await v76Uncompress(localStorage.getItem(key));
+   if(v76Valid(copy)){v77Track(id,copy);v76CommitMetadata(id,copy);}
+  }
+  // If startup opened an empty setup screen but an older save has real game
+  // data, try opening the last career automatically without any button.
+  if(game?.phase==='setup'){
+   const last=localStorage.getItem('nflgm_last_career_slot');
+   if(last&&careerSlots().some(s=>s.id===last))await A.loadCareer(last);
+  }
+  if(page==='careerhub')render();
+ }catch(err){console.warn('Automatic career recovery scan:',err)}
+ finally{v77BootScanning=false}
+}
+// Periodic automatic checkpoint in addition to action, page hide, and tab switch.
+setInterval(()=>{if(v70BootReady&&v76Valid(game)&&activeCareerSlot){
+ v77Checkpoint();v70Flush().catch(e=>console.warn('Autosave retry:',e));
+}},20000);
+window.addEventListener('pageshow',()=>{if(v70BootReady&&v76Valid(game))v77Checkpoint()});
+(async()=>{await v76WaitBoot();await v77AutoFindCareers()})();
+window.NFL_GM_V77_QA={version:'7.7',checkpoint:v77Checkpoint,flush:()=>v70Flush(),load:id=>A.loadCareer(id),scan:v77AutoFindCareers,slots:()=>careerSlots(),failed:()=>[...v76SaveFailure],pending:()=>v70Pending.size};
+
 </script></body></html>
