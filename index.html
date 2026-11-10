@@ -5627,4 +5627,68 @@ A.v74AcceptBrand=function(){const s=v73State(),o=s?.offers.find(x=>x.id===game.v
  store();page='endorsements';render();say(`Signed with ${b.name}: ${v73Money(annual)} each season.`);
 };
 
+
+
+/* v7.5 — Safe career-slot Continue. Existing saves and v7.4 features remain intact.
+   A previous async load could race against setup/create and the v7.4 wrapper.
+   Never open setup from Continue and never change the current save on load failure. */
+const V75_BUILD='NFL GM: Connected Careers — v7.5 Save Recovery';
+document.title=V75_BUILD;
+let v75LoadingSlot=false;
+let v75LoadVersion=0;
+function v75ValidSlotState(s){
+ return !!(s&&s.version===7&&s.phase&&s.phase!=='setup'&&Array.isArray(s.teams)&&s.teams.length&&Array.isArray(s.players)&&s.players.length);
+}
+function v75Failure(msg){
+ page='careerhub';render();say(msg,true);
+}
+A.loadCareer=async function(id){
+ if(v75LoadingSlot)return;
+ if(!careerSlots().some(s=>s.id===id))return v75Failure('That career is not listed in this browser. Your other saves were not changed.');
+ v75LoadingSlot=true;const ticket=++v75LoadVersion;
+ const original={game,activeCareerSlot,page};
+ try{
+  // Finish pending writes for the career being left BEFORE reading the selected one.
+  // Do not write a setup placeholder over a real career.
+  if(v75ValidSlotState(game)&&activeCareerSlot){store();await v70Flush();}
+  let saved=null;
+  try{saved=await v70DBGet(id)}catch(err){console.warn('Career database read:',err)}
+  if(!v75ValidSlotState(saved)){
+   // Migrated legacy saves, in-flight writes, and the current memory copy are
+   // safe fallbacks. Never substitute a different franchise by name alone.
+   const pending=v70Pending.get(id);
+   if(v75ValidSlotState(pending))saved=pending;
+   if(!v75ValidSlotState(saved))saved=v70ReadLegacy(CAREER_SLOT_PREFIX+id);
+   if(!v75ValidSlotState(saved)&&id===activeCareerSlot&&v75ValidSlotState(game))saved=game;
+  }
+  if(!v75ValidSlotState(saved)){
+   game=original.game;activeCareerSlot=original.activeCareerSlot;
+   return v75Failure('This save is listed, but its game data could not be opened. Do NOT delete it or clear browser storage.');
+  }
+  if(ticket!==v75LoadVersion)return;
+  game=saved;activeCareerSlot=id;
+  try{v70RatingRepair(game)}catch(e){console.warn('Career rating repair:',e)}
+  initImmersion();setDefaultLineup();
+  page=game.media?.pending?'media':game.career==='player'?'career':'dashboard';
+  v70Meta(id);store();render();window.scrollTo?.(0,0);
+  // Data is in memory immediately; the background write is best-effort and
+  // must never prevent an existing save from opening.
+  v70Flush().catch(e=>console.warn('Post-load autosave:',e));
+ }catch(err){
+  console.error('Career Continue failure:',err);
+  game=original.game;activeCareerSlot=original.activeCareerSlot;
+  v75Failure('Career loading hit an error. Your save was not deleted. Try Continue again.');
+ }finally{
+  if(ticket===v75LoadVersion)v75LoadingSlot=false;
+ }
+};
+const v75OldCreateCareer=A.createCareer;
+A.createCareer=async function(){
+ if(v75LoadingSlot)return say('Finish loading your career before starting another.',true);
+ return v75OldCreateCareer();
+};
+// Explicit status on the hub removes ambiguity when a save is still loading.
+const v75OldHub=hubPage;
+hubPage=function(){const html=v75OldHub();return v75LoadingSlot?'<div class="notice"><b>Loading saved career…</b> Opening your existing league, not creating a new one.</div>'+html:html;};
+window.NFL_GM_V75_QA={version:'7.5',valid:v75ValidSlotState,loading:()=>v75LoadingSlot,load:id=>A.loadCareer(id)};
 </script></body></html>
